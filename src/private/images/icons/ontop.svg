@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.468" height="87.458" viewBox="0 0 68.468 87.458">
+  <defs>
+    <filter id="Path_25290" x="0" y="0" width="68.468" height="87.458" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-opacity="0.059"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_213" data-name="Group 213" transform="translate(-1581 -6599.337)">
+    <g transform="matrix(1, 0, 0, 1, 1581, 6599.34)" filter="url(#Path_25290)">
+      <path id="Path_25290-2" data-name="Path 25290" d="M942.876,215.666a19.044,19.044,0,0,0-1.254-4.1l-2.181-3.776-15.471-26.8-15.47,26.8-2.18,3.776a19.023,19.023,0,0,0-1.254,4.1,19.234,19.234,0,1,0,37.81,0Zm-27.791,16.258" transform="translate(-889.74 -169)" fill="#fff"/>
+    </g>
+    <g id="Vector_Smart_Object" data-name="Vector Smart Object" transform="translate(0.763)">
+      <g id="Vector_Smart_Object-2" data-name="Vector Smart Object" transform="matrix(0, 1, -1, 0, 1625.118, 6633)">
+        <path id="Path_5" data-name="Path 5" d="M6.96,3.34a.762.762,0,0,1,1.075,0,.738.738,0,0,1,0,1.048L2.583,9.753h17.99a.752.752,0,0,1,.764.741.761.761,0,0,1-.764.751H2.583L8.035,16.6a.751.751,0,0,1,0,1.058.762.762,0,0,1-1.075,0L.217,11.023a.738.738,0,0,1,0-1.048Z" fill="#3eb7e4"/>
+      </g>
+      <path id="Color_Overlay" data-name="Color Overlay" d="M1613.873,6653.572v-17.989l-5.356,5.453a.752.752,0,0,1-1.059,0,.763.763,0,0,1,0-1.076l6.637-6.742a.738.738,0,0,1,1.047,0l6.637,6.742a.763.763,0,0,1,0,1.076.74.74,0,0,1-1.049,0l-5.366-5.453v17.989a.751.751,0,0,1-.74.765A.761.761,0,0,1,1613.873,6653.572Z" fill="#3eb7e4"/>
+    </g>
+  </g>
+</svg>

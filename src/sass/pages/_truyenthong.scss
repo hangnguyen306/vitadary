@@ -1,0 +1,75 @@
+.sBanerChild{
+  .image{
+    @include bg-box(1918,399)
+  } 
+}
+.bigImageEvent{
+  .image{
+    a{
+      @include bg-box(598,385);
+    }
+  }
+  .info{
+    .date{
+
+    }
+    h3{
+      a{
+        font-size: rem(20);
+        color:inherit;
+      }
+    }
+    .des{
+
+    }
+  }
+}
+.thumbImageEvent{
+  margin-top:30px;
+  .itemEvent{
+    padding:rem(30);
+    .image{
+      a{
+        @include bg-box(326,224)
+      }
+    }
+    .info{
+      .date{
+  
+      }
+      h4{
+        a{
+          font-size: rem(16);
+          color:inherit;
+        }
+      }
+      .des{
+  
+      }
+    }
+  }
+}
+.listEvent{
+  .item{
+    .image{
+      a{
+        @include bg-box(326,224)
+      }
+    }
+
+    .info{
+      h3{
+        a{
+          font-size: rem(16);
+          color:inherit;
+        }
+        }
+      }
+      .des{
+
+      }
+    }
+  }
+  .sEventChild{
+    
+  }

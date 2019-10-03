@@ -1,0 +1,42 @@
+header.header
+    .container
+        .row
+            .col-md-3
+                h1
+                    a(href=url)
+                        img(src=logo alt="").logoTop
+            .col-md-9
+                a.header__toggle(href='#')
+                    span
+                    span
+                    span
+                    span
+                
+                .wrapMenu
+                    .mainMenuInner
+                        .mainMenu
+                            .nav-top.text-right
+                                +menuNav(mainActive,menuTop, '', '', 'menumain', '' ,'', '')
+                            .navRight
+                                .search.searchDk
+                                    a(class="btn-search navbar-search-btn" href="#")
+                                        i.icon-search
+                                    form(action="")
+                                        .innerSearch.navbar-search
+                                            div 
+                                                input(class="form-control" type="text" placeholder="Tìm kiếm…")
+                                                button.btn-search-button: i.icon-search
+                                +menuNav(mainActive,mainMenu, '', '', 'menumain', '' ,'', '')
+        .searchMb
+            .search
+                a(class="btn-search navbar-search-btn" href="#")
+                    i.icon-search
+                form(action="")
+                    .innerSearch.navbar-search
+                        div 
+                            input(class="form-control" type="text" placeholder="Tìm kiếm…")
+                            button.btn-search-button: i.icon-search                   
+
+// End Header
+|
+|

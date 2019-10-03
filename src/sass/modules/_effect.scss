@@ -1,0 +1,111 @@
+main.wrapper {
+    overflow: hidden;
+}
+.sMain[data-waypoint].active {
+    .page-header{
+        opacity: 1;
+        transform: translate(0, 0); 
+    }
+    .imgIcon,.des,.image,.btn-primary{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+.sMain[data-waypoint] {
+    position: relative;
+    .page-header{
+        opacity: 0;
+        transform: translate(0, 20px);
+        transition: all 1s ease-in-out;
+    }
+    .imgIcon, .des,.btn-primary{
+        transform: translate(50px, 0);
+        transition: all 0.7s ease-in-out;
+        opacity: 0;
+    }
+    .imgIcon{
+        transition-delay: 0.25s;
+    }
+    .des{ transition-delay: 0.3s;}
+    .btn-primary{transition-delay: 0.35s;}
+    .image{
+        transform: translate(-100px, 0);
+        transition: all 0.7s ease-in-out;
+        transition-delay: 0.25s;
+        opacity: 0;
+    }
+}
+.sMain-2[data-waypoint],.sMain-3[data-waypoint] {
+    .page-header{
+        opacity: 0;
+        transform: translate(0, 20px);
+        transition: all 1s ease-in-out;
+    }
+    .des,ul,.info,.btn-primary{
+        opacity: 0;
+        transform: translate(-50px, 0px);
+        transition: all 1s ease-in-out;
+    }
+    .des,.info,.btn-primary{
+        transition-delay: 0.25s;
+    }
+    ul{
+        transition-delay: 0.4s;
+    }
+    .image{
+        transform: translate(50px, 0px); 
+        transition: all 1s ease-in-out;
+        opacity: 0;
+    }
+    &.active{
+        .page-header,.des,ul,.image,.info, .btn-primary,.image{
+            opacity: 1;
+            transform: translate(0, 0px);
+        }
+    }
+}
+.sMain-4[data-waypoint]{
+    .page-header{
+        opacity: 0;
+        transform: translate(0, 20px);
+        transition: all 1s ease-in-out;
+    }
+    .sGridProductItem{
+        opacity: 0;
+        transform: translate(15%, 0);
+        transition: all 1s ease-in-out;
+        &:nth-child(1){
+            transition-delay: 0.1s;
+        }
+        &:nth-child(2){
+            transition-delay: 0.3s;
+        }
+        &:nth-child(3){
+            transition-delay: 0.5s;
+        }
+    }
+    &.active{
+        .sGridProductItem, .page-header{
+            opacity: 1;
+            transform: translate(0, 0); 
+        }
+        
+    }
+}
+.sMain-5[data-waypoint],.sMain-6[data-waypoint],.sMain-7[data-waypoint]{
+    .page-header,.sHomeProductSlider,.sNewsSlider,.form-style{
+        opacity: 0;
+        transform: translate(0, 20px);
+        transition: all 1s ease-in-out;
+    }
+    .sHomeProductSlider,.sNewsSlider,.form-style{
+        transition-delay: 0.2s;
+    }
+    &.active{
+        .sHomeProductSlider, .page-header,.sNewsSlider,.form-style{
+            opacity: 1;
+            transform: translate(0, 0); 
+        }
+        
+    }
+}

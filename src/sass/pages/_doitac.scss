@@ -1,0 +1,50 @@
+.sListNew{
+  &Item{
+    margin: 0 0 30px 0;
+    .image{
+      a{
+        @include bg-box(390,261)
+      }
+    }
+    h4{
+      a{
+        font-size: rem(18);
+        color:inherit;
+      }
+    }
+    .des{
+
+    }
+    .btn-white{
+
+    }
+    &:nth-child(2n){
+        >div:first-child{
+          order:2;
+        }
+    }
+  }
+}
+
+.sDoitacContent{
+  .list-group{
+    flex-direction: row;
+  }
+  .tab-content{
+    padding-top:30px;
+  }
+}
+.sDoitacInner{
+  padding:60px 0;
+  background: #ccc;
+  margin-top:30px;
+  .item {
+    padding:20px;
+    .image{
+      @include bg-box(378,239);
+    }
+    .info{
+      padding-top:20px;
+    }
+  }
+}

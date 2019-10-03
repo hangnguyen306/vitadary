@@ -22,7 +22,11 @@ header.header {
         max-width: 82%;
         align-self: flex-end;
     }
-
+    .searchMb{
+        @media (min-width: 991px) {
+            display: none;
+        }
+    }
     .mainMenuInner {
         position: relative;
     }
@@ -45,7 +49,11 @@ header.header {
             > li {
                 display: inline-block;
                 padding-left: 13px;
-
+                &.active{
+                    a{
+                        color:$blue-main-light;
+                    }
+                }
                 .icon-earth-outline {
                     display: inline-block;
                     width: 14px;
@@ -284,11 +292,7 @@ header.header {
                 display: none;
             }
         }
-        &.searchMb{
-            @media (min-width: 991px) {
-                display: none;
-            }
-        }
+        
 
         .icon-search {
             width: rem(17);

@@ -1,0 +1,76 @@
+extends layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "lien-he"
+
+block content
+    .sMainChild.sContact
+        .sContactImg
+            .image
+                img(src= imgPath + 'lienhe/banner.jpg' alt="")
+                .info
+                    .container
+                        +breadcrumb([{'title':'Liên hệ'}])
+                        .des
+                            h2 Liên hệ
+                            p Cám ơn bạn đã ghé thăm Website của VitaDairy. 
+                            p Chúng tôi luôn sẵn sàng lắng nghe những phản hồi cũng như sự quan tâm của bạn đối với dịch vụ và sản phẩm. Ý kiến của bạn với chúng tôi rất quan  trọng và giúp chúng tôi phục vụ bạn ngày một tốt hơn.
+                        .btnDiv
+                            +a-btn-primary('Liên hệ với chúng tôi','#','','icon-contact')
+        .sMainContent
+            .container
+                p Bạn có thể liên hệ với chúng tôi qua email hoặc để lại lời nhắn cho chúng tôi theo thông tin bên dưới
+                .row
+                    .col-sm-6
+                        .sBox
+                            h3 Địa chỉ công ty
+                            h5 Công ty cổ phần sữa vitadairy việt nam     
+                            h4 Trụ sở tại Tp. Hồ Chí Minh
+                            table
+                                tr
+                                    td
+                                        span.ic-add
+                                    td Tầng 9, Empire Tower 26-28 Hàm Nghi, P.Bến Nghé, Q.1
+                                tr
+                                    td
+                                        span.ic-fax
+                                    td Tel/Fax: 0286 6509 3333
+                            h4 Văn phòng tại Hà Nội
+                            table
+                                tr
+                                    td
+                                        span.ic-add
+                                    td Tầng 20 Khách sạn Mường Thanh Grand Hà Nội, Lô CC2 Bắc Linh Đàm, Q. Hoàng Mai
+                                tr
+                                    td
+                                        span.ic-fax
+                                    td Tel/Fax: (024) 3540 9193
+                                tr
+                                    td
+                                        span.ic-phone
+                                    td Hotline: (+84) 92 182 1200
+                                tr
+                                    td
+                                        span.ic-earth
+                                    td Website: <a href="www.vitadairy.vn">www.vitadairy.vn</a>   
+                                tr
+                                    td
+                                        span.ic-mail
+                                    td Email: <a href="mailto:info@vitadairy.vn">info@vitadairy.vn</a>
+                    .col-sm-6
+                        .sBox
+                            h3 Liên hệ với chúng tôi
+                            .form-style
+                                p Vui lòng để lại lời nhắn/ câu hỏi tại đây, chúng tôi sẽ trả lời bạn trong vòng 48 giờ (trừ thứ 7, CN và ngày lễ). <br>Cám ơn bạn đã quan tâm đến VitaDairy!
+                                +input-box("text","","","Họ và tên *",'Nhập họ và tên','')
+                                +input-box("text","","","Email *",'Nhập email','')
+                                +input-box("text","","","Số điện thoại liên lạc",'Nhập số điện thoại','')
+                                +textarea-box('','','Nội dung *','','3')
+                                .row
+                                    .col-6
+                                        +a-btn-primary('Gửi','#','','icon-contact')
+                                    .col-6
+                                        .capcha
+                                            img(src= imgPath + 'captcha.png' alt="")
+                hr                                

@@ -17,6 +17,7 @@
 @import "components/tables";
 @import "components/forms";
 @import "components/fonts";
+@import "components/icons-FontAwesomeIcon";
 @import "components/icons";
 @import "components/buttons";
 @import "components/transitions";
@@ -71,6 +72,8 @@
     // @import "pages/docs";  // Example HTML
     // @import "pages/builder";   // Builder preview html
     @import "pages/home";  
+    @import "pages/about";  
+    @import "pages/contact";  
     @import "pages/doitac";  
     @import "pages/truyenthong";  
 // End Page ------------------------------------------------------------

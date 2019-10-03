@@ -1,15 +1,19 @@
 .breadcrumb {
   display: flex;
   flex-wrap: wrap;
-  padding: $breadcrumb-padding-y $breadcrumb-padding-x;
-  margin-bottom: $breadcrumb-margin-bottom;
+  padding: 0;
+  margin: 0;
+  //padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+  //margin-bottom: $breadcrumb-margin-bottom;
   list-style: none;
-  background-color: $breadcrumb-bg;
-  @include border-radius($breadcrumb-border-radius);
+  //background-color: $breadcrumb-bg;
 }
 
 .breadcrumb-item {
   // The separator between breadcrumbs (by default, a forward-slash: "/")
+  a{
+    color:#333333;
+  }
   + .breadcrumb-item {
     padding-left: $breadcrumb-item-padding;
 
@@ -17,7 +21,14 @@
       display: inline-block; // Suppress underlining of the separator in modern browsers
       padding-right: $breadcrumb-item-padding;
       color: $breadcrumb-divider-color;
-      content: $breadcrumb-divider;
+      //content: $breadcrumb-divider;
+      content: "\f105";
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      color: $blue-main-light;
     }
   }
 
@@ -36,6 +47,6 @@
   }
 
   &.active {
-    color: $breadcrumb-active-color;
+    color: $blue-main-light;
   }
 }

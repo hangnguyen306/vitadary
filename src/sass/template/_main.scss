@@ -180,6 +180,72 @@ a.btn,.btn{
         margin: rem(30) 0;
     }
 }
+.sMainChild{
+    padding-top:rem(60);
+    .sMainContent{
+        margin-top:rem(60);
+    }
+}
+.sNavLink{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    border-bottom: 1px solid #CCCED0;
+    margin: 0;
+    padding: 0;
+    li{
+        max-width: 50%;
+        flex: 0 0 50%;
+        a{
+            position: relative;
+            color:$body-color;
+            font-size: rem(20);
+            display: block;
+            font-weight: bold;
+            text-align: center;
+            padding: 9px 3px;
+            &:after{
+                background: $blue-main-light;
+                left: 0;
+                right: 0;
+                content: '';
+                height:4px;
+                bottom: 0;
+                position: absolute;
+                width: 0;
+                margin: 0 auto;
+                @include transition();
+            }
+            &:hover,&.active{
+                color:$blue-main;
+                text-decoration: none;
+                &:after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.sContent{
+    img{
+        border-radius: 10px;
+    }
+}
+.form-style{
+    .form-group{
+        label{
+            color:$blue-main-light;
+            font-weight: normal;
+            font-size:rem(12);
+        }
+        textarea.form-control {
+            height: rem(100);
+            resize: none;
+            overflow: auto;
+        }
+    }
+   
+}
 @media (max-width: 1024px) {
     html,body{
         font-size: 13px;

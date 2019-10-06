@@ -1,0 +1,24 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "about"
+
+block content
+    .sMainChild.sAboutChild
+        .container
+            +breadcrumb([{'title':'VitaDairy','link':'vitadairy.html'},{'title':' Câu chuyện VitaDairy'}])
+            .sMainContent
+                .page-header
+                    h2
+                        span.icon-text.icon-ab-1
+                        span.ttl-text Lịch sử
+                    h3 Phát triển
+                    p  Khi một bác sỹ chỉ có vài giây để mở thông đường thở giữa hai động mạch cổ, cứu thoát bệnh nhân giữa nguy cơ tử vong chỉ trong gang tất, họ không có thời gian để nghĩ về trách nhiệm của đường dao đó. Với họ, cứu người là một nghĩa vụ. Đấy cũng là giá trị mà Tiến sỹ Dinh dưỡng Nguyễn Tú Anh, nhà sáng lập của VitaDairy, chia sẻ với chồng là Bác sĩ hồi sức cấp cứu ở Bệnh viện Bạch Mai Hà Nội. Dù việc nghiên cứu thiết kế sản phẩm dinh dưỡng của chị có khác với việc cầm dao mổ của anh, nhưng nghĩa vụ đối với con người đều như nhau.
+                .sStory
+                    +itemStory('20 năm trước',imgPath + 'aboutus/cauchuyen/img-01.jpg','Cứu người là nghĩa vụ và trách nhiệm của một bác sỹ','Hơn 20 năm trước, Bác sỹ Lê Văn Ký đã áp dụng kỹ thuật mở khí quản để cứu sống nhiều bệnh nhân, đây là kỹ thuật cấp cứu đòi hỏi kỹ thuật cao, và là lựa chọn duy nhất mà không phải bác sỹ nào cũng dám thực hiện. Là một bác sỹ cấp cứu, bác sỹ Ký hiểu rõ, những trường hợp bệnh nhân nặng trên nền suy kiệt, thiếu năng lượng trường diễn sẽ làm tăng thời gian điều trị và thậm chí tăng tỷ lệ tử vong. Nếu có chế độ dinh dưỡng nâng cao thể trạng, người bệnh sẽ đạt được kết quả điều trị tốt và giảm tử vong.<br>Những trăn trở đó được bác sĩ Ký chia sẻ với vợ – Tiến sĩ Dinh dưỡng, Bác sĩ Nguyễn Tú Anh để cùng quyết tâm khởi nghiệp với mong muốn góp phần hỗ trợ điều trị cho người bệnh bằng chế độ dinh dưỡng hợp lý và sản phẩm dinh dưỡng tốt.')
+                    +itemStory('Năm 2005',imgPath + 'aboutus/cauchuyen/img-02.jpg','VitaDairy ra đời từ những con người thực sự có tâm huyết','VitaDairy được thành lập bởi đội ngũ gồm những người tâm huyết trong lĩnh vực dinh dưỡng và sức khỏe. Với mong muốn gây ấn tượng mạnh với người tiêu dùng Việt, VitaDairy hướng tới sản xuất sản')
+                    +itemStory('Năm 2007',imgPath + 'aboutus/cauchuyen/img-03.jpg','Xây dựng nhà máy VitaDairy đầu tiên','Năm 2007, nhà máy nghiên cứu và sản phẩm các sản phẩm dinh dưỡng đầu tiên của VitaDairy được xây dựng tại Hà Nội. Từ ý định ban đầu đưa dinh dưỡng đóng góp cho điều trị, VitaDairy đã vươn xa ra')
+                    +itemStory('Năm 2008',imgPath + 'aboutus/cauchuyen/img-04.jpg','Xây dựng nhà máy VitaDairy thứ 2','Với thế mạnh là thị trường các bệnh viện lớn ở phía Bắc như Bạch Mai, Hữu nghị, Việt Đức, 103, 108… Năm 2018, VitaDairy tăng cường sự hiện diện của mình ở miền Nam thông qua việc đưa vào hoạt động…')
+                    +itemStory('Năm 2009',imgPath + 'aboutus/cauchuyen/img-05.jpg','“Top 10 thương hiệu được tin dùng nhất Châu Á”','VitaDairy là doanh nghiệp đã tiên phong đưa kháng thể tự nhiên IgG từ sữa non vào sản phẩm dinh dưỡng cho trẻ trên 2 tuổi trở lên ColosBaby. Theo đó, IgG được bảo tồn ở dạng còn hoạt tính và được nhập…')
+                   

@@ -84,8 +84,8 @@
 
         span {
             display: block;
-            width: 20px;
-            height: 20px;
+            width: rem(20);
+            height: rem(20);
             background-repeat: no-repeat;
             background-position: center;
         }
@@ -162,7 +162,7 @@
                 }
             }
 
-            @media (max-width: 480px) {
+            @media (max-width: 640px) {
                 max-width: 100%;
                 flex: 0 0 100%;
                 display: flex;
@@ -177,6 +177,12 @@
                 >a{
                     display: inline-flex;
                     order: 1;
+                    width:35px;
+                    height: 35px;
+                    span{
+                        width:35px;
+                        height: 35px;  
+                    }
                 }
                 img{
                     max-height: 45px;

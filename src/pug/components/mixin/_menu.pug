@@ -58,7 +58,7 @@ mixin menuNav(selected, menus, wrap, wrapId,  wrapClass, item, itemClass , linkC
                     if typeof menu.child == typeof []
                         if menu.child.length > 0
                             span.expand
-                                i.icon_plus
+                                i.arrow_carrot-right
                             +menuNav(selected, menu.child, wrapChild, wrapChildId, wrapChildClass, itemChild, itemChildClass, linkChildClass)
             else
                 #{item}(class= itemClass)
@@ -66,5 +66,5 @@ mixin menuNav(selected, menus, wrap, wrapId,  wrapClass, item, itemClass , linkC
                     if typeof menu.child == typeof []
                         if menu.child.length > 0
                             span.expand
-                                i.icon_plus
+                                i.arrow_carrot-right
                             +menuNav(selected, menu.child, wrapChild, wrapChildId, wrapChildClass, itemChild, itemChildClass, linkChildClass)

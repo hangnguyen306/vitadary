@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="79.076" height="79.076" viewBox="0 0 79.076 79.076">
+  <g id="Group_1" data-name="Group 1" transform="translate(-771 -543)">
+    <ellipse id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" cx="39.538" cy="39.538" rx="39.538" ry="39.538" transform="translate(771 543)" fill="#ececec" opacity="0.6"/>
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="29.096" cy="29.096" rx="29.096" ry="29.096" transform="translate(781.925 553.925)" fill="#f9f9f9"/>
+    <ellipse id="Ellipse_1_copy" data-name="Ellipse 1 copy" cx="21.724" cy="21.724" rx="21.724" ry="21.724" transform="translate(789 561)" fill="#fff"/>
+    <g id="favourites-filled-star-symbol" transform="translate(798 567.838)">
+      <path id="Path_29491" data-name="Path 29491" d="M23.617,11.16l-6.8-.643a1.176,1.176,0,0,1-.974-.721l-2.435-5.9a1.166,1.166,0,0,0-2.163,0L8.829,9.8a1.151,1.151,0,0,1-.974.721l-6.8.643a1.176,1.176,0,0,0-.662,2.046l5.124,4.5a1.165,1.165,0,0,1,.37,1.15L4.348,25.169a1.175,1.175,0,0,0,1.734,1.286l5.67-3.332a1.179,1.179,0,0,1,1.189,0l5.67,3.332a1.172,1.172,0,0,0,1.734-1.286l-1.52-6.313a1.165,1.165,0,0,1,.37-1.15l5.124-4.5A1.19,1.19,0,0,0,23.617,11.16Z" transform="translate(0 0)" fill="#3eb7e4"/>
+    </g>
+  </g>
+</svg>

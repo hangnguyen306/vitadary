@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--background image for Link-->
+<!--item-->
+<!--item new big-->
+<html lang="vi">
+  <head>
+    <title>Công ty cổ phần sữa VitaDairy Việt Nam</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta property="twitter:image" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="fb:app_id" content="">
+    <meta name="twitter:site" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="/assets/images/icons/favicon.ico">
+    <link rel="manifest" href="/assets/manifest.json">
+    <meta name="msapplication-TileColor" content="#f05b28">
+    <meta name="msapplication-TileImage" content="/assets/images/icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#f05b28">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--include ../components/_header-->
+    <main class="wrapper">
+      <div class="sMainChild sShopping">
+        <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="/" title="Home">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Mua Hàng</li>
+            </ol>
+          </nav>
+          <div class="destination"><a class="paneToggle" id="paneToggle" href="#toggleBtn"></a>
+            <div class="panelCanvas" id="panel">
+              <div class="panelCanvas-top">
+                <div class="directionsFrom" id="directionsPanel"><a class="ic-location" id="useGPS" href="#geoLocation"></a>
+                  <div class="directions-icon"><span class="wiget-handle"></span><span class="wiget-dot"></span><span class="wiget-pin"></span></div>
+                  <div class="directions-form" id="directionInputs">
+                    <div class="form-style">
+                      <div class="form-group">
+                        <input class="form-control" id="dirSource" type="text" placeholder="Viết vị trí của bạn">
+                      </div>
+                      <div class="form-group">
+                        <div class="form-control" id="dirDestinationText">Chọn chi nhánh từ danh sách bên dưới</div>
+                        <input class="form-control" id="dirDestination" type="hidden" placeholder="Chọn chi nhánh từ danh sách bên dưới" readonly="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><a class="btnShow" href="#"></a>
+              <div class="panelCanvas-content scroll-ui">
+                <div class="directionAdrress"></div>
+              </div>
+            </div>
+            <div class="map-canvas" id="mapCanvas" style="height:100%;width:100%"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End Main Content-->
+    <!--include ../components/_footer-->
+    <script src="./assets/js/library.js"></script>
+    <script async src="./assets/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4lBmajuqUx0ZkspMCVwxrJyM8OAKVzVo&amp;amp;callback=initialize&amp;amp;libraries=places&amp;amp;sensor=false" async defer></script>
+    <script src="./assets/js/directions.js"></script>
+    <script>
+      function initialize() {
+            initMap();
+        }
+    </script>
+  </body>
+</html>

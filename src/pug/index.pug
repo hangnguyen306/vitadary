@@ -8,49 +8,49 @@ block content
         .sBannerInner
             .homeSlider
                 .homeSlider__image
-                    +bgImg(imgPath + 'slider/slider-01.jpg','image pc')
-                    +bgImg(imgPath + 'slider/slider-01-sp.jpg','image sp')
+                    .image.pc: img(src=imgPath + 'slider/slider-01.jpg')
+                    .image.sp: img(src=imgPath + 'slider/slider-01-sp.png')
                 .homeSlider__image
-                    +bgImg(imgPath + 'slider/slider-02.png','image pc')
-                    +bgImg(imgPath + 'slider/slider-02-sp.jpg','image sp')
+                    .image.pc: img(src=imgPath + 'slider/slider-02.png')
+                    .image.sp: img(src=imgPath + 'slider/slider-02-sp.png')
                 .homeSlider__image
-                    +bgImg(imgPath + 'slider/slider-03.png','image pc')
-                    +bgImg(imgPath + 'slider/slider-03-sp.jpg','image sp')
+                    .image.pc: img(src=imgPath + 'slider/slider-03.png')
+                    .image.sp: img(src=imgPath + 'slider/slider-03-sp.png')
         a(href="#sMainSestion").scroll-down
             i
-    //- sMain
-    section.sMain#sMainSestion(data-waypoint="70%")
+    sMain
+    section.fixHeight.sMain#sMainSestion(data-waypoint="70%")
         .container
             .sHomeAbout
-                .info
-                    .page-header
-                        h2
-                            span.icon-text.icon-ttl-1
-                            span.ttl-text VitaDairy
-                        h3 Nghĩa vụ vun bồi sức sống
+                .page-header
+                    h2
+                        span.icon-text.icon-ttl-1
+                        span.ttl-text VitaDairy
+                    h3 Nghĩa vụ vun bồi sức sống
                 .row
                     .col-lg-6.align-self-center
-                        .imgIcon
-                            span.icon-1
-                                i.normal
-                                //i.normal-rorate
-                            span.icon-2
-                                i.normal
-                                //- i.normal-rorate
-                            span.icon-3
-                                i.normal
-                                //- i.normal-rorate
-                            //- img(src= imgPath + 'nghiavu.png' alt="")
-                        .des
-                            p Tại VitaDairy, chúng tôi lấy giá trị cốt lõi NHÂN ĐẠO – TRUNG THỰC – TRÁCH NHIỆM để truyền cảm hứng và lan tỏa tinh thần VÌ CON NGƯỜI đến với tập thể cán bộ nhân viên. VitaDairy được thành lập vì mục tiêu con người và sẽ luôn nỗ lực hết mình vì điều đó.
-                        .btnDiv
-                            +a-btn-primary('Xem thêm','#')
+                        .info
+                            .imgIcon
+                                span.icon-1
+                                    i.normal
+                                    //i.normal-rorate
+                                span.icon-2
+                                    i.normal
+                                    //- i.normal-rorate
+                                span.icon-3
+                                    i.normal
+                                    //- i.normal-rorate
+                                //- img(src= imgPath + 'nghiavu.png' alt="")
+                            .des
+                                p Tại VitaDairy, chúng tôi lấy giá trị cốt lõi NHÂN ĐẠO – TRUNG THỰC – TRÁCH NHIỆM để truyền cảm hứng và lan tỏa tinh thần VÌ CON NGƯỜI đến với tập thể cán bộ nhân viên. VitaDairy được thành lập vì mục tiêu con người và sẽ luôn nỗ lực hết mình vì điều đó.
+                            .btnDiv
+                                +a-btn-primary('Xem thêm','#')
                     .col-lg-6
                         .image
                             img(src= imgPath + 'img01.png' alt="")
 
     //-sMain-2
-    section.sMain-2(data-waypoint="70%")
+    section.fixHeight.sMain-2(data-waypoint="70%")
         .container
             .sHomeKnow
                 .row
@@ -83,7 +83,7 @@ block content
                         .image
                             img(data-src= imgPath + 'img-kienthuc.png' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
     //- sMain-3
-    section.sMain-3(data-waypoint="70%")
+    section.fixHeight.sMain-3(data-waypoint="70%")
         .container
             .sHomeAdv
                 .page-header
@@ -102,7 +102,7 @@ block content
                         .btnDiv
                             +a-btn-primary('Xem thêm','#')
     //- sMain-4
-    section.sMain-4(data-waypoint="70%")
+    section.fixHeight.sMain-4(data-waypoint="70%")
         .container
             .sHomeProduct
                 .page-header
@@ -135,7 +135,7 @@ block content
                                 .btnDiv
                                     +a-btn-primary('Xem thêm','#')
     //- sMain-5
-    section.sMain-5(data-waypoint="70%")
+    section.fixHeight.sMain-5(data-waypoint="70%")
         .container
             .sHomeProduct2
                 .page-header
@@ -179,7 +179,7 @@ block content
                                 a(href="#") CaloSure
                                 p Lorem ipsum dolor sit amet consectetur adipisicing elitsed do 
     //- sMain-6
-    section.sMain-6(data-waypoint="70%")
+    section.fixHeight.sMain-6(data-waypoint="70%")
         .container
             .sHomeNews
                 .row

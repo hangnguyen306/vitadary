@@ -1,0 +1,38 @@
+extends layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "mua-hang"
+
+block content
+    .sMainChild.sShopping
+      .container
+        +breadcrumb([{'title':'Mua Hàng'}])
+        .destination
+          a#paneToggle.paneToggle(href='#toggleBtn')
+          #panel.panelCanvas
+              .panelCanvas-top
+                  #directionsPanel.directionsFrom
+                      a#useGPS.ic-location(href='#geoLocation')
+                      .directions-icon
+                          span.wiget-handle
+                          span.wiget-dot
+                          span.wiget-pin
+                      #directionInputs.directions-form
+                          .form-style
+                              .form-group
+                                  input#dirSource.form-control(type='text', placeholder='Viết vị trí của bạn')
+                              .form-group
+                                  #dirDestinationText.form-control Chọn chi nhánh từ danh sách bên dưới
+                                  input#dirDestination.form-control(type='hidden', placeholder='Chọn chi nhánh từ danh sách bên dưới', readonly='')
+              a.btnShow(href='#')
+              .panelCanvas-content.scroll-ui
+                  .directionAdrress
+          #mapCanvas.map-canvas(style='height:100%;width:100%')
+block js
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4lBmajuqUx0ZkspMCVwxrJyM8OAKVzVo&amp;callback=initialize&amp;libraries=places&amp;sensor=false" async defer)
+  script(src="./assets/js/directions.js")
+  script.
+    function initialize() {
+          initMap();
+      }

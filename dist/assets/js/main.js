@@ -15,7 +15,7 @@ var wind=$(window);var sticky=$('.header');wind.on('scroll',function(){var scrol
 ui();// Image SVG
 imgSVG();// Go to top
 gotoTop();//waypointEl();
-slider();sHomeProduct();sHomeNews();searchBox();stick();sProduct();$('.lazy').lazy();fixHeight();sAboutStory();function init(){// waypointEl();
+slider();sHomeProduct();sHomeNews();searchBox();stick();sProduct();$('.lazy').lazy();fixHeight();sAboutStory();sPartner();function sPartner(){$('.sSlideLogo').owlCarousel({margin:0,nav:true,loop:true,dots:false,center:true,items:3,navText:['<a href=\'#\' class=\'icon-arr icon-arr-small icon-left\'></a>','<a href=\'#\' class=\'icon-arr icon-arr-small icon-right\'></a>'],responsive:{768:{items:3}}})}function init(){// waypointEl();
 // // Base
 // ui();
 // // Image SVG

@@ -1,0 +1,30 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "doi-tac"
+
+block content
+    .sMainChild.sDist
+        .container
+            +breadcrumb([{'title':'Đối tác & Phân phối','link':'#'},{'title':'Đối tác'}])
+            .sDoitacContent
+                ul#myList.list-group.list-group-tab.sNavLink(role='tablist')
+                    li: a.active(data-toggle='list', href='#navTab1', role='tab') Đối tác nghiên cứu dinh dưỡng
+                    li: a(data-toggle='list', href='#navTab2', role='tab') Đối tác phát triển
+                .tab-content
+                    #navTab1.tab-pane.active(role='tabpanel')
+                        .des
+                            p Mọi sản phẩm của VitaDairy đều được nghiên cứu trên cơ sở khoa học, dưới sự tư vấn của các chuyên gia hàng đầu về sức khỏe và hợp tác với các đối tác là bệnh viện lớn như: Bệnh viện Bạch Mai, Chợ Rẫy, Viện dinh dưỡng quốc gia….
+                        .sSlideLogo.owl-carousel.owl-theme
+                            - for (var x = 1; x < 5; x++)
+                                .item
+                                    .image
+                                        a(href="#"): img(src= imgPath + 'doitac/doitac/logo.png' alt="")
+                                    .info
+                                        h4 Bệnh viện Bạch Mai
+                    #navTab2.tab-pane(role='tabpanel')
+                        .des
+                            p Mọi sản phẩm của VitaDairy đều được nghiên cứu trên cơ sở khoa học, dưới sự tư vấn của các chuyên gia hàng đầu về sức khỏe và hợp tác với các đối tác là bệnh viện lớn như: Bệnh viện Bạch Mai, Chợ Rẫy, Viện dinh dưỡng quốc gia….
+
+            

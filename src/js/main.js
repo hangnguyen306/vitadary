@@ -349,6 +349,7 @@ function sAboutStory(){
         moreLink: '<a href="#"><i class="icon-down-link"></i></a>',
     });
 }
+
 $(function($) {
     $toggleMenu = $('.header__toggle');
     $toggleMenu.bind('click', function(e) {
@@ -403,6 +404,7 @@ function waypointEl() {
         })
     })
 }
+
 waypointEl();
 // Base
 ui();
@@ -420,6 +422,23 @@ sProduct();
 $('.lazy').lazy();
 fixHeight();
 sAboutStory();
+sPartner();
+function sPartner(){
+    $('.sSlideLogo').owlCarousel({
+        margin: 0,
+        nav: true, 
+        loop: true,
+        dots: false, 
+        center: true,
+        items: 3,
+        navText: ["<a href='#' class='icon-arr icon-arr-small icon-left'></a>","<a href='#' class='icon-arr icon-arr-small icon-right'></a>"],
+        responsive: {
+            768: {
+                items: 3
+            }
+        }
+    });
+}
 function init(){
     // waypointEl();
     // // Base

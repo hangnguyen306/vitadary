@@ -1,0 +1,36 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "doi-tac"
+
+block content
+    .sMainChild.sPartner-1
+        .container
+            +breadcrumb([{'title':'Đối tác & Phân phối'}])
+            .sListNew
+                .sListNewItem
+                    .row
+                        .col-sm-6.align-self-center
+                            .page-header
+                                h2
+                                    span.icon-text.icon-dt-1
+                                    span.ttl-text Đối tác
+                            .des Những sản phẩm của VitaDairy bắt đầu được ra đời từ năm 2005, từ nhiều nghiên cứu của Tiến sỹ dinh dưỡng Nguyễn Tú Anh - đồng thời là nhà sáng lập VitaDairy. Những sản phẩm mà Tiến sỹ Tú Anh nghiên cứu và ứng dụng trong Vita Dairy phần nhiều được truyền cảm hứng từ chồng mình, vị bác sỹ công tác tại khoa Hồi sức cấp cứu – Bệnh viện Bạch Mai. Đây là hai con người thật sự có tâm huyết, có kiến thức khoa học trong dinh dưỡng và sức khoẻ con người.
+                            .btnDiv
+                                +a-btn-primary('Xem thêm','#')
+                        .col-sm-6
+                            img(src= imgPath + 'doitac/img01.png' alt="")
+    .sPartner-2
+        .container
+            .sListNew
+                .sListNewItem
+                    .row
+                        .col-sm-6.ml-auto
+                            .page-header
+                                h2
+                                    span.icon-text.icon-dt-2
+                                    span.ttl-text Đối tác
+                            .des Hệ thống phân phối của VitaDairy trải rộng khắm 63 tỉnh thành và xuất khẩu sang thị trường Myanma. Với hơn 60.000 cửa hàng, VitaDairy đã nhanh chóng mở rộng, tiếp cận thị trường, đa dạng hoá sản phẩm, bao gồm các sản phẩm trẻ em, người trưởng thành, phụ nữ mang thai và các sản phẩm đặc trị dành cho người bệnh.
+                            .btnDiv
+                                +a-btn-primary('Xem thêm','#')

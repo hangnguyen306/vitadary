@@ -12,20 +12,20 @@ html(lang=language)
         //- Add Custom CSS
         block styles
     body(class=bodyClass)
-        //include ../components/_header
+        include ../components/_header
 
         main.wrapper
             block content
         // End Main Content
 
-        //include ../components/_footer
+        include ../components/_footer
         
         //- Add Custom Modal
         block modal
 
-        script(src="./assets/js/library.js")
+        script(src="../assets/js/library.js")
         //- script(async src="http://brandlook.vn/html/vitadairy/assets/js/library.js")
-        script(async src="./assets/js/main.js")
+        script(async src="../assets/js/main.js")
 
         //- Add Custom Js
         block js

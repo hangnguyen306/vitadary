@@ -113,6 +113,7 @@ module.exports = grunt => {
           'src/js/library/waypoints.min.js',        // v4.0.1
           'src/js/library/jquery.sticky.js',        // v4.0.1
           'src/js/library/readmore.min.js',        // v4.0.1
+          'src/js/library/owl.carousel.min.js', 
           'src/js/library/bootstrap-select.min.js',        // v4.0.1
         ],
         dest: 'dist/assets/js/library.js',

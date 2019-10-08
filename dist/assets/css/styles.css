@@ -15530,16 +15530,20 @@ a.btn,
       padding: 1.25rem 0 0rem 0; } }
   .sMain-3 .page-header {
     position: relative;
-    padding-right: 235px; }
+    padding-right: 235px;
+    max-width: 100%;
+    flex: 0 0 100%; }
     .sMain-3 .page-header a {
       position: absolute;
       right: 0;
       bottom: 4px; }
       .sMain-3 .page-header a img {
-        max-width: 235px; }
+        max-width: 235px;
+        transform: scale(1.2); }
         @media (max-width: 991.99px) {
           .sMain-3 .page-header a img {
-            max-width: 150px; } }
+            max-width: 150px;
+            transform: scale(1); } }
     @media (max-width: 991.99px) {
       .sMain-3 .page-header {
         padding-right: 0; }
@@ -15549,13 +15553,16 @@ a.btn,
   .sMain-3 .sHomeAdv .row {
     margin-top: 3.75rem; }
     .sMain-3 .sHomeAdv .row .image img {
-      max-width: 100%;
-      max-height: 460px; }
-    @media (min-width: 1400.99px) {
+      max-width: 100%; }
+    @media (min-width: 1450px) {
       .sMain-3 .sHomeAdv .row .image {
-        margin-left: -212px; } }
+        margin-left: -263px; } }
+    @media (max-width: 1449px) {
+      .sMain-3 .sHomeAdv .row .image {
+        margin-left: 0px;
+        max-height: 390px; } }
     .sMain-3 .sHomeAdv .row .info {
-      margin-bottom: 1.875rem; }
+      margin-bottom: 1.25rem; }
       .sMain-3 .sHomeAdv .row .info p {
         font-weight: normal;
         display: -webkit-box;
@@ -15564,7 +15571,8 @@ a.btn,
         max-height: 12.1333333333em;
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
-        overflow: hidden; }
+        overflow: hidden;
+        margin: 0; }
   @media (max-width: 991.99px) {
     .sMain-3 .sHomeAdv .row {
       margin-top: 20px; }
@@ -15965,9 +15973,47 @@ a.btn,
     top: 0px;
     opacity: 1; } }
 
-@media (min-width: 769px) {
-  .fixHeight.sMain, .fixHeight.sMain-2 .row, .fixHeight.sMain-3 .sHomeAdv, .fixHeight.sMain-4, .fixHeight.sMain-5, .fixHeight.sMain-6 {
-    min-height: inherit !important; } }
+.fixHeight.sMain {
+  display: flex;
+  align-items: center; }
+
+.fixHeight.sMain-2 {
+  display: flex; }
+  .fixHeight.sMain-2 .sHomeKnow {
+    display: flex;
+    height: 100%; }
+    .fixHeight.sMain-2 .sHomeKnow .info {
+      padding-right: 40px; }
+      @media (max-width: 768px) {
+        .fixHeight.sMain-2 .sHomeKnow .info {
+          padding-right: 0; } }
+    .fixHeight.sMain-2 .sHomeKnow .image {
+      margin-left: -10px; }
+      @media (max-width: 768px) {
+        .fixHeight.sMain-2 .sHomeKnow .image {
+          margin-left: 0px; } }
+    .fixHeight.sMain-2 .sHomeKnow .row div:first-child {
+      align-self: center; }
+
+.fixHeight.sMain-3 {
+  display: flex; }
+  .fixHeight.sMain-3 .sHomeAdv {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    flex-wrap: wrap; }
+
+.fixHeight.sMain-4 {
+  display: flex;
+  align-items: center; }
+
+.fixHeight.sMain-5 {
+  display: flex;
+  align-items: center; }
+
+.fixHeight.sMain-6 {
+  display: flex;
+  align-items: center; }
 
 @media (max-width: 768px) {
   .fixHeight {

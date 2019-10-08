@@ -64,11 +64,11 @@ function fixHeight(){
     var header = $('header').innerHeight(),
         hW = $(window).innerHeight(),
         hTitle =  $('.page-header').innerHeight();
-        $('.fixHeight.sMain').css({'minHeight': hW});
-        $('.fixHeight.sMain-2 .row').css({'minHeight': hW});
-        //$('.fixHeight.sMain-3 .sHomeAdv').css({'minHeight': hW});
-        $('.fixHeight.sMain-4').css({'minHeight': hW});
-        $('.fixHeight.sMain-5').css({'minHeight': hW});
+        $('.fixHeight.sMain').css({'minHeight': hW - 60});
+        $('.fixHeight.sMain-2').css({'minHeight': hW - 60});
+        $('.fixHeight.sMain-3').css({'minHeight': hW - 60});
+        $('.fixHeight.sMain-4').css({'minHeight': hW - 60});
+        $('.fixHeight.sMain-5').css({'minHeight': hW - 60});
         $('.fixHeight.sMain-6').css({'minHeight': hW});
 }
 function gotoTop() {
@@ -461,6 +461,7 @@ function init(){
     });
 }$(window).resize(function(){
     sProduct();
+    fixHeight();
 })
 
 

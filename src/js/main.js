@@ -431,7 +431,7 @@ function sPartner(){
         dots: false, 
         center: true,
         items: 3,
-        navText: ["<a href='#' class='icon-arr icon-arr-small icon-left'></a>","<a href='#' class='icon-arr icon-arr-small icon-right'></a>"],
+        navText: ["<a href='#' class='icon-arr-2 icon-arr-small icon-left'></a>","<a href='#' class='icon-arr-2 icon-arr-small icon-right'></a>"],
         responsive: {
             768: {
                 items: 3

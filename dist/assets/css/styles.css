@@ -14714,6 +14714,47 @@ a.btn,
     transform: scale(0.6);
     margin-top: -1.125rem; }
 
+.icon-arr-2 {
+  display: inline-block;
+  width: 2rem;
+  height: 2.8125rem;
+  position: relative;
+  cursor: pointer;
+  left: 0;
+  transition: all 0.2s ease-in-out; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .icon-arr-2 {
+      transition: none; } }
+  @media (max-width: 767.99px) {
+    .icon-arr-2 {
+      transform: scale(0.6); } }
+  .icon-arr-2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: contain;
+    background-image: url("../images/icons/icon-left.svg");
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .icon-arr-2.icon-right {
+    left: inherit;
+    right: 0px; }
+    .icon-arr-2.icon-right:after {
+      background-size: contain;
+      background-image: url("../images/icons/icon-right.svg");
+      background-repeat: no-repeat;
+      background-position: center center; }
+  @media (min-width: 768px) {
+    .icon-arr-2:hover.icon-left {
+      left: -5px; }
+    .icon-arr-2:hover.icon-right {
+      right: -5px; } }
+
 .page-header {
   letter-spacing: -0.5px;
   margin: 0 0 20px 0; }
@@ -16277,7 +16318,7 @@ a.btn,
       box-shadow: 0px 3px 40px rgba(131, 131, 131, 0.15);
       border-radius: 10px;
       text-align: center;
-      padding: 20px; }
+      padding: 0.625rem; }
       .sSlideLogo .owl-item .item .image img {
         width: auto;
         display: inline-block;
@@ -16302,14 +16343,15 @@ a.btn,
     outline: none !important; }
     .sSlideLogo .owl-nav button:focus {
       outline: none !important; }
-  .sSlideLogo .owl-nav .owl-prev, .sSlideLogo .owl-nav .owl-next {
+  .sSlideLogo .owl-nav .owl-prev,
+  .sSlideLogo .owl-nav .owl-next {
     transform: scale(0.8);
     position: absolute;
     top: 35%; }
   .sSlideLogo .owl-nav .owl-prev {
-    left: -20px; }
+    left: -1.25rem; }
   .sSlideLogo .owl-nav .owl-next {
-    right: -20px; }
+    right: -1.25rem; }
   .sSlideLogo .owl-theme .owl-nav [class*=owl-]:hover {
     background: none !important; }
 

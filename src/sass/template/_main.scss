@@ -172,6 +172,58 @@ a.btn,
 
 }
 
+.icon-arr-2 {
+    display: inline-block;
+    width: rem(32);
+    height: rem(45);
+    position: relative;
+    cursor: pointer;
+    left: 0;
+    @include transition();
+
+    @media (max-width: 767.99px) {
+        transform: scale(0.6)
+    }
+
+    &:after {
+        @include preAfter();
+        display: inline-block;
+        vertical-align: middle;
+
+        background: {
+            size: contain;
+            image: url($img-path + 'icons/icon-left.svg');
+            repeat: no-repeat;
+            position: center center;
+        }
+    }
+
+    &.icon-right {
+        left: inherit;
+        right: 0px;
+
+        &:after {
+            background: {
+                size: contain;
+                image: url($img-path + 'icons/icon-right.svg');
+                repeat: no-repeat;
+                position: center center;
+            }
+        }
+    }
+
+    &:hover {
+        @include media-breakpoint-up(md) {
+            &.icon-left {
+                left: -5px;
+            }
+            &.icon-right {
+                right: -5px;
+            }
+         }
+    }
+}
+
 .page-header {
     letter-spacing: -0.5px;
     margin: 0 0 20px 0;

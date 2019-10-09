@@ -13,13 +13,13 @@ header.header {
     }
 
     .col-md-3 {
-        flex: 0 0 18%;
-        max-width: 18%;
+        flex: 0 0 17%;
+        max-width: 17%;
     }
 
     .col-md-9 {
-        flex: 0 0 82%;
-        max-width: 82%;
+        flex: 0 0 83%;
+        max-width: 83%;
         align-self: flex-end;
     }
     .searchMb{
@@ -131,7 +131,7 @@ header.header {
 
             >li {
                 display: inline-block;
-                padding-right: rem(10);
+                padding-right: 0.4rem;
                 position: relative;
                 padding-bottom: rem(20);
 

@@ -22,7 +22,7 @@ a.btn,
     font-weight: bold;
     @include transition();
     border: none;
-
+ 
     @media (max-width: 1024px) {
         padding: rem(15) rem(32);
         font-size: rem(15);
@@ -227,7 +227,7 @@ a.btn,
 .page-header {
     letter-spacing: -0.5px;
     margin: 0 0 20px 0;
-
+    @media (max-width: 1366px) { margin: 0 0 10px 0;}
     @media (max-width: 767.99px) {
         margin: 0 0 5px 0;
     }
@@ -244,7 +244,10 @@ a.btn,
             repeat: no-repeat;
             position: center center;
         }
-
+        @media (max-width: 1366px) {
+            width: rem(35);
+            height: rem(35);
+        }
         @media (max-width: 767.99px) {
             width: 30px;
             height: 30px;
@@ -262,7 +265,9 @@ a.btn,
         font-size: rem(32);
         font-weight: bold;
         margin: 0;
-
+        @media (max-width: 1366px) {
+            font-size: rem(26);   
+        }
         @media (max-width: 768px) {
             font-size: rem(20);
         }
@@ -273,7 +278,9 @@ a.btn,
         font-size: rem(40);
         font-weight: bold;
         margin: 0;
-
+        @media (max-width: 1366px) {
+            font-size: rem(28);   
+        }
         @media (max-width: 768px) {
             font-size: rem(22);
             margin: 7px 0px;
@@ -283,7 +290,11 @@ a.btn,
     p {
         font-size: rem(15);
         margin: rem(10) 0;
-
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+        overflow: hidden;
     }
     &-content{
         padding: 0px 50px 50px 50px;

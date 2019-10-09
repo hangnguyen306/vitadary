@@ -283,17 +283,44 @@ a.btn,
     p {
         font-size: rem(15);
         margin: rem(10) 0;
+
+    }
+    &-content{
+        padding: 0px 50px 50px 50px;
+        border:2px dotted #999A9D;
+        border-radius: 20px;
+        h2{
+            text-align: center;
+            span{
+                font-size: rem(48);
+                font-weight: bold;
+                display: inline-block;
+                background: #fff;
+                padding: 0 30px;
+                color:$blue-main;
+                transform: translateY(-50%);
+            }
+        }
+        .des{
+            p{
+                margin: 0;
+                font-style: italic;
+            }
+        }
     }
 }
 
 .sMainChild {
-    padding-top: rem(60);
-
     .sMainContent {
         margin-top: rem(60);
     }
 }
-
+.sBannerChild{
+    margin-bottom: rem(40);
+    img{
+      width: 100%;
+    }
+  }
 .sNavLink {
     display: flex;
     flex-wrap: wrap;

@@ -661,7 +661,7 @@
     overflow: hidden;
     padding: rem(40) 0 0px 0;
     position: relative;
-
+    margin-top: -2px;
     background: {
         image: url($img-path + "bg-3.png");
         size: cover;
@@ -1043,7 +1043,7 @@
             }
 
             .info {
-                margin: -50px 0 0 0;
+                margin: -70px 0 0 0;
 
                 a {
                     font-size: rem(24);
@@ -1140,7 +1140,7 @@
     }
 
     .sNewsSliderInner {
-        margin: rem(20) -10px 0 -10px;
+        margin: rem(0) -10px 0 -10px;
 
         .item {
             padding: 0 10px;

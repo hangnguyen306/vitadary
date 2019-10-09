@@ -14797,11 +14797,31 @@ a.btn,
   .page-header p {
     font-size: 0.9375rem;
     margin: 0.625rem 0; }
+  .page-header-content {
+    padding: 0px 50px 50px 50px;
+    border: 2px dotted #999A9D;
+    border-radius: 20px; }
+    .page-header-content h2 {
+      text-align: center; }
+      .page-header-content h2 span {
+        font-size: 3rem;
+        font-weight: bold;
+        display: inline-block;
+        background: #fff;
+        padding: 0 30px;
+        color: #0054A5;
+        transform: translateY(-50%); }
+    .page-header-content .des p {
+      margin: 0;
+      font-style: italic; }
 
-.sMainChild {
-  padding-top: 3.75rem; }
-  .sMainChild .sMainContent {
-    margin-top: 3.75rem; }
+.sMainChild .sMainContent {
+  margin-top: 3.75rem; }
+
+.sBannerChild {
+  margin-bottom: 2.5rem; }
+  .sBannerChild img {
+    width: 100%; }
 
 .sNavLink {
   display: flex;
@@ -15522,6 +15542,7 @@ a.btn,
   overflow: hidden;
   padding: 2.5rem 0 0px 0;
   position: relative;
+  margin-top: -2px;
   background-image: url("../images/bg-3.png");
   background-size: cover;
   background-repeat: no-repeat; }
@@ -15754,7 +15775,7 @@ a.btn,
         .sMain-5 .sHomeProductSlider .item .image img {
           max-width: 80%; } }
       .sMain-5 .sHomeProductSlider .item .info {
-        margin: -50px 0 0 0; }
+        margin: -70px 0 0 0; }
         .sMain-5 .sHomeProductSlider .item .info a {
           font-size: 1.5rem;
           font-weight: bold;
@@ -15817,7 +15838,7 @@ a.btn,
     .sMain-6 .btn.btn-link:after {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='13.763' viewBox='0 0 20 13.763'%3E%3Cg id='icon-arrow' transform='translate(0 -41.916)'%3E%3Cpath id='Path_25276' data-name='Path 25276' d='M19.728,48.14l-5.952-5.952A.93.93,0,1,0,12.461,43.5l4.364,4.364H.93a.93.93,0,1,0,0,1.86H16.825l-4.364,4.364a.93.93,0,0,0,1.315,1.315l5.952-5.952A.93.93,0,0,0,19.728,48.14Z' transform='translate(0 0)' fill='%233EB7E4'/%3E%3C/g%3E%3C/svg%3E%0A"); }
   .sMain-6 .sNewsSliderInner {
-    margin: 1.25rem -10px 0 -10px; }
+    margin: 0rem -10px 0 -10px; }
     .sMain-6 .sNewsSliderInner .item {
       padding: 0 10px; }
       .sMain-6 .sNewsSliderInner .item a {
@@ -16513,5 +16534,26 @@ a.btn,
 .listEvent .item .info h3 a {
   font-size: 1rem;
   color: inherit; }
+
+.sNew .sLandingNewItem .bgImg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sNew .sLandingNewItem .bgImg:after {
+    content: "";
+    padding-top: 33.8541666667%;
+    display: block; }
+  .sNew .sLandingNewItem .bgImg img {
+    display: none; }
+  .sNew .sLandingNewItem .bgImg .page-header h2 {
+    color: #0054A5; }
+  .sNew .sLandingNewItem .bgImg .info {
+    max-width: 580px; }
+    .sNew .sLandingNewItem .bgImg .info .des {
+      margin-bottom: 1.25rem; }
 
 /*# sourceMappingURL=styles.css.map */

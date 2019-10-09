@@ -69,7 +69,7 @@ function fixHeight(){
         $('.fixHeight.sMain-3').css({'minHeight': hW - 60});
         $('.fixHeight.sMain-4').css({'minHeight': hW - 60});
         $('.fixHeight.sMain-5').css({'minHeight': hW - 60});
-        $('.fixHeight.sMain-6').css({'minHeight': hW});
+        $('.fixHeight.sMain-6').css({'minHeight': hW -60});
 }
 function gotoTop() {
     var topTop = $('.toTop');

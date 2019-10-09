@@ -1,0 +1,24 @@
+
+.sNew{
+  .sLandingNew{
+    &Item{
+      .bgImg{
+        @include bg-box(1920,650);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .page-header{
+          h2{
+            color: $blue-main;
+          }
+        }
+        .info{
+          max-width: 580px;
+          .des{
+            margin-bottom: rem(20);
+          }
+        }
+      }
+    }
+  }
+}

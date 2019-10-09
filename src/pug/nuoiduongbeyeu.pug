@@ -1,0 +1,17 @@
+extends layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "mua-hang"
+
+block content
+    .sMainChild.sNew
+      .sBannerChild
+        img(src= imgPath + 'nuoiduongbeyeu/banner.jpg' alt="")
+      .container
+        +breadcrumb([{'title':' Nuôi dưỡng bé yêu'}])
+        .sMainContent
+          +headerlanding('Nuôi dưỡng bé yêu','Làm mẹ là một hành trình ngọt ngào, nhiều hạnh phúc nhưng cũng không ít gian nan và vất vả. Bởi đó là khi mọi nỗ lực trong cuộc sống của mẹ đều đặt vào thiên thần nhỏ của mình. Làm thế nào để con được phát triển toàn diện từ thể chất đến trí não? Ba mẹ phải làm gì để nuôi dạy con tốt nhất? Và hàng ngàn câu hỏi khác mẹ đặt ra trong suốt hành trình nuôi con của mình. Chuyên gia VitaDairy sẽ luôn sẵn sàng chia sẻ cùng mẹ những kinh nghiệm chăm sóc, nuôi nấng và dạy dỗ con một cách khoa học nhất.')
+      .sLandingNew
+        .sLandingNewItem
+            +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong.jpg','Miễn dịch khoẻ','icon-new-1','Với trẻ em, hệ miễn dịch chưa thể hoàn thiện cho đến khi trẻ tròn 36 tháng tuổi, nguy cơ lâynhiễm và phát bệnh rất cao. Do đó trong giai đoạn này, mẹ cần bổ sung dinh dưỡng miễn dịch đúng chuẩn, đầy đủ và hợp lý, giúp tăng cường đề kháng, cho con sức mạnh từ bên trong để xây dựng nền tảng vững chắc cho sự phát triển toàn diện.',nuoiduongbeyeu1)

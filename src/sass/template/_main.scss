@@ -168,10 +168,22 @@ a.btn,
             transform: scale(0.6);
             margin-top: rem(-18);
         }
+        
     }
+    
 
 }
-
+.slick-arrow{
+    &.icon-arr.icon-arr-3{
+        &.icon-left {
+            left: -40px;
+        }
+        &.icon-arr.icon-right {
+            right: -40px;
+            transform: scale(0.6) rotate(180deg)
+        }
+    }
+}
 .icon-arr-2 {
     display: inline-block;
     width: rem(32);

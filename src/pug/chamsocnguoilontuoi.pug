@@ -1,0 +1,25 @@
+extends layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "cham-soc"
+
+block content
+    .sMainChild.sNew
+      .sBannerChild
+        img(src= imgPath + 'chamsocnguoilontuoi/banner.jpg' alt="")
+      .container
+        +breadcrumb([{'title':'Chăm sóc người lớn tuổi'}])
+        .sMainContent
+          +headerlanding('Chăm sóc người lớn tuổi ','Khi tuổi càng cao, con người thường phải đối mặt với nhiều vấn đề về sức khoẻ và tâm lý. Chế độ dinh dưỡng hợp lý, tinh thần thoải mái và thực hiện vận động vừa sức sẽ giúp người lớn tuổi cải thiện sức khoẻ và ngăn ngừa bệnh tật.')
+      .sLandingNew
+        .sLandingNewItem.bg-right.listColNew
+          +itemLanding('#',imgPath + 'chamsocnguoilontuoi/bg-01.jpg','Sống khoẻ','Mỗi ngày','icon-old-1','Bước qua tuổi 50 là giai đoạn các hoạt động của cơ quan trong cơ thể suy giảm, biểu hiện rõ ràng nhất là cơ thể hay mệt mỏi, ăn kém ngon, dễ mắc bệnh do suy giảm đề kháng. Người lớn tuổi nên làm những gì để cải thiện sức khỏe, làm  chậm quá trình lão hóa, tiếp tục sống vui - sống khỏe mỗi ngày?',chamsocnguoilontuoi1)
+        .sLandingNewItem.bg-left.listColNew
+          +itemLanding('#',imgPath + 'chamsocnguoilontuoi/bg-02.jpg','Sức khoẻ','Tim mạch','icon-old-2','Quá trình lão hoá xảy ra trong cơ thể làm biến đổi chức năng hoạt động của các cơ quan nên một số bệnh lý có thể xảy ra, trong đó hệ tim mạch cũng bị ảnh hưởng. Tuy nhiên, người bệnh tim mạch vẫn có thể kiểm soát được bệnh nếu có một chế độ tập luyện kết hợp nguồn dinh dưỡng chuyên biệt phù hợp.',chamsocnguoilontuoi2)
+        .sLandingNewItem.bg-right.listColNew
+          +itemLanding('#',imgPath + 'chamsocnguoilontuoi/bg-03.jpg','Chăm sóc','Người bệnh tiểu đường','icon-old-3','Bệnh tiểu đường có thể dẫn đến các biến chứng khác nhau và đặc biệt cần được chú ý ở người cao tuổi vì mức độ nguy hiểm của nó. Đây là bệnh liên quan đến nội tiết do tuyến tụy không sản xuất đủ insulin hoặc insulin khi đó bị giảm tác động bởi cơ thể nên dẫn đến việc rối loạn chuyển hóa chất đường trong máu. Dinh dưỡng đúng và khoa học là yếu tố quan trọng trong việc chăm sóc người bệnh tiểu đường.',chamsocnguoilontuoi3)
+        .sLandingNewItem.bg-left.listColNew
+          +itemLanding('#',imgPath + 'chamsocnguoilontuoi/bg-04.jpg','Dinh dưỡng','Cho người bệnh thận','icon-old-4','Thận đóng vai trò quan trọng trong việc loại bỏ những chất độc hại và giữ thăng bằng nước, các chất khoáng cần thiết cho cơ thể. Đối với người bệnh thận, chức năng này của thận sẽ bị suy giảm. Chế độ dinh dưỡng hợp lý và đặc trị giúp cho người bệnh bảo tồn được chức năng thận hiện tại và hạn chế tiến triển biến chứng của bệnh.',chamsocnguoilontuoi4)
+        .sLandingNewItem.bg-right.listColNew
+          +itemLanding('#',imgPath + 'chamsocnguoilontuoi/bg-05.jpg','Chăm sóc','Người bệnh gan','icon-old-5','Gan là cơ quan lớn nhất và duy nhất thực hiện cùng lúc nhiều “nhiệm vụ” quan trọng cho cơ thể, gan đóng vai trò quan trọng bỏ độc tố, làm sạch máu,và thực hiện quá trình trao đổi chất duy trì sự sống cho cơ thể. Đối với người cao tuổi, bị suy giảm chức năng gan hoặc mắc các bệnh lý về gan càng khó phục hồi hơn rất nhiều lần. Chăm sóc người bệnh gan rất quan trọng và dinh dưỡng quyết định không nhỏ vào hiệu quả của điều trị bệnh.',chamsocnguoilontuoi5)

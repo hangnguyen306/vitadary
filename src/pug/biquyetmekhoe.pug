@@ -1,0 +1,23 @@
+extends layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "bi-quyet"
+
+block content
+    .sMainChild.sNew
+      .sBannerChild
+        img(src= imgPath + 'biquyetmekhoe/banner.jpg' alt="")
+      .container
+        +breadcrumb([{'title':' Bí quyết mẹ khoẻ'}])
+        .sMainContent
+          +headerlanding('Bí quyết mẹ khoẻ ','Mẹ đã sẵn sàng cho hành trình chờ đón thiên thần của mình chưa? Có quá nhiều thứ cần phải chuẩn bị cho sự hiện diện của bé con. Nếu đây là lần đầu lên kế hoạch sinh con, mẹ sẽ gặp một chút bối rối, nhưng đừng lo, mẹ sẽ làm tốt mọi việc như chính bản năng làm mẹ mà tạo hoá ban tặng. Các chuyên gia VitaDairy cùng những thông tin hữu ích và khoa học, sẽ luôn đồng hành cùng mẹ trong các giai đoạn mẹ nhé!')
+      .sLandingNew
+        .sLandingNewItem.bg-right.listColNew
+          +itemLanding('#',imgPath + 'biquyetmekhoe/bg-1.jpg','Dự định','Mang thai','icon-mom-1','Lên kế hoạch mang thai an toàn, khoẻ mạnh là việc làm cần thiết để con sinh ra được phát triển toàn diện. Tuy nhiên không phải gia đình nào cũng có thể chuẩn bị tốt ở giai đoạn này, ba mẹ cần rất nhiều “hành trang” từ vật chất đến tinh thần, và quan trọng nhất là sức khoẻ của mẹ. Ngay bây giờ, mẹ hãy trang bị cho mình thật nhiều kiến thức hữu ích cho kế hoạch đón thành viên mới của gia đình mình nhé!',biquyetmekhoe1)
+        .sLandingNewItem.bg-left.listColNew
+          +itemLanding('#',imgPath + 'biquyetmekhoe/bg-2.jpg','Mang thai','','icon-mom-2','Chúc mừng mẹ đã hoàn thành tốt nhiệm vụ “thăng chức” cho các thành viên trong gia đình. Thiên thần nhỏ đã sớm báo hiệu cho mẹ biết sự có mặt của mình kể từ con chỉ là một cụm nhỏ các tế bào đó mẹ ơi. Những cơn ốm nghén hay sự thay đổi của cơ thể sẽ khiến mẹ mệt mỏi trong một số giai đoạn của thai kỳ, nhưng mẹ đừng quá lo lắng bởi phần lớn phụ nữ mang thai đều vượt qua một cách an toàn. Để có thêm nhiều kiến thức cho thai kỳ khoẻ mạnh, mẹ hãy tham khảo ngay các thông tin về dinh dưỡng, chăm sóc sức khoẻ và các bài tập khi mang thai từ chuyên gia VitaDairy!',biquyetmekhoe2)
+        .sLandingNewItem.bg-right.listColNew
+          +itemLanding('#',imgPath + 'biquyetmekhoe/bg-3.jpg','Dự sinh','','icon-mom-3','Mẹ đang bước vào những tuần cuối của thai kỳ. Tam cá nguyệt thứ 3 khá an toàn nhưng luôn khiến mẹ lo lắng và hồi hộp, bởi chỉ còn vài tuần nữa là mẹ có thể chào đón thiên thần bé xíu của mình rồi. Con cũng đang nôn nóng được gặp mẹ vì con đã lớn và “ngôi nhà” của con cũng rất chật hẹp rồi đó mẹ ơi. Ngày dự sinh luôn mang tính tương đối, cơn chuyển dạ có thể đến bất chợt nên mẹ bầu cần chuẩn bị thật kỹ những vật dùng cần thiết và một tinh thần thật tốt cho hành trình “vượt cạn” của mình nhé!',biquyetmekhoe3)
+        .sLandingNewItem.bg-left.listColNew
+          +itemLanding('#',imgPath + 'biquyetmekhoe/bg-4.jpg','Sau sinh','Và chăm sóc bé yêu','icon-mom-4','Chúc mừng mẹ đã trải qua “cuộc vượt cạn” thành công để mang thành viên mới đến với gia đình. Chào mừng bé yêu đến với thế giới, cuộc sống bên ngoài chắc hẳn là thú vị và vui hơn rất nhiều so với thế giới trong bụng mẹ đúng không nào? Hành trình của mẹ lại bắt đầu một nấc thang mới, phải chuẩn bị dinh dưỡng như thế nào để sức khoẻ của mẹ nhanh hồi phục, phải chuẩn bị những kiến thức gì để chăm sóc con yêu phát triển khoẻ mạnh? Tìm hiểu ngay những thông tin cần thiết nào mẹ ơi!',biquyetmekhoe4)

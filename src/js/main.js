@@ -161,7 +161,7 @@ function sHomeNews(){
         infinite: true,
         arrows:true,
         prevArrow: "<a href='#' class='icon-arr icon-arr-small icon-left'></a>",
-        nextArrow: "<a href='#' class='icon-arr icon-arr-small icon-right'></a>", 
+        nextArrow: "<a href='#' class='icon-arr icon-arr-small icon-right'></a>",
         speed: 1000,
         autoplay:true,
         slidesToShow: 3,
@@ -349,6 +349,44 @@ function sAboutStory(){
         moreLink: '<a href="#"><i class="icon-down-link"></i></a>',
     });
 }
+function sNew(){
+    $('.sSliderNew').slick({
+        infinite: true,
+        arrows:true,
+        prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
+        nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>", 
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        focusOnSelect: true,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+            }
+           
+        ]
+    });
+}
 
 $(function($) {
     $toggleMenu = $('.header__toggle');
@@ -419,6 +457,7 @@ sHomeNews();
 searchBox();
 stick();
 sProduct();
+sNew();
 $('.lazy').lazy();
 fixHeight();
 sAboutStory();

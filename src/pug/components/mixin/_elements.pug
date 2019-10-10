@@ -136,14 +136,15 @@ mixin headerlanding(title,des)
 mixin sSlideNewThumb(arrayNews)
 	each x in arrayNews  
 		.itemEvent
-			+bgImgLink(x.img,'image',"#")
-			.info
-					.date 21/09/2019
-					h4: a(href="#") 
-						= x.title
-					.des
-						| Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-mixin itemLanding(link,image,title,icon,des,array)
+			.itemEventWrap
+				+bgImgLink(x.img,'image',"#")
+				.info
+						.date 21/09/2019
+						h4: a(href="#") 
+							= x.title
+						.des-content
+							| Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+mixin itemLanding(link,image,title,title2,icon,des,array)
 	div(class="bgImg" style="background-image:url('" + image + "')")
 		.container
 			.info
@@ -152,7 +153,10 @@ mixin itemLanding(link,image,title,icon,des,array)
 						span.icon-text.icon
 						span.ttl-text
 							= title
+					h3
+						= title2
 				.des !{des}
 				.btnDiv
 					+a-btn-primary('Xem thêm',link)
-			+sSlideNewThumb(array)
+			.sSliderNew
+				+sSlideNewThumb(array)

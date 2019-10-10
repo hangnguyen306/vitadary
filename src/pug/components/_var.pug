@@ -74,87 +74,109 @@
         {'key': 'home',     'title': 'Tuyển dụng',            'url': '#'},
         {'key': 'home',     'title': 'Liên hệ',            'url': '#'}
     ]
--
-    var slideMenu = [
-        {'key': 'docs',     'title':'Getting started',  'url':'/docs',                          'child':[
-            {'key': 'docs',             'title':'Introduction',     'url':'/docs'},
-            {'key': 'contents',         'title':'Contents',         'url':'/docs/getting-started/contents.html'},
-            {'key': 'sass',             'title':'Sass',             'url':'/docs/getting-started/sass.html'},
-            {'key': 'browsers-devices', 'title':'Browsers and devices', 'url':'/docs/getting-started/browsers-devices.html'}
-        ]},
-        {'key': 'overview',     'title':'Layout',  'url':'/docs/layout/index.html',                          'child':[
-            {'key': 'overview',         'title':'Overview',         'url':'/docs/layout/index.html'},
-            {'key': 'grid',             'title':'Grid system',      'url':'/docs/layout/grid.html'},
-            {'key': 'media-object',     'title':'Media object',     'url':'/docs/layout/media-object.html'},
-            {'key': 'utilities-for-layout','title':'Utilities for layout','url':'/docs/layout/utilities-for-layout.html'},
-        ]},
-        {'key': 'reboot',     'title':'Content',  'url':'/docs/content/index.html',                          'child':[
-            {'key': 'reboot',           'title':'Reboot',           'url':'/docs/content/index.html'},
-            {'key': 'typography',       'title':'Typography',       'url':'/docs/content/typography.html'},
-            {'key': 'code',             'title':'Code',             'url':'/docs/content/code.html'},
-            {'key': 'images',           'title':'Images',           'url':'/docs/content/images.html'},
-            {'key': 'tables',           'title':'Tables',           'url':'/docs/content/tables.html'},
-            {'key': 'figures',          'title':'Figures',          'url':'/docs/content/figures.html'},
-        ]},
-        {'key': 'alerts',   'title':'Components',       'url':'/docs/components/alerts.html',   'child':[
-            {'key': 'alerts',           'title':'Alerts',           'url':'/docs/components/alerts.html'},
-            {'key': 'badges',           'title':'Badge',            'url':'/docs/components/badges.html'},
-            {'key': 'breadcrumb',       'title':'Breadcrumb',       'url':'/docs/components/breadcrumb.html'},
-            {'key': 'buttons',          'title':'Buttons',          'url':'/docs/components/buttons.html'},
-            {'key': 'button-group',     'title':'Button group',     'url':'/docs/components/button-group.html'},
-            {'key': 'cards',            'title':'Card',             'url':'/docs/components/cards.html'},
-            {'key': 'collapse',         'title':'Collapse',         'url':'/docs/components/collapse.html'},
-            {'key': 'dropdowns',        'title':'Dropdowns',        'url':'/docs/components/dropdowns.html'},
-            {'key': 'forms',            'title':'Forms',            'url':'/docs/components/forms.html'},
-            {'key': 'input-group',      'title':'Input group',      'url':'/docs/components/input-group.html'},
-            {'key': 'list-group',       'title':'List group',       'url':'/docs/components/list-group.html'},
-            {'key': 'modal',            'title':'Modal',            'url':'/docs/components/modal.html'},
-            {'key': 'navs',             'title':'Navs',             'url':'/docs/components/navs.html'},
-            {'key': 'navbar',           'title':'Navbar',           'url':'/docs/components/navbar.html'},
-            {'key': 'pagination',       'title':'Pagination',       'url':'/docs/components/pagination.html'},
-            {'key': 'popovers',         'title':'Popovers',         'url':'/docs/components/popovers.html'},
-            {'key': 'progress',         'title':'Progress',         'url':'/docs/components/progress.html'},
-            {'key': 'scrollspy',        'title':'Scrollspy',        'url':'/docs/components/scrollspy.html'},
-            {'key': 'tooltips',         'title':'Tooltips',         'url':'/docs/components/tooltips.html'}
-        ]},
-        {'key': 'borders',   'title':'Utilities',   'url':'/docs/utilities/borders.html',                          'child':[
-            {'key': 'borders',          'title':'Borders',          'url':'/docs/utilities/borders.html'},
-            {'key': 'clearfix',         'title':'Clearfix',         'url':'/docs/utilities/clearfix.html'},
-            {'key': 'close-icon',       'title':'Close icon',       'url':'/docs/utilities/close-icon.html'},
-            {'key': 'colors',           'title':'Colors',           'url':'/docs/utilities/colors.html'},
-            {'key': 'display',          'title':'Display',          'url':'/docs/utilities/display.html'},
-            {'key': 'embed',            'title':'Embed',            'url':'/docs/utilities/embed.html'},
-            {'key': 'flex',             'title':'Flex',             'url':'/docs/utilities/flex.html'},
-            {'key': 'float',            'title':'Float',            'url':'/docs/utilities/float.html'},
-            {'key': 'image-replacement','title':'Image replacement','url':'/docs/utilities/image-replacement.html'},
-            {'key': 'position',         'title':'Position',         'url':'/docs/utilities/position.html'},
-            {'key': 'screenreaders',    'title':'Screenreaders',    'url':'/docs/utilities/screenreaders.html'},
-            {'key': 'shadows',          'title':'Shadows',          'url':'/docs/utilities/shadows.html'},
-            {'key': 'sizing',           'title':'Sizing',           'url':'/docs/utilities/sizing.html'},
-            {'key': 'spacing',          'title':'Spacing',          'url':'/docs/utilities/spacing.html'},
-            {'key': 'text',             'title':'Text',             'url':'/docs/utilities/text.html'},
-            {'key': 'vertical-align',   'title':'Vertical align',   'url':'/docs/utilities/vertical-align.html'},
-            {'key': 'visibility',       'title':'Visibility',       'url':'/docs/utilities/visibility.html'},
-        ]},
-        {'key': 'approach',     'title':'Extend',  'url':'/docs/extend/index.html',                          'child':[
-            {'key': 'approach',         'title':'Approach',         'url':'/docs/extend/index.html'},
-            {'key': 'icons',            'title':'Icons',            'url':'/docs/extend/icons.html'},
-            {'key': 'selectbox',        'title':'Selectbox UI',     'url':'/docs/extend/selectbox.html'},
-            {'key': 'range',            'title':'Range UI',         'url':'/docs/extend/range.html'},
-            {'key': 'checkbox',         'title':'Checkbox/Radio UI','url':'/docs/extend/checkbox-radio.html'},
-            {'key': 'file',             'title':'File browser',     'url':'/docs/extend/file-browser.html'},
-            {'key': 'datepicker',       'title':'Datepicker',       'url':'/docs/extend/datepicker.html'},
-            {'key': 'validate',         'title':'Validate',         'url':'/docs/extend/validate.html'},
-            {'key': 'notify',           'title':'Notify',           'url':'/docs/extend/notify.html'},
-            {'key': 'waypoint',         'title':'Waypoint',         'url':'/docs/extend/waypoint.html'},
-            {'key': 'parallax',         'title':'Parallax ',        'url':'/docs/extend/parallax.html'},
-            {'key': 'scroll',           'title':'Scroll',           'url':'/docs/extend/scroll.html'},
-            {'key': 'slick',            'title':'Slick',            'url':'/docs/extend/slick.html'},
-            {'key': 'slick-lightbox',   'title':'Slick Lightbox',   'url':'/docs/extend/slick-lightbox.html'},
-            {'key': 'lazy',             'title':'Lazy load',        'url':'/docs/extend/lazy.html'},
-        ]},
-    ]
+
 -
     var nuoiduongbeyeu1 = [
-        {'title' : 'Bí quyết tăng cường miễn dịch cho trẻ thời… ', 'img':'nuoiduongbeyeu/img-01.jpg'}
+        {'title' : 'Bí quyết tăng cường miễn dịch cho trẻ thời…', 'img':imgPath + 'nuoiduongbeyeu/img-01.jpg'},
+        {'title' : '4 việc mẹ nên làm để tăng cường sức đề…', 'img':imgPath + 'nuoiduongbeyeu/img-02.jpg'},
+        {'title' : 'Hệ miễn dịch tốt giúp cơ thể của trẻ giảm…', 'img':imgPath + 'nuoiduongbeyeu/img-03.jpg'},
+        {'title' : '4 việc mẹ nên làm để tăng cường sức đề…', 'img':imgPath + 'nuoiduongbeyeu/img-04.jpg'}
+    ]
+-
+    var nuoiduongbeyeu2 = [
+        {'title' : 'Bí quyết tăng cường miễn dịch cho trẻ thời…', 'img':imgPath + 'nuoiduongbeyeu/img-04.jpg'},
+        {'title' : '4 việc mẹ nên làm để tăng cường sức đề…', 'img':imgPath + 'nuoiduongbeyeu/img-05.jpg'},
+        {'title' : 'Hệ miễn dịch tốt giúp cơ thể của trẻ giảm…', 'img':imgPath + 'nuoiduongbeyeu/img-06.jpg'},
+        {'title' : '4 việc mẹ nên làm để tăng cường sức đề…', 'img':imgPath + 'nuoiduongbeyeu/img-07.jpg'}
+    ]
+-
+    var nuoiduongbeyeu3 = [
+        {'title' : 'Sự phát triển thể chất, tâm thần vận động…', 'img':imgPath + 'nuoiduongbeyeu/img-08.jpg'},
+        {'title' : 'Phát triển thể chất trẻ em lứa tuổi Mầm non…', 'img':imgPath + 'nuoiduongbeyeu/img-09.jpg'},
+        {'title' : 'Hệ miễn dịch tốt giúp cơ thể của trẻ giảm…', 'img':imgPath + 'nuoiduongbeyeu/img-10.jpg'},
+        {'title' : '3 mục tiêu phát triển thể chất cho trẻ mầm…', 'img':imgPath + 'nuoiduongbeyeu/img-01.jpg'}
+    ]
+-
+    var nuoiduongbeyeu4 = [
+        {'title' : 'Những điều kỳ diệu về bộ não của trẻ mà…', 'img':imgPath + 'nuoiduongbeyeu/img-11.jpg'},
+        {'title' : 'Dinh dưỡng và sự phát triển trí não của trẻ em', 'img':imgPath + 'nuoiduongbeyeu/img-12.jpg'},
+        {'title' : 'Phương pháp tác động giúp phát triển trí não…', 'img':imgPath + 'nuoiduongbeyeu/img-13.jpg'},
+        {'title' : '3 mục tiêu phát triển thể chất cho trẻ mầm…', 'img':imgPath + 'nuoiduongbeyeu/img-14.jpg'}
+    ]
+-
+    var nuoiduongbeyeu5 = [
+        {'title' : 'Dị ứng đạm sữa bò ở trẻ nhỏ dễ nhầm lẫn với…', 'img':imgPath + 'nuoiduongbeyeu/img-14.jpg'},
+        {'title' : 'Cẩn trọng với dị ứng đạm sữa bò ở trẻ', 'img':imgPath + 'nuoiduongbeyeu/img-15.jpg'},
+        {'title' : 'Dấu hiệu trẻ bị dị ứng đạm sữa bò', 'img':imgPath + 'nuoiduongbeyeu/img-16.jpg'},
+        {'title' : '3 mục tiêu phát triển thể chất cho trẻ mầm…', 'img':imgPath + 'nuoiduongbeyeu/img-17.jpg'}
+    ]
+-
+    var nuoiduongbeyeu6 = [
+        {'title' : 'Nhật kí lần đầu làm bố mẹ của cặp vợ chồng…', 'img':imgPath + 'nuoiduongbeyeu/img-17.jpg'},
+        {'title' : 'Nhật ký làm mẹ lần đầu hài hước qua hình vẽ', 'img':imgPath + 'nuoiduongbeyeu/img-18.jpg'},
+        {'title' : 'Nhật ký: Lần đầu làm mẹ, cảm xúc khó tả,…', 'img':imgPath + 'nuoiduongbeyeu/img-16.jpg'},
+        {'title' : '3 mục tiêu phát triển thể chất cho trẻ mầm…', 'img':imgPath + 'nuoiduongbeyeu/img-15.jpg'}
+    ]
+-
+    var biquyetmekhoe1 = [
+        {'title' : 'Cần chuẩn bị những gì trước khi mang thai?', 'img':imgPath + 'biquyetmekhoe/img-01.jpg'},
+        {'title' : '18 điều bạn nên chuẩn bị trước khi mang thai', 'img':imgPath + 'biquyetmekhoe/img-02.jpg'},
+        {'title' : 'Nên và không nên ăn gì trước khi mang thai', 'img':imgPath + 'biquyetmekhoe/img-03.jpg'},
+        {'title' : '18 điều bạn nên chuẩn bị trước khi mang thai', 'img':imgPath + 'biquyetmekhoe/img-04.jpg'}
+    ]
+-
+    var biquyetmekhoe2 = [
+        {'title' : 'Tổng hợp kiến thức và kinh nghiệm mang thai', 'img':imgPath + 'biquyetmekhoe/img-04.jpg'},
+        {'title' : 'Những điều cần biết khi mang thai 3 tháng...', 'img':imgPath + 'biquyetmekhoe/img-05.jpg'},
+        {'title' : 'Trọn bộ kiến thức về mang thai và chăm…', 'img':imgPath + 'biquyetmekhoe/img-06.jpg'},
+        {'title' : '18 điều bạn nên chuẩn bị trước khi mang thai', 'img':imgPath + 'biquyetmekhoe/img-04.jpg'}
+    ]
+-
+    var biquyetmekhoe3 = [
+        {'title' : 'Cách tính ngày dự sinh chính xác cho bà bầu', 'img':imgPath + 'biquyetmekhoe/img-07.jpg'},
+        {'title' : 'Ngày dự sinh có chính xác không và điều chị…', 'img':imgPath + 'biquyetmekhoe/img-08.jpg'},
+        {'title' : 'Quá ngày dự sinh: mẹ nên làm gì?', 'img':imgPath + 'biquyetmekhoe/img-09.jpg'},
+        {'title' : '18 điều bạn nên chuẩn bị trước khi mang thai', 'img':imgPath + 'biquyetmekhoe/img-04.jpg'}
+    ]
+-
+    var biquyetmekhoe4 = [
+        {'title' : 'Cách chăm sóc mẹ và bé sau sinh đúng cách', 'img':imgPath + 'biquyetmekhoe/img-10.jpg'},
+        {'title' : 'Chăm sóc bé - Cách chăm sóc trẻ tốt nhất', 'img':imgPath + 'biquyetmekhoe/img-11.jpg'},
+        {'title' : 'Cách chăm bé yêu 3 tháng đầu đời', 'img':imgPath + 'biquyetmekhoe/img-12.jpg'},
+        {'title' : '18 điều bạn nên chuẩn bị trước khi mang thai', 'img':imgPath + 'biquyetmekhoe/img-04.jpg'}
+    ]
+-
+    var chamsocnguoilontuoi1 = [
+        {'title' : 'Bí quyết sống khỏe mạnh cho người cao…', 'img':imgPath + 'chamsocnguoilontuoi/img-01.jpg'},
+        {'title' : '10 bí quyết giúp người cao tuổi sống thọ', 'img':imgPath + 'chamsocnguoilontuoi/img-02.jpg'},
+        {'title' : 'Sức khoẻ và bệnh tật của người lớn tuổi', 'img':imgPath + 'chamsocnguoilontuoi/img-03.jpg'},
+        {'title' : '10 bí quyết giúp người cao tuổi sống thọ', 'img':imgPath + 'chamsocnguoilontuoi/img-04.jpg'}
+    ]
+-
+    var chamsocnguoilontuoi2 = [
+        {'title' : 'Các bệnh tim mạch thường gặp ở người…', 'img':imgPath + 'chamsocnguoilontuoi/img-04.jpg'},
+        {'title' : 'Những môn thể thao tốt cho người bệnh…', 'img':imgPath + 'chamsocnguoilontuoi/img-05.jpg'},
+        {'title' : 'Huyết áp và nhịp tim của người cao tuổi', 'img':imgPath + 'biquyechamsocnguoilontuoitmekhoe/img-06.jpg'},
+        {'title' : 'Những môn thể thao tốt cho người bệnh…', 'img':imgPath + 'chamsocnguoilontuoi/img-07.jpg'}
+    ]
+-
+    var chamsocnguoilontuoi3 = [
+        {'title' : '5 lưu ý khi chăm sóc người thân bị bệnh', 'img':imgPath + 'chamsocnguoilontuoi/img-07.jpg'},
+        {'title' : 'Cách lập kế hoạch chăm sóc bệnh nhân…', 'img':imgPath + 'chamsocnguoilontuoi/img-08.jpg'},
+        {'title' : 'Chăm sóc tại nhà cho người bệnh tiểu đường', 'img':imgPath + 'chamsocnguoilontuoi/img-09.jpg'},
+        {'title' : 'Cách lập kế hoạch chăm sóc bệnh nhân…', 'img':imgPath + 'chamsocnguoilontuoi/img-10.jpg'}
+    ]
+-
+    var chamsocnguoilontuoi4 = [
+        {'title' : 'Chế độ dinh dưỡng cho người bị suy thận mạn…', 'img':imgPath + 'chamsocnguoilontuoi/img-10.jpg'},
+        {'title' : 'Nguyên tắc dinh dưỡng chung cho người bện…', 'img':imgPath + 'chamsocnguoilontuoi/img-11.jpg'},
+        {'title' : 'Chế độ Dinh Dưỡng Cho Người Sỏi Thận', 'img':imgPath + 'chamsocnguoilontuoi/img-12.jpg'},
+        {'title' : 'Cách lập kế hoạch chăm sóc bệnh nhân…', 'img':imgPath + 'chamsocnguoilontuoi/img-13.jpg'}
+    ]
+-
+    var chamsocnguoilontuoi5 = [
+        {'title' : 'Chế độ dinh dưỡng cho người bị suy thận mạn…', 'img':imgPath + 'chamsocnguoilontuoi/img-13.jpg'},
+        {'title' : 'Nguyên tắc dinh dưỡng chung cho người bện…', 'img':imgPath + 'chamsocnguoilontuoi/img-14.jpg'},
+        {'title' : 'Chế độ Dinh Dưỡng Cho Người Sỏi Thận', 'img':imgPath + 'chamsocnguoilontuoi/img-15.jpg'},
+        {'title' : 'Cách lập kế hoạch chăm sóc bệnh nhân…', 'img':imgPath + 'chamsocnguoilontuoi/img-13.jpg'}
     ]

@@ -3,6 +3,7 @@ extends layouts/_layout_default
 block setting
     - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
     - mainActive = "bi-quyet"
+    -var bodyClass = 'noStick';
 
 block content
     .sMainChild.sNew
@@ -12,6 +13,32 @@ block content
         +breadcrumb([{'title':' Bí quyết mẹ khoẻ'}])
         .sMainContent
           +headerlanding('Bí quyết mẹ khoẻ ','Mẹ đã sẵn sàng cho hành trình chờ đón thiên thần của mình chưa? Có quá nhiều thứ cần phải chuẩn bị cho sự hiện diện của bé con. Nếu đây là lần đầu lên kế hoạch sinh con, mẹ sẽ gặp một chút bối rối, nhưng đừng lo, mẹ sẽ làm tốt mọi việc như chính bản năng làm mẹ mà tạo hoá ban tặng. Các chuyên gia VitaDairy cùng những thông tin hữu ích và khoa học, sẽ luôn đồng hành cùng mẹ trong các giai đoạn mẹ nhé!')
+          .sLink
+            ul
+              li: a(href="#")
+                span.icon-link
+                  <svg viewBox="0 0 40 40" class="icon-shape">
+                    <use xlink:href="#mom1"></use>
+                  </svg>
+                span.icon-text Dự định <br>mang thai
+              li: a(href="#")
+                span.icon-link
+                  <svg viewBox="0 0 29 50" class="icon-shape">
+                    <use xlink:href="#mom2"></use>
+                  </svg>
+                span.icon-text Mang thai
+              li: a(href="#")
+                span.icon-link
+                  <svg viewBox="0 0 40 40" class="icon-shape">
+                    <use xlink:href="#mom3"></use>
+                  </svg>
+                span.icon-text Dự sinh
+              li: a(href="#")
+                span.icon-link
+                  <svg viewBox="0 0 40 40" class="icon-shape">
+                    <use xlink:href="#mom4"></use>
+                  </svg>
+                span.icon-text Sau sinh và <br>chăm sóc bé yêu
       .sLandingNew
         .sLandingNewItem.bg-right.listColNew
           +itemLanding('#',imgPath + 'biquyetmekhoe/bg-1.jpg','Dự định','Mang thai','icon-mom-1','Lên kế hoạch mang thai an toàn, khoẻ mạnh là việc làm cần thiết để con sinh ra được phát triển toàn diện. Tuy nhiên không phải gia đình nào cũng có thể chuẩn bị tốt ở giai đoạn này, ba mẹ cần rất nhiều “hành trang” từ vật chất đến tinh thần, và quan trọng nhất là sức khoẻ của mẹ. Ngay bây giờ, mẹ hãy trang bị cho mình thật nhiều kiến thức hữu ích cho kế hoạch đón thành viên mới của gia đình mình nhé!',biquyetmekhoe1)

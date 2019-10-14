@@ -145,18 +145,34 @@ mixin sSlideNewThumb(arrayNews)
 						.des-content
 							| Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 mixin itemLanding(link,image,title,title2,icon,des,array)
-	div(class="bgImg" style="background-image:url('" + image + "')")
-		.container
-			.info
-				.page-header
-					h2
-						span.icon-text.icon
-						span.ttl-text
-							= title
-					h3
-						= title2
-				.des !{des}
-				.btnDiv
-					+a-btn-primary('Xem thêm',link)
-			.sSliderNew
-				+sSlideNewThumb(array)
+	unless title2
+		div(class="bgImg" style="background-image:url('" + image + "')")
+			.container
+				.info
+					.page-header
+						h3
+							span.icon-text(class=icon)
+							span.ttl-text
+								= title
+					.des !{des}
+					.btnDiv
+						+a-btn-primary('Xem thêm',link)
+				.sSliderNew
+					+sSlideNewThumb(array)
+	else
+		div(class="bgImg" style="background-image:url('" + image + "')")
+			.container
+				.info
+					.page-header
+						h2
+							span.icon-text(class=icon)
+							span.ttl-text
+								= title
+						h3
+							= title2
+					.des !{des}
+					.btnDiv
+						+a-btn-primary('Xem thêm',link)
+				.sSliderNew
+					+sSlideNewThumb(array)
+		

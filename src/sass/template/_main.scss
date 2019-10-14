@@ -175,12 +175,17 @@ a.btn,
 }
 .slick-arrow{
     &.icon-arr.icon-arr-3{
+        opacity: 1;
+        @include transition();
         &.icon-left {
             left: -40px;
         }
         &.icon-arr.icon-right {
             right: -40px;
             transform: scale(0.6) rotate(180deg)
+        }
+        &:hover{
+            opacity: 0.6;
         }
     }
 }
@@ -312,6 +317,8 @@ a.btn,
         padding: 0px 50px 50px 50px;
         border:2px dotted #999A9D;
         border-radius: 20px;
+        margin-bottom: 40px;
+        
         h2{
             text-align: center;
             span{
@@ -325,6 +332,7 @@ a.btn,
             }
         }
         .des{
+            font-style: italic;
             p{
                 margin: 0;
                 font-style: italic;
@@ -488,5 +496,14 @@ a.btn,
 
     100% {
         bottom: -47px;
+    }
+}
+
+
+//no stick
+
+.noStick{
+    header.header.sticky {
+        position: relative;
     }
 }

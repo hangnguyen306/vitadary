@@ -1,38 +1,157 @@
-
-.sNew{
-  .sLandingNew{
-  
-    .sSliderNew{
-      margin-top:rem(40);
+.icon-mom {
+  &-1 {
+    background: {
+      image: url($img-path + "icons/icon-mom-1.svg");
+      size: contain;
+      repeat: no-repeat;
+      position: center;
     }
-    &Item{ 
-      &.bg-left{
-        .bgImg{
+  }
+
+  &-2 {
+    background: {
+      image: url($img-path + "icons/icon-mom-2.svg");
+      size: contain;
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+
+  &-3 {
+    background: {
+      image: url($img-path + "icons/icon-mom-3.svg");
+      size: contain;
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+  &-4 {
+    background: {
+      image: url($img-path + "icons/icon-mom-4.svg");
+      size: contain;
+      repeat: no-repeat;
+      position: center;
+    }
+  }
+}
+.sLink{
+  background: {
+    image: url($img-path + "icons/line.svg");
+    repeat: no-repeat;
+    position: center;
+  }
+  ul{
+    padding: 0;
+    margin:0 0 30px 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    li{
+      a{
+        text-align: center;
+        display: block;
+        @include transition();
+        transform: scale(1);
+        svg{
+          fill: #333333;
+          width: 40px;
+          height: 40px;
+          @include transition();
+        }
+        span.icon-link{
+          width:rem(80);
+          height:rem(80);
+          margin: 0 auto;
+          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background: #fff;
+          border:1px solid #CCCED0;
+          text-align: center;
+          box-shadow: 0 1px 20px rgba(131, 131, 131, 0);
+          @include transition();
+        }
+        .icon-text{
+          font-size: rem(15);
+          color:#333333;
+          font-weight: normal;
+          line-height: (26/15);
+          margin-top: 17px;
+          display: block;
+          @include transition();
+        }
+        &:hover{
+          text-decoration: none!important;
+          transform: scale(1.2);
+          color:$blue-main;
+          svg{
+            fill:#0054A5;
+          }
+          span.icon-link{
+            border-color:$blue-main-light;
+            box-shadow: 0 1px 20px rgba(131, 131, 131, 0.15);
+          }
+          span.icon-text{
+            color:$blue-main;
+            transform: scale(0.8);
+          }
+        }
+      }
+      &:nth-child(2){
+        margin-top: 56px;
+      }
+      &:last-child{
+        margin-right:-20px;
+        margin-top: 67px;
+      }
+    }
+  }
+}
+.sNew {
+  .sLandingNew {
+
+    .sSliderNew {
+      margin-top: rem(40);
+    }
+
+    &Item {
+      &.bg-left {
+        .bgImg {
           //background-position: left;
         }
-        .info{
+
+        .info {
           margin-left: auto;
         }
       }
-      &.bg-right{
-        .bgImg{
+
+      &.bg-right {
+        .bgImg {
           //background-position: right;
         }
       }
-      .bgImg{
-        @include bg-box(1920,650);
+
+      .bgImg {
+        @include bg-box(1920, 650);
         display: flex;
         justify-content: center;
         align-items: center;
-        padding:rem(100) 0 rem(80) 0;
-        .page-header{
-          h2{
+        padding: rem(100) 0 rem(80) 0;
+
+        .page-header {
+          h2 {
             //color: $blue-main;
           }
         }
-        .info{
+
+        .info {
           max-width: 580px;
-          .des{
+
+          .des {
             margin-bottom: rem(20);
           }
         }
@@ -40,29 +159,46 @@
     }
   }
 }
-.listColNew{
-  .itemEvent{
+
+.listColNew {
+  .itemEvent {
     padding: 0 rem(10);
-    &Wrap{
+
+    &Wrap {
       display: flex;
       background: #fff;
       border-radius: 10px;
       overflow: hidden;
-      .image{
+
+      .image {
         max-width: 150px;
         flex: 0 0 150px;
-        >a{
-          @include bg-box(150,150)
+
+        >a {
+          @include bg-box(150, 150)
         }
       }
-      .info{
+
+      .info {
         padding: 10px;
-        .date{
+
+        .date {
           font-size: rem(12);
-          color:$blue-main-light;
+          color: $blue-main-light;
+          &:before{
+            width: 14px;
+            height: 14px;
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 6px;
+            background-image: url("data:image/svg+xml,%3Csvg id='calendar_1_' data-name='calendar (1)' xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath id='Path_29686' data-name='Path 29686' d='M11.662,1.587c0-.008-.007-.014-.009-.022a.215.215,0,0,0-.016-.038.224.224,0,0,0-.026-.039.238.238,0,0,0-.027-.028.212.212,0,0,0-.038-.026.175.175,0,0,0-.083-.027l-.03-.007H10.257C10.2.588,9.82,0,9.333,0S8.47.588,8.41,1.4H7.924C7.863.588,7.487,0,7,0s-.863.588-.924,1.4H5.59C5.53.588,5.153,0,4.667,0S3.8.588,3.743,1.4H3.257C3.2.588,2.82,0,2.333,0S1.47.588,1.41,1.4H.233A.233.233,0,0,0,0,1.633V13.767A.233.233,0,0,0,.233,14h11.2a.233.233,0,0,0,.233-.233v-.7h2.1a.233.233,0,0,0,.228-.28ZM9.333.467c.169,0,.4.358.456.933h-.91C8.93.824,9.165.467,9.333.467ZM7,.467c.169,0,.4.358.456.933h-.91C6.6.824,6.832.467,7,.467Zm-2.333,0c.169,0,.4.358.456.933h-.91C4.263.824,4.5.467,4.667.467Zm-2.333,0c.169,0,.4.358.456.933h-.91C1.93.824,2.165.467,2.333.467ZM.467,1.867H1.41c.06.812.437,1.4.924,1.4a.233.233,0,1,0,0-.467c-.169,0-.4-.358-.456-.933H3.743c.061.812.437,1.4.924,1.4a.233.233,0,1,0,0-.467c-.169,0-.4-.358-.456-.933H6.077c.061.812.437,1.4.924,1.4A.233.233,0,1,0,7,2.8c-.169,0-.4-.358-.456-.933H8.41c.061.812.437,1.4.924,1.4a.233.233,0,1,0,0-.467c-.169,0-.4-.358-.456-.933H11.2V4.2H.467ZM11.2,13.534H.467V4.667H11.2Zm.467-.933V3.9l1.813,8.7Zm0,0' fill='%233eb7e4'/%3E%3Cpath id='Path_29687' data-name='Path 29687' d='M137.177,288h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,137.177,288Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-132.037 -279.608)' fill='%233eb7e4'/%3E%3Cpath id='Path_29688' data-name='Path 29688' d='M217.177,288h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,217.177,288Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-209.706 -279.608)' fill='%233eb7e4'/%3E%3Cpath id='Path_29689' data-name='Path 29689' d='M57.177,288h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,57.177,288Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-54.352 -279.608)' fill='%233eb7e4'/%3E%3Cpath id='Path_29690' data-name='Path 29690' d='M137.177,368h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,137.177,368Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-132.037 -357.295)' fill='%233eb7e4'/%3E%3Cpath id='Path_29691' data-name='Path 29691' d='M217.177,368h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,217.177,368Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-209.706 -357.295)' fill='%233eb7e4'/%3E%3Cpath id='Path_29692' data-name='Path 29692' d='M57.177,368h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,57.177,368Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-54.352 -357.295)' fill='%233eb7e4'/%3E%3Cpath id='Path_29693' data-name='Path 29693' d='M137.177,208h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,137.177,208Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-132.037 -201.939)' fill='%233eb7e4'/%3E%3Cpath id='Path_29694' data-name='Path 29694' d='M217.177,208h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,217.177,208Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-209.706 -201.939)' fill='%233eb7e4'/%3E%3Cpath id='Path_29695' data-name='Path 29695' d='M297.177,288h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,297.177,288Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-287.375 -279.608)' fill='%233eb7e4'/%3E%3Cpath id='Path_29696' data-name='Path 29696' d='M297.177,368h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,297.177,368Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-287.375 -357.295)' fill='%233eb7e4'/%3E%3Cpath id='Path_29697' data-name='Path 29697' d='M297.177,208h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,297.177,208Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-287.375 -201.939)' fill='%233eb7e4'/%3E%3Cpath id='Path_29698' data-name='Path 29698' d='M57.177,208h-.942a.235.235,0,0,0-.235.235v.942a.235.235,0,0,0,.235.235h.942a.235.235,0,0,0,.235-.235v-.942A.235.235,0,0,0,57.177,208Zm-.235.942h-.471v-.471h.471Zm0,0' transform='translate(-54.352 -201.939)' fill='%233eb7e4'/%3E%3C/svg%3E%0A");
+          }
+         
         }
-        h4{
-          a{
+
+        h4 {
+          a {
             color: $blue-main;
             font-size: rem(15);
             font-weight: bold;
@@ -74,9 +210,15 @@
             -webkit-box-orient: vertical;
             text-overflow: ellipsis;
             overflow: hidden;
+            @include transition();
+            &:hover{
+              color: $blue-main-light;
+              text-decoration: none;
+            }
           }
         }
-        .des-content{
+
+        .des-content {
           font-size: rem(12);
           line-height: (20/12);
           margin: 0;

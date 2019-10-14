@@ -503,6 +503,15 @@ function init(){
     fixHeight();
 })
 
+$(window).on('load ', function(){
+	$.ajax({
+		type: 'get',
+		url: '/assets/images/sprite.svg'
+	}).done(function(data) {
+		var svg = $(data).find('svg');
+		$('body').prepend(svg);
+	});
+});
 
 // $('body').imagesLoaded( function() {
 //     init();

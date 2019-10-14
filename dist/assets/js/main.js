@@ -30,7 +30,7 @@ slider();sHomeProduct();sHomeNews();searchBox();stick();sProduct();sNew();$('.la
 // $('.lazy').lazy();
 // sliderPartner();
 // sliderEvent();
-$(window).on('debouncedresize',function(event){})}$(window).resize(function(){sProduct();fixHeight()});// $('body').imagesLoaded( function() {
+$(window).on('debouncedresize',function(event){})}$(window).resize(function(){sProduct();fixHeight()});$(window).on('load ',function(){$.ajax({type:'get',url:'/assets/images/sprite.svg'}).done(function(data){var svg=$(data).find('svg');$('body').prepend(svg)})});// $('body').imagesLoaded( function() {
 //     init();
 //     $('body').addClass('loaded');
 //     $('.pageLoad').fadeOut();

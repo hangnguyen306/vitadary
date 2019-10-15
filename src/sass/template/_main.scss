@@ -22,7 +22,7 @@ a.btn,
     font-weight: bold;
     @include transition();
     border: none;
- 
+
     @media (max-width: 1024px) {
         padding: rem(15) rem(32);
         font-size: rem(15);
@@ -168,27 +168,40 @@ a.btn,
             transform: scale(0.6);
             margin-top: rem(-18);
         }
-        
+
     }
-    
+
 
 }
-.slick-arrow{
-    &.icon-arr.icon-arr-3{
+
+.slick-arrow {
+    &.icon-arr.icon-arr-3 {
         opacity: 1;
         @include transition();
+
         &.icon-left {
             left: -40px;
+
+            @media (max-width: 991.99px) {
+                left: -5px;
+            }
         }
+
         &.icon-arr.icon-right {
             right: -40px;
-            transform: scale(0.6) rotate(180deg)
+            transform: scale(0.6) rotate(180deg);
+
+            @media (max-width: 991.99px) {
+                right: -5px;
+            }
         }
-        &:hover{
+
+        &:hover {
             opacity: 0.6;
         }
     }
 }
+
 .icon-arr-2 {
     display: inline-block;
     width: rem(32);
@@ -234,17 +247,22 @@ a.btn,
             &.icon-left {
                 left: -5px;
             }
+
             &.icon-right {
                 right: -5px;
             }
-         }
+        }
     }
 }
 
 .page-header {
     letter-spacing: -0.5px;
     margin: 0 0 20px 0;
-    @media (max-width: 1366px) { margin: 0 0 10px 0;}
+
+    @media (max-width: 1366px) {
+        margin: 0 0 10px 0;
+    }
+
     @media (max-width: 767.99px) {
         margin: 0 0 5px 0;
     }
@@ -261,10 +279,12 @@ a.btn,
             repeat: no-repeat;
             position: center center;
         }
+
         @media (max-width: 1366px) {
             width: rem(35);
             height: rem(35);
         }
+
         @media (max-width: 767.99px) {
             width: 30px;
             height: 30px;
@@ -282,9 +302,11 @@ a.btn,
         font-size: rem(32);
         font-weight: bold;
         margin: 0;
+
         @media (max-width: 1366px) {
-            font-size: rem(26);   
+            font-size: rem(26);
         }
+
         @media (max-width: 768px) {
             font-size: rem(20);
         }
@@ -295,9 +317,11 @@ a.btn,
         font-size: rem(40);
         font-weight: bold;
         margin: 0;
+
         @media (max-width: 1366px) {
-            font-size: rem(28);   
+            font-size: rem(28);
         }
+
         @media (max-width: 768px) {
             font-size: rem(22);
             margin: 7px 0px;
@@ -313,29 +337,52 @@ a.btn,
         text-overflow: ellipsis;
         overflow: hidden;
     }
-    &-content{
+
+    &-content {
         padding: 0px 50px 50px 50px;
-        border:2px dotted #999A9D;
+        border: 2px dotted #999A9D;
         border-radius: 20px;
         margin-bottom: 40px;
-        
-        h2{
+
+        h2 {
             text-align: center;
-            span{
+
+            span {
                 font-size: rem(48);
                 font-weight: bold;
                 display: inline-block;
                 background: #fff;
                 padding: 0 30px;
-                color:$blue-main;
+                color: $blue-main;
                 transform: translateY(-50%);
             }
         }
-        .des{
+
+        .des {
             font-style: italic;
-            p{
+
+            p {
                 margin: 0;
                 font-style: italic;
+            }
+        }
+
+        @media (max-width: 991.99px) {
+            padding: 0px 20px 20px 20px;
+            margin-bottom: 10px;
+
+            h2 {
+                span {
+                    font-size: rem(30);
+                }
+            }
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                span {
+                    font-size: rem(24);
+                }
             }
         }
     }
@@ -346,12 +393,15 @@ a.btn,
         margin-top: rem(60);
     }
 }
-.sBannerChild{
+
+.sBannerChild {
     margin-bottom: rem(40);
-    img{
-      width: 100%;
+
+    img {
+        width: 100%;
     }
-  }
+}
+
 .sNavLink {
     display: flex;
     flex-wrap: wrap;
@@ -502,7 +552,7 @@ a.btn,
 
 //no stick
 
-.noStick{
+.noStick {
     header.header.sticky {
         position: relative;
     }

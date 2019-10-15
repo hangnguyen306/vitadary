@@ -203,7 +203,12 @@ header.header {
                 @media (min-width: 768.99px) {
                     @include transition();
                 }
-
+                @media (max-width:1280px) {
+                    width: 260px;
+                    li li a{
+                        font-size:rem(14);
+                    }
+                }
                 &:before {
                     content: '';
                     position: absolute;

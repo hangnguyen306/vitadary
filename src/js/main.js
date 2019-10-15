@@ -70,6 +70,7 @@ function fixHeight(){
         $('.fixHeight.sMain-4').css({'minHeight': hW - 60});
         $('.fixHeight.sMain-5').css({'minHeight': hW - 60});
         $('.fixHeight.sMain-6').css({'minHeight': hW -60});
+        $('.fixHeight.sLandingNewItem .bgImg').css({'minHeight': hW -70});
 }
 function gotoTop() {
     var topTop = $('.toTop');
@@ -420,7 +421,11 @@ function stick(){
 		} else {
 			sticky.addClass('sticky');
 		}
-	});
+    });
+    $("#stickMenu").sticky({
+        topSpacing: 0,
+        zIndex: 9999
+    });
 
 }
 function waypointEl() {

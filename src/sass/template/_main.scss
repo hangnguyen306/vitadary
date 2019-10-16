@@ -551,9 +551,10 @@ a.btn,
 
 
 //no stick
-
-.noStick {
-    header.header.sticky {
-        position: relative;
+@media (min-width: 991.99px) {
+    .noStick {
+        header.header.sticky {
+            position: relative;
+        }
     }
 }

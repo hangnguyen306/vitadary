@@ -134,7 +134,11 @@ header.header {
                 padding-right: 0.4rem;
                 position: relative;
                 padding-bottom: rem(20);
-
+                &.active{
+                    a{ 
+                        color: $blue-main-light;
+                    }
+                }
                 &:first-child {
                     a {
                         background-position: left center;

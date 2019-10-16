@@ -3,7 +3,7 @@ extends layouts/_layout_default
 block setting
     - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
     - mainActive = "bi-quyet"
-    -var bodyClass = 'noStick';
+    - bodyClass = 'noStick';
 
 block content
     .sMainChild.sNew
@@ -11,7 +11,7 @@ block content
         img(src= imgPath + 'biquyetmekhoe/banner.jpg' alt="")
       .container
         +breadcrumb([{'title':' Bí quyết mẹ khoẻ'}])
-        .sMainContent
+        .sMainContent.sMainContent-other
           +headerlanding('Bí quyết mẹ khoẻ ','Mẹ đã sẵn sàng cho hành trình chờ đón thiên thần của mình chưa? Có quá nhiều thứ cần phải chuẩn bị cho sự hiện diện của bé con. Nếu đây là lần đầu lên kế hoạch sinh con, mẹ sẽ gặp chút bối rối, nhưng đừng lo, các chuyên gia VitaDairy cùng những thông tin hữu ích và khoa học, sẽ luôn đồng hành cùng mẹ trong các giai đoạn mẹ nhé!')
           .sLink#stickMenu
             ul

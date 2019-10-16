@@ -108,12 +108,19 @@ function gotoTop() {
 };
 function scrollClick() {
     //active menu + scroll
-    var menuItems = $('.sLink a'), hHeader = $(".header").height() + 20, lastId, scrollItems = menuItems.map(function () {
+    var menuItems = $('.sLink a'), 
+    hHeader = $(".sLink").height(), 
+    lastId, scrollItems = menuItems.map(function () {
         var item = $($(this).attr('href'));
         if (item.length) {
             return item
         }
     });
+    if (window.innerWidth <= 767) {
+       var hHeader = 48;
+    } else {
+        var hHeader = 65;
+    }
 
 
     menuItems.click(function (e) {
@@ -127,7 +134,7 @@ function scrollClick() {
     });
 
     $(window).scroll(function () {
-        var fromTop = $(this).scrollTop() + hHeader + 20;
+        var fromTop = $(this).scrollTop() + hHeader;
         var cur = scrollItems.map(function () {
             if ($(this).offset().top < fromTop)
                 return this
@@ -400,14 +407,7 @@ function sNew() {
         focusOnSelect: true,
         responsive: [
             {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                }
-            },
-            {
-                breakpoint: 600,
+                breakpoint: 800,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2
@@ -534,7 +534,7 @@ $(window).resize(function () {
 $(window).on('load ', function () {
     $.ajax({
         type: 'get',
-        url: '/assets/images/sprite.svg'
+        url: './assets/images/sprite.svg'
     }).done(function (data) {
         var svg = $(data).find('svg');
         $('body').prepend(svg);

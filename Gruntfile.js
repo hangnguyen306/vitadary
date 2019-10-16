@@ -12,7 +12,7 @@ module.exports = grunt => {
         files: [{
           src: '**/[^_]*.pug',
           cwd: 'src/pug/',
-          dest: 'dist',
+          dest: 'dist/html/vitadairy',
           expand: true,
           ext: '.html'
         }]
@@ -29,7 +29,7 @@ module.exports = grunt => {
         files: [{
           src: '[^_]*.scss',
           cwd: 'src/sass/',
-          dest: 'dist/assets/css',
+          dest: 'dist/html/vitadairy/assets/css',
           expand: true,
           ext: '.css'
         }]
@@ -44,7 +44,7 @@ module.exports = grunt => {
           expand: true,
           cwd: 'src/private',
           src: ['**'],
-          dest: 'dist/assets'
+          dest: 'dist/html/vitadairy/assets'
         },
         {
           expand: true,
@@ -62,7 +62,7 @@ module.exports = grunt => {
               expand: true,
               cwd: 'src/',
               src: ['images/**/*.{png,jpg,gif,svg}'],
-              dest: 'dist'
+              dest: 'dist/html/vitadairy'
           }]
       }
     },
@@ -116,7 +116,7 @@ module.exports = grunt => {
           'src/js/library/owl.carousel.min.js', 
           'src/js/library/bootstrap-select.min.js',        // v4.0.1
         ],
-        dest: 'dist/assets/js/library.js',
+        dest: 'dist/html/vitadairy/assets/js/library.js',
       },
     },
 
@@ -125,12 +125,12 @@ module.exports = grunt => {
       dev: {
         bsFiles: {
             src : [
-                'dist/**.*'
+                'dist/html/vitadairy/**.*'
             ]
         },
         options: {
             watchTask: true,
-            server: './dist'
+            server: './dist/'
         }
       }
     },
@@ -183,7 +183,7 @@ module.exports = grunt => {
       },
       dist: {
         files: {
-          'dist/assets/js/main.js': 'src/js/main.js'
+          'dist/html/vitadairy/assets/js/main.js': 'src/js/main.js'
         }
       }
     }

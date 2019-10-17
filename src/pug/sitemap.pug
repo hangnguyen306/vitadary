@@ -1,0 +1,86 @@
+extends layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = ""
+
+block content
+    .sMainChild.sSitemapPage.sMainChild-other
+      .container
+        +breadcrumb([{'title':'Sơ đồ website'}])
+        .sSitemap
+            h3 Sơ đồ website
+            .row
+                .col-sm-4
+                    ul
+                        li: a(href="#") Trang chủ
+                        li
+                            a(href="#") VitaDairy
+                            ul
+                                li: a(href="#") Câu chuyện
+                                li: a(href="#") Cam kết chát lượng
+                                li: a(href="#") Phát triển bền vững
+                        li: a(href="#") Mua hàng
+                        li
+                            a(href="#") Đối tác / Hệ thống phân phối
+                            ul
+                                li: a(href="#") Đối tác
+                                li: a(href="#") Hệ thống phân phối
+                        li: a(href="#") Tuyển dụng
+                            ul
+                                li: a(href="#") Môi trường làm việc
+                                li: a(href="#") Cơ hội nghề nghiệp
+                        li: a(href="#") Liên hệ
+                .col-sm-4
+                    ul
+                        li
+                            a(href="#") Bí quyết mẹ khoẻ
+                            ul 
+                                li: a(href="#") Dự định mang thai
+                                li: a(href="#") Mang thai
+                                li: a(href="#") Dự sinh
+                                li: a(href="#") Sau khi sinh
+
+                        li
+                            a(href="#") Nuôi dưỡng bé yêu
+                            ul 
+                                li: a(href="#") Miễn dịch khoẻ
+                                li: a(href="#") Tiêu hoá tốt
+                                li: a(href="#") Phát triển thể chất
+                                li: a(href="#") Phát triển trí não
+                                li: a(href="#") Dị ứng đạm sữa bò
+                                li: a(href="#") Nhật ký làm mẹ
+
+                        li
+                            a(href="#") Chăm sóc người lớn tuổi
+                            ul
+                                li: a(href="#") Sống khoẻ mỗi ngày
+                                li: a(href="#") Sức khoẻ tim mạch
+                                li: a(href="#") Chăm sóc người bệnh tiểu đường
+                                li: a(href="#") Dinh dưỡng cho người bệnh thận
+                                li: a(href="#") Chăm sóc người bệnh gan
+                .col-sm-4
+                    ul
+                        li
+                            a(href="#") Tư vấn dinh dưỡng
+                            ul
+                                li: a(href="#") Đội ngũ chuyên gia
+                                li: a(href="#") Chia sẻ cùng chuyên gia
+                                li: a(href="#") Những câu hỏi thường gặp
+                                li: a(href="#") Đặt câu hỏi cho chuyên gia
+                        li
+                            a(href="#") Sản phẩm
+                            ul
+                                li: a(href="#") Tất cả sản phẩm
+                                li: a(href="#") Sản phẩm cho bé
+                                li: a(href="#") Sản phẩm cho mẹ
+                                li: a(href="#") Sản phẩm cho người lớn tuổi
+                        li
+                            a(href="#") Truyền thông
+                            ul 
+                                li: a(href="#") Tin tức - Sự kiện
+                                li: a(href="#") Thông tin khuyến mãi
+                                li: a(href="#") Chiến dịch quảng cáo
+                                li: a(href="#") Vì con mẹ tặng
+                        li: a(href="#") Điều khoản sử dụng
+                        li: a(href="#") Chính sách bảo mật

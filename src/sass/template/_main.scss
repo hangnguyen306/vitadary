@@ -392,6 +392,9 @@ a.btn,
     .sMainContent {
         margin-top: rem(60);
     }
+    &.sMainChild-other{
+        padding-top:rem(20);
+    }
 }
 
 .sBannerChild {

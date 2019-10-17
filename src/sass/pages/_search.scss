@@ -1,0 +1,48 @@
+.sSearchPage{
+    .txt-search {
+        font-size: rem(20);
+        font-weight: bold;
+    }
+    .form-style {
+        margin-top: rem(30);
+        margin-bottom: rem(40);
+        >div{
+            position: relative;
+            .form-control{
+                @include transition();
+                &:focus{
+                    background: #3EB7E4;
+                    color: white;
+                }
+            }
+            .btn-search-button {
+                position: absolute;
+                top: 7px;
+                right: 6px;
+                bottom: 0;
+                width: 40px;
+                height: 40px;
+                background: none;
+                border: none;
+                outline: none;
+                z-index: 9;
+                cursor: pointer;
+                @include transition();
+                opacity: 1;
+                i{
+                    width: 20px;
+                    height: 20px;
+                    background-size: contain;
+                    display: block;
+                    background-repeat: no-repeat;
+                }
+                &:hover{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+    .sListNews2Col{
+        margin-top:rem(50);
+    }
+}

@@ -73,20 +73,21 @@ mixin bgImgLink(image,className,url)
 		a(style="background-image:url('" + image + "')" href=url)
 			img(src=image alt="")
 
-//item
+//item like search page
 mixin itemEvent2(image,className,url,title)
 	.row.item
-		.col-sm-5
+		.col-sm-6.col-md-4
 			div(class=className)
 				a(style="background-image:url('" + image + "')" href=url)
 					img(src=image alt="")
-		.col-sm-7
+		.col-sm-6.col-md-8
 			.info
+				.date 21/09/2019
 				h4
 					a(href=url)
 						= title
 				.des
-					p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+					p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet
 
 //item new big
 mixin itemBigEvent(image,className,url,title)

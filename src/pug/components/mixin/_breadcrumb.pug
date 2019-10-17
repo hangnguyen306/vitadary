@@ -16,7 +16,7 @@ mixin breadcrumb(data,home,_class)
                 li.breadcrumb-item.active(aria-current="page")= home
             else
                 li.breadcrumb-item
-                    a(href="/", title=home)= home
+                    a(href=url, title=home)= home
                 each item, index in data
                     if(index < data.length - 1)
                         li.breadcrumb-item

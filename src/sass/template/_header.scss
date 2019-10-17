@@ -163,7 +163,7 @@ header.header {
                 a {
                     color: $blue-main;
                     letter-spacing: -.3px;
-                    font-weight: bold;
+                    font-weight: 600;
                     font-size: rem(15.5);
                     @include transition();
 

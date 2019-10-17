@@ -9,42 +9,45 @@ block content
     .sMainChild.sNew
       .sBannerChild
         img(src= imgPath + 'biquyetmekhoe/banner.jpg' alt="")
-      .container
-        +breadcrumb([{'title':' Bí quyết mẹ khoẻ'}])
-        .sMainContent.sMainContent-other
-          +headerlanding('Bí quyết mẹ khoẻ ','Mẹ đã sẵn sàng cho hành trình chờ đón thiên thần của mình chưa? Có quá nhiều thứ cần phải chuẩn bị cho sự hiện diện của bé con. Nếu đây là lần đầu lên kế hoạch sinh con, mẹ sẽ gặp chút bối rối, nhưng đừng lo, các chuyên gia VitaDairy cùng những thông tin hữu ích và khoa học, sẽ luôn đồng hành cùng mẹ trong các giai đoạn mẹ nhé!')
-          .sLink#stickMenu
-            ul
-              li: a(href="#itemNews1")
-                span.icon-link
-                  <svg viewBox="0 0 40 40" class="icon-shape">
-                    <use xlink:href="#mom1"></use>
-                  </svg>
-                span.icon-text Dự định <br>mang thai
-              li: a(href="#itemNews2")
-                span.icon-link
-                  <svg viewBox="0 0 29 50" class="icon-shape">
-                    <use xlink:href="#mom2"></use>
-                  </svg>
-                span.icon-text Mang thai
-              li: a(href="#itemNews3")
-                span.icon-link
-                  <svg viewBox="0 0 40 40" class="icon-shape">
-                    <use xlink:href="#mom3"></use>
-                  </svg>
-                span.icon-text Dự sinh
-              li: a(href="#itemNews4")
-                span.icon-link
-                  <svg viewBox="0 0 40 40" class="icon-shape">
-                    <use xlink:href="#mom4"></use>
-                  </svg>
-                span.icon-text Sau sinh và <br>chăm sóc bé yêu
+      .fixHeight
+        .sIntroheader
+          .container
+            +breadcrumb([{'title':' Bí quyết mẹ khoẻ'}])
+          .container
+            .sMainContent.sMainContent-other
+            +headerlanding('Bí quyết mẹ khoẻ ','Mẹ đã sẵn sàng cho hành trình chờ đón thiên thần của mình chưa? Có quá nhiều thứ cần phải chuẩn bị cho sự hiện diện của bé con. Nếu đây là lần đầu lên kế hoạch sinh con, mẹ sẽ gặp chút bối rối, nhưng đừng lo, các chuyên gia VitaDairy cùng những thông tin hữu ích và khoa học, sẽ luôn đồng hành cùng mẹ trong các giai đoạn mẹ nhé!')
+            .sLink#stickMenu
+              ul
+                li: a(href="#itemNews1")
+                  span.icon-link
+                    <svg viewBox="0 0 40 40" class="icon-shape">
+                      <use xlink:href="#mom1"></use>
+                    </svg>
+                  span.icon-text Dự định <br>mang thai
+                li: a(href="#itemNews2")
+                  span.icon-link
+                    <svg viewBox="0 0 29 50" class="icon-shape">
+                      <use xlink:href="#mom2"></use>
+                    </svg>
+                  span.icon-text Mang thai
+                li: a(href="#itemNews3")
+                  span.icon-link
+                    <svg viewBox="0 0 40 40" class="icon-shape">
+                      <use xlink:href="#mom3"></use>
+                    </svg>
+                  span.icon-text Dự sinh
+                li: a(href="#itemNews4")
+                  span.icon-link
+                    <svg viewBox="0 0 40 40" class="icon-shape">
+                      <use xlink:href="#mom4"></use>
+                    </svg>
+                  span.icon-text Sau sinh và <br>chăm sóc bé yêu
       .sLandingNew
         .sLandingNewItem.bg-right.listColNew.fixHeight#itemNews1
           +itemLanding('#',imgPath + 'biquyetmekhoe/bg-1.jpg',imgPath + 'biquyetmekhoe/bg-1-sp.jpg','Dự định','Mang thai','icon-mom-1','Lên kế hoạch mang thai an toàn, khoẻ mạnh là việc làm cần thiết để con sinh ra được phát triển toàn diện. Tuy nhiên không phải gia đình nào cũng có thể chuẩn bị tốt ở giai đoạn này, ba mẹ cần rất nhiều “hành trang” từ vật chất đến tinh thần. Ngay bây giờ, mẹ hãy trang bị cho mình thật nhiều kiến thức hữu ích cho kế hoạch đón thành viên mới của gia đình mình nhé!',biquyetmekhoe1)
         .sLandingNewItem.bg-left.listColNew.fixHeight#itemNews2
-          +itemLanding('#',imgPath + 'biquyetmekhoe/bg-2.jpg',imgPath + 'biquyetmekhoe/bg-2-sp.jpg','Mang thai','','icon-mom-2','Chúc mừng mẹ đã hoàn thành tốt nhiệm vụ “thăng chức” cho các thành viên trong gia đình. Hành trình mang thai của mẹ sẽ bắt đầu bằng những cột mốc phát triển của con trong suốt 40 tuần thai, trong giai đoạn này cơ thể mẹ thường trải qua rất nhiều thay đổi cả thể chất và tinh thần. Tuy nhiên, dù có khó khăn đến đâu, trở thành mẹ vẫn là một hành trình vô cùng tuyệt vời. Để chuẩn bị thật tốt cho thai kỳ của mình, mẹ hãy tìm hiểu những kiến thức và thông tin hữu ích từ các chuyên gia VitaDairy, mẹ nhé!',biquyetmekhoe2)
+          +itemLanding('#',imgPath + 'biquyetmekhoe/bg-2.jpg',imgPath + 'biquyetmekhoe/bg-2-sp.jpg','Mang thai','','icon-mom-2','Hành trình mang thai của mẹ sẽ bắt đầu bằng những cột mốc phát triển của con trong suốt 40 tuần thai, thời gian này cơ thể mẹ sẽ trải qua rất nhiều thay đổi về thể chất và tinh thần. Tuy nhiên, dù khó khăn đến đâu, làm mẹ vẫn là một hành trình vô cùng tuyệt vời. Hãy chuẩn bị tốt cho thai kỳ của mình bằng những kiến thức, thông tin hữu ích từ chuyên gia VitaDairy mẹ nhé!',biquyetmekhoe2)
         .sLandingNewItem.bg-right.listColNew.fixHeight#itemNews3
-          +itemLanding('#',imgPath + 'biquyetmekhoe/bg-3.jpg',imgPath + 'biquyetmekhoe/bg-3-sp.jpg','Dự sinh','','icon-mom-3','Ngày dự sinh đang đến gần rồi đó mẹ ơi! Chắc mẹ đang lo lắng và hồi hộp chờ đón bé con lắm! Trong giai đoạn này, các dấu hiệu chuyển dạ có thể xuất hiện sớm hơn dự kiến nên mẹ bầu cần chuẩn bị thật kỹ những vật dụng cần thiết cho mẹ và bé nhé! Mẹ có thể kiểm tra lần nữa danh sách đồ dùng sơ sinh cho bé, các giấy tờ cần thiết cho mẹ khi nhập viện, và một số kỹ năng qua các bài tập để giúp mẹ hoàn thành chuyến “vượt cạn” nhẹ nhàng hơn. Đừng quên duy trì bổ sung dinh dưỡng cho thai kỳ và chuẩn bị một tinh thần thật tốt mẹ nhé!',biquyetmekhoe3)
+          +itemLanding('#',imgPath + 'biquyetmekhoe/bg-3.jpg',imgPath + 'biquyetmekhoe/bg-3-sp.jpg','Dự sinh','','icon-mom-3','Ngày dự sinh đang đến gần rồi đó mẹ ơi! Trong giai đoạn này, các dấu hiệu chuyển dạ có thể xuất hiện sớm hơn dự kiến nên mẹ bầu cần chuẩn bị kỹ những vật dụng cần thiết cho mẹ và bé nhé! Mẹ hãy kiểm tra lần nữa danh sách đồ dùng sơ sinh cho bé, các giấy tờ cần thiết cho mẹ khi nhập viện, và một số kỹ năng qua các bài tập để giúp mẹ hoàn thành chuyến “vượt cạn” nhẹ nhàng hơn!',biquyetmekhoe3)
         .sLandingNewItem.bg-left.listColNew.fixHeight#itemNews4
-          +itemLanding('#',imgPath + 'biquyetmekhoe/bg-4.jpg',imgPath + 'biquyetmekhoe/bg-4-sp.jpg','Sau sinh','Và chăm sóc bé yêu','icon-mom-4','Chào mừng bé yêu đến với thế giới và bắt đầu cùng mẹ trải qua một giai đoạn mới trong hành trình làm mẹ. Điều tuyệt vời này sẽ làm cuộc sống của mẹ ý nghĩa hơn, tuy nhiên, việc chăm sóc bé cưng sẽ chiếm phần lớn thời gian sắp tới của mẹ, mẹ cần phải chuẩn bị nhiều kiến thức để chăm sóc và nuôi dạy bé qua các giai đoạn phát triển quan trọng. Nhưng mẹ đừng lo lắng, các chuyên gia VitaDairy sẽ luôn đồng hành cùng mẹ san sẻ mọi thắc mắc về chăm sóc dinh dưỡng và sức khoẻ cho con yêu!',biquyetmekhoe4)
+          +itemLanding('#',imgPath + 'biquyetmekhoe/bg-4.jpg',imgPath + 'biquyetmekhoe/bg-4-sp.jpg','Sau sinh','Và chăm sóc bé yêu','icon-mom-4','Chào mừng con yêu đến với thế giới!! Điều tuyệt vời này sẽ làm cho cuộc sống của mẹ ý nghĩa hơn, tuy nhiên, việc chăm sóc bé cưng sẽ chiếm phần lớn thời gian sắp tới của mẹ, mẹ cần phải chuẩn bị nhiều kiến thức để chăm sóc và nuôi dạy bé đúng cách qua các giai đoạn phát triển quan trọng. Cùng tìm hiểu các thông tin hữu ích từ chuyên gia VitaDairy chia sẻ mẹ nhé!',biquyetmekhoe4) 

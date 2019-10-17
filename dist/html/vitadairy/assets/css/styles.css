@@ -14264,7 +14264,7 @@ header.header {
         header.header .navRight > ul > li a {
           color: #0054A5;
           letter-spacing: -.3px;
-          font-weight: bold;
+          font-weight: 600;
           font-size: 0.96875rem;
           transition: all 0.2s ease-in-out; }
           @media screen and (prefers-reduced-motion: reduce) {
@@ -16730,6 +16730,10 @@ a.btn,
     .sMainContent-other {
       margin-bottom: 30px; } }
 
+.fixHeight .sIntroheader {
+  display: flex;
+  flex-wrap: wrap; }
+
 .icon-mom-1 {
   background-image: url("../images/icons/icon-mom-1.svg");
   background-size: contain;
@@ -16842,22 +16846,11 @@ a.btn,
               color: #0054A5;
               transform: scale(0.8); } }
         @media (max-width: 991.99px) {
-          .sLink ul li a span.icon-link {
-            width: 45px;
-            height: 45px; }
-            .sLink ul li a span.icon-link svg {
-              width: 28px;
-              height: 28px; }
           .sLink ul li a span.icon-text {
-            font-size: 0.75rem;
-            margin-top: 0; } }
-        @media (max-width: 767.99px) {
-          .sLink ul li a span.icon-link {
-            width: 35px;
-            height: 35px; }
-            .sLink ul li a span.icon-link svg {
-              width: 20px;
-              height: 20px; } }
+            margin-top: 10px;
+            font-size: 0.875rem; }
+            .sLink ul li a span.icon-text br {
+              display: none; } }
       .sLink ul li.active a {
         color: #0054A5; }
         .sLink ul li.active a svg {
@@ -16870,23 +16863,13 @@ a.btn,
       .sLink ul li:nth-child(1) {
         left: 0;
         top: 10%; }
-        @media (max-width: 768px) {
-          .sLink ul li:nth-child(1) {
-            top: 25%; } }
       .sLink ul li:nth-child(2) {
         left: 33.33%;
         top: 30%; }
-        @media (max-width: 768px) {
-          .sLink ul li:nth-child(2) {
-            left: 28.33%;
-            top: 38%; } }
       .sLink ul li:nth-child(3) {
         right: 33.33%;
         left: inherit;
         top: 11%; }
-        @media (max-width: 768px) {
-          .sLink ul li:nth-child(3) {
-            top: 28%; } }
       .sLink ul li:last-child {
         right: 0;
         top: 31%;
@@ -16894,6 +16877,20 @@ a.btn,
         @media (max-width: 768px) {
           .sLink ul li:last-child {
             top: 40%; } }
+  @media (max-width: 991.99px) {
+    .sLink:before {
+      display: none; }
+    .sLink ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px; }
+      .sLink ul li {
+        position: static;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-top: 20px; }
+        .sLink ul li a {
+          position: static; } }
 
 @media (min-width: 991.99px) {
   .is-sticky .sLink {
@@ -17022,18 +17019,24 @@ a.btn,
     overflow: hidden; }
     .listColNew .itemEventWrap .image {
       max-width: 150px;
-      flex: 0 0 150px; }
+      flex: 0 0 150px;
+      overflow: hidden; }
       .listColNew .itemEventWrap .image > a {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        display: block; }
+        display: block;
+        transform: scale(1);
+        transition: all 0.2s ease-in-out; }
         .listColNew .itemEventWrap .image > a:after {
           content: "";
           padding-top: 100%;
           display: block; }
         .listColNew .itemEventWrap .image > a img {
           display: none; }
+        @media screen and (prefers-reduced-motion: reduce) {
+          .listColNew .itemEventWrap .image > a {
+            transition: none; } }
     .listColNew .itemEventWrap .info {
       padding: 15px 20px 10px 20px; }
       .listColNew .itemEventWrap .info .date {
@@ -17063,9 +17066,6 @@ a.btn,
         @media screen and (prefers-reduced-motion: reduce) {
           .listColNew .itemEventWrap .info h4 a {
             transition: none; } }
-        .listColNew .itemEventWrap .info h4 a:hover {
-          color: #3EB7E4;
-          text-decoration: none; }
       .listColNew .itemEventWrap .info .des-content {
         font-size: 0.75rem;
         line-height: 1.6666666667;
@@ -17076,5 +17076,11 @@ a.btn,
         -webkit-box-orient: vertical;
         text-overflow: ellipsis;
         overflow: hidden; }
+    @media (min-width: 768px) {
+      .listColNew .itemEventWrap:hover .image > a {
+        transform: scale(1.1); }
+      .listColNew .itemEventWrap:hover .info a {
+        color: #3EB7E4;
+        text-decoration: none; } }
 
 /*# sourceMappingURL=styles.css.map */

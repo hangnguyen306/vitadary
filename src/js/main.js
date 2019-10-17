@@ -71,6 +71,7 @@ function fixHeight() {
     $('.fixHeight.sMain-5').css({ 'minHeight': hW - 60 });
     $('.fixHeight.sMain-6').css({ 'minHeight': hW - 60 });
 
+    $('.fixHeight .sIntroheader').css({ 'minHeight': hW});
     $('.fixHeight.sLandingNewItem .bgImg.bgImgpc').css({ 'minHeight': hW - 70 });
     $('.fixHeight.sLandingNewItem .bgImgsp .container').css({ 'minHeight': hW - 50 });
 }
@@ -145,7 +146,6 @@ function scrollClick() {
             lastId = id;
             menuItems.parent().removeClass('active').end().filter('[href=\'#' + id + '\']').parent().addClass('active')
         }
-        console.log(lastId)
     });
 
 

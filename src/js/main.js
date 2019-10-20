@@ -534,7 +534,7 @@ $(window).resize(function () {
 $(window).on('load ', function () {
     $.ajax({
         type: 'get',
-        url: './assets/images/sprite.svg'
+        url: '/html/vitadairy/assets/images/sprite.svg'
     }).done(function (data) {
         var svg = $(data).find('svg');
         $('body').prepend(svg);

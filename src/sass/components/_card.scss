@@ -8,9 +8,8 @@
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: $card-bg;
   background-clip: border-box;
-  border: $card-border-width solid $card-border-color;
+  margin-bottom:rem(20);
   @include border-radius($card-border-radius);
 
   > hr {
@@ -35,7 +34,9 @@
   // Enable `flex-grow: 1` for decks and groups so that card blocks take up
   // as much space as possible, ensuring footers are aligned to the bottom.
   flex: 1 1 auto;
-  padding: $card-spacer-x;
+  font-size: rem(13);
+  padding-top:rem(20);
+  padding-bottom: rem(20);
 }
 
 .card-title {
@@ -54,6 +55,7 @@
 .card-link {
   @include hover {
     text-decoration: none;
+    background:rgba( $blue-main-light,0.1);
   }
 
   + .card-link {
@@ -66,20 +68,58 @@
 //
 
 .card-header {
-  padding: $card-spacer-y $card-spacer-x;
-  margin-bottom: 0; // Removes the default margin-bottom of <hN>
-  background-color: $card-cap-bg;
-  border-bottom: $card-border-width solid $card-border-color;
-
-  &:first-child {
-    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+  button.btn.btn-link{
+    font-size:rem(13);
+    font-weight: normal;
+    font-size: 13px;
+    white-space: normal;
+    text-align: left;
+    padding: 20px;
+    position: relative;
+    padding-left:rem(104);
+    color:$body-color;
+    background-color: #fff;
+    border: 2px dotted #CCCED0;
+    border-radius: 20px;
+    width: 100%;
+    text-decoration: none!important;
+    &:after{
+      display: none;
+    }
+    >span{
+      font-size: rem(20);
+      font-weight: bold;
+      color:$body-color;
+      font-size: 1.25rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-right: 2px dotted #CCCED0;
+    }
+    &:not(.collapsed){
+      background: rgba(#ECEFF1,0.2);
+      >span{
+        color:$blue-main-light;
+      }
+    }
+    @include hover {
+      text-decoration: none;
+      background:rgba( $blue-main-light,0.1);
+    }
   }
-
+  &:first-child {
+  }
   + .list-group {
     .list-group-item:first-child {
       border-top: 0;
     }
   }
+ 
 }
 
 .card-footer {
@@ -284,7 +324,6 @@
 
   .card:not(:first-of-type) {
     .card-header:first-child {
-      border-radius: 0;
     }
   }
 

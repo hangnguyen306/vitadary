@@ -17,7 +17,7 @@ var wind=$(window);var sticky=$('.header');wind.on('scroll',function(){var scrol
 ui();// Image SVG
 imgSVG();// Go to top
 gotoTop();//waypointEl();
-slider();sHomeProduct();sHomeNews();searchBox();stick();sProduct();sNew();$('.lazy').lazy();fixHeight();sAboutStory();sPartner();scrollClick();function sPartner(){$('.sSlideLogo').owlCarousel({margin:0,nav:true,loop:true,dots:false,center:true,items:3,navText:['<a href=\'#\' class=\'icon-arr-2 icon-arr-small icon-left\'></a>','<a href=\'#\' class=\'icon-arr-2 icon-arr-small icon-right\'></a>'],responsive:{768:{items:3}}})}function init(){$(window).on('debouncedresize',function(event){})}$(window).resize(function(){sProduct();fixHeight()});$(window).on('load ',function(){$.ajax({type:'get',url:'./assets/images/sprite.svg'}).done(function(data){var svg=$(data).find('svg');$('body').prepend(svg)})});// $('body').imagesLoaded( function() {
+slider();sHomeProduct();sHomeNews();searchBox();stick();sProduct();sNew();$('.lazy').lazy();fixHeight();sAboutStory();sPartner();scrollClick();function sPartner(){$('.sSlideLogo').owlCarousel({margin:0,nav:true,loop:true,dots:false,center:true,items:3,navText:['<a href=\'#\' class=\'icon-arr-2 icon-arr-small icon-left\'></a>','<a href=\'#\' class=\'icon-arr-2 icon-arr-small icon-right\'></a>'],responsive:{768:{items:3}}})}function init(){$(window).on('debouncedresize',function(event){})}$(window).resize(function(){sProduct();fixHeight()});$(window).on('load ',function(){$.ajax({type:'get',url:'/html/vitadairy/assets/images/sprite.svg'}).done(function(data){var svg=$(data).find('svg');$('body').prepend(svg)})});// $('body').imagesLoaded( function() {
 //     init();
 //     $('body').addClass('loaded');
 //     $('.pageLoad').fadeOut();

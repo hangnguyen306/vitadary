@@ -10,6 +10,7 @@
             position: relative;
             .form-control{
                 @include transition();
+                padding-left: rem(30);
                 &:focus{
                     background: #3EB7E4;
                     color: white;
@@ -44,5 +45,60 @@
     }
     .sListNews2Col{
         margin-top:rem(50);
+    }
+}
+
+.sPolicyPage{
+
+}
+.sOtherLink{
+    &Item{
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        & + .sOtherLinkItem{
+            margin-top:rem(20);
+        }
+        &:hover{
+            .image{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+        >a{
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+        }
+        .image{
+            img{
+                max-width: 100%;
+                border-radius: 20px;
+                transform: scale(1);
+                @include transition()
+            }
+        }
+        .info{
+            position: absolute;
+            top:50%;
+            left:0;
+            right:0;
+            bottom:0;
+            background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); 
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            display: flex;
+            padding: 20px;
+            align-items: flex-end;
+            h4{
+                color:#fff;
+                font-weight: bold;
+                font-size: rem(20);
+                margin: 0;;
+            }
+        }
     }
 }

@@ -26,3 +26,12 @@ block content
         .sListNews2Col
             - for (var x = 1; x < 6; x++)
                 +itemEvent2(imgPath + 'search/img_0'+ x +'.jpg','image','#','Vợ chồng cần chuẩn bị gì trước khi mang thai')
+        .sPaiging
+            +pagination([
+                {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                {text:'1',url:'#'},
+                {text:'2',url:'#'},
+                {text:'3',url:'#'},
+                {text:'...',url:'#'},
+                {text:'Cuối <i class="arrow_carrot-right"></i>',url:'#'}
+            ])

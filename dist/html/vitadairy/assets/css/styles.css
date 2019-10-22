@@ -11396,6 +11396,9 @@ input[type="button"].btn-block {
 
 .breadcrumb-item a {
   color: #333333; }
+  .breadcrumb-item a:hover {
+    text-decoration: none;
+    color: #3EB7E4; }
 
 .breadcrumb-item + .breadcrumb-item {
   padding-left: 0.5rem; }
@@ -14891,6 +14894,10 @@ a.btn,
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center; }
+    .page-header .icon-text svg {
+      width: 3.125rem;
+      height: 3.125rem;
+      fill: #3EB7E4; }
     @media (max-width: 1366px) {
       .page-header .icon-text {
         width: 2.1875rem;
@@ -15099,6 +15106,36 @@ a.btn,
 @media (min-width: 991.99px) {
   .noStick header.header.sticky {
     position: relative; } }
+
+.owl-theme .owl-stage-outer .owl-item {
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1); }
+  .owl-theme .owl-stage-outer .owl-item .book-box {
+    transform: scale(1); }
+  .owl-theme .owl-stage-outer .owl-item:not(.center) {
+    transform: scale(0.7); }
+
+.owl-theme .owl-nav button {
+  background: none !important;
+  outline: none !important; }
+  .owl-theme .owl-nav button:focus {
+    outline: none !important; }
+
+.owl-theme .owl-nav .owl-prev,
+.owl-theme .owl-nav .owl-next {
+  transform: scale(0.8);
+  position: absolute;
+  top: 35%; }
+
+.owl-theme .owl-nav .owl-prev {
+  left: -1.25rem; }
+
+.owl-theme .owl-nav .owl-next {
+  right: -1.25rem; }
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  background: none !important; }
 
 .footer {
   padding: 3.75rem 0 0px 0;
@@ -16362,7 +16399,46 @@ a.btn,
         .fixHeight.sMain-3 .container .sHomeAdv .row .image {
           text-align: center; } }
 
-.sStory .des + [data-readmore-toggle], .sStory .des[data-readmore] {
+.sAboutChild .sticky-wrapper {
+  height: 150px !important; }
+  .sAboutChild .sticky-wrapper.is-sticky {
+    height: 63px !important; }
+
+.sMainContent-gray {
+  background: #F8F8F8;
+  margin-top: 3.75rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+
+.sMainContent-value {
+  padding: 5rem 0;
+  background-image: url("../images/bg-cau-chuyen-1.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover; }
+  .sMainContent-value .page-header .icon-text {
+    margin-right: 0; }
+
+.sMainContent-invest {
+  padding: 5rem 0;
+  background-image: url("../images/bg-cau-chuyen-2.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover; }
+  .sMainContent-invest .page-header .icon-text {
+    margin-right: 0; }
+
+.sMainContent-quanlity {
+  padding: 5rem 0;
+  background-image: url("../images/bg-cau-chuyen-3.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover; }
+  .sMainContent-quanlity .page-header .icon-text {
+    margin-right: 0; }
+
+.sStory .des + [data-readmore-toggle],
+.sStory .des[data-readmore] {
   display: block;
   width: 100%; }
 
@@ -16421,9 +16497,9 @@ a.btn,
   margin-top: 2.5rem; }
 
 .sStory {
-  max-width: 70%;
+  max-width: 1080px;
   position: relative;
-  margin-bottom: 6.25rem; }
+  margin-top: 3.125rem; }
   .sStory:before {
     content: '';
     top: 10px;
@@ -16549,33 +16625,106 @@ a.btn,
       padding-left: 3.75rem; }
       .sStory:before {
         left: 10px; }
-      .sStory .item, .sStory .item:nth-child(2n-1) {
+      .sStory .item,
+      .sStory .item:nth-child(2n-1) {
         display: block; }
-        .sStory .item > div, .sStory .item:nth-child(2n-1) > div {
+        .sStory .item > div,
+        .sStory .item:nth-child(2n-1) > div {
           max-width: 100%; }
-        .sStory .item .year, .sStory .item:nth-child(2n-1) .year {
+        .sStory .item .year,
+        .sStory .item:nth-child(2n-1) .year {
           text-align: left;
           position: relative;
           left: -37px;
           padding-left: 20px; }
-          .sStory .item .year span, .sStory .item:nth-child(2n-1) .year span {
+          .sStory .item .year span,
+          .sStory .item:nth-child(2n-1) .year span {
             padding-left: 20px;
             padding-top: 16px;
             text-align: left; }
-          .sStory .item .year:after, .sStory .item .year:before, .sStory .item:nth-child(2n-1) .year:after, .sStory .item:nth-child(2n-1) .year:before {
+          .sStory .item .year:after, .sStory .item .year:before,
+          .sStory .item:nth-child(2n-1) .year:after,
+          .sStory .item:nth-child(2n-1) .year:before {
             transform: scale(0.6);
             left: -10px;
             right: inherit; }
-          .sStory .item .year:before, .sStory .item:nth-child(2n-1) .year:before {
+          .sStory .item .year:before,
+          .sStory .item:nth-child(2n-1) .year:before {
             left: -19px;
             right: inherit; }
-        .sStory .item .content, .sStory .item:nth-child(2n-1) .content {
+        .sStory .item .content,
+        .sStory .item:nth-child(2n-1) .content {
           padding-left: 0;
           padding-right: 0;
           margin-top: 1.25rem; }
-          .sStory .item .content:before, .sStory .item:nth-child(2n-1) .content:before {
+          .sStory .item .content:before,
+          .sStory .item:nth-child(2n-1) .content:before {
             left: -47px;
             top: -28px; } }
+
+.sLink {
+  height: 60px; }
+  .sLink.sLinkLine:before {
+    background: url("../images/line2.svg") no-repeat;
+    background-size: contain;
+    top: 40px;
+    opacity: 0.5; }
+  .sLink.sLinkLine .navLink {
+    justify-content: space-between;
+    margin-bottom: 0; }
+    .sLink.sLinkLine .navLink:after {
+      display: none; }
+    .sLink.sLinkLine .navLink .flex-item {
+      position: static;
+      order: 0;
+      flex: 0 1 auto;
+      align-self: auto; }
+
+.sSlideValue .item {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  transition: all 0.2s ease-in-out; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .sSlideValue .item {
+      transition: none; } }
+  .sSlideValue .item .image {
+    box-shadow: 0 3px 40px rgba(131, 131, 131, 0.15);
+    border-radius: 10px;
+    overflow: hidden; }
+    .sSlideValue .item .image img {
+      max-width: 100%;
+      border-radius: 10px; }
+  .sSlideValue .item .info {
+    text-align: center;
+    margin-top: 20px; }
+    .sSlideValue .item .info h4 {
+      font-weight: bold;
+      color: #0054A5;
+      font-size: 1.25rem; }
+  .sSlideValue .item:not(.slick-current) {
+    transform: scale(0.8); }
+  .sSlideValue .item.slick-current {
+    transform: scale(1.1); }
+
+.sSlideValueContent {
+  box-shadow: 0 3px 40px rgba(131, 131, 131, 0.15);
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.875rem;
+  position: relative; }
+  .sSlideValueContent p {
+    margin: 0; }
+  .sSlideValueContent:before {
+    content: '';
+    position: absolute;
+    width: 3.4375rem;
+    height: 1.375rem;
+    top: -0.875rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='55' height='22' viewBox='0 0 55 22'%3E%3Cpath id='Polygon_1' data-name='Polygon 1' d='M24.377,2.5a5,5,0,0,1,6.247,0L43.87,13.1A5,5,0,0,1,40.746,22H14.254a5,5,0,0,1-3.123-8.9Z' fill='%23fff' opacity='0.99'/%3E%3C/svg%3E%0A"); }
 
 .sContact {
   padding-top: 0; }
@@ -16706,30 +16855,6 @@ a.btn,
         text-align: center;
         color: #0054A5;
         font-weight: bold; }
-  .sSlideLogo .owl-stage-outer .owl-item {
-    padding: 0;
-    transition: all 0.4s ease-in-out;
-    transform: scale(1); }
-    .sSlideLogo .owl-stage-outer .owl-item .book-box {
-      transform: scale(1); }
-    .sSlideLogo .owl-stage-outer .owl-item:not(.center) {
-      transform: scale(0.7); }
-  .sSlideLogo .owl-nav button {
-    background: none !important;
-    outline: none !important; }
-    .sSlideLogo .owl-nav button:focus {
-      outline: none !important; }
-  .sSlideLogo .owl-nav .owl-prev,
-  .sSlideLogo .owl-nav .owl-next {
-    transform: scale(0.8);
-    position: absolute;
-    top: 35%; }
-  .sSlideLogo .owl-nav .owl-prev {
-    left: -1.25rem; }
-  .sSlideLogo .owl-nav .owl-next {
-    right: -1.25rem; }
-  .sSlideLogo .owl-theme .owl-nav [class*=owl-]:hover {
-    background: none !important; }
 
 .sNew2Cold .item {
   padding: 50px 0 50px 0; }
@@ -16891,22 +17016,22 @@ a.btn,
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%; }
-  .sLink ul {
+  .sLink ul, .sLink .navLink {
     padding: 0;
     margin: 0 0 40px 0;
     list-style: none;
     position: relative;
     z-index: 2; }
-    .sLink ul:after {
+    .sLink ul:after, .sLink .navLink:after {
       content: "";
       display: block;
       padding-top: 13.1203814064%; }
       @media (max-width: 767.99px) {
-        .sLink ul:after {
+        .sLink ul:after, .sLink .navLink:after {
           padding-top: 30%; } }
-    .sLink ul li {
+    .sLink ul li, .sLink ul .flex-item, .sLink .navLink li, .sLink .navLink .flex-item {
       position: absolute; }
-      .sLink ul li a {
+      .sLink ul li a, .sLink ul .flex-item a, .sLink .navLink li a, .sLink .navLink .flex-item a {
         text-align: center;
         display: block;
         position: relative;
@@ -16914,17 +17039,17 @@ a.btn,
         transition: all 0.2s ease-in-out;
         transform: scale(1); }
         @media screen and (prefers-reduced-motion: reduce) {
-          .sLink ul li a {
+          .sLink ul li a, .sLink ul .flex-item a, .sLink .navLink li a, .sLink .navLink .flex-item a {
             transition: none; } }
-        .sLink ul li a svg {
+        .sLink ul li a svg, .sLink ul .flex-item a svg, .sLink .navLink li a svg, .sLink .navLink .flex-item a svg {
           fill: #333333;
           width: 40px;
           height: 40px;
           transition: all 0.2s ease-in-out; }
           @media screen and (prefers-reduced-motion: reduce) {
-            .sLink ul li a svg {
+            .sLink ul li a svg, .sLink ul .flex-item a svg, .sLink .navLink li a svg, .sLink .navLink .flex-item a svg {
               transition: none; } }
-        .sLink ul li a span.icon-link {
+        .sLink ul li a span.icon-link, .sLink ul .flex-item a span.icon-link, .sLink .navLink li a span.icon-link, .sLink .navLink .flex-item a span.icon-link {
           width: 5rem;
           height: 5rem;
           margin: 0 auto;
@@ -16939,9 +17064,9 @@ a.btn,
           box-shadow: 0 1px 20px rgba(131, 131, 131, 0);
           transition: all 0.2s ease-in-out; }
           @media screen and (prefers-reduced-motion: reduce) {
-            .sLink ul li a span.icon-link {
+            .sLink ul li a span.icon-link, .sLink ul .flex-item a span.icon-link, .sLink .navLink li a span.icon-link, .sLink .navLink .flex-item a span.icon-link {
               transition: none; } }
-        .sLink ul li a .icon-text {
+        .sLink ul li a .icon-text, .sLink ul .flex-item a .icon-text, .sLink .navLink li a .icon-text, .sLink .navLink .flex-item a .icon-text {
           font-size: 0.9375rem;
           color: #333333;
           font-weight: normal;
@@ -16950,66 +17075,66 @@ a.btn,
           display: block;
           transition: all 0.2s ease-in-out; }
           @media screen and (prefers-reduced-motion: reduce) {
-            .sLink ul li a .icon-text {
+            .sLink ul li a .icon-text, .sLink ul .flex-item a .icon-text, .sLink .navLink li a .icon-text, .sLink .navLink .flex-item a .icon-text {
               transition: none; } }
         @media (min-width: 991.99px) {
-          .sLink ul li a:hover {
+          .sLink ul li a:hover, .sLink ul .flex-item a:hover, .sLink .navLink li a:hover, .sLink .navLink .flex-item a:hover {
             text-decoration: none !important;
             transform: scale(1.2);
             color: #0054A5; }
-            .sLink ul li a:hover svg {
+            .sLink ul li a:hover svg, .sLink ul .flex-item a:hover svg, .sLink .navLink li a:hover svg, .sLink .navLink .flex-item a:hover svg {
               fill: #0054A5; }
-            .sLink ul li a:hover span.icon-link {
+            .sLink ul li a:hover span.icon-link, .sLink ul .flex-item a:hover span.icon-link, .sLink .navLink li a:hover span.icon-link, .sLink .navLink .flex-item a:hover span.icon-link {
               border-color: #3EB7E4;
               box-shadow: 0 1px 20px rgba(131, 131, 131, 0.15); }
-            .sLink ul li a:hover span.icon-text {
+            .sLink ul li a:hover span.icon-text, .sLink ul .flex-item a:hover span.icon-text, .sLink .navLink li a:hover span.icon-text, .sLink .navLink .flex-item a:hover span.icon-text {
               color: #0054A5;
               transform: scale(0.8); } }
         @media (max-width: 991.99px) {
-          .sLink ul li a span.icon-text {
+          .sLink ul li a span.icon-text, .sLink ul .flex-item a span.icon-text, .sLink .navLink li a span.icon-text, .sLink .navLink .flex-item a span.icon-text {
             margin-top: 10px;
             font-size: 0.875rem; }
-            .sLink ul li a span.icon-text br {
+            .sLink ul li a span.icon-text br, .sLink ul .flex-item a span.icon-text br, .sLink .navLink li a span.icon-text br, .sLink .navLink .flex-item a span.icon-text br {
               display: none; } }
-      .sLink ul li.active a {
+      .sLink ul li.active a, .sLink ul .flex-item.active a, .sLink .navLink li.active a, .sLink .navLink .flex-item.active a {
         color: #0054A5; }
-        .sLink ul li.active a svg {
+        .sLink ul li.active a svg, .sLink ul .flex-item.active a svg, .sLink .navLink li.active a svg, .sLink .navLink .flex-item.active a svg {
           fill: #0054A5; }
-        .sLink ul li.active a span.icon-link {
+        .sLink ul li.active a span.icon-link, .sLink ul .flex-item.active a span.icon-link, .sLink .navLink li.active a span.icon-link, .sLink .navLink .flex-item.active a span.icon-link {
           border-color: #3EB7E4;
           box-shadow: 0 1px 20px rgba(131, 131, 131, 0.15); }
-        .sLink ul li.active a span.icon-text {
+        .sLink ul li.active a span.icon-text, .sLink ul .flex-item.active a span.icon-text, .sLink .navLink li.active a span.icon-text, .sLink .navLink .flex-item.active a span.icon-text {
           color: #0054A5; }
-      .sLink ul li:nth-child(1) {
+      .sLink ul li:nth-child(1), .sLink ul .flex-item:nth-child(1), .sLink .navLink li:nth-child(1), .sLink .navLink .flex-item:nth-child(1) {
         left: 0;
         top: 10%; }
-      .sLink ul li:nth-child(2) {
+      .sLink ul li:nth-child(2), .sLink ul .flex-item:nth-child(2), .sLink .navLink li:nth-child(2), .sLink .navLink .flex-item:nth-child(2) {
         left: 33.33%;
         top: 30%; }
-      .sLink ul li:nth-child(3) {
+      .sLink ul li:nth-child(3), .sLink ul .flex-item:nth-child(3), .sLink .navLink li:nth-child(3), .sLink .navLink .flex-item:nth-child(3) {
         right: 33.33%;
         left: inherit;
         top: 11%; }
-      .sLink ul li:last-child {
+      .sLink ul li:last-child, .sLink ul .flex-item:last-child, .sLink .navLink li:last-child, .sLink .navLink .flex-item:last-child {
         right: 0;
         top: 31%;
         left: inherit; }
         @media (max-width: 768px) {
-          .sLink ul li:last-child {
+          .sLink ul li:last-child, .sLink ul .flex-item:last-child, .sLink .navLink li:last-child, .sLink .navLink .flex-item:last-child {
             top: 40%; } }
   @media (max-width: 991.99px) {
     .sLink:before {
       display: none; }
-    .sLink ul {
+    .sLink ul, .sLink .navLink {
       display: flex;
       flex-wrap: wrap;
       margin-top: 20px; }
-      .sLink ul li {
+      .sLink ul li, .sLink .navLink li {
         position: static;
         flex: 0 0 50%;
         max-width: 50%;
         margin-top: 20px; }
-        .sLink ul li a {
+        .sLink ul li a, .sLink .navLink li a {
           position: static; } }
 
 @media (min-width: 991.99px) {
@@ -17027,34 +17152,31 @@ a.btn,
       height: 66px;
       position: absolute;
       content: ''; }
-    .is-sticky .sLink ul {
-      margin: 0;
-      align-items: flex-start;
-      position: relative;
+    .is-sticky .sLink ul, .is-sticky .sLink .navLink {
       z-index: 2;
       padding-top: 3px; }
-      .is-sticky .sLink ul:after {
+      .is-sticky .sLink ul:after, .is-sticky .sLink .navLink:after {
         display: none; }
-      .is-sticky .sLink ul li {
+      .is-sticky .sLink ul li, .is-sticky .sLink ul .flex-item, .is-sticky .sLink .navLink li, .is-sticky .sLink .navLink .flex-item {
         margin-top: 0;
         margin-right: 0;
         top: 4px; }
-        .is-sticky .sLink ul li a {
+        .is-sticky .sLink ul li a, .is-sticky .sLink ul .flex-item a, .is-sticky .sLink .navLink li a, .is-sticky .sLink .navLink .flex-item a {
           position: static; }
-          .is-sticky .sLink ul li a span.icon-link {
+          .is-sticky .sLink ul li a span.icon-link, .is-sticky .sLink ul .flex-item a span.icon-link, .is-sticky .sLink .navLink li a span.icon-link, .is-sticky .sLink .navLink .flex-item a span.icon-link {
             width: 40px;
             height: 40px;
             transform: scale(1) !important; }
-            .is-sticky .sLink ul li a span.icon-link svg {
+            .is-sticky .sLink ul li a span.icon-link svg, .is-sticky .sLink ul .flex-item a span.icon-link svg, .is-sticky .sLink .navLink li a span.icon-link svg, .is-sticky .sLink .navLink .flex-item a span.icon-link svg {
               width: 24px;
               height: 24px; }
-          .is-sticky .sLink ul li a span.icon-text {
+          .is-sticky .sLink ul li a span.icon-text, .is-sticky .sLink ul .flex-item a span.icon-text, .is-sticky .sLink .navLink li a span.icon-text, .is-sticky .sLink .navLink .flex-item a span.icon-text {
             font-size: 0.75rem;
             transform: scale(1) !important;
             margin-top: 0; }
-            .is-sticky .sLink ul li a span.icon-text br {
+            .is-sticky .sLink ul li a span.icon-text br, .is-sticky .sLink ul .flex-item a span.icon-text br, .is-sticky .sLink .navLink li a span.icon-text br, .is-sticky .sLink .navLink .flex-item a span.icon-text br {
               display: none; }
-          .is-sticky .sLink ul li a:hover {
+          .is-sticky .sLink ul li a:hover, .is-sticky .sLink ul .flex-item a:hover, .is-sticky .sLink .navLink li a:hover, .is-sticky .sLink .navLink .flex-item a:hover {
             transform: scale(1) !important; } }
 
 @media (max-width: 991.99px) {

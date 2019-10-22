@@ -13,6 +13,10 @@
   // The separator between breadcrumbs (by default, a forward-slash: "/")
   a{
     color:#333333;
+    &:hover{
+      text-decoration: none;
+      color:$blue-main-light;
+    }
   }
   + .breadcrumb-item {
     padding-left: $breadcrumb-item-padding;

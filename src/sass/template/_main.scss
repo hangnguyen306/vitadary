@@ -279,7 +279,11 @@ a.btn,
             repeat: no-repeat;
             position: center center;
         }
-
+        svg{
+            width: rem(50);
+            height: rem(50);
+            fill: $blue-main-light;
+        }
         @media (max-width: 1366px) {
             width: rem(35);
             height: rem(35);
@@ -296,7 +300,7 @@ a.btn,
         position: relative;
         bottom: 3px;
     }
-    
+
 
     h2 {
         color: $blue-main-light;
@@ -387,18 +391,22 @@ a.btn,
             }
         }
     }
-    &-2{
+
+    &-2 {
         margin-bottom: rem(20);
-        h2{
+
+        h2 {
             font-weight: bold;
-            font-size:rem(34);
-            color:$blue-main;
+            font-size: rem(34);
+            color: $blue-main;
         }
-        .icon-link{
+
+        .icon-link {
             display: inline-block;
             vertical-align: text-bottom;
             margin-right: 10px;
-            svg{
+
+            svg {
                 width: 40px;
                 height: 40px;
                 fill: $blue-main-light;
@@ -411,8 +419,9 @@ a.btn,
     .sMainContent {
         margin-top: rem(60);
     }
-    &.sMainChild-other{
-        padding-top:rem(20);
+
+    &.sMainChild-other {
+        padding-top: rem(20);
     }
 }
 
@@ -444,13 +453,15 @@ a.btn,
             font-weight: bold;
             text-align: center;
             padding: 9px 3px;
-            svg{
-                width:50px;
-                height:50px;
-                fill:#AFB0B2;
+
+            svg {
+                width: 50px;
+                height: 50px;
+                fill: #AFB0B2;
                 display: inline-block;
                 vertical-align: middle;
             }
+
             &:after {
                 background: $blue-main-light;
                 left: 0;
@@ -466,9 +477,10 @@ a.btn,
 
             &:hover,
             &.active {
-                svg{
-                    fill:$blue-main-light;
+                svg {
+                    fill: $blue-main-light;
                 }
+
                 color: $blue-main;
                 text-decoration: none;
 
@@ -579,9 +591,10 @@ a.btn,
         bottom: -47px;
     }
 }
-.sPaiging{
+
+.sPaiging {
     text-align: center;
-    margin-top:rem(40);
+    margin-top: rem(40);
 }
 
 //no stick
@@ -591,4 +604,55 @@ a.btn,
             position: relative;
         }
     }
+}
+
+//owl theme
+.owl-theme {
+    .owl-stage-outer {
+        .owl-item {
+            padding: 0;
+            transition: all 0.4s ease-in-out;
+            transform: scale(1);
+
+            .book-box {
+                transform: scale(1);
+            }
+
+            &:not(.center) {
+                transform: scale(.7);
+            }
+        }
+    }
+
+    .owl-nav {
+        button {
+            background: none !important;
+            outline: none !important;
+
+            &:focus {
+                outline: none !important;
+            }
+        }
+
+        .owl-prev,
+        .owl-next {
+            transform: scale(0.8);
+            position: absolute;
+            top: 35%;
+        }
+
+        .owl-prev {
+            left: rem(-20);
+
+        }
+
+        .owl-next {
+            right: rem(-20);
+        }
+    }
+
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: none !important;
 }

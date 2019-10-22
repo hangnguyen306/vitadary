@@ -110,29 +110,27 @@ function gotoTop() {
 function scrollClick() {
     //active menu + scroll
     var menuItems = $('.sLink a'), 
-    hHeader = $(".sLink").height(), 
+    hHeader = $('.sLink').height(),
     lastId, scrollItems = menuItems.map(function () {
         var item = $($(this).attr('href'));
         if (item.length) {
             return item
         }
     });
-    if (window.innerWidth <= 767) {
-       var hHeader = 48;
-    } else {
-        var hHeader = 65;
-    }
-
+    // if (window.innerWidth <= 767) {
+    //    var hHeader = 48;
+    // } else {
+    //     var hHeader = 65;
+    // }
 
     menuItems.click(function (e) {
         var href = $(this).attr('href'), offsetTop = href === '#' ? 0 : $(href).offset().top - hHeader;
-        // $('.sLink li').removeClass('active')
-        // $(this).parent().addClass('active');
         $('html, body').stop().animate({
             scrollTop: offsetTop
         }, 300);
         e.preventDefault()
-    });
+        console.log(offsetTop);
+    })
 
     $(window).scroll(function () {
         var fromTop = $(this).scrollTop() + hHeader;
@@ -147,7 +145,6 @@ function scrollClick() {
             menuItems.parent().removeClass('active').end().filter('[href=\'#' + id + '\']').parent().addClass('active')
         }
     });
-
 
 }
 function slider() {
@@ -458,12 +455,18 @@ function stick() {
             sticky.addClass('sticky');
         }
     });
+}
+function stickMenu(){
     $("#stickMenu").sticky({
         topSpacing: 0,
-        zIndex: 9
+        zIndex: 9,
+        onScroll: function() {
+            scrollClick();
+        }
     });
-
+  
 }
+
 function waypointEl() {
     var way = $("[data-waypoint]");
     way.each(function () {
@@ -498,6 +501,7 @@ sHomeProduct();
 sHomeNews();
 searchBox();
 stick();
+stickMenu();
 sProduct();
 sNew();
 $('.lazy').lazy();
@@ -505,6 +509,7 @@ fixHeight();
 sAboutStory();
 sPartner();
 scrollClick();
+sSlidethumb();
 function sPartner() {
     $('.sSlideLogo').owlCarousel({
         margin: 0,
@@ -521,6 +526,42 @@ function sPartner() {
         }
     });
 }
+function sSlidethumb() {
+    $('.sSlidethumb-text').slick({
+        infinite: true,
+        arrows:false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode:true,
+        centerPadding: '0px',
+        focusOnSelect: true,
+        asNavFor: '.sSlidethumb-text-content',
+        responsive: [
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+
+        ]
+    });
+    $('.sSlidethumb-text-content').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        //fade: true,
+        asNavFor: '.sSlidethumb-text'
+    });
+}
+
 function init() {
     $(window).on("debouncedresize", function (event) {
 

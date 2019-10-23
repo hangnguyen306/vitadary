@@ -2,8 +2,8 @@ extends layouts/_layout_default
 
 block setting
     - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
-    - mainActive = "nuoi-duong"
-
+    - mainActive = "nuoi-duong";
+    - bodyClass = 'noStick';
 block content
     .sMainChild.sNew
       .sBannerChild
@@ -12,16 +12,55 @@ block content
         +breadcrumb([{'title':' Nuôi dưỡng bé yêu'}])
         .sMainContent
           +headerlanding('Nuôi dưỡng bé yêu','Làm mẹ là một hành trình ngọt ngào, nhiều hạnh phúc nhưng cũng không ít gian nan và vất vả. Bởi đó là khi mọi nỗ lực trong cuộc sống của mẹ đều đặt vào thiên thần nhỏ của mình. Làm thế nào để con được phát triển toàn diện từ thể chất đến trí não? Ba mẹ phải làm gì để nuôi dạy con tốt nhất? Và hàng ngàn câu hỏi khác mẹ đặt ra trong suốt hành trình nuôi con của mình. Chuyên gia VitaDairy sẽ luôn sẵn sàng chia sẻ cùng mẹ những kinh nghiệm chăm sóc, nuôi nấng và dạy dỗ con một cách khoa học nhất.')
+          .sLinkWrap
+            .sLink#stickMenu.sLink-col-6
+              ul
+                li: a(href="#itemNews1")
+                  span.icon-link
+                    <svg viewBox="0 0 40 40" class="icon-shape">
+                      <use xlink:href="#nuoiduong1"></use>
+                    </svg>
+                  span.icon-text Miễn dịch <br>khoẻ
+                li: a(href="#itemNews2")
+                  span.icon-link
+                    <svg viewBox="0 0 40 40" class="icon-shape">
+                      <use xlink:href="#nuoiduong2"></use>
+                    </svg>
+                  span.icon-text Tiêu hoá<br> tốt
+                li: a(href="#itemNews3")
+                  span.icon-link
+                    <svg viewBox="0 0 40 40" class="icon-shape">
+                      <use xlink:href="#nuoiduong3"></use>
+                    </svg>
+                  span.icon-text Phát triển<br> thể chất
+                li: a(href="#itemNews4")
+                  span.icon-link
+                    <svg viewBox="0 0 40 40" class="icon-shape">
+                      <use xlink:href="#nuoiduong4"></use>
+                    </svg>
+                  span.icon-text Phát triển<br> trí não
+                li: a(href="#itemNews5")
+                  span.icon-link
+                    <svg viewBox="0 0 40 40" class="icon-shape">
+                      <use xlink:href="#nuoiduong5"></use>
+                    </svg>
+                  span.icon-text Dị ứng<br> đạm sữa bò
+                li: a(href="#itemNews6")
+                  span.icon-link
+                    <svg viewBox="0 0 40 40" class="icon-shape">
+                      <use xlink:href="#nuoiduong6"></use>
+                    </svg>
+                  span.icon-text Nuôi dạy con và<br> nhật ký làm mẹ
       .sLandingNew
-        .sLandingNewItem.bg-right.listColNew
-        //-   +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong.jpg','Miễn dịch khoẻ','','icon-new-1','Với trẻ em, hệ miễn dịch chưa thể hoàn thiện cho đến khi trẻ tròn 36 tháng tuổi, nguy cơ lâynhiễm và phát bệnh rất cao. Do đó trong giai đoạn này, mẹ cần bổ sung dinh dưỡng miễn dịch đúng chuẩn, đầy đủ và hợp lý, giúp tăng cường đề kháng, cho con sức mạnh từ bên trong để xây dựng nền tảng vững chắc cho sự phát triển toàn diện.',nuoiduongbeyeu1)
-        //- .sLandingNewItem.bg-left.listColNew
-        //-   +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong-01.jpg','Tiêu hoá tốt','','icon-new-2','Ba mẹ biết không, trong những năm tháng đầu đời, hệ tiêu hóa của con còn rất non yếu trong khi nhu cầu dinh dưỡng lớn cho sự tăng trưởng và phát triển toàn diện thì lại rất cao, lúc này hệ tiêu hoá như một “chiến binh” phải làm việc liên tục và thậm chí với hiệu suất còn cao hơn cả người trưởng thành. Theo công bố của viện dinh dưỡng Quốc gia – 80% khả năng miễn dịch của trẻ ở đường ruột, khi đường ruột có vấn đề trẻ dễ rơi vào tình trạng nhiễm khuẩn liên miên,vì vậy, cho con một hệ tiêu hoá tốt chính là khởi nguồn cho một cơ thể phát triển tốt và lâu dài trong tương lai.',nuoiduongbeyeu2)
-        //- .sLandingNewItem.bg-right.listColNew
-        //-   +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong-03.jpg','Phát triển','Thể chất','icon-new-3','Khoảng thời gian từ 1 – 3 tuổi, thể chất của con phát triển rất nhanh, ngoài năng lượng để con phát triển cân nặng, con cũng cần rất nhiều năng lượng cho việc vận động và vui chơi. Giai đoạn này, bên cạnh việc cung cấp đầy đủ chất dinh dưỡng một cách hợp lý và khoa học để trẻ vận hành “bộ máy” của mình, hoạt động rèn luyện thể chất cũng góp phần tạo nên nền tảng cho sự phát triển lâu dài của trẻ.',nuoiduongbeyeu3)
-        //- .sLandingNewItem.bg-left.listColNew
-        //-   +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong-04.jpg','Phát triển','Trí não','icon-new-4','Sau khi chào đời là khoảng thời gian vàng cho trẻ phát triển phát huy tối đa năng lực trí não. Đây là lúc mà bộ não của trẻ phát triển nhanh hơn bất kỳ khoảng thời điểm nào trong cuộc đời. Khi trẻ bắt đầu khám phá thế giới xung quanh, là lúc con sẽ tự tiếp thu rất nhiều kiến thức để tích góp vào “ngân hàng” bộ nhớ của mình , vì vậy, việc cần làm của mẹ là bảo đảm cung cấp đủ dưỡng chất cho quá trình này bằng nguồn dinh dưỡng liên tục cho não bộ, để con không ngừng học hỏi và lớn khôn.',nuoiduongbeyeu4)
-        //- .sLandingNewItem.bg-right.listColNew
-        //-   +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong-05.jpg','Dị ứng','Đạm sữa bò','icon-new-5','Dị ứng đạm sữa bò là hiện tượng xảy ra khi hệ miễn dịch của trẻ em có những phản ứng quá nhạy cảm với thành phần đạm có trong sữa bò, đây là lúc cơ thể trẻ không muốn làm quen với “người bạn” mới này, cơ thể trẻ có thể từ chối hấp thu và gây nên một số “phản ứng” để mẹ sớm nhận biết. <br>Hiện tượng dị ứng này phổ biến nhất ở nhóm trẻ sơ sinh và trẻ nhỏ vì sữa bò là loại thực phẩm có chứa đạm lạ đầu tiên mà trẻ dung nạp vào cơ thể, do đó mẹ đừng quá lo lắng mà hãy chọn ngay cho con nguồn dinh dưỡng chuyên biệt dành riêng cho trẻ dị ứng đạm sữa bò mẹ nhé!',nuoiduongbeyeu5)
-        //- .sLandingNewItem.bg-left.listColNew
-        //-   +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong-06.jpg','Nuôi dạy con','Và nhật ký làm mẹ','icon-new-6','Dị ứng đạm sữa bò là hiện tượng xảy ra khi hệ miễn dịch của trẻ em có những phản ứng quá nhạy cảm với thành phần đạm có trong sữa bò, đây là lúc cơ thể trẻ không muốn làm quen với “người bạn” mới này, cơ thể trẻ có thể từ chối hấp thu và gây nên một số “phản ứng” để mẹ sớm nhận biết. <br>Hiện tượng dị ứng này phổ biến nhất ở nhóm trẻ sơ sinh và trẻ nhỏ vì sữa bò là loại thực phẩm có chứa đạm lạ đầu tiên mà trẻ dung nạp vào cơ thể, do đó mẹ đừng quá lo lắng mà hãy chọn ngay cho con nguồn dinh dưỡng chuyên biệt dành riêng cho trẻ dị ứng đạm sữa bò mẹ nhé!',nuoiduongbeyeu6)
+        .sLandingNewItem.bg-right.listColNew#itemNews1
+          +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong.jpg','','Miễn dịch khoẻ','','<svg viewBox="0 0 40 40" class="icon-shape"><use xlink:href="#nuoiduong1"></use></svg>','Với trẻ em, hệ miễn dịch chưa thể hoàn thiện cho đến khi trẻ tròn 36 tháng tuổi, nguy cơ lâynhiễm và phát bệnh rất cao. Do đó trong giai đoạn này, mẹ cần bổ sung dinh dưỡng miễn dịch đúng chuẩn, đầy đủ và hợp lý, giúp tăng cường đề kháng, cho con sức mạnh từ bên trong để xây dựng nền tảng vững chắc cho sự phát triển toàn diện.',nuoiduongbeyeu1)
+        .sLandingNewItem.bg-left.listColNew#itemNews2
+          +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong-01.jpg','','Tiêu hoá tốt','','<svg viewBox="0 0 40 40" class="icon-shape"><use xlink:href="#nuoiduong2"></use></svg>','Ba mẹ biết không, trong những năm tháng đầu đời, hệ tiêu hóa của con còn rất non yếu trong khi nhu cầu dinh dưỡng lớn cho sự tăng trưởng và phát triển toàn diện thì lại rất cao, lúc này hệ tiêu hoá như một “chiến binh” phải làm việc liên tục và thậm chí với hiệu suất còn cao hơn cả người trưởng thành. Theo công bố của viện dinh dưỡng Quốc gia – 80% khả năng miễn dịch của trẻ ở đường ruột, khi đường ruột có vấn đề trẻ dễ rơi vào tình trạng nhiễm khuẩn liên miên,vì vậy, cho con một hệ tiêu hoá tốt chính là khởi nguồn cho một cơ thể phát triển tốt và lâu dài trong tương lai.',nuoiduongbeyeu2)
+        .sLandingNewItem.bg-right.listColNew#itemNews3
+          +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong-03.jpg','','Phát triển','Thể chất','<svg viewBox="0 0 40 40" class="icon-shape"><use xlink:href="#nuoiduong3"></use></svg>','Khoảng thời gian từ 1 – 3 tuổi, thể chất của con phát triển rất nhanh, ngoài năng lượng để con phát triển cân nặng, con cũng cần rất nhiều năng lượng cho việc vận động và vui chơi. Giai đoạn này, bên cạnh việc cung cấp đầy đủ chất dinh dưỡng một cách hợp lý và khoa học để trẻ vận hành “bộ máy” của mình, hoạt động rèn luyện thể chất cũng góp phần tạo nên nền tảng cho sự phát triển lâu dài của trẻ.',nuoiduongbeyeu3)
+        .sLandingNewItem.bg-left.listColNew#itemNews4
+          +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong-04.jpg','','Phát triển','Trí não','<svg viewBox="0 0 40 40" class="icon-shape"><use xlink:href="#nuoiduong4"></use></svg>','Sau khi chào đời là khoảng thời gian vàng cho trẻ phát triển phát huy tối đa năng lực trí não. Đây là lúc mà bộ não của trẻ phát triển nhanh hơn bất kỳ khoảng thời điểm nào trong cuộc đời. Khi trẻ bắt đầu khám phá thế giới xung quanh, là lúc con sẽ tự tiếp thu rất nhiều kiến thức để tích góp vào “ngân hàng” bộ nhớ của mình , vì vậy, việc cần làm của mẹ là bảo đảm cung cấp đủ dưỡng chất cho quá trình này bằng nguồn dinh dưỡng liên tục cho não bộ, để con không ngừng học hỏi và lớn khôn.',nuoiduongbeyeu4)
+        .sLandingNewItem.bg-right.listColNew#itemNews5
+          +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong-05.jpg','','Dị ứng','Đạm sữa bò','<svg viewBox="0 0 40 40" class="icon-shape"><use xlink:href="#nuoiduong5"></use></svg>','Dị ứng đạm sữa bò là hiện tượng xảy ra khi hệ miễn dịch của trẻ em có những phản ứng quá nhạy cảm với thành phần đạm có trong sữa bò, đây là lúc cơ thể trẻ không muốn làm quen với “người bạn” mới này, cơ thể trẻ có thể từ chối hấp thu và gây nên một số “phản ứng” để mẹ sớm nhận biết. <br>Hiện tượng dị ứng này phổ biến nhất ở nhóm trẻ sơ sinh và trẻ nhỏ vì sữa bò là loại thực phẩm có chứa đạm lạ đầu tiên mà trẻ dung nạp vào cơ thể, do đó mẹ đừng quá lo lắng mà hãy chọn ngay cho con nguồn dinh dưỡng chuyên biệt dành riêng cho trẻ dị ứng đạm sữa bò mẹ nhé!',nuoiduongbeyeu5)
+        .sLandingNewItem.bg-left.listColNew#itemNews6
+          +itemLanding('#',imgPath + 'nuoiduongbeyeu/bg-nuoiduong-06.jpg','','Nuôi dạy con','Và nhật ký làm mẹ','<svg viewBox="0 0 40 40" class="icon-shape"><use xlink:href="#nuoiduong6"></use></svg>','Dị ứng đạm sữa bò là hiện tượng xảy ra khi hệ miễn dịch của trẻ em có những phản ứng quá nhạy cảm với thành phần đạm có trong sữa bò, đây là lúc cơ thể trẻ không muốn làm quen với “người bạn” mới này, cơ thể trẻ có thể từ chối hấp thu và gây nên một số “phản ứng” để mẹ sớm nhận biết. <br>Hiện tượng dị ứng này phổ biến nhất ở nhóm trẻ sơ sinh và trẻ nhỏ vì sữa bò là loại thực phẩm có chứa đạm lạ đầu tiên mà trẻ dung nạp vào cơ thể, do đó mẹ đừng quá lo lắng mà hãy chọn ngay cho con nguồn dinh dưỡng chuyên biệt dành riêng cho trẻ dị ứng đạm sữa bò mẹ nhé!',nuoiduongbeyeu6)

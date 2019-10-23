@@ -154,7 +154,7 @@ mixin itemLanding(link,image,imagesp,title,title2,icon,des,array)
 					.info
 						.page-header
 							h3
-								span.icon-text(class=icon)
+								span.icon-text !{icon}
 								span.ttl-text
 									= title
 						.des !{des}
@@ -169,7 +169,7 @@ mixin itemLanding(link,image,imagesp,title,title2,icon,des,array)
 					.info
 						.page-header
 							h2
-								span.icon-text(class=icon)
+								span.icon-text !{icon}
 								span.ttl-text
 									= title
 							h3

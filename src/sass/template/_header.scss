@@ -135,7 +135,7 @@ header.header {
                 position: relative;
                 padding-bottom: rem(20);
                 &.active{
-                    a{ 
+                    >a{ 
                         color: $blue-main-light;
                     }
                 }

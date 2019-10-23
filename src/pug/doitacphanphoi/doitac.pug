@@ -5,24 +5,54 @@ block setting
     - mainActive = "doi-tac"
 
 block content
-    .sMainChild.sDist
+    .sMainChild.sDist.sMainChild-other
         .container
             +breadcrumb([{'title':'Đối tác & Phân phối','link':'#'},{'title':'Đối tác'}])
-            .sDoitacContent
+            .sMainContent.sDoitacContent
                 ul#myList.list-group.list-group-tab.sNavLink(role='tablist')
-                    li: a.active(data-toggle='list', href='#navTab1', role='tab') Đối tác nghiên cứu dinh dưỡng
-                    li: a(data-toggle='list', href='#navTab2', role='tab') Đối tác phát triển
+                    li: a.active(data-toggle='list', href='#navTab1', role='tab') 
+                        span.svg-icon.ic-dt-tab-1
+                            <svg viewBox="0 0 18.355 24" class="icon-shape">
+                                <use xlink:href="#ic-dt-tab-1"></use>
+                            </svg>
+                        span Đối tác nghiên cứu dinh dưỡng
+                    li: a(data-toggle='list', href='#navTab2', role='tab') 
+                        span.svg-icon.ic-dt-tab-2
+                            <svg viewBox="0 0 18.355 24" class="icon-shape">
+                                <use xlink:href="#ic-dt-tab-2"></use>
+                            </svg>
+                        span Đối tác phát triển
                 .tab-content
                     #navTab1.tab-pane.active(role='tabpanel')
                         .des
                             p Mọi sản phẩm của VitaDairy đều được nghiên cứu trên cơ sở khoa học, dưới sự tư vấn của các chuyên gia hàng đầu về sức khỏe và hợp tác với các đối tác là bệnh viện lớn như: Bệnh viện Bạch Mai, Chợ Rẫy, Viện dinh dưỡng quốc gia….
-                        .sSlideLogo.owl-carousel.owl-theme
-                            - for (var x = 1; x < 5; x++)
-                                .item
-                                    .image
-                                        a(href="#"): img(src= imgPath + 'doitac/doitac/logo.png' alt="")
-                                    .info
-                                        h4 Bệnh viện Bạch Mai
+                        .sSlideValue.sSlidethumb-text
+                            .item
+                                .image
+                                    img(src= imgPath + 'cauchuyen/img-01.jpg' alt="")
+                                .info
+                                    h4 Khoa học
+                            .item
+                                .image
+                                    img(src= imgPath + 'cauchuyen/img-02.jpg' alt="")
+                                .info
+                                    h4 Sáng tạo
+                            .item
+                                .image
+                                    img(src= imgPath + 'cauchuyen/img-03.jpg' alt="")
+                                .info
+                                    h4 Tử tế
+                            .item
+                                .image
+                                    img(src= imgPath + 'cauchuyen/img-02.jpg' alt="")
+                                .info
+                                    h4 Sáng tạo
+                        .sSlideValueContent.sSlidethumb-text-content
+                            .info 
+                                p Tại VitaDairy, sự sáng tạo và đổi mới luôn là sức sống, là đòn bẩy phát triển doanh nghiệp. VitaDairy đề cao tinh thần dám nghĩ dám làm, khuyến khích học hỏi, ứng dụng những tiến bộ khoa học, kỹ thuật và công nghệ vào quản lý, sản xuất.
+                            .info 2
+                            .info 3
+                            .info 4
                     #navTab2.tab-pane(role='tabpanel')
                         .des
                             p Mọi sản phẩm của VitaDairy đều được nghiên cứu trên cơ sở khoa học, dưới sự tư vấn của các chuyên gia hàng đầu về sức khỏe và hợp tác với các đối tác là bệnh viện lớn như: Bệnh viện Bạch Mai, Chợ Rẫy, Viện dinh dưỡng quốc gia….

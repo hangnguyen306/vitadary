@@ -14338,7 +14338,7 @@ header.header {
         padding-right: 0.4rem;
         position: relative;
         padding-bottom: 1.25rem; }
-        header.header .navRight > ul > li.active a {
+        header.header .navRight > ul > li.active > a {
           color: #3EB7E4; }
         header.header .navRight > ul > li:first-child a {
           background-position: left center;
@@ -14999,47 +14999,47 @@ a.btn,
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  border-bottom: 1px solid #CCCED0;
-  margin: 0 0 2.5rem 0;
-  padding: 0; }
+  border-bottom: 1px solid #ECEFF1;
+  margin: 0 -10px 2.5rem -10px;
+  padding: 0;
+  flex-direction: row; }
   .sNavLink li {
     max-width: 50%;
-    flex: 0 0 50%; }
+    flex: 0 0 50%;
+    padding: 0 10px; }
     .sNavLink li a {
       position: relative;
       color: #222222;
-      font-size: 1.25rem;
+      font-size: 0.9375rem;
       display: block;
       font-weight: bold;
       text-align: center;
-      padding: 9px 3px; }
-      .sNavLink li a svg {
-        width: 50px;
-        height: 50px;
-        fill: #AFB0B2;
+      padding: 9px 3px;
+      background: #ECEFF1;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px; }
+      .sNavLink li a .svg-icon {
+        height: 24px;
         display: inline-block;
-        vertical-align: middle; }
-      .sNavLink li a:after {
-        background: #3EB7E4;
-        left: 0;
-        right: 0;
-        content: '';
-        height: 4px;
-        bottom: 0;
-        position: absolute;
-        width: 0;
-        margin: 0 auto;
-        transition: all 0.2s ease-in-out; }
-        @media screen and (prefers-reduced-motion: reduce) {
-          .sNavLink li a:after {
-            transition: none; } }
+        vertical-align: text-bottom;
+        position: relative;
+        margin-right: 10px; }
+        .sNavLink li a .svg-icon.ic-phattrien-1 {
+          width: 19px; }
+        .sNavLink li a .svg-icon.ic-phattrien-2 {
+          width: 25px; }
+        .sNavLink li a .svg-icon.ic-dt-tab-1 {
+          width: 16px; }
+        .sNavLink li a .svg-icon.ic-dt-tab-2 {
+          width: 24px; }
+      .sNavLink li a svg {
+        fill: #333333; }
       .sNavLink li a:hover, .sNavLink li a.active {
-        color: #0054A5;
-        text-decoration: none; }
+        background: #3EB7E4;
+        text-decoration: none;
+        color: white; }
         .sNavLink li a:hover svg, .sNavLink li a.active svg {
-          fill: #3EB7E4; }
-        .sNavLink li a:hover:after, .sNavLink li a.active:after {
-          width: 100%; }
+          fill: white; }
 
 .sContent img {
   border-radius: 10px; }
@@ -16399,6 +16399,11 @@ a.btn,
         .fixHeight.sMain-3 .container .sHomeAdv .row .image {
           text-align: center; } }
 
+.sAboutChild .sticky-wrapper, .sNew .sticky-wrapper {
+  height: 150px !important; }
+  .sAboutChild .sticky-wrapper.is-sticky, .sNew .sticky-wrapper.is-sticky {
+    height: 63px !important; }
+
 .sMainContent-gray {
   background: #F8F8F8;
   margin-top: 3.75rem;
@@ -16874,12 +16879,6 @@ a.btn,
   background-position: top right;
   background-repeat: no-repeat; }
 
-.sDoitacContent .list-group {
-  flex-direction: row; }
-
-.sDoitacContent .tab-content {
-  padding-top: 30px; }
-
 .sDoitacInner {
   padding: 60px 0;
   background: #ccc;
@@ -16997,9 +16996,131 @@ a.btn,
   background-repeat: no-repeat;
   background-position: center; }
 
-.sLink {
+.sLinkWrap {
+  height: 192px !important;
+  margin-bottom: 50px;
+  margin-top: -25px; }
+
+.sLink a {
+  text-align: center;
+  display: block;
+  position: relative;
+  text-decoration: none !important;
+  transition: all 0.2s ease-in-out;
+  transform: scale(1); }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .sLink a {
+      transition: none; } }
+  .sLink a svg {
+    fill: #333333;
+    width: 40px;
+    height: 40px;
+    transition: all 0.2s ease-in-out; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .sLink a svg {
+        transition: none; } }
+  .sLink a span.icon-link {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #CCCED0;
+    text-align: center;
+    box-shadow: 0 1px 20px rgba(131, 131, 131, 0);
+    transition: all 0.2s ease-in-out; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .sLink a span.icon-link {
+        transition: none; } }
+  .sLink a .icon-text {
+    font-size: 0.9375rem;
+    color: #333333;
+    font-weight: normal;
+    line-height: 1.7333333333;
+    margin-top: 17px;
+    display: block;
+    transition: all 0.2s ease-in-out; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .sLink a .icon-text {
+        transition: none; } }
+  @media (min-width: 991.99px) {
+    .sLink a:hover {
+      text-decoration: none !important;
+      transform: scale(1.2);
+      color: #0054A5; }
+      .sLink a:hover svg {
+        fill: #0054A5; }
+      .sLink a:hover span.icon-link {
+        border-color: #3EB7E4;
+        box-shadow: 0 1px 20px rgba(131, 131, 131, 0.15); }
+      .sLink a:hover span.icon-text {
+        color: #0054A5;
+        transform: scale(0.8); } }
+  @media (max-width: 991.99px) {
+    .sLink a span.icon-text {
+      margin-top: 10px;
+      font-size: 0.875rem; }
+      .sLink a span.icon-text br {
+        display: none; } }
+
+.sLink li.active a {
+  color: #0054A5; }
+  .sLink li.active a svg {
+    fill: #0054A5; }
+  .sLink li.active a span.icon-link {
+    border-color: #3EB7E4;
+    box-shadow: 0 1px 20px rgba(131, 131, 131, 0.15); }
+  .sLink li.active a span.icon-text {
+    color: #0054A5; }
+
+.sLink ul {
+  padding: 0;
+  margin: 0 0 40px 0;
+  list-style: none;
+  position: relative;
+  z-index: 2; }
+  .sLink ul li {
+    position: absolute; }
+
+.sLink.sLink-col-6 {
   position: relative; }
-  .sLink:before {
+  .sLink.sLink-col-6:before {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    content: '';
+    background-image: url("../images/icons/line3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; }
+  .sLink.sLink-col-6 ul {
+    display: flex;
+    justify-content: space-between;
+    height: 192px; }
+    .sLink.sLink-col-6 ul li {
+      position: relative; }
+      .sLink.sLink-col-6 ul li:nth-child(1) {
+        top: 36px; }
+      .sLink.sLink-col-6 ul li:nth-child(2) {
+        top: 70px; }
+      .sLink.sLink-col-6 ul li:nth-child(3) {
+        top: 35px; }
+      .sLink.sLink-col-6 ul li:nth-child(4) {
+        top: 72px; }
+      .sLink.sLink-col-6 ul li:nth-child(5) {
+        top: 40px; }
+      .sLink.sLink-col-6 ul li:nth-child(6) {
+        top: 70px; }
+
+.sLink:not(.sLink-col-6) {
+  position: relative; }
+  .sLink:not(.sLink-col-6):before {
     position: absolute;
     top: 0;
     right: 20px;
@@ -17010,125 +17131,51 @@ a.btn,
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%; }
-  .sLink ul, .sLink .navLink {
+  .sLink:not(.sLink-col-6) ul, .sLink:not(.sLink-col-6) .navLink {
     padding: 0;
     margin: 0 0 40px 0;
     list-style: none;
     position: relative;
     z-index: 2; }
-    .sLink ul:after, .sLink .navLink:after {
+    .sLink:not(.sLink-col-6) ul:after, .sLink:not(.sLink-col-6) .navLink:after {
       content: "";
       display: block;
       padding-top: 13.1203814064%; }
       @media (max-width: 767.99px) {
-        .sLink ul:after, .sLink .navLink:after {
+        .sLink:not(.sLink-col-6) ul:after, .sLink:not(.sLink-col-6) .navLink:after {
           padding-top: 30%; } }
-    .sLink ul li, .sLink ul .flex-item, .sLink .navLink li, .sLink .navLink .flex-item {
+    .sLink:not(.sLink-col-6) ul li, .sLink:not(.sLink-col-6) ul .flex-item, .sLink:not(.sLink-col-6) .navLink li, .sLink:not(.sLink-col-6) .navLink .flex-item {
       position: absolute; }
-      .sLink ul li a, .sLink ul .flex-item a, .sLink .navLink li a, .sLink .navLink .flex-item a {
-        text-align: center;
-        display: block;
-        position: relative;
-        text-decoration: none !important;
-        transition: all 0.2s ease-in-out;
-        transform: scale(1); }
-        @media screen and (prefers-reduced-motion: reduce) {
-          .sLink ul li a, .sLink ul .flex-item a, .sLink .navLink li a, .sLink .navLink .flex-item a {
-            transition: none; } }
-        .sLink ul li a svg, .sLink ul .flex-item a svg, .sLink .navLink li a svg, .sLink .navLink .flex-item a svg {
-          fill: #333333;
-          width: 40px;
-          height: 40px;
-          transition: all 0.2s ease-in-out; }
-          @media screen and (prefers-reduced-motion: reduce) {
-            .sLink ul li a svg, .sLink ul .flex-item a svg, .sLink .navLink li a svg, .sLink .navLink .flex-item a svg {
-              transition: none; } }
-        .sLink ul li a span.icon-link, .sLink ul .flex-item a span.icon-link, .sLink .navLink li a span.icon-link, .sLink .navLink .flex-item a span.icon-link {
-          width: 5rem;
-          height: 5rem;
-          margin: 0 auto;
-          display: block;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 50%;
-          background: #fff;
-          border: 1px solid #CCCED0;
-          text-align: center;
-          box-shadow: 0 1px 20px rgba(131, 131, 131, 0);
-          transition: all 0.2s ease-in-out; }
-          @media screen and (prefers-reduced-motion: reduce) {
-            .sLink ul li a span.icon-link, .sLink ul .flex-item a span.icon-link, .sLink .navLink li a span.icon-link, .sLink .navLink .flex-item a span.icon-link {
-              transition: none; } }
-        .sLink ul li a .icon-text, .sLink ul .flex-item a .icon-text, .sLink .navLink li a .icon-text, .sLink .navLink .flex-item a .icon-text {
-          font-size: 0.9375rem;
-          color: #333333;
-          font-weight: normal;
-          line-height: 1.7333333333;
-          margin-top: 17px;
-          display: block;
-          transition: all 0.2s ease-in-out; }
-          @media screen and (prefers-reduced-motion: reduce) {
-            .sLink ul li a .icon-text, .sLink ul .flex-item a .icon-text, .sLink .navLink li a .icon-text, .sLink .navLink .flex-item a .icon-text {
-              transition: none; } }
-        @media (min-width: 991.99px) {
-          .sLink ul li a:hover, .sLink ul .flex-item a:hover, .sLink .navLink li a:hover, .sLink .navLink .flex-item a:hover {
-            text-decoration: none !important;
-            transform: scale(1.2);
-            color: #0054A5; }
-            .sLink ul li a:hover svg, .sLink ul .flex-item a:hover svg, .sLink .navLink li a:hover svg, .sLink .navLink .flex-item a:hover svg {
-              fill: #0054A5; }
-            .sLink ul li a:hover span.icon-link, .sLink ul .flex-item a:hover span.icon-link, .sLink .navLink li a:hover span.icon-link, .sLink .navLink .flex-item a:hover span.icon-link {
-              border-color: #3EB7E4;
-              box-shadow: 0 1px 20px rgba(131, 131, 131, 0.15); }
-            .sLink ul li a:hover span.icon-text, .sLink ul .flex-item a:hover span.icon-text, .sLink .navLink li a:hover span.icon-text, .sLink .navLink .flex-item a:hover span.icon-text {
-              color: #0054A5;
-              transform: scale(0.8); } }
-        @media (max-width: 991.99px) {
-          .sLink ul li a span.icon-text, .sLink ul .flex-item a span.icon-text, .sLink .navLink li a span.icon-text, .sLink .navLink .flex-item a span.icon-text {
-            margin-top: 10px;
-            font-size: 0.875rem; }
-            .sLink ul li a span.icon-text br, .sLink ul .flex-item a span.icon-text br, .sLink .navLink li a span.icon-text br, .sLink .navLink .flex-item a span.icon-text br {
-              display: none; } }
-      .sLink ul li.active a, .sLink ul .flex-item.active a, .sLink .navLink li.active a, .sLink .navLink .flex-item.active a {
-        color: #0054A5; }
-        .sLink ul li.active a svg, .sLink ul .flex-item.active a svg, .sLink .navLink li.active a svg, .sLink .navLink .flex-item.active a svg {
-          fill: #0054A5; }
-        .sLink ul li.active a span.icon-link, .sLink ul .flex-item.active a span.icon-link, .sLink .navLink li.active a span.icon-link, .sLink .navLink .flex-item.active a span.icon-link {
-          border-color: #3EB7E4;
-          box-shadow: 0 1px 20px rgba(131, 131, 131, 0.15); }
-        .sLink ul li.active a span.icon-text, .sLink ul .flex-item.active a span.icon-text, .sLink .navLink li.active a span.icon-text, .sLink .navLink .flex-item.active a span.icon-text {
-          color: #0054A5; }
-      .sLink ul li:nth-child(1), .sLink ul .flex-item:nth-child(1), .sLink .navLink li:nth-child(1), .sLink .navLink .flex-item:nth-child(1) {
+      .sLink:not(.sLink-col-6) ul li:nth-child(1), .sLink:not(.sLink-col-6) ul .flex-item:nth-child(1), .sLink:not(.sLink-col-6) .navLink li:nth-child(1), .sLink:not(.sLink-col-6) .navLink .flex-item:nth-child(1) {
         left: 0;
         top: 10%; }
-      .sLink ul li:nth-child(2), .sLink ul .flex-item:nth-child(2), .sLink .navLink li:nth-child(2), .sLink .navLink .flex-item:nth-child(2) {
+      .sLink:not(.sLink-col-6) ul li:nth-child(2), .sLink:not(.sLink-col-6) ul .flex-item:nth-child(2), .sLink:not(.sLink-col-6) .navLink li:nth-child(2), .sLink:not(.sLink-col-6) .navLink .flex-item:nth-child(2) {
         left: 33.33%;
         top: 30%; }
-      .sLink ul li:nth-child(3), .sLink ul .flex-item:nth-child(3), .sLink .navLink li:nth-child(3), .sLink .navLink .flex-item:nth-child(3) {
+      .sLink:not(.sLink-col-6) ul li:nth-child(3), .sLink:not(.sLink-col-6) ul .flex-item:nth-child(3), .sLink:not(.sLink-col-6) .navLink li:nth-child(3), .sLink:not(.sLink-col-6) .navLink .flex-item:nth-child(3) {
         right: 33.33%;
         left: inherit;
         top: 11%; }
-      .sLink ul li:last-child, .sLink ul .flex-item:last-child, .sLink .navLink li:last-child, .sLink .navLink .flex-item:last-child {
+      .sLink:not(.sLink-col-6) ul li:last-child, .sLink:not(.sLink-col-6) ul .flex-item:last-child, .sLink:not(.sLink-col-6) .navLink li:last-child, .sLink:not(.sLink-col-6) .navLink .flex-item:last-child {
         right: 0;
         top: 31%;
         left: inherit; }
         @media (max-width: 768px) {
-          .sLink ul li:last-child, .sLink ul .flex-item:last-child, .sLink .navLink li:last-child, .sLink .navLink .flex-item:last-child {
+          .sLink:not(.sLink-col-6) ul li:last-child, .sLink:not(.sLink-col-6) ul .flex-item:last-child, .sLink:not(.sLink-col-6) .navLink li:last-child, .sLink:not(.sLink-col-6) .navLink .flex-item:last-child {
             top: 40%; } }
   @media (max-width: 991.99px) {
-    .sLink:before {
+    .sLink:not(.sLink-col-6):before {
       display: none; }
-    .sLink ul, .sLink .navLink {
+    .sLink:not(.sLink-col-6) ul, .sLink:not(.sLink-col-6) .navLink {
       display: flex;
       flex-wrap: wrap;
       margin-top: 20px; }
-      .sLink ul li, .sLink .navLink li {
+      .sLink:not(.sLink-col-6) ul li, .sLink:not(.sLink-col-6) .navLink li {
         position: static;
         flex: 0 0 50%;
         max-width: 50%;
         margin-top: 20px; }
-        .sLink ul li a, .sLink .navLink li a {
+        .sLink:not(.sLink-col-6) ul li a, .sLink:not(.sLink-col-6) .navLink li a {
           position: static; } }
 
 @media (min-width: 991.99px) {
@@ -17154,7 +17201,7 @@ a.btn,
       .is-sticky .sLink ul li, .is-sticky .sLink ul .flex-item, .is-sticky .sLink .navLink li, .is-sticky .sLink .navLink .flex-item {
         margin-top: 0;
         margin-right: 0;
-        top: 4px; }
+        top: 4px !important; }
         .is-sticky .sLink ul li a, .is-sticky .sLink ul .flex-item a, .is-sticky .sLink .navLink li a, .is-sticky .sLink .navLink .flex-item a {
           position: static; }
           .is-sticky .sLink ul li a span.icon-link, .is-sticky .sLink ul .flex-item a span.icon-link, .is-sticky .sLink .navLink li a span.icon-link, .is-sticky .sLink .navLink .flex-item a span.icon-link {

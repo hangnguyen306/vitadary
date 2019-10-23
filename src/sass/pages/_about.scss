@@ -1,10 +1,10 @@
-.sAboutChild{
-    // .sticky-wrapper{
-    //     height: 150px!important;
-    //     &.is-sticky{
-    //         height: 63px!important;
-    //     }
-    // }
+.sAboutChild,.sNew{
+    .sticky-wrapper{
+        height: 150px!important;
+        &.is-sticky{
+            height: 63px!important; 
+        }
+    }
 }
 .sMainContent{
     &-gray

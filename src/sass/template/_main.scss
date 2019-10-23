@@ -437,55 +437,55 @@ a.btn,
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    border-bottom: 1px solid #CCCED0;
-    margin: 0 0 rem(40) 0;
+    border-bottom: 1px solid #ECEFF1;
+    margin: 0 -10px rem(40) -10px;
     padding: 0;
-
+    flex-direction: row;
     li {
         max-width: 50%;
         flex: 0 0 50%;
-
+        padding: 0 10px;
         a {
             position: relative;
             color: $body-color;
-            font-size: rem(20);
+            font-size: rem(15);
             display: block;
             font-weight: bold;
             text-align: center;
             padding: 9px 3px;
-
-            svg {
-                width: 50px;
-                height: 50px;
-                fill: #AFB0B2;
+            background: #ECEFF1;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            .svg-icon{
+                height: 24px;
                 display: inline-block;
-                vertical-align: middle;
+                vertical-align: text-bottom;
+                position: relative;
+                margin-right: 10px;
+                &.ic-phattrien-1{
+                    width:19px;
+                }
+                &.ic-phattrien-2{
+                    width:25px;
+                }
+                &.ic-dt-tab-1{
+                    width:16px;
+                }
+                &.ic-dt-tab-2{
+                    width:24px;
+                }
             }
-
-            &:after {
-                background: $blue-main-light;
-                left: 0;
-                right: 0;
-                content: '';
-                height: 4px;
-                bottom: 0;
-                position: absolute;
-                width: 0;
-                margin: 0 auto;
-                @include transition();
+            svg {
+                fill: #333333;
             }
 
             &:hover,
             &.active {
-                svg {
-                    fill: $blue-main-light;
-                }
-
-                color: $blue-main;
+                background: $blue-main-light;
                 text-decoration: none;
-
-                &:after {
-                    width: 100%;
+                color:white;
+                svg {
+                    fill: white;
                 }
             }
         }

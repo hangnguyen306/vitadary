@@ -108,9 +108,9 @@ function gotoTop() {
 
 };
 
-var hHeader = $('.sLink').height();
+var hHeader = 0;
 
-function scrollClick() {
+// function scrollClick() {
     //active menu + scroll
     var menuItems = $('.sLink a'),
     lastId, scrollItems = menuItems.map(function () {
@@ -134,9 +134,8 @@ function scrollClick() {
         //console.log(hHeader);
         console.log(hHeader);
     })
-
     $(window).scroll(function () {
-        var fromTop = $(this).scrollTop() + hHeader;
+        var fromTop = $(this).scrollTop() + hHeader + 1;
         var cur = scrollItems.map(function () {
             if ($(this).offset().top < fromTop)
                 return this
@@ -148,8 +147,8 @@ function scrollClick() {
             menuItems.parent().removeClass('active').end().filter('[href=\'#' + id + '\']').parent().addClass('active')
         }
     });
+// }
 
-}
 function slider() {
     $('.homeSlider').slick({
         infinite: true,
@@ -469,12 +468,24 @@ function stickMenu(){
         zIndex: 9,
     });
 
-    $('#stickMenu-2').on('sticky-start', function() { 
-       hHeader = 60;
+    $('#stickMenu').on('sticky-start', function() { 
+       hHeader = 50;
+       console.log('start')
      });
-    $('#stickMenu-2').on('sticky-end', function() { 
-        hHeader = 149;
+    $('#stickMenu').on('sticky-end', function() { 
+        hHeader = 63;
+       console.log('end')
+
     });
+    $('#stickMenu-2').on('sticky-start', function() { 
+        hHeader = 60;
+        console.log('start')
+      });
+     $('#stickMenu-2').on('sticky-end', function() { 
+         hHeader = 149;
+        console.log('end')
+ 
+     });
 }
 
 function waypointEl() {
@@ -498,28 +509,7 @@ function waypointEl() {
 }
 
 
-waypointEl();
-// Base
-ui();
-// Image SVG
-imgSVG();
-// Go to top
-gotoTop();
-//waypointEl();
-slider();
-sHomeProduct();
-sHomeNews();
-searchBox();
-stick();
-stickMenu();
-sProduct();
-sNew();
-$('.lazy').lazy();
-fixHeight();
-sAboutStory();
-sPartner();
-scrollClick();
-sSlidethumb();
+
 function sPartner() {
     $('.sSlideLogo').owlCarousel({
         margin: 0,
@@ -572,6 +562,27 @@ function sSlidethumb() {
     });
 }
 
+waypointEl();
+// Base
+ui();
+// Image SVG
+imgSVG();
+// Go to top
+gotoTop();
+//waypointEl();
+slider();
+sHomeProduct();
+sHomeNews();
+searchBox();
+stick();
+stickMenu();
+sProduct();
+sNew();
+$('.lazy').lazy();
+fixHeight();
+sAboutStory();
+sPartner();
+sSlidethumb();
 function init() {
     $(window).on("debouncedresize", function (event) {
 

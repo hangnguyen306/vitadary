@@ -1,10 +1,10 @@
 .sAboutChild{
-    .sticky-wrapper{
-        height: 150px!important;
-        &.is-sticky{
-            height: 63px!important;
-        }
-    }
+    // .sticky-wrapper{
+    //     height: 150px!important;
+    //     &.is-sticky{
+    //         height: 63px!important;
+    //     }
+    // }
 }
 .sMainContent{
     &-gray
@@ -391,7 +391,7 @@
 }
 
 .sLink {
-    height: 60px;
+   // height: 60px;
     &.sLinkLine {
         &:before {
             background: url($img-path + 'line2.svg') no-repeat;

@@ -16399,11 +16399,6 @@ a.btn,
         .fixHeight.sMain-3 .container .sHomeAdv .row .image {
           text-align: center; } }
 
-.sAboutChild .sticky-wrapper {
-  height: 150px !important; }
-  .sAboutChild .sticky-wrapper.is-sticky {
-    height: 63px !important; }
-
 .sMainContent-gray {
   background: #F8F8F8;
   margin-top: 3.75rem;
@@ -16662,23 +16657,22 @@ a.btn,
             left: -47px;
             top: -28px; } }
 
-.sLink {
-  height: 60px; }
-  .sLink.sLinkLine:before {
-    background: url("../images/line2.svg") no-repeat;
-    background-size: contain;
-    top: 40px;
-    opacity: 0.5; }
-  .sLink.sLinkLine .navLink {
-    justify-content: space-between;
-    margin-bottom: 0; }
-    .sLink.sLinkLine .navLink:after {
-      display: none; }
-    .sLink.sLinkLine .navLink .flex-item {
-      position: static;
-      order: 0;
-      flex: 0 1 auto;
-      align-self: auto; }
+.sLink.sLinkLine:before {
+  background: url("../images/line2.svg") no-repeat;
+  background-size: contain;
+  top: 40px;
+  opacity: 0.5; }
+
+.sLink.sLinkLine .navLink {
+  justify-content: space-between;
+  margin-bottom: 0; }
+  .sLink.sLinkLine .navLink:after {
+    display: none; }
+  .sLink.sLinkLine .navLink .flex-item {
+    position: static;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto; }
 
 .sSlideValue .item {
   padding-top: 40px;

@@ -107,10 +107,12 @@ function gotoTop() {
     });
 
 };
+
+var hHeader = $('.sLink').height();
+
 function scrollClick() {
     //active menu + scroll
-    var menuItems = $('.sLink a'), 
-    hHeader = $('.sLink').height(),
+    var menuItems = $('.sLink a'),
     lastId, scrollItems = menuItems.map(function () {
         var item = $($(this).attr('href'));
         if (item.length) {
@@ -129,7 +131,8 @@ function scrollClick() {
             scrollTop: offsetTop
         }, 300);
         e.preventDefault()
-        console.log(offsetTop);
+        //console.log(hHeader);
+        console.log(hHeader);
     })
 
     $(window).scroll(function () {
@@ -460,11 +463,18 @@ function stickMenu(){
     $("#stickMenu").sticky({
         topSpacing: 0,
         zIndex: 9,
-        onScroll: function() {
-            scrollClick();
-        }
     });
-  
+    $("#stickMenu-2").sticky({
+        topSpacing: 0,
+        zIndex: 9,
+    });
+
+    $('#stickMenu-2').on('sticky-start', function() { 
+       hHeader = 60;
+     });
+    $('#stickMenu-2').on('sticky-end', function() { 
+        hHeader = 149;
+    });
 }
 
 function waypointEl() {

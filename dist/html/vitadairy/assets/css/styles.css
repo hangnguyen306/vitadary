@@ -17118,9 +17118,39 @@ a.btn,
       .sLink.sLink-col-6 ul li:nth-child(6) {
         top: 70px; }
 
-.sLink:not(.sLink-col-6) {
+.sLink.sLink-col-5 {
   position: relative; }
-  .sLink:not(.sLink-col-6):before {
+  .sLink.sLink-col-5:before {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    left: 20px;
+    content: '';
+    background-image: url("../images/icons/line3.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%; }
+  .sLink.sLink-col-5 ul {
+    display: flex;
+    justify-content: space-between;
+    height: 192px; }
+    .sLink.sLink-col-5 ul li {
+      position: relative; }
+      .sLink.sLink-col-5 ul li:nth-child(1) {
+        top: 36px; }
+      .sLink.sLink-col-5 ul li:nth-child(2) {
+        top: 70px; }
+      .sLink.sLink-col-5 ul li:nth-child(3) {
+        top: 35px; }
+      .sLink.sLink-col-5 ul li:nth-child(4) {
+        top: 44px; }
+      .sLink.sLink-col-5 ul li:nth-child(5) {
+        top: 70px; }
+
+.sLink.sLink-col-4 {
+  position: relative; }
+  .sLink.sLink-col-4:before {
     position: absolute;
     top: 0;
     right: 20px;
@@ -17131,51 +17161,51 @@ a.btn,
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%; }
-  .sLink:not(.sLink-col-6) ul, .sLink:not(.sLink-col-6) .navLink {
+  .sLink.sLink-col-4 ul, .sLink.sLink-col-4 .navLink {
     padding: 0;
     margin: 0 0 40px 0;
     list-style: none;
     position: relative;
     z-index: 2; }
-    .sLink:not(.sLink-col-6) ul:after, .sLink:not(.sLink-col-6) .navLink:after {
+    .sLink.sLink-col-4 ul:after, .sLink.sLink-col-4 .navLink:after {
       content: "";
       display: block;
       padding-top: 13.1203814064%; }
       @media (max-width: 767.99px) {
-        .sLink:not(.sLink-col-6) ul:after, .sLink:not(.sLink-col-6) .navLink:after {
+        .sLink.sLink-col-4 ul:after, .sLink.sLink-col-4 .navLink:after {
           padding-top: 30%; } }
-    .sLink:not(.sLink-col-6) ul li, .sLink:not(.sLink-col-6) ul .flex-item, .sLink:not(.sLink-col-6) .navLink li, .sLink:not(.sLink-col-6) .navLink .flex-item {
+    .sLink.sLink-col-4 ul li, .sLink.sLink-col-4 ul .flex-item, .sLink.sLink-col-4 .navLink li, .sLink.sLink-col-4 .navLink .flex-item {
       position: absolute; }
-      .sLink:not(.sLink-col-6) ul li:nth-child(1), .sLink:not(.sLink-col-6) ul .flex-item:nth-child(1), .sLink:not(.sLink-col-6) .navLink li:nth-child(1), .sLink:not(.sLink-col-6) .navLink .flex-item:nth-child(1) {
+      .sLink.sLink-col-4 ul li:nth-child(1), .sLink.sLink-col-4 ul .flex-item:nth-child(1), .sLink.sLink-col-4 .navLink li:nth-child(1), .sLink.sLink-col-4 .navLink .flex-item:nth-child(1) {
         left: 0;
         top: 10%; }
-      .sLink:not(.sLink-col-6) ul li:nth-child(2), .sLink:not(.sLink-col-6) ul .flex-item:nth-child(2), .sLink:not(.sLink-col-6) .navLink li:nth-child(2), .sLink:not(.sLink-col-6) .navLink .flex-item:nth-child(2) {
+      .sLink.sLink-col-4 ul li:nth-child(2), .sLink.sLink-col-4 ul .flex-item:nth-child(2), .sLink.sLink-col-4 .navLink li:nth-child(2), .sLink.sLink-col-4 .navLink .flex-item:nth-child(2) {
         left: 33.33%;
         top: 30%; }
-      .sLink:not(.sLink-col-6) ul li:nth-child(3), .sLink:not(.sLink-col-6) ul .flex-item:nth-child(3), .sLink:not(.sLink-col-6) .navLink li:nth-child(3), .sLink:not(.sLink-col-6) .navLink .flex-item:nth-child(3) {
+      .sLink.sLink-col-4 ul li:nth-child(3), .sLink.sLink-col-4 ul .flex-item:nth-child(3), .sLink.sLink-col-4 .navLink li:nth-child(3), .sLink.sLink-col-4 .navLink .flex-item:nth-child(3) {
         right: 33.33%;
         left: inherit;
         top: 11%; }
-      .sLink:not(.sLink-col-6) ul li:last-child, .sLink:not(.sLink-col-6) ul .flex-item:last-child, .sLink:not(.sLink-col-6) .navLink li:last-child, .sLink:not(.sLink-col-6) .navLink .flex-item:last-child {
+      .sLink.sLink-col-4 ul li:last-child, .sLink.sLink-col-4 ul .flex-item:last-child, .sLink.sLink-col-4 .navLink li:last-child, .sLink.sLink-col-4 .navLink .flex-item:last-child {
         right: 0;
         top: 31%;
         left: inherit; }
         @media (max-width: 768px) {
-          .sLink:not(.sLink-col-6) ul li:last-child, .sLink:not(.sLink-col-6) ul .flex-item:last-child, .sLink:not(.sLink-col-6) .navLink li:last-child, .sLink:not(.sLink-col-6) .navLink .flex-item:last-child {
+          .sLink.sLink-col-4 ul li:last-child, .sLink.sLink-col-4 ul .flex-item:last-child, .sLink.sLink-col-4 .navLink li:last-child, .sLink.sLink-col-4 .navLink .flex-item:last-child {
             top: 40%; } }
   @media (max-width: 991.99px) {
-    .sLink:not(.sLink-col-6):before {
+    .sLink.sLink-col-4:before {
       display: none; }
-    .sLink:not(.sLink-col-6) ul, .sLink:not(.sLink-col-6) .navLink {
+    .sLink.sLink-col-4 ul, .sLink.sLink-col-4 .navLink {
       display: flex;
       flex-wrap: wrap;
       margin-top: 20px; }
-      .sLink:not(.sLink-col-6) ul li, .sLink:not(.sLink-col-6) .navLink li {
+      .sLink.sLink-col-4 ul li, .sLink.sLink-col-4 .navLink li {
         position: static;
         flex: 0 0 50%;
         max-width: 50%;
         margin-top: 20px; }
-        .sLink:not(.sLink-col-6) ul li a, .sLink:not(.sLink-col-6) .navLink li a {
+        .sLink.sLink-col-4 ul li a, .sLink.sLink-col-4 .navLink li a {
           position: static; } }
 
 @media (min-width: 991.99px) {
@@ -17559,5 +17589,36 @@ a.btn,
       font-weight: bold;
       font-size: 1.25rem;
       margin: 0; }
+
+.sFaqPage .list-group-col3 li {
+  float: 0 0 33.33%;
+  max-width: 33.33%; }
+
+.sFaqPage .faqGrid .item {
+  border: 2px dashed #CCCED0;
+  border-radius: 20px;
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  transition: all 0.2s ease-in-out; }
+  @media screen and (prefers-reduced-motion: reduce) {
+    .sFaqPage .faqGrid .item {
+      transition: none; } }
+  .sFaqPage .faqGrid .item img {
+    width: 90px;
+    height: 90px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px; }
+  .sFaqPage .faqGrid .item h2 {
+    color: #0054A5;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 1.25rem; }
+  .sFaqPage .faqGrid .item p {
+    margin: 0; }
+  .sFaqPage .faqGrid .item:hover {
+    background: rgba(62, 183, 228, 0.1); }
 
 /*# sourceMappingURL=styles.css.map */

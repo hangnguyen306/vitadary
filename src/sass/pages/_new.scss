@@ -218,8 +218,47 @@
     }
     
   }
+  &.sLink-col-5{
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      bottom: 0;
+      left: 20px;
+      content: '';
+  
+      background: {
+        image: url($img-path + "icons/line3.svg");
+        repeat: no-repeat;
+        position: center;
+        size: 100% 100%;
+      }
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      height: 192px;
+      li{
+        position: relative;
+        &:nth-child(1){    top: 36px;
+        }
+        &:nth-child(2){
+          top: 70px;
+        }
+          
+        &:nth-child(3){    top: 35px;
+        }
+        &:nth-child(4){    top: 44px;
+        }
+        &:nth-child(5){    top: 70px;
+        }
+      }
+    }
+    
+  }
 }
-.sLink:not(.sLink-col-6) {
+.sLink.sLink-col-4{
   position: relative;
 
   &:before {

@@ -134,6 +134,13 @@ mixin headerlanding(title,des)
 				= title
 		.des !{des}
 
+mixin faq(image,title)
+	.item
+		.info
+			img(src=image alt="")
+			h2 
+				= title
+			p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt uting Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt ut labore et dolore magna.
 mixin sSlideNewThumb(arrayNews)
 	each x in arrayNews  
 		.itemEvent

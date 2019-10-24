@@ -72,7 +72,7 @@ function fixHeight() {
     $('.fixHeight.sMain-6').css({ 'minHeight': hW - 60 });
 
     $('.fixHeight .sIntroheader').css({ 'minHeight': hW});
-    $('.fixHeight.sLandingNewItem .bgImg.bgImgpc').css({ 'minHeight': hW - 70 });
+    $('.fixHeight.sLandingNewItem .bgImg.bgImgpc').css({ 'minHeight': hW - 50 });
     $('.fixHeight.sLandingNewItem .bgImgsp .container').css({ 'minHeight': hW - 50 });
 }
 function gotoTop() {

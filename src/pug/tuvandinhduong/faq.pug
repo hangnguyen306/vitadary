@@ -1,0 +1,64 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "tu-van"
+
+block content
+    .sMainChild.sFaqPage.sMainChild-other
+      .container
+        +breadcrumb([{'title':'Tư vấn dinh dưỡng ','link':'./'},{'title':'FAQ'}])
+        .sMainContent
+            ul#myList.list-group.list-group-tab.sNavLink.list-group-col3(role='tablist')
+                li: a.active(data-toggle='list', href='#navTab1', role='tab') 
+                    span.svg-icon.ic-dt-tab-1
+                        <svg viewBox="0 0 24 29.844" class="icon-shape">
+                            <use xlink:href="#ic-faq-1"></use>
+                        </svg>
+                    span Bí quyết mẹ khoẻ
+                li: a(data-toggle='list', href='#navTab2', role='tab') 
+                    span.svg-icon.ic-dt-tab-2
+                        <svg viewBox="0 0 24 24" class="icon-shape">
+                            <use xlink:href="#ic-faq-2"></use>
+                        </svg>
+                    span Nuôi dưỡng bé yêu
+                li: a(data-toggle='list', href='#navTab3', role='tab') 
+                    span.svg-icon.ic-dt-tab-2
+                        <svg viewBox="0 0 24 24" class="icon-shape">
+                            <use xlink:href="#ic-faq-3"></use>
+                        </svg>
+                    span Chăm sóc người lớn tuổi
+            .tab-content
+                #navTab1.tab-pane.active(role='tabpanel')
+                    .row.faqGrid
+                        .col-sm-6 
+                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Nguyễn Thị Tuyết Mai")
+                        .col-sm-6 
+                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Mai Thị Kiều Châu")
+                        .col-sm-6 
+                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Trần Nguyệt Nhi")
+                        .col-sm-6 
+                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Cao Thị Minh Tuyết")
+                        .col-sm-6 
+                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Nguyễn Thị Hương")
+                        .col-sm-6 
+                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Phạm Thị Mỹ Ngọc")
+                        .col-sm-6 
+                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Trần Tuyết Nhi")
+                        .col-sm-6 
+                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Nguyễn Thị Tuyết Mai")
+                        .col-sm-6 
+                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Nguyễn Hà Diễm My")
+                        .col-sm-6 
+                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Mai Việt Hương")
+                #navTab2.tab-pane(role='tabpanel')
+                #navTab3.tab-pane(role='tabpanel')
+        .sPaiging
+            +pagination([
+                {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                {text:'1',url:'#'},
+                {text:'2',url:'#'},
+                {text:'3',url:'#'},
+                {text:'...',url:'#'},
+                {text:'Cuối <i class="arrow_carrot-right"></i>',url:'#'}
+            ])

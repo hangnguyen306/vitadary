@@ -4,7 +4,11 @@
         &.is-sticky{
             height: 63px!important; 
         }
+        @media (max-width: 991.99px) {
+            height: inherit!important;
+        }
     }
+   
 }
 .sMainContent{
     &-gray

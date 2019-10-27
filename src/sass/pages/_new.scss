@@ -216,7 +216,22 @@
         }
       }
     }
-    
+    @media (max-width: 991.99px) {
+      &::before{
+        display: none;
+      }
+      ul{
+        flex-wrap: wrap;
+        margin-top:20px;
+        li{
+          position: static;
+          flex: 0 0 50%;
+          max-width: 50%;
+          margin-top: 20px
+        }
+      }
+   
+    }
   }
   &.sLink-col-5{
     position: relative;
@@ -444,6 +459,8 @@
     }
 
     &Item {
+   
+      @include media-breakpoint-up(md) {
       &.bg-left {
         .bgImg {
           //background-position: left;
@@ -459,6 +476,7 @@
           //background-position: right;
         }
       }
+    }
 
       .bgImg {
         @include bg-box(1920, 650);
@@ -485,6 +503,7 @@
           }
 
         }
+     
       }
 
       @media (min-width: 1024px) {

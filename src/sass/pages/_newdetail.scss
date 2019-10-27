@@ -1,0 +1,146 @@
+.sNewDetail{
+    .sMainContentInfo{
+        padding: rem(80) 0;
+        
+    }
+    .sNewsSlider{
+        margin-top: rem(50);
+        &.sNewsSliderList{
+            .item{
+                padding: 0;
+                margin-bottom: rem(30);
+            }
+        }
+    }
+}
+.bg-dudinh{
+    background: {
+        image: url($img-path + "bg-dudinhmangthai.jpg");
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+      }
+}
+.bg-thongtin{
+    background: {
+        image: url($img-path + "bg-thongtinlienquan.jpg");
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+      }  
+}
+
+.bigImageEvent {
+    .image {
+        overflow: hidden;
+        a {
+            overflow: hidden;
+            img{
+                border-radius: 20px; 
+                transform: scale(1);
+                max-width: 100%;
+                @include transition();
+            }
+        }
+    }
+
+    .info {
+        .date {}
+
+        h3 {
+            margin: rem(10) 0 rem(10) 0;
+            a {
+                font-size: rem(34);
+                color: $blue-main;
+                font-weight: bold;
+                line-height: (46/34);
+                margin: 0;
+                height: (46/34)*2em;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                @include transition();
+            }
+        }
+
+        .des {
+            font-size: rem(15);
+            line-height: (26/15);
+            margin: 0;
+            height: (26/15)*5em;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .btnDiv{
+            margin-top:rem(20);
+        }
+    }
+    @include media-breakpoint-up(md) {
+        &:hover {
+          .image {
+            >a {
+              transform: scale(1.1);
+            }
+          }
+
+          .info {
+            h3 a {
+              color: $blue-main-light;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+}
+
+.thumbImageEvent {
+    margin-top: 30px;
+
+    .itemEvent {
+        padding: rem(30);
+
+        .image {
+        }
+
+        .info {
+            .date {}
+
+            h4 {
+                a {
+                    font-size: rem(16);
+                    color: inherit;
+                }
+            }
+
+            .des {}
+        }
+    }
+}
+
+.listEvent {
+    .item {
+        .image {
+            a {
+                @include bg-box(326, 224)
+            }
+        }
+
+        .info {
+            h3 {
+                a {
+                    font-size: rem(16);
+                    color: inherit;
+                }
+            }
+        }
+
+        .des {}
+    }
+}
+
+.sEventChild {}

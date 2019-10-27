@@ -1,0 +1,123 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "nuoi-duong"
+
+block content
+    .sMainChild.sNew.sNewDetail
+        .sMainContent.sMainContent-other
+            .container
+                +breadcrumb([{'title':'Nuôi dưỡng bé yêu','link':'#'},{'title':'Miễn dịch khoẻ'}])
+                .sLinkWrap
+                    .sLink.sLink-col-6
+                    ul
+                        li: a(href="#")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#nuoiduong1"></use>
+                                </svg>
+                            span.icon-text Miễn dịch <br>khoẻ
+                        li: a(href="#")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#nuoiduong2"></use>
+                                </svg>
+                            span.icon-text Tiêu hoá<br> tốt
+                        li: a(href="#")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#nuoiduong3"></use>
+                                </svg>
+                            span.icon-text Phát triển<br> thể chất
+                        li: a(href="#")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#nuoiduong4"></use>
+                                </svg>
+                            span.icon-text Phát triển<br> trí não
+                        li: a(href="#itemNews5")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#nuoiduong5"></use>
+                                </svg>
+                            span.icon-text Dị ứng<br> đạm sữa bò
+                        li: a(href="#itemNews6")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#nuoiduong6"></use>
+                                </svg>
+                            span.icon-text Nuôi dạy con và<br> nhật ký làm mẹ
+        .sMainContentInfo.bg-dudinh
+            .container
+                .page-header
+                    h2
+                        span.icon-text
+                            <svg viewBox="0 0 51.171 50" class="icon-shape">
+                                <use xlink:href="#ic-thongtinnoibat"></use>
+                            </svg>
+                        span.ttl-text Thông tin
+                    h3 Nổi bật
+                .sInfo.listColNew
+                    .bigImageEvent
+                        +itemBigEvent(imgPath + 'miendichkhoe/img-01.jpg','image',"#","Nuôi dưỡng hệ miễn dịch của trẻ: Mẹ đã biết chưa?")
+                    -
+                        var news = [
+                            {'title' : "Cùng bé rèn luyện hệ miễn dịch khỏe mạnh", 'img': 'miendichkhoe/img-02.jpg','url' : "#"},
+                            {'title' : "Dinh dưỡng miễn dịch đạt chuẩn giúp trẻ khỏe mạnh", 'img': 'miendichkhoe/img-03.jpg','url' : "#"},
+                            {'title' : "Thực phẩm vàng tăng cường miễn dịch cho trẻ mùa hè", 'img': 'miendichkhoe/img-04.jpg','url' : "#"},
+                            {'title' : "Cùng bé rèn luyện hệ miễn dịch khỏe mạnh", 'img': 'miendichkhoe/img-02.jpg','url' : "#"},
+                            {'title' : "Dinh dưỡng miễn dịch đạt chuẩn giúp trẻ khỏe mạnh", 'img': 'miendichkhoe/img-03.jpg','url' : "#"},
+                            {'title' : "Thực phẩm vàng tăng cường miễn dịch cho trẻ mùa hè", 'img': 'miendichkhoe/img-04.jpg','url' : "#"}
+                        ]
+                    .sNewsSlider
+                        .sNewsSliderInner
+                            for x in news
+                                .item
+                                    a(href=x.url)
+                                        img(data-src= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                                    .info
+                                        .date 21/09/2019
+                                        a(href=x.url)
+                                            = x.title
+                                        p Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
+                                        +a-btn-link('Xem thêm','#')
+        .sMainContentInfo.bg-thongtin
+            .container
+                .page-header
+                    h3
+                        span.icon-text
+                            <svg viewBox="0 0 63.891 50" class="icon-shape">
+                                <use xlink:href="#ic-thongtinlienquan"></use>
+                            </svg>
+                        span.ttl-text Thông tin liên quan
+                -
+                    var news2 = [
+                        {'title' : "Tăng cường hệ miễn dịch cho trẻ đúng cách", 'img': 'miendichkhoe/img-05.jpg','url' : "#"},
+                        {'title' : "Giúp trẻ khỏe mạnh – phải có dinh dưỡng miễn dịch đạt…", 'img': 'miendichkhoe/img-06.jpg','url' : "#"},
+                        {'title' : "9 Thói quen “vàng” giúp tăng cường khả năng miễn dịch…", 'img': 'miendichkhoe/img-07.jpg','url' : "#"},
+                        {'title' : "Bí kíp kinh điển tăng đề kháng cho trẻ chỉ Trung tâm…", 'img': 'miendichkhoe/img-08.jpg','url' : "#"},
+                        {'title' : "Miễn dịch - Nuôi con không kháng sinh", 'img': 'miendichkhoe/img-09.jpg','url' : "#"},
+                        {'title' : "Điều kỳ diệu cho hệ miễn dịch của trẻ", 'img': 'miendichkhoe/img-10.jpg','url' : "#"}
+                    ]
+                .sNewsSlider.row.sNewsSliderList
+                        for x in news2
+                            .col-md-4.col-sm-6
+                                .item
+                                    a(href=x.url)
+                                        img(data-src= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                                    .info
+                                        .date 21/09/2019
+                                        a(href=x.url)
+                                            = x.title
+                                        p Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
+                                        +a-btn-link('Xem thêm','#')
+                .sPaiging
+                    +pagination([
+                        {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                        {text:'1',url:'#'},
+                        {text:'2',url:'#'},
+                        {text:'3',url:'#'},
+                        {text:'...',url:'#'},
+                        {text:'Cuối <i class="arrow_carrot-right"></i>',url:'#'}
+                    ])

@@ -279,11 +279,21 @@ a.btn,
             repeat: no-repeat;
             position: center center;
         }
-        svg{
+
+        svg {
             width: rem(50);
             height: rem(50);
             fill: $blue-main-light;
+            @media (max-width: 1366px) {
+                width: rem(35);
+                height: rem(35);
+            }
+            @media (max-width: 767.99px) {
+                width: 30px;
+                height: 30px;
+            }
         }
+
         @media (max-width: 1366px) {
             width: rem(35);
             height: rem(35);
@@ -441,10 +451,12 @@ a.btn,
     margin: 0 -10px rem(40) -10px;
     padding: 0;
     flex-direction: row;
+
     li {
         max-width: 50%;
         flex: 0 0 50%;
         padding: 0 10px;
+
         a {
             position: relative;
             color: $body-color;
@@ -456,25 +468,31 @@ a.btn,
             background: #ECEFF1;
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
-            .svg-icon{
+
+            .svg-icon {
                 height: 24px;
                 display: inline-block;
                 vertical-align: text-bottom;
                 position: relative;
                 margin-right: 10px;
-                &.ic-phattrien-1{
-                    width:19px;
+
+                &.ic-phattrien-1 {
+                    width: 19px;
                 }
-                &.ic-phattrien-2{
-                    width:25px;
+
+                &.ic-phattrien-2 {
+                    width: 25px;
                 }
-                &.ic-dt-tab-1{
-                    width:16px;
+
+                &.ic-dt-tab-1 {
+                    width: 16px;
                 }
-                &.ic-dt-tab-2{
-                    width:24px;
+
+                &.ic-dt-tab-2 {
+                    width: 24px;
                 }
             }
+
             svg {
                 fill: #333333;
             }
@@ -483,7 +501,8 @@ a.btn,
             &.active {
                 background: $blue-main-light;
                 text-decoration: none;
-                color:white;
+                color: white;
+
                 svg {
                     fill: white;
                 }

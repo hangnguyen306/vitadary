@@ -92,26 +92,29 @@ mixin itemEvent2(image,className,url,title)
 //item new big
 mixin itemBigEvent(image,className,url,title)
 	.row
-		.col-sm-6
-				+bgImgLink(image,'image',href=url)
-		.col-sm-6
-				.info
-					.date dd/mm/yyyy
-					h3
-						a(href=url)
-							= title
-					.des
-							| Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
-					a(href=url).v-more Xem them 
+		.col-md-6
+			.image
+				a(href=url)
+					img(data-src= image  alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+		.col-md-6
+			.info
+				.date 21/09/2019
+				h3
+					a(href=url)
+						= title
+				.des
+						| Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+				.btnDiv-2
+					+a-btn-primary('Xem thêm',"#")
 
 mixin itemEvent(image,className,url,title)
 	.itemEvent
 		+bgImgLink(image,'image',"#")
 		.info
-				.date dd/mm/yyyy
-				h4: a(href="#") Lorem Ipsum has been the industry's standard dummy text
-				.des
-				| Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
+			.date 21/09/2019
+			h4: a(href="#") Lorem Ipsum has been the industry's standard dummy text
+			.des
+			| Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting
 
 mixin itemStory(name,image,title,info)
 	.item
@@ -166,7 +169,7 @@ mixin itemLanding(link,image,imagesp,title,title2,icon,des,array)
 									= title
 						.des !{des}
 						.btnDiv
-							+a-btn-primary('Xem thêm',link)
+							+a-btn-primary('Xem chi tiết',link)
 					.sSliderNew
 						+sSlideNewThumb(array)
 	else

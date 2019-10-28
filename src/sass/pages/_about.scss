@@ -432,6 +432,12 @@
                 max-width: 100%;
                 border-radius: 10px;
             }
+            @include media-breakpoint-down(md) {
+            padding-left: rem(10);
+            padding-right: rem(10);
+            box-shadow: 0 3px 40px rgba($color: #838383, $alpha: 0) ;
+
+            }
         }
         .info{
             text-align: center;
@@ -445,9 +451,13 @@
         }
         &:not(.slick-current){
         transform: scale(0.8);
+        @include media-breakpoint-down(md) {  transform:scale(1);}
+
         }
         &.slick-current{
-            transform:scale(1.1)
+           
+            transform:scale(1.1);
+            @include media-breakpoint-down(md) {  transform:scale(1); }
         }
     }
     &Content{

@@ -538,18 +538,20 @@ function sPartner() {
 function sSlidethumb() {
     $('.sSlidethumb-text').slick({
         infinite: true,
-        arrows:false,
+        arrows:true,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode:true,
         centerPadding: '0px',
+        prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
+        nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>",
         lazyLoad: "ondemand",
         focusOnSelect: true,
         asNavFor: '.sSlidethumb-text-content',
         responsive: [
             {
-                breakpoint: 600,
+                breakpoint: 992,
                 settings: {
                     slidesToShow: 2
                 }

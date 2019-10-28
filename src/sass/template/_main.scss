@@ -451,7 +451,6 @@ a.btn,
     margin: 0 -10px rem(40) -10px;
     padding: 0;
     flex-direction: row;
-
     li {
         max-width: 50%;
         flex: 0 0 50%;
@@ -509,11 +508,27 @@ a.btn,
             }
         }
     }
+    @include media-breakpoint-down(sm) {
+    border-bottom: none;
+    li{
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        a{
+        border-radius: 5px;
+        }
+    }
+    }
 }
 
 .sContent {
     img {
         border-radius: 10px;
+        max-width: 100%;
+    }
+    p{
+        margin-bottom: rem(20);
     }
 }
 

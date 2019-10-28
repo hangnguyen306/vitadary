@@ -9,13 +9,6 @@
 .sPartner {
   &-1 {
     padding: rem(40) 0 0 0;
-
-    background: {
-      image: url($img-path + 'bg-doitac-1.jpg');
-      size: cover;
-      repeat: no-repeat;
-    }
-
     .des {
       margin-bottom: rem(30);
     }
@@ -125,18 +118,55 @@
 //phan phoi
 .sDist {
   padding: rem(40) 0 0 0;
+  .sSlideValueContent{
+    position: relative;
+  }
 
-  background: {
-    image: url($img-path + 'bg-phanphoi.jpg');
-    size: cover;
-    position: top right;
-    repeat: no-repeat;
+}
+.sDistTab.tab-content > .tab-pane{
+  display: block!important;
+  height: 0;
+  overflow: hidden;
+  @include transition();
+}
+.sDistTab.tab-content > .tab-pane.active{
+  height: auto;
+}
+.sDistTab{
+  @include media-breakpoint-down(md) {
+    .sSlideValue{
+      padding-left: rem(30);
+      padding-right: rem(30);
+    }
   }
 
 }
 
 
 .sDoitacContent {
+  &Info{
+    &White{
+      background: white;
+    }
+    position: relative;
+    padding: rem(80) 0;
+    background: {
+        image:url($img-path + "bg-doitac.jpg");
+        repeat:no-repeat;
+        position: bottom;
+        size:cover;
+    };
+    .sSlideValueContent{
+      background: none;
+      box-shadow: 0 3px 40px rgba(131, 131, 131, 0);
+      padding: 0;
+      border-radius: 0;
+      &:before{
+        display: none;
+      }
+     
+    }
+  }
   .list-group {
   }
 

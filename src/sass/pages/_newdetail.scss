@@ -1,6 +1,10 @@
 .sNewDetail{
     .sMainContentInfo{
         padding: rem(80) 0;
+         @include media-breakpoint-down(md) {
+            padding: rem(40) 0;
+
+         }
         
     }
     .sNewsSlider{
@@ -76,6 +80,9 @@
                 @include transition();
             }
         }
+         @include media-breakpoint-down(md) {
+            margin-bottom:rem(20);
+         }
     }
 
     .info {

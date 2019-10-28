@@ -8,33 +8,34 @@ block content
     .sMainChild.sNew.sNewDetail
         .sMainContent.sMainContent-other
             .container
-                +breadcrumb([{'title':'Bí quyết mẹ khoẻ','link':'#'},{'title':'Dự định mang thai'}])
-                .sLink.sLink-col-4
-                    ul
-                        li.active: a(href="#")
-                            span.icon-link
-                                <svg viewBox="0 0 40 40" class="icon-shape">
-                                    <use xlink:href="#mom1"></use>
-                                </svg>
-                            span.icon-text Dự định <br>mang thai
-                        li: a(href="#")
-                            span.icon-link
-                                <svg viewBox="0 0 29 50" class="icon-shape">
-                                    <use xlink:href="#mom2"></use>
-                                </svg>
-                            span.icon-text Mang thai
-                        li: a(href="#")
-                            span.icon-link
-                                <svg viewBox="0 0 40 40" class="icon-shape">
-                                    <use xlink:href="#mom3"></use>
-                                </svg>
-                            span.icon-text Dự sinh
-                        li: a(href="#")
-                            span.icon-link
-                                <svg viewBox="0 0 40 40" class="icon-shape">
-                                    <use xlink:href="#mom4"></use>
-                                </svg>
-                            span.icon-text Sau sinh và <br>chăm sóc bé yêu
+                +breadcrumb([{'title':'Bí quyết mẹ khoẻ','link':url + 'biquyetmekhoe.html'},{'title':'Dự định mang thai'}])
+                .sLinkWrap
+                    .sLink.sLink-col-4
+                        ul
+                            li.active: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#mom1"></use>
+                                    </svg>
+                                span.icon-text Dự định <br>mang thai
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 29 50" class="icon-shape">
+                                        <use xlink:href="#mom2"></use>
+                                    </svg>
+                                span.icon-text Mang thai
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#mom3"></use>
+                                    </svg>
+                                span.icon-text Dự sinh
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#mom4"></use>
+                                    </svg>
+                                span.icon-text Sau sinh và <br>chăm sóc bé yêu
         .sMainContentInfo.bg-dudinh
             .container
                 .page-header

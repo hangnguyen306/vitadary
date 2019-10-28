@@ -1267,30 +1267,24 @@
 .sNewsSliderInner {
     .slick-arrow.icon-arr.icon-left {
         left: -40px;
-
-        @media (min-width: 1023px) {
-            &:hover {
-
-                left: -50px;
-            }
-        }
-
-
+        opacity: 1;
+        @include transition();
         @media (max-width: 767.99px) {
             left: -10px;
+        }
+        &:hover{
+            opacity: 0.6;
         }
     }
 
     .slick-arrow.icon-arr.icon-right {
         right: -40px;
         transform: scale(0.6) rotate(180deg);
-
-        @media (min-width: 1023px) {
-            &:hover {
-                right: -50px;
-            }
+        opacity: 1;
+        @include transition();
+        &:hover{
+            opacity: 0.6;
         }
-
         @media (max-width: 767.99px) {
             right: -10px;
         }

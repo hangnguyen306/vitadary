@@ -11,6 +11,23 @@
                 margin-bottom: rem(30);
             }
         }
+
+    .btn.btn-link {
+        color: $blue-main-light;
+        padding-bottom: 0;
+        padding-left: 2px;
+        text-align: left;
+        @include transition();
+
+        &:after {
+            background: {
+                image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='13.763' viewBox='0 0 20 13.763'%3E%3Cg id='icon-arrow' transform='translate(0 -41.916)'%3E%3Cpath id='Path_25276' data-name='Path 25276' d='M19.728,48.14l-5.952-5.952A.93.93,0,1,0,12.461,43.5l4.364,4.364H.93a.93.93,0,1,0,0,1.86H16.825l-4.364,4.364a.93.93,0,0,0,1.315,1.315l5.952-5.952A.93.93,0,0,0,19.728,48.14Z' transform='translate(0 0)' fill='%233EB7E4'/%3E%3C/g%3E%3C/svg%3E%0A");
+            }
+        }
+    }
+    }
+    .sLinkWrap{
+        margin-top:rem(30);
     }
 }
 .bg-dudinh{
@@ -29,12 +46,29 @@
         position: bottom center;
       }  
 }
-
+.bg-miendich{
+    background: {
+        image: url($img-path + "bg-miendich.jpg");
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+      }  
+}
+.bg-songkhoe{
+    background: {
+        image: url($img-path + "bg-songkhoe.jpg");
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+      }  
+}
 .bigImageEvent {
     .image {
         overflow: hidden;
         a {
             overflow: hidden;
+            border-radius: 20px; 
+            display: block;
             img{
                 border-radius: 20px; 
                 transform: scale(1);
@@ -76,14 +110,14 @@
             text-overflow: ellipsis;
             overflow: hidden;
         }
-        .btnDiv{
+        .btnDiv-2{
             margin-top:rem(20);
         }
     }
     @include media-breakpoint-up(md) {
         &:hover {
           .image {
-            >a {
+            img {
               transform: scale(1.1);
             }
           }

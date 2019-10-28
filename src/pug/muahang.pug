@@ -6,32 +6,61 @@ block setting
 
 block content
     .sMainChild.sShopping
-      .container
-        +breadcrumb([{'title':'Mua Hàng'}])
-        .destination
-          a#paneToggle.paneToggle(href='#toggleBtn')
-          #panel.panelCanvas
-              .panelCanvas-top
-                  #directionsPanel.directionsFrom
-                      a#useGPS.ic-location(href='#geoLocation')
-                      .directions-icon
-                          span.wiget-handle
-                          span.wiget-dot
-                          span.wiget-pin
-                      #directionInputs.directions-form
-                          .form-style
-                              .form-group
-                                  input#dirSource.form-control(type='text', placeholder='Viết vị trí của bạn')
-                              .form-group
-                                  #dirDestinationText.form-control Chọn chi nhánh từ danh sách bên dưới
-                                  input#dirDestination.form-control(type='hidden', placeholder='Chọn chi nhánh từ danh sách bên dưới', readonly='')
-              a.btnShow(href='#')
-              .panelCanvas-content.scroll-ui
-                  .directionAdrress
-          #mapCanvas.map-canvas(style='height:100%;width:100%')
+        .sMainContent.sMainContent-other
+            .container
+                +breadcrumb([{'title':'Mua Hàng'}])
+                .page-header
+                    .row
+                        .col-lg-3.col-sm-6
+                            +a-btn-primary('Mua hàng trực tuyến','#','','ic-shop')
+                        .col-lg-6.align-self-center
+                            h3.text-center Danh sách cửa hàng
+                        .col-lg-3.col-sm-6
+                            .item.sHotline
+                                a(href='#')
+                                    span.ic-shop
+                                span.txt-footer
+                                    | Mua hàng 
+                                    br
+                                    a(href='#') Hotline: 1900 633 559
+                .form-style
+                    .item
+                        label(for="") Tỉnh / Thành
+                        select.selectpicker.form-control(title="Chọn tỉnh/thành")
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                    .item
+                        label(for="") Quận / Huyện
+                        select.selectpicker.form-control(title="Chọn quận/huyện")
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                    .item
+                        label(for="") Tên cửa hàng
+                        select.selectpicker.form-control(title="Nhập tên cửa hàng")
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                    .item.align-self-end
+                        button.btn-search-button.btn.btn-primary 
+                            span Tìm kiếm
+                    
+                .destination
+                    .destinationInfo
+                        .scroll-ui
+                            .directionAdrress
+                    .destinationMap
+                        #mapCanvas.map-canvas(style='height:570px;width:100%')
 block js
-  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4lBmajuqUx0ZkspMCVwxrJyM8OAKVzVo&amp;callback=initialize&amp;libraries=places&amp;sensor=false" async defer)
-  script(src="./assets/js/directions.js")
+  script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUl6LsKF3ichrG1WS7eS_k2WPxVmmmSQ0&callback=initialize&libraries=places&sensor=false" async defer)
+  script(src="/html/vitadairy/assets/js/directions.js")
   script.
     function initialize() {
           initMap();

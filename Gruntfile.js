@@ -108,7 +108,7 @@ module.exports = grunt => {
           // 'src/js/library/select2.min.js',          // v4.0.6 
           'src/js/library/slick.min.js',            // v2.6.1
           // 'src/js/library/slick-lightbox.min.js',   // v0.0.1
-          //'src/js/library/simplebar.min.js',        // v2.6.1
+          'src/js/library/simplebar.min.js',        // v2.6.1
           'src/js/library/validation.min.js',       // v1.17.0
           'src/js/library/waypoints.min.js',        // v4.0.1
           'src/js/library/jquery.sticky.js',        // v4.0.1

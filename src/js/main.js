@@ -157,6 +157,7 @@ function slider() {
         nextArrow: "<a href='#' class='icon-arr icon-right'></a>",
         dots: true,
         autoplay: true,
+       
         arrows: true,
         speed: 500,
         fade: true,
@@ -171,6 +172,7 @@ function sHomeProduct() {
         prevArrow: "<a href='#' class='icon-arr icon-arr-small icon-left'></a>",
         nextArrow: "<a href='#' class='icon-arr icon-arr-small icon-right'></a>",
         speed: 1000,
+        lazyLoad: "ondemand",
         autoplay: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -209,6 +211,7 @@ function sHomeNews() {
         nextArrow: "<a href='#' class='icon-arr icon-arr-small icon-right'></a>",
         speed: 1000,
         autoplay: true,
+        lazyLoad: "ondemand",
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
@@ -239,6 +242,7 @@ function sProduct() {
         prevArrow: "<a href='#' class='icon-arr icon-arr-small icon-left'></a>",
         nextArrow: "<a href='#' class='icon-arr icon-arr-small icon-right'></a>",
         speed: 1000,
+        lazyLoad: "ondemand",
         mobileFirst: true,
         responsive: [
             {
@@ -277,6 +281,7 @@ function sliderPartner() {
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 3,
+        lazyLoad: "ondemand",
         focusOnSelect: true,
         asNavFor: '.sSliderParContentInner',
         responsive: [
@@ -323,6 +328,7 @@ function sliderEvent() {
         prevArrow: "<a href='#' class='btn-arrow-left arrow1'><i class='arrow_left'></i></a>",
         nextArrow: "<a href='#' class='btn-arrow-right arrow1'><i class='arrow_right'></i></a>",
         speed: 300,
+        lazyLoad: "ondemand",
         slidesToShow: 3,
         slidesToScroll: 3,
         focusOnSelect: true,
@@ -400,6 +406,7 @@ function sNew() {
         arrows: true,
         prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
         nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>",
+        lazyLoad: "ondemand",
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -537,6 +544,7 @@ function sSlidethumb() {
         slidesToScroll: 1,
         centerMode:true,
         centerPadding: '0px',
+        lazyLoad: "ondemand",
         focusOnSelect: true,
         asNavFor: '.sSlidethumb-text-content',
         responsive: [

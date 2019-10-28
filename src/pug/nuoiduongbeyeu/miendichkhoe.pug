@@ -11,44 +11,44 @@ block content
                 +breadcrumb([{'title':'Nuôi dưỡng bé yêu','link':'#'},{'title':'Miễn dịch khoẻ'}])
                 .sLinkWrap
                     .sLink.sLink-col-6
-                    ul
-                        li: a(href="#")
-                            span.icon-link
-                                <svg viewBox="0 0 40 40" class="icon-shape">
-                                    <use xlink:href="#nuoiduong1"></use>
-                                </svg>
-                            span.icon-text Miễn dịch <br>khoẻ
-                        li: a(href="#")
-                            span.icon-link
-                                <svg viewBox="0 0 40 40" class="icon-shape">
-                                    <use xlink:href="#nuoiduong2"></use>
-                                </svg>
-                            span.icon-text Tiêu hoá<br> tốt
-                        li: a(href="#")
-                            span.icon-link
-                                <svg viewBox="0 0 40 40" class="icon-shape">
-                                    <use xlink:href="#nuoiduong3"></use>
-                                </svg>
-                            span.icon-text Phát triển<br> thể chất
-                        li: a(href="#")
-                            span.icon-link
-                                <svg viewBox="0 0 40 40" class="icon-shape">
-                                    <use xlink:href="#nuoiduong4"></use>
-                                </svg>
-                            span.icon-text Phát triển<br> trí não
-                        li: a(href="#itemNews5")
-                            span.icon-link
-                                <svg viewBox="0 0 40 40" class="icon-shape">
-                                    <use xlink:href="#nuoiduong5"></use>
-                                </svg>
-                            span.icon-text Dị ứng<br> đạm sữa bò
-                        li: a(href="#itemNews6")
-                            span.icon-link
-                                <svg viewBox="0 0 40 40" class="icon-shape">
-                                    <use xlink:href="#nuoiduong6"></use>
-                                </svg>
-                            span.icon-text Nuôi dạy con và<br> nhật ký làm mẹ
-        .sMainContentInfo.bg-dudinh
+                        ul
+                            li.active: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#nuoiduong1"></use>
+                                    </svg>
+                                span.icon-text Miễn dịch <br>khoẻ
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#nuoiduong2"></use>
+                                    </svg>
+                                span.icon-text Tiêu hoá<br> tốt
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#nuoiduong3"></use>
+                                    </svg>
+                                span.icon-text Phát triển<br> thể chất
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#nuoiduong4"></use>
+                                    </svg>
+                                span.icon-text Phát triển<br> trí não
+                            li: a(href="#itemNews5")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#nuoiduong5"></use>
+                                    </svg>
+                                span.icon-text Dị ứng<br> đạm sữa bò
+                            li: a(href="#itemNews6")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#nuoiduong6"></use>
+                                    </svg>
+                                span.icon-text Nuôi dạy con và<br> nhật ký làm mẹ
+        .sMainContentInfo.bg-miendich
             .container
                 .page-header
                     h2
@@ -75,7 +75,7 @@ block content
                             for x in news
                                 .item
                                     a(href=x.url)
-                                        img(data-src= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                                        img(data-lazy= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
                                     .info
                                         .date 21/09/2019
                                         a(href=x.url)

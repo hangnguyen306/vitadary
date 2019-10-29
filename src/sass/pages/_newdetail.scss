@@ -1,6 +1,6 @@
 .sNewDetail{
     .sMainContentInfo{
-        padding: rem(80) 0;
+        padding: rem(40) 0;
          @include media-breakpoint-down(md) {
             padding: rem(40) 0;
 
@@ -32,6 +32,18 @@
     }
     .sLinkWrap{
         margin-top:rem(30);
+        height: auto!important;
+        margin-bottom: 0;
+    }
+    .sPaiging{
+        margin-top:0;
+    }
+    .sMainContent-other{
+        margin-bottom: rem(60);
+    }
+    .bg-thongtinkhuyemai{
+        margin-top:0;
+        padding-top:rem(60);
     }
 }
 .bg-dudinh{
@@ -61,6 +73,22 @@
 .bg-songkhoe{
     background: {
         image: url($img-path + "bg-songkhoe.jpg");
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+      }  
+}
+.bg-thongtinkhuyemai{
+    background: {
+        image: url($img-path + "bg-thongtin-1.jpg");
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+      }  
+}
+.bg-thongtinkhuyemai-1{
+    background: {
+        image: url($img-path + "bg-thongtin.jpg");
         size: cover;
         repeat: no-repeat;
         position: bottom center;

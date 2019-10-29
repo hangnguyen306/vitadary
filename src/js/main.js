@@ -70,7 +70,7 @@ function fixHeight() {
     $('.fixHeight.sMain-4').css({ 'minHeight': hW - 60 });
     $('.fixHeight.sMain-5').css({ 'minHeight': hW - 60 });
     $('.fixHeight.sMain-6').css({ 'minHeight': hW - 60 });
-
+    $('.fixHeight.s404Page').css({ 'minHeight': hW});
     $('.fixHeight .sIntroheader').css({ 'minHeight': hW});
     $('.fixHeight.sLandingNewItem .bgImg.bgImgpc').css({ 'minHeight': hW - 50 });
     $('.fixHeight.sLandingNewItem .bgImgsp .container').css({ 'minHeight': hW - 50 });
@@ -573,6 +573,21 @@ function sSlidethumb() {
         asNavFor: '.sSlidethumb-text'
     });
 }
+function sSliderbigImage(){
+    $('.bigImageEventSlider').slick({
+        infinite: true,
+        arrows:true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode:true,
+        centerPadding: '0px',
+        prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
+        nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>",
+        lazyLoad: "ondemand",
+        focusOnSelect: true
+    });
+}
 
 waypointEl();
 // Base
@@ -595,6 +610,7 @@ fixHeight();
 sAboutStory();
 sPartner();
 sSlidethumb();
+sSliderbigImage();
 function init() {
     $(window).on("debouncedresize", function (event) {
 

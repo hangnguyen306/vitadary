@@ -1,9 +1,8 @@
 .sShopping {
   .page-header {
-    margin: rem(60) 0;
+    margin: rem(30) 0;
     @include media-breakpoint-down(md) {
-    margin: rem(20) 0;
-
+    margin: rem(10) 0;
     }
     .col-lg-6.align-self-center{
       @include media-breakpoint-down(md) {
@@ -33,7 +32,7 @@
     display: flex;
     padding: rem(10);
     flex-wrap: wrap;
-    margin: rem(60) 0;
+    margin: rem(30) 0;
 
     .btn-search-button {
       padding-top: rem(14);
@@ -73,7 +72,9 @@
       }
     }
   }
-
+  .sMainContent-other{
+    margin-bottom: 0;
+  }
 }
 
 .btn.btn-primary {

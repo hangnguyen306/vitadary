@@ -11448,7 +11448,8 @@ input[type="button"].btn-block {
     cursor: pointer; }
 
 .page-item:first-child .page-link {
-  margin-left: 0; }
+  margin-left: 0;
+  padding-right: 0; }
   .page-item:first-child .page-link i:before {
     font-weight: bold;
     font-size: 1.25rem; }
@@ -11467,6 +11468,13 @@ input[type="button"].btn-block {
   cursor: auto;
   background-color: #fff;
   border-color: #dee2e6; }
+
+.page-item span {
+  display: inline-block;
+  vertical-align: text-bottom;
+  position: relative;
+  bottom: 3px;
+  margin-right: 6px; }
 
 .pagination-lg .page-link {
   padding: 0.75rem 1.5rem;
@@ -14930,7 +14938,7 @@ a.btn,
         font-size: 1.25rem; } }
   .page-header h3 {
     color: #0054A5;
-    font-size: 2.5rem;
+    font-size: 1.875rem;
     font-weight: bold;
     margin: 0; }
     @media (max-width: 1366px) {
@@ -16441,6 +16449,10 @@ a.btn,
     .sAboutChild .sticky-wrapper, .sNew .sticky-wrapper {
       height: inherit !important; } }
 
+.sAboutChild .sMainContent {
+  border-bottom: 1px dashed #CCCED0;
+  padding-bottom: 30px; }
+
 .sMainContent-gray {
   background: #F8F8F8;
   margin-top: 3.75rem;
@@ -16759,8 +16771,6 @@ a.btn,
   border-radius: 20px;
   padding: 1.875rem;
   position: relative; }
-  .sSlideValueContent p {
-    margin: 0; }
   .sSlideValueContent:before {
     content: '';
     position: absolute;
@@ -16944,7 +16954,7 @@ a.btn,
   padding: 5rem 0;
   background-image: url("../images/bg-doitac.jpg");
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: top;
   background-size: cover; }
   .sDoitacContentInfoWhite {
     background: white; }
@@ -17664,7 +17674,7 @@ a.btn,
     background: rgba(62, 183, 228, 0.1); }
 
 .sNewDetail .sMainContentInfo {
-  padding: 5rem 0; }
+  padding: 2.5rem 0; }
   @media (max-width: 991.98px) {
     .sNewDetail .sMainContentInfo {
       padding: 2.5rem 0; } }
@@ -17687,7 +17697,19 @@ a.btn,
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='13.763' viewBox='0 0 20 13.763'%3E%3Cg id='icon-arrow' transform='translate(0 -41.916)'%3E%3Cpath id='Path_25276' data-name='Path 25276' d='M19.728,48.14l-5.952-5.952A.93.93,0,1,0,12.461,43.5l4.364,4.364H.93a.93.93,0,1,0,0,1.86H16.825l-4.364,4.364a.93.93,0,0,0,1.315,1.315l5.952-5.952A.93.93,0,0,0,19.728,48.14Z' transform='translate(0 0)' fill='%233EB7E4'/%3E%3C/g%3E%3C/svg%3E%0A"); }
 
 .sNewDetail .sLinkWrap {
-  margin-top: 1.875rem; }
+  margin-top: 1.875rem;
+  height: auto !important;
+  margin-bottom: 0; }
+
+.sNewDetail .sPaiging {
+  margin-top: 0; }
+
+.sNewDetail .sMainContent-other {
+  margin-bottom: 3.75rem; }
+
+.sNewDetail .bg-thongtinkhuyemai {
+  margin-top: 0;
+  padding-top: 3.75rem; }
 
 .bg-dudinh {
   background-image: url("../images/bg-dudinhmangthai.jpg");
@@ -17709,6 +17731,18 @@ a.btn,
 
 .bg-songkhoe {
   background-image: url("../images/bg-songkhoe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+
+.bg-thongtinkhuyemai {
+  background-image: url("../images/bg-thongtin-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+
+.bg-thongtinkhuyemai-1 {
+  background-image: url("../images/bg-thongtin.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center; }
@@ -17796,10 +17830,10 @@ a.btn,
   color: inherit; }
 
 .sShopping .page-header {
-  margin: 3.75rem 0; }
+  margin: 1.875rem 0; }
   @media (max-width: 991.98px) {
     .sShopping .page-header {
-      margin: 1.25rem 0; } }
+      margin: 0.625rem 0; } }
   @media (max-width: 991.98px) {
     .sShopping .page-header .col-lg-6.align-self-center {
       order: 1;
@@ -17822,7 +17856,7 @@ a.btn,
   display: flex;
   padding: 0.625rem;
   flex-wrap: wrap;
-  margin: 3.75rem 0; }
+  margin: 1.875rem 0; }
   .sShopping .form-style .btn-search-button {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
@@ -17851,6 +17885,9 @@ a.btn,
         .sShopping .form-style .item:last-child {
           max-width: 50%;
           flex: 0 0 50%; } }
+
+.sShopping .sMainContent-other {
+  margin-bottom: 0; }
 
 .btn.btn-primary.btn-ic-shop:after {
   width: 1.75rem;
@@ -18000,5 +18037,25 @@ a.btn,
       flex: 0 0 100%;
       padding-top: 1.25rem;
       padding-left: 0rem; } }
+
+.s404Page {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/bg-404.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center; }
+  .s404Page .page-header h3 {
+    font-size: 3rem; }
+    @media (min-width: 768px) {
+      .s404Page .page-header h3 {
+        font-size: 1.875rem; } }
+  .s404Page .page-header p {
+    font-size: 2.125rem; }
+    @media (min-width: 768px) {
+      .s404Page .page-header p {
+        font-size: 1.25rem; } }
+  .s404Page .btn.btn-primary:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='13.987' viewBox='0 0 20 13.987'%3E%3Cg id='return' transform='translate(0 -76.97)'%3E%3Cg id='Group_771' data-name='Group 771' transform='translate(0 76.97)'%3E%3Cpath id='Path_29802' data-name='Path 29802' d='M15.033,81.022H1.41l2.864-3.21a.505.505,0,0,0-.754-.673L.295,80.754a1.16,1.16,0,0,0,0,1.545l3.226,3.616a.505.505,0,0,0,.754-.673L1.41,82.032H15.033a3.957,3.957,0,0,1,0,7.914H12.627a.505.505,0,0,0,0,1.01h2.405a4.967,4.967,0,1,0,0-9.935Z' transform='translate(0 -76.97)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
 
 /*# sourceMappingURL=styles.css.map */

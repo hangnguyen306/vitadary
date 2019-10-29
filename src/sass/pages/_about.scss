@@ -10,6 +10,13 @@
     }
    
 }
+.sAboutChild{
+    .sMainContent{
+        border-bottom: 1px dashed #CCCED0;
+        padding-bottom: 30px;
+    }
+}
+
 .sMainContent{
     &-gray
         {
@@ -466,9 +473,6 @@
         border-radius: 20px;
         padding:rem(30);
         position: relative;
-        p{
-            margin: 0;
-        }
         &:before{
             content: '';
             position: absolute;

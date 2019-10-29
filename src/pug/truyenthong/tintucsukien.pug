@@ -1,0 +1,70 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "bi-quyet"
+
+block content
+    .sMainChild.sNew.sNewDetail
+        .sMainContent.bg-tintucsukien
+            .container
+                +breadcrumb([{'title':'Truyền thông','link':'#'},{'title':'Tin tức sự kiện'}])
+            .sMainContentInfo
+                .container
+                    .sInfo.listColNew
+                        .bigImageEvent.bigImageEventSlider
+                            .item
+                                +itemBigEventSlider(imgPath + 'tintucsukien/img-01.jpg','image',"#","Chính phủ Mỹ nói gì về hợp tác độc quyền sữa non của…")
+                            .item
+                                +itemBigEventSlider(imgPath + 'tintucsukien/img-01.jpg','image',"#","​1 Chính phủ Mỹ nói gì về hợp tác độc quyền sữa non của…")
+                            .item
+                                +itemBigEventSlider(imgPath + 'tintucsukien/img-01.jpg','image',"#","2 Chính phủ Mỹ nói gì về hợp tác độc quyền sữa non của…")
+                   
+        .sMainContentInfo.bg-thongtinkhuyemai-1
+            .container
+                .page-header
+                    .row
+                      .col-sm-8
+                        h3
+                          span.icon-text
+                              <svg viewBox="0 0 63.891 50" class="icon-shape">
+                                  <use xlink:href="#ic-tintuc-sukien"></use>
+                              </svg>
+                          span.ttl-text Tin tức Sự kiện
+                      .col-sm-4
+                        select.selectpicker.form-control(title="Tin mới nhất")
+                          option(value="Sample") Sample
+                          option(value="Sample") Sample
+                          option(value="Sample") Sample
+                          option(value="Sample") Sample
+                          option(value="Sample") Sample
+                -
+                    var news2 = [
+                        {'title' : "Báo Vnexpress: VitaDairy mang sữa non ColosIgG 24h…", 'img': 'tintucsukien/img-02.jpg','url' : "#"},
+                        {'title' : "Báo Eva: Sao Việt chia sẻ bí quyết chăm con khỏe mạnh…", 'img': 'tintucsukien/img-03.jpg','url' : "#"},
+                        {'title' : "Báo dân Trí: Cần có giải pháp giảm bệnh tiêu hóa, hô hấp…", 'img': 'tintucsukien/img-04.jpg','url' : "#"},
+                        {'title' : "Eva.vn: Muốn con khỏe mạnh, cha mẹ hãy bổ sung ngay…", 'img': 'tintucsukien/img-05.jpg','url' : "#"},
+                        {'title' : "Báo Dân Trí: Trẻ thường xuyên bị nhiễm khuẩn đường tiêu…", 'img': 'tintucsukien/img-06.jpg','url' : "#"},
+                        {'title' : "Báo Thanh Niên: Bí quyết nuôi con mà ít phải đến bệnh…", 'img': 'tintucsukien/img-07.jpg','url' : "#"}
+                    ]
+                .sNewsSlider.row.sNewsSliderList
+                        for x in news2
+                            .col-md-4.col-sm-6
+                                .item
+                                    a(href=x.url)
+                                        img(data-src= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                                    .info
+                                        .date 21/09/2019
+                                        a(href=x.url)
+                                            = x.title
+                                        p Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
+                                        +a-btn-link('Xem thêm','#')
+                .sPaiging
+                    +pagination([
+                        {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                        {text:'1',url:'#'},
+                        {text:'2',url:'#'},
+                        {text:'3',url:'#'},
+                        {text:'...',url:'#'},
+                        {text:'<span>Cuối</span><i class="arrow_carrot-right"></i>',url:'#'}
+                    ])

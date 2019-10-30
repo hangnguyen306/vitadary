@@ -1,0 +1,81 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "bi-quyet"
+
+block content
+    .sMainChild.sNew.sNewDetail
+        .sMainContent.sMainContent-other
+            .container
+                +breadcrumb([{'title':'Bí quyết mẹ khoẻ','link':url + 'biquyetmekhoe.html'},{'title':'Dự định mang thai','link':url + '#'},{'title':'Cần chuẩn bị những gì trước khi mang thai?'}])
+                .row
+                    .col-sm-8
+                        .page-header
+                            h2 Cần chuẩn bị những gì trước khi mang thai?
+                        .grp-date.row
+                            .date.col-6 21/09/2019
+                            .share.col-6 Chia sẻ
+                        .sContentDes
+                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.
+                        .sContent
+                            p: img(data-sr= imgPath + "dudinhmangthai/img-16.jpg" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Viverra maecenas accumsan lacus vel. Placerat vestibulum lectus mauris ultrices eros. Quis vel eros donec ac odio tempor orci dapibus ultrices. Suspendisse sed nisi lacus sed viverra tellus in. Quam pellentesque nec nam aliquam sem et. Tortor dignissim convallis aenean et tortor at risus. Vitae suscipit tellus mauris a diam. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. A diam maecenas sed enim ut sem. Sit amet consectetur adipiscing elit duis. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Aliquet risus feugiat in ante metus. Congue quisque egestas diam in arcu cursus euismod quis. Amet dictum sit amet justo donec enim diam. Erat pellentesque adipiscing commodo elit at. Eu nisl nunc mi ipsum faucibus. Sed nisi lacus sed viverra tellus in hac.
+                            p Semper eget duis at tellus at urna condimentum mattis. Et netus et malesuada fames ac turpis egestas. Mauris augue neque gravida in fermentum et. Fames ac turpis egestas maecenas pharetra convallis. Cursus vitae congue mauris rhoncus aenean. Neque laoreet suspendisse interdum consectetur. Mus mauris vitae ultricies leo integer malesuada. Aliquam eleifend mi in nulla. Sodales neque sodales ut etiam sit amet nisl. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Neque convallis a cras semper auctor neque vitae tempus quam. Lectus sit 
+                            p: img(data-sr= imgPath + "dudinhmangthai/img-17.jpg" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                            p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Viverra maecenas accumsan lacus vel. Placerat vestibulum lectus mauris ultrices eros. Quis vel eros donec ac odio tempor orci dapibus ultrices. Suspendisse sed nisi lacus sed viverra tellus in. Quam pellentesque nec nam aliquam sem et. Tortor dignissim convallis aenean et tortor at risus. Vitae suscipit tellus mauris a diam. Et ligula ullamcorper malesuada proin libero nunc consequat interdum varius. A diam maecenas sed enim ut sem. Sit amet consectetur adipiscing elit duis. Lorem mollis aliquam ut porttitor leo a diam sollicitudin. Aliquet risus feugiat in ante metus. Congue quisque egestas diam in arcu cursus euismod quis. Amet dictum sit amet justo donec enim diam. Erat pellentesque adipiscing commodo elit at. Eu nisl nunc mi ipsum faucibus. Sed nisi lacus sed viverra tellus in hac.
+                            p Semper eget duis at tellus at urna condimentum mattis. Et netus et malesuada fames ac turpis egestas. Mauris augue neque gravida in fermentum et. Fames ac turpis egestas maecenas pharetra convallis. Cursus vitae congue mauris rhoncus aenean. Neque laoreet suspendisse interdum consectetur. Mus mauris vitae ultricies leo integer malesuada. Aliquam eleifend mi in nulla. Sodales neque sodales ut etiam sit amet nisl. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Neque convallis a cras semper auctor neque vitae tempus quam. Lectus sit       
+                    .col-sm-4
+                        .page-header
+                            h2
+                                span.icon-text
+                                span.ttl-text Bài viết liên quan
+                        -
+                            var news2 = [
+                                {'title' : "Vợ chồng cần chuẩn bị gì trước khi mang thai", 'img': 'miendichkhoe/img-18.jpg','url' : "#"},
+                                {'title' : "18 điều bạn nên chuẩn bị trước khi mang thai", 'img': 'miendichkhoe/img-19.jpg','url' : "#"},
+                                {'title' : "Nên và không nên ăn gì trước khi mang thai", 'img': 'miendichkhoe/img-20.jpg','url' : "#"}
+                            ]
+                        .sNewsSlider.sNewsSliderList
+                                for x in news2
+                                    .item
+                                        a(href=x.url)
+                                            img(data-src= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                                        .info
+                                            //.date 21/09/2019
+                                            a(href=x.url)
+                                                = x.title
+                                            p Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
+                                            //+a-btn-link('Xem thêm','#')
+        .sMainContent.bg-sanphamlienquan
+            .container
+                .page-header
+                    h2
+                        span.icon-text
+                        span.ttl-text Sản phẩm liên quan
+                .sBoxProduct
+                    .row
+                        .col-sm-8
+                            h3 Gluvita 900g
+                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,.
+                            +a-btn-primary('Xem chi tiết','#')
+                        .col-sm-4
+                            a(href="#")
+                                img(data-src= imgPath + "dudinhmangthai/img-21.png" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                .sBoxProductSlidder
+                    .item
+                        .image
+                            a(href="#")
+                                img(data-lazy= imgPath + "dudinhmangthai/img-22.jpg" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                        h4: a(href="#") Vitamama 400g
+                    .item
+                        .image
+                            a(href="#")
+                                img(data-lazy= imgPath + "dudinhmangthai/img-23.jpg" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                        h4: a(href="#") ColosBaby Gold for MUM 400g 
+                    .item
+                        .image
+                            a(href="#")
+                                img(data-lazy= imgPath + "dudinhmangthai/img-24.jpg" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                        h4: a(href="#") ColosBaby Gold for MUM 800g
+                        

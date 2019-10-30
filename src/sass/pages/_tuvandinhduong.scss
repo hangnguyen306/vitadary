@@ -1,0 +1,147 @@
+.sAdvisory{
+   
+    .sMainContentItem{
+        padding: rem(50) 0;
+        &.bg-tuvan-4{
+            padding-bottom: 0;
+        }
+    }
+    .bg-tuvan-1{
+        background: {
+            image: url($img-path + "bg-tuvan-1.jpg");
+            size: cover;
+            repeat: no-repeat;
+            position: bottom center;
+          }  
+    }
+    .bg-tuvan-2{
+        background: {
+            image: url($img-path + "bg-tuvan-2.jpg");
+            size: cover;
+            repeat: no-repeat;
+            position: bottom center;
+          }  
+    }
+    .bg-tuvan-3{
+        background: {
+            image: url($img-path + "bg-tuvan-3.jpg");
+            size: cover;
+            repeat: no-repeat;
+            position: bottom center;
+          }  
+    }
+    .bg-tuvan-4{
+        background: {
+            image: url($img-path + "bg-tuvan-4.jpg");
+            size: cover;
+            repeat: no-repeat;
+            position: bottom center;
+          }  
+    }
+   
+    .page-header-content{
+        margin-top: rem(50);
+    }
+    .sListsAdvisory{
+        .item{
+            border-radius: 20px;
+            background: #fff;
+            margin-bottom: rem(30);
+            box-shadow: 0 3px 40px rgba(131, 131, 131, 0.15);
+            &:nth-child(2n){
+                .row{
+                    div:first-child{
+                        order: 1;
+                    }
+                    div:last-child{
+                        order: 0;
+                        .image{
+                            img{
+                                border-bottom-right-radius: 0px;
+                                border-top-right-radius: 0px;
+                                border-bottom-left-radius: 20px;
+                                border-top-left-radius: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            .info{
+                padding: rem(30);
+            }
+            h3{
+                color:$blue-main;
+                font-weight: bold;
+                font-size: rem(34);
+            }
+            p{
+                font-size: rem(15);
+                line-height: (26/15);
+            }
+            .image{
+                img{
+                    max-width: 100%;
+                    border-bottom-right-radius: 20px;
+                    border-top-right-radius: 20px;
+                }
+            }
+
+        }
+    }
+    .sFormAdv{
+        img{
+            max-width: 100%;
+        }
+        .sForm{
+            background:#fff;
+            border:2px dotted $blue-main-light;
+            padding: rem(20) rem(40);
+            border-radius: 30px;margin-bottom: rem(50);
+        }
+    }
+    
+}
+.sSlideperson{
+    .item{
+        padding: rem(15);
+        .image{
+            text-align: center;
+            img{
+                display: inline-block;
+                max-width: 100%;
+            }
+        }
+        .info{
+            background: white;
+            border-radius: 80px;
+            border:2px dotted $blue-main-light;
+            padding: rem(20) rem(40);
+            @include transition();
+            h3{
+                color:$blue-main;
+                font-size: rem(20);
+                text-transform: uppercase;
+                font-weight: bold;
+                margin: 0 0 0 0;
+                @include transition();
+
+            }
+            p{
+                font-size: rem(18);
+                margin: 0;
+                 @include transition();
+            }
+        }
+        @include media-breakpoint-up(md) {
+            &:hover{
+                .info{
+                    background: $blue-main;
+                    >*{
+                        color: white;
+                    }
+                }
+            }
+        }
+       
+    }
+}

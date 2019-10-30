@@ -588,6 +588,19 @@ function sSliderbigImage(){
         focusOnSelect: true
     });
 }
+function sSlidepersonSlider(){
+    $('.sSlidepersonSlider').slick({
+        infinite: true,
+        arrows:true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerPadding: '0px',
+        prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
+        nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>",
+        lazyLoad: "ondemand"
+    });
+}
 
 waypointEl();
 // Base
@@ -611,6 +624,7 @@ sAboutStory();
 sPartner();
 sSlidethumb();
 sSliderbigImage();
+sSlidepersonSlider();
 function init() {
     $(window).on("debouncedresize", function (event) {
 

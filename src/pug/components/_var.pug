@@ -10,21 +10,21 @@
     var title          = ''
 -
     var menuTop = [
-        {'key': 'about',     'title': 'VitaDairy',            'url': '#','child':[
-            {'key': 'cau-chuyen',     'title': 'Câu chuyện VitaDairy',            'url': '#'},
-            {'key': 'cam-ket',     'title': 'Cam kết chất lượng',            'url': '#'},
+        {'key': 'about',     'title': 'VitaDairy',            'url':  url +  'vitadairy/index.html','child':[
+            {'key': 'cau-chuyen',     'title': 'Câu chuyện VitaDairy',            'url': url + 'vitadairy/cauchuyenvitadairy.html'},
+            {'key': 'cam-ket',     'title': 'Cam kết chất lượng',            'url': url + 'vitadairy/camketchatluong.html'},
             {'key': 'phat-trien-ben-vung',     'title': 'Phát triển bền vững',            'url': url + 'vitadairy/phattrienbenvung.html'}
         ]},
         {'key': 'mua-hang',     'title': 'Mua hàng',            'url': url + 'muahang.html'},
-        {'key': 'doi-tac',     'title': 'Đối tác & Phân phối',            'url': '#', 'child' : [
+        {'key': 'doi-tac',     'title': 'Đối tác & Phân phối',            'url': url + 'doitacphanphoi', 'child' : [
             {'key': 'doi-tac',     'title': 'Đối tác',            'url': url + 'doitacphanphoi/doitac.html'},
-            {'key': 'phan-phoi',     'title': 'Phân phối',            'url': '#'},
+            {'key': 'phan-phoi',     'title': 'Phân phối',            'url': url + 'doitacphanphoi/phanphoi.html'},
         ]},
-        {'key': 'tuyen-dung',     'title': 'Tuyển dụng',            'url': '#' ,'child' : [
-            {'key': 'co-hoi-nghe-nghiep',     'title': 'Cơ hội nghề nghiệp',            'url': '#'},
-            {'key': 'moi-truong-lam-viec',     'title': 'Môi trường làm việc',            'url': '#'},
+        {'key': 'tuyen-dung',     'title': 'Tuyển dụng',            'url': url + 'tuyendung.html' ,'child' : [
+            {'key': 'co-hoi-nghe-nghiep',     'title': 'Cơ hội nghề nghiệp',            'url': url + 'tuyendung/cohoinghenghiep.html'},
+            {'key': 'moi-truong-lam-viec',     'title': 'Môi trường làm việc',            'url': url + 'tuyendung/moitruonglamviec.html'},
         ]},
-        {'key': 'lien-he',     'title': 'Liên hệ',            'url': '#'},
+        {'key': 'lien-he',     'title': 'Liên hệ',            'url': url + 'lienhe.html'},
         {'key': 'language',     'title': 'English',            'url': '#'},
     ]
 -
@@ -50,20 +50,20 @@
             {'key': 'cham-soc',  'title':'Dinh dữỡng cho người bệnh thận',     'url': url +  'chamsocnguoilontuoi/songkhoemoingay.html'},
             {'key': 'cham-soc',  'title':'Chăm sóc người bệnh gan',     'url': url +  'chamsocnguoilontuoi/songkhoemoingay.html'}
         ]},
-        {'key': 'tu-van',    'title': 'Tư vấn dinh dưỡng',     'url': '#','child': [
-            {'key': 'tu-van',  'title':'Đội ngũ chuyên gia',     'url': '#'},
-            {'key': 'tu-van',  'title':'Trung tâm dinh dưỡng VitaDairy',     'url': '#'}
+        {'key': 'tu-van',    'title': 'Tư vấn dinh dưỡng',     'url': url + 'tuvandinhduong.html','child': [
+            {'key': 'tu-van',  'title':'Đội ngũ chuyên gia',     'url': url + 'tuvandinhduong/doinguchuyengia.html'},
+            {'key': 'tu-van',  'title':'Trung tâm dinh dưỡng VitaDairy',     'url': url + 'tuvandinhduong/trungtamdinhduong.html'}
         ]},
-        {'key': 'san-pham',    'title': 'Sản phẩm',     'url': '#','child': [
-            {'key': 'san-pham',  'title':'Sữa cho mẹ',     'url': '#'},
-            {'key': 'san-pham',  'title':'Sữa cho bé',     'url': '#'},
-            {'key': 'san-pham',  'title':'Sữa cho người lớn',     'url': '#'}
+        {'key': 'san-pham',    'title': 'Sản phẩm',     'url':url +  'sanpham.html','child': [
+            {'key': 'san-pham',  'title':'Sữa cho mẹ',     'url': url + 'sampham/suachome.html'},
+            {'key': 'san-pham',  'title':'Sữa cho bé',     'url': url + 'sampham/suachobe.html'},
+            {'key': 'san-pham',  'title':'Sữa cho người lớn',     'url': url + 'sampham/suachonguoilon.html'}
         ]},
-        {'key': 'truyen-thong',    'title': 'Truyền thông',     'url': '#' ,'child': [
-            {'key': 'truyen-thong',  'title':'Tin tức - sự kiện',     'url': '#'},
-            {'key': 'truyen-thong',  'title':'Thông tin khuyến mãi',     'url': '#'},
-            {'key': 'truyen-thong',  'title':'Chiến dịch quảng cáo',     'url': '#'},
-            {'key': 'truyen-thong',  'title':'VitaDairy tặng mẹ',     'url': '#'}
+        {'key': 'truyen-thong',    'title': 'Truyền thông',     'url': url + 'truyenthong.html' ,'child': [
+            {'key': 'truyen-thong',  'title':'Tin tức - sự kiện',     'url': url + 'truyenthong/tintucsukien.html'},
+            {'key': 'truyen-thong',  'title':'Thông tin khuyến mãi',     'url': url + 'truyenthong/thongtinkhuyenmai.html'},
+            {'key': 'truyen-thong',  'title':'Chiến dịch quảng cáo',     'url': url + 'truyenthong/chiendichquangcao.html'},
+            {'key': 'truyen-thong',  'title':'VitaDairy tặng mẹ',     'url': url + 'truyenthong/vitadairytangme.html'}
         ]}
     ]
 -

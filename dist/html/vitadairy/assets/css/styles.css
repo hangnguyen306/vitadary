@@ -13504,17 +13504,11 @@ select.selectpicker {
 .simplebar-scrollbar:before {
   position: absolute;
   content: "";
-  background: rgba(0, 0, 0, 0.8);
+  background: #3eb7e4;
   border-radius: 7px;
   left: 0;
   right: 0;
-  opacity: 0;
-  transition: opacity 0.2s linear; }
-
-.simplebar-track .simplebar-scrollbar.visible:before {
-  /* When hovered, remove all transitions from drag handle */
-  opacity: 0.5;
-  transition: opacity 0 linear; }
+  opacity: 1; }
 
 .simplebar-track.vertical {
   top: 0; }
@@ -14493,7 +14487,7 @@ header.header {
       top: 0;
       width: 100%;
       box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.07);
-      z-index: 9999;
+      z-index: 999;
       animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
       background: #F0FBFD;
       padding-top: 0.3125rem;
@@ -17643,36 +17637,55 @@ a.btn,
       font-size: 1.25rem;
       margin: 0; }
 
-.sFaqPage .list-group-col3 li {
-  float: 0 0 33.33%;
-  max-width: 33.33%; }
+.sFaqPage .list-group-col4 li {
+  flex: 0 0 25%;
+  max-width: 25%; }
 
-.sFaqPage .faqGrid .item {
+.faqGrid .item {
   border: 2px dashed #CCCED0;
   border-radius: 20px;
   padding: 1.25rem;
   margin-top: 1.25rem;
   transition: all 0.2s ease-in-out; }
   @media screen and (prefers-reduced-motion: reduce) {
-    .sFaqPage .faqGrid .item {
+    .faqGrid .item {
       transition: none; } }
-  .sFaqPage .faqGrid .item img {
+  .faqGrid .item img {
     width: 90px;
     height: 90px;
     float: left;
     border-radius: 50%;
     margin-right: 20px;
     margin-bottom: 20px; }
-  .sFaqPage .faqGrid .item h2 {
+  .faqGrid .item h2 {
     color: #0054A5;
     font-size: 0.9375rem;
     font-weight: bold;
     margin: 0;
     padding-bottom: 1.25rem; }
-  .sFaqPage .faqGrid .item p {
+  .faqGrid .item p {
     margin: 0; }
-  .sFaqPage .faqGrid .item:hover {
+  .faqGrid .item:hover {
     background: rgba(62, 183, 228, 0.1); }
+
+.sNavtag {
+  margin-top: 1.25rem; }
+  .sNavtag a {
+    border: 1px solid #3EB7E4;
+    font-size: 0.75rem;
+    display: inline-block;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: all 0.2s ease-in-out; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .sNavtag a {
+        transition: none; } }
+    .sNavtag a:hover {
+      background: #3EB7E4;
+      color: #fff; }
 
 .sNewDetail .sMainContentInfo {
   padding: 2.5rem 0; }
@@ -18059,45 +18072,6 @@ a.btn,
   .s404Page .btn.btn-primary:after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='13.987' viewBox='0 0 20 13.987'%3E%3Cg id='return' transform='translate(0 -76.97)'%3E%3Cg id='Group_771' data-name='Group 771' transform='translate(0 76.97)'%3E%3Cpath id='Path_29802' data-name='Path 29802' d='M15.033,81.022H1.41l2.864-3.21a.505.505,0,0,0-.754-.673L.295,80.754a1.16,1.16,0,0,0,0,1.545l3.226,3.616a.505.505,0,0,0,.754-.673L1.41,82.032H15.033a3.957,3.957,0,0,1,0,7.914H12.627a.505.505,0,0,0,0,1.01h2.405a4.967,4.967,0,1,0,0-9.935Z' transform='translate(0 -76.97)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
 
-.sAdvisory .sSlideperson .item {
-  padding: 0.9375rem; }
-  .sAdvisory .sSlideperson .item .image {
-    text-align: center; }
-    .sAdvisory .sSlideperson .item .image img {
-      display: inline-block;
-      max-width: 100%; }
-  .sAdvisory .sSlideperson .item .info {
-    background: white;
-    border-radius: 80px;
-    border: 2px dotted #3EB7E4;
-    padding: 1.25rem 2.5rem;
-    transition: all 0.2s ease-in-out; }
-    @media screen and (prefers-reduced-motion: reduce) {
-      .sAdvisory .sSlideperson .item .info {
-        transition: none; } }
-    .sAdvisory .sSlideperson .item .info h3 {
-      color: #0054A5;
-      font-size: 1.25rem;
-      text-transform: uppercase;
-      font-weight: bold;
-      margin: 0 0 0 0;
-      transition: all 0.2s ease-in-out; }
-      @media screen and (prefers-reduced-motion: reduce) {
-        .sAdvisory .sSlideperson .item .info h3 {
-          transition: none; } }
-    .sAdvisory .sSlideperson .item .info p {
-      font-size: 1.125rem;
-      margin: 0;
-      transition: all 0.2s ease-in-out; }
-      @media screen and (prefers-reduced-motion: reduce) {
-        .sAdvisory .sSlideperson .item .info p {
-          transition: none; } }
-  @media (min-width: 768px) {
-    .sAdvisory .sSlideperson .item:hover .info {
-      background: #0054A5; }
-      .sAdvisory .sSlideperson .item:hover .info > * {
-        color: white; } }
-
 .sAdvisory .sMainContentItem {
   padding: 3.125rem 0; }
   .sAdvisory .sMainContentItem.bg-tuvan-4 {
@@ -18158,14 +18132,161 @@ a.btn,
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px; }
 
-.sAdvisory .sFormAdv img {
+.sFormAdv img {
   max-width: 100%; }
 
-.sAdvisory .sFormAdv .sForm {
+.sFormAdv .sForm {
   background: #fff;
   border: 2px dotted #3EB7E4;
   padding: 1.25rem 2.5rem;
   border-radius: 30px;
   margin-bottom: 3.125rem; }
+
+.sSlideperson .item {
+  padding: 0.9375rem; }
+  .sSlideperson .item .image {
+    text-align: center; }
+    .sSlideperson .item .image img {
+      display: inline-block;
+      max-width: 100%; }
+  .sSlideperson .item .info {
+    background: white;
+    border-radius: 80px;
+    border: 2px dotted #3EB7E4;
+    padding: 1.25rem 2.5rem;
+    transition: all 0.2s ease-in-out; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .sSlideperson .item .info {
+        transition: none; } }
+    .sSlideperson .item .info h3 {
+      color: #0054A5;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 0 0 0 0;
+      transition: all 0.2s ease-in-out; }
+      @media screen and (prefers-reduced-motion: reduce) {
+        .sSlideperson .item .info h3 {
+          transition: none; } }
+    .sSlideperson .item .info p {
+      font-size: 1.125rem;
+      margin: 0;
+      transition: all 0.2s ease-in-out; }
+      @media screen and (prefers-reduced-motion: reduce) {
+        .sSlideperson .item .info p {
+          transition: none; } }
+  @media (min-width: 768px) {
+    .sSlideperson .item:hover .info {
+      background: #0054A5; }
+      .sSlideperson .item:hover .info > * {
+        color: white; } }
+
+.sBoxFaq {
+  background: #fff;
+  border-radius: 20px;
+  border: 1px dotted #3EB7E4;
+  display: flex;
+  margin-bottom: 0.625rem;
+  padding-bottom: 1.875rem; }
+  .sBoxFaqLeft {
+    max-width: 50%;
+    width: 50%;
+    padding-right: 1.875rem; }
+    .sBoxFaqLeft .scroll-ui {
+      max-height: 540px; }
+    .sBoxFaqLeft .faqGrid .item {
+      padding: 1.25rem;
+      border: none;
+      border-radius: 0;
+      margin-top: 0;
+      position: relative; }
+      .sBoxFaqLeft .faqGrid .item:afteR {
+        left: 15px;
+        right: 15px;
+        bottom: 0;
+        height: 1px;
+        border-bottom: 1px dotted #CCCED0;
+        position: absolute;
+        content: ''; }
+      .sBoxFaqLeft .faqGrid .item.active {
+        background: rgba(62, 183, 228, 0.1); }
+  .sBoxFaqRight {
+    max-width: 50%;
+    width: 50%;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem; }
+    .sBoxFaqRight .scroll-ui {
+      max-height: 440px; }
+    .sBoxFaqRight .sContent {
+      padding-right: 1.25rem; }
+  .sBoxFaq h3 {
+    color: #0054A5;
+    font-weight: bold;
+    font-size: 2.125rem;
+    margin-top: 1.875rem; }
+  .sBoxFaq .sname {
+    text-align: right; }
+    .sBoxFaq .sname h4 {
+      color: #0054A5;
+      font-weight: bold;
+      font-size: 0.9375rem;
+      margin-top: 1.875rem; }
+  .sBoxFaq .data-hide {
+    display: none; }
+    .sBoxFaq .data-hide.active {
+      display: block; }
+
+.modal {
+  z-index: 9999; }
+  .modal .modal-dialog {
+    max-width: 1180px; }
+    .modal .modal-dialog .modal-content {
+      border-radius: 20px;
+      border: none; }
+      .modal .modal-dialog .modal-content button.close {
+        width: 50px;
+        height: 50px;
+        background: none;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+        outline: none;
+        top: 30px;
+        right: 30px;
+        background: #fff;
+        z-index: 99;
+        position: absolute;
+        transition: all 0.2s ease-in-out; }
+        @media screen and (prefers-reduced-motion: reduce) {
+          .modal .modal-dialog .modal-content button.close {
+            transition: none; } }
+        .modal .modal-dialog .modal-content button.close:hover {
+          background: #3EB7E4;
+          border-color: #3EB7E4; }
+        .modal .modal-dialog .modal-content button.close .ic-close {
+          background-repeat: no-repeat;
+          background-position: center center;
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.487' height='19.486' viewBox='0 0 19.487 19.486'%3E%3Cpath id='Path_29776' data-name='Path 29776' d='M35.2,16.285a.973.973,0,0,0-1.378,0l-8.08,8.08-8.08-8.08a.974.974,0,0,0-1.378,1.378l8.08,8.08-8.08,8.08A.974.974,0,1,0,17.663,35.2l8.08-8.08,8.08,8.08A.974.974,0,0,0,35.2,33.823l-8.08-8.08,8.08-8.08A.973.973,0,0,0,35.2,16.285Z' transform='translate(-16 -16)' fill='%23ccced0'/%3E%3C/svg%3E%0A"); }
+      .modal .modal-dialog .modal-content .modal-header {
+        text-align: center;
+        display: block;
+        border: none;
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem; }
+        .modal .modal-dialog .modal-content .modal-header h5 {
+          color: #0054A5;
+          font-size: 1.875rem;
+          margin: 0;
+          font-weight: bold; }
+    .modal .modal-dialog .scroll-ui {
+      max-height: 600px; }
+  .modal a.btn.btn-primary.btn-icon-contact {
+    display: block;
+    margin-top: 30px; }
 
 /*# sourceMappingURL=styles.css.map */

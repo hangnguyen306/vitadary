@@ -601,7 +601,17 @@ function sSlidepersonSlider(){
         lazyLoad: "ondemand"
     });
 }
-
+function showAsk(){
+    var  el = $('.showAsk');
+    el.click(function() {
+        var elType = $(this).attr('data-id');
+        $('.data-hide').removeClass('active');
+        $('.showAsk').removeClass('active');
+        $(this).addClass('active');
+        $('.' + elType).addClass('active');
+    })
+}
+showAsk();
 waypointEl();
 // Base
 ui();

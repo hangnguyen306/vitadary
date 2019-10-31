@@ -112,17 +112,63 @@ block content
                     h3
                         span.icon-text
                         span.ttl-text Những câu hỏi thường gặp (FAQ)
+                .sBoxFaq
+                    .sBoxFaqLeft
+                        .text-center
+                            h3 Câu hỏi
+                        .faqGrid
+                            .scroll-ui
+                                +faq(imgPath + 'tuvandinhduong/img1.png',"Nguyễn Thị Tuyết Mai",'data-item1','active')
+                                +faq(imgPath + 'tuvandinhduong/img1.png',"Mai Thị Kiều Châu",'data-item2')
+                                +faq(imgPath + 'tuvandinhduong/img1.png',"Mai Thị Kiều Châu",'data-item2')
+                    .sBoxFaqRight
+                        .text-center
+                            h3 Câu trả lời
+                        .faqGridContent
+                            .item.data-item1.data-hide.active
+                                .scroll-ui
+                                    .sContent
+                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt et dolore magna.
+                                        p At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                                        p At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                                .sname
+                                    h4 TS.BS. Lê Thị Hồng Gấm
+                                    p Trung tâm dinh dưỡng VitaDairy
+                            .item.data-item2.data-hide
+                                .scroll-ui
+                                    .sContent
+                                        p 2Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt et dolore magna.
+                                        p  2At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                                        p  2At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                                .sname
+                                    h4 TS.BS. Lê Thị Hồng Gấm
+                                    p Trung tâm dinh dưỡng VitaDairy
+                            .item.data-item3.data-hide
+                                .scroll-ui
+                                    .sContent
+                                        p 2Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt et dolore magna.
+                                        p  2At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                                        p  2At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                                .sname
+                                    h4 TS.BS. Lê Thị Hồng Gấm
+                                    p Trung tâm dinh dưỡng VitaDairy
+
+                .text-center
+                    +a-btn-primary('Xem thêm','#')
+
+
         .sMainContentItem.bg-tuvan-4
             .container
                 .sFormAdv
                     .row
-                        .col-sm-5
+                        .col-sm-5.align-self-end
                             img(data-src= imgPath + 'tuvandinhduong/img-08.png' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
                         .col-sm-6
                             .page-header
                                 h3
                                     span.icon-text
                                     span.ttl-text Đặt câu hỏi cho chuyên gia
+                                a(href="tel:+1900633559"): img(src= imgPath + 'hotline.svg' alt="")
                             .page-header-des
                                 p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
                             .sForm.form-style
@@ -144,30 +190,70 @@ block content
                                     .col-6
                                         .capcha
                                             img(src= imgPath + 'captcha.png' alt="")
-    block modal
-        #personModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
-            .modal-dialog.modal-dialog-centered(role='document')
-                .modal-content
-                    .modal-header
-                        h5#exampleModalLongTitle.modal-title Thông tin chuyên gia
-                        button.close(type='button', data-dismiss='modal', aria-label='Close')
-                            span(aria-hidden='true') ×
-                    .modal-body
+block modal
+    #personModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalLongTitle.modal-title Thông tin chuyên gia
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        i.ic-close
+                .modal-body
+                    .row
+                        .col-sm-5
+                            .sSlideperson
+                                .item
+                                    .image
+                                        a(href="#" data-toggle="modal" data-target="#personModalCenter")
+                                            img(src= imgPath + 'tuvandinhduong/img-02.png' alt="")
+                                    .info
+                                        h3 TS.BS. DAVID WILLIAM
+                                        p Trình độ: Tiến sĩ 
+                                        p Chuyên khoa dinh dưỡng
+                                    a(data-toggle="modal"  class="btn btn-primary btn-icon-contact " data-target="#fromModalCenter" data-dismiss="modal"  title="Gửi câu hỏi cho chuyên gia"): span Gửi câu hỏi cho chuyên gia
+
+                        .col-sm-7
+                            .sSlidepersonInfo
+                                .scroll-ui
+                                    .sContent
+                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+    #fromModalCenter.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    i.ic-close
+                .modal-body
+                    .sFormAdv
                         .row
-                            .col-sm-5
-                                .sSlideperson
-                                    .item
-                                        .image
-                                            a(href="#" data-toggle="modal" data-target="#personModalCenter")
-                                                img(src= imgPath + 'tuvandinhduong/img-02.png' alt="")
-                                        .info
-                                            h3 TS.BS. DAVID WILLIAM
-                                            p Trình độ: Tiến sĩ 
-                                            p Chuyên khoa dinh dưỡng
-                            .col-sm-7
-                                .sSlidepersonInfo
-                                    .scroll-ui
-                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
-                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                            .col-sm-5.align-self-end
+                                img(data-src= imgPath + 'tuvandinhduong/img-08.png' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                            .col-sm-6
+                                .page-header
+                                    h3
+                                        span.icon-text
+                                        span.ttl-text Đặt câu hỏi cho chuyên gia
+                                    a(href="tel:+1900633559"): img(src= imgPath + 'hotline.svg' alt="")
+                                .page-header-des
+                                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                                .sForm.form-style
+                                    +input-box("text","","","Tên của mẹ *",'Nhập tên của mẹ','')
+                                    +input-box("text","","","Email *",'Nhập email','')
+                                    +input-box("text","","","Số điện thoại liên lạc",'Nhập số điện thoại','')
+                                    .form-group
+                                        label Chủ đề bạn quan tâm
+                                        select.selectpicker.form-control(title="Chọn chủ đề bạn quan tâm")
+                                            option(value="Sample") Sample
+                                            option(value="Sample") Sample
+                                            option(value="Sample") Sample
+                                            option(value="Sample") Sample
+                                            option(value="Sample") Sample
+                                    +textarea-box('','','Nội dung câu hỏi *','Nhập nội dung câu hỏi','3')
+                                    .row
+                                        .col-6
+                                            +a-btn-primary('Gửi','#','','icon-contact')
+                                        .col-6
+                                            .capcha
+                                                img(src= imgPath + 'captcha.png' alt="")

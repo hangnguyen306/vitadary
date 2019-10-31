@@ -9,8 +9,14 @@ block content
       .container
         +breadcrumb([{'title':'Tư vấn dinh dưỡng ','link':'./'},{'title':'FAQ'}])
         .sMainContent
-            ul#myList.list-group.list-group-tab.sNavLink.list-group-col3(role='tablist')
+            ul#myList.list-group.list-group-tab.sNavLink.list-group-col4(role='tablist')
                 li: a.active(data-toggle='list', href='#navTab1', role='tab') 
+                    span.svg-icon.ic-dt-tab-1
+                        <svg viewBox="0 0 24 29.844" class="icon-shape">
+                            <use xlink:href="#ic-cauhoi"></use>
+                        </svg>
+                    span Tất cả
+                li: a(data-toggle='list', href='#navTab1', role='tab') 
                     span.svg-icon.ic-dt-tab-1
                         <svg viewBox="0 0 24 29.844" class="icon-shape">
                             <use xlink:href="#ic-faq-1"></use>
@@ -32,33 +38,26 @@ block content
                 #navTab1.tab-pane.active(role='tabpanel')
                     .row.faqGrid
                         .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Nguyễn Thị Tuyết Mai")
+                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
                         .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Mai Thị Kiều Châu")
+                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Mai Thị Kiều Châu")
                         .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Trần Nguyệt Nhi")
+                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Trần Nguyệt Nhi")
                         .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Cao Thị Minh Tuyết")
+                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Cao Thị Minh Tuyết")
                         .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Nguyễn Thị Hương")
+                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Hương")
                         .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Phạm Thị Mỹ Ngọc")
-                        .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Trần Tuyết Nhi")
-                        .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Nguyễn Thị Tuyết Mai")
-                        .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Nguyễn Hà Diễm My")
-                        .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img-1.png',"Mai Việt Hương")
+                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Phạm Thị Mỹ Ngọc")
+                    .sPaiging
+                        +pagination([
+                            {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                            {text:'1',url:'#'},
+                            {text:'2',url:'#'},
+                            {text:'3',url:'#'},
+                            {text:'...',url:'#'},
+                            {text:'<span>Cuối</span><i class="arrow_carrot-right"></i>',url:'#'}
+                        ])
                 #navTab2.tab-pane(role='tabpanel')
                 #navTab3.tab-pane(role='tabpanel')
-        .sPaiging
-            +pagination([
-                {text:'<i class="arrow_carrot-left"></i>',url:'#'},
-                {text:'1',url:'#'},
-                {text:'2',url:'#'},
-                {text:'3',url:'#'},
-                {text:'...',url:'#'},
-                {text:'Cuối <i class="arrow_carrot-right"></i>',url:'#'}
-            ])
+                #navTab4.tab-pane(role='tabpanel')

@@ -1,39 +1,55 @@
 .sFaqPage{
-    .list-group-col3{
+    .list-group-col4{
         li{
-            float: 0 0 33.33%;
-            max-width: 33.33%;
+            flex: 0 0 25%;
+            max-width: 25%;
         }
     }
-    .faqGrid{
-        .item {
-            border: 2px dashed #CCCED0;
-            border-radius: 20px;
-            padding: rem(20);
-            margin-top: rem(20);
-            @include transition();
-            img{
-                width: 90px;
-                height: 90px;
-                float: left;
-                border-radius: 50%;
-                margin-right: 20px;
-                margin-bottom: 20px;
-            }
-            h2{
-                color:$blue-main;
-                font-size: rem(15);
-                font-weight: bold;
-                margin: 0;
-                padding-bottom: rem(20);
-            }
-            p{
-                margin: 0;
-            }
-            &:hover{
-                background: rgba(#3EB7E4, 0.1);
-            }
+}
+.faqGrid{
+    .item {
+        border: 2px dashed #CCCED0;
+        border-radius: 20px;
+        padding: rem(20);
+        margin-top: rem(20);
+        @include transition();
+        img{
+            width: 90px;
+            height: 90px;
+            float: left;
+            border-radius: 50%;
+            margin-right: 20px;
+            margin-bottom: 20px;
+        }
+        h2{
+            color:$blue-main;
+            font-size: rem(15);
+            font-weight: bold;
+            margin: 0;
+            padding-bottom: rem(20);
+        }
+        p{
+            margin: 0;
+        }
+        &:hover{
+            background: rgba(#3EB7E4, 0.1);
         }
     }
-
+}
+.sNavtag{
+    margin-top: rem(20);
+    a{
+        border:1px solid $blue-main-light;
+        font-size: rem(12);
+        display: inline-block;
+        padding:5px;
+        background: white;
+        border-radius: 5px;margin-right: 5px;
+        margin-bottom: 5px;
+        @include transition();
+        &:hover{
+            background: $blue-main-light;
+            color: #fff;
+        }
+    }
 }

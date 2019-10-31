@@ -154,13 +154,30 @@ mixin headerlanding(title,des)
 				= title
 		.des !{des}
 
-mixin faq(image,title)
-	.item
-		.info
-			img(src=image alt="")
-			h2 
-				= title
-			p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt uting Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt ut labore et dolore magna.
+mixin faq(image,des,title,other,active)
+	unless other
+		.item
+			.info
+				img(src=image alt="")
+				h2 
+					= title
+				p 
+					= des
+	else
+		unless active
+			.item(data-id=other).showAsk
+				.info
+					img(src=image alt="")
+					h2 
+						= title
+					p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt uting Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt ut labore et dolore magna.
+		else
+			.item(data-id=other).showAsk.active
+				.info
+					img(src=image alt="")
+					h2 
+						= title
+					p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt uting Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt ut labore et dolore magna.
 mixin sSlideNewThumb(arrayNews)
 	each x in arrayNews  
 		.itemEvent
@@ -174,7 +191,8 @@ mixin sSlideNewThumb(arrayNews)
 							| Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
 
 mixin itemLanding(link,image,imagesp,title,title2,icon,des,array)
-	unless title2
+
+	unless array
 		div(class="bgImg bgImgpc" style="background-image:url('" + image + "')")
 			div(class="bgImgsp" style="background-image:url('" + imagesp + "')")
 				.container
@@ -184,26 +202,39 @@ mixin itemLanding(link,image,imagesp,title,title2,icon,des,array)
 								span.icon-text !{icon}
 								span.ttl-text
 									= title
-						.des !{des}
-						.btnDiv
-							+a-btn-primary('Xem chi tiết',link)
-					.sSliderNew
-						+sSlideNewThumb(array)
-	else
-		div(class="bgImg bgImgpc" style="background-image:url('" + image + "')")
-			div(class="bgImgsp" style="background-image:url('" + imagesp + "')")
-				.container
-					.info
-						.page-header
-							h2
-								span.icon-text !{icon}
-								span.ttl-text
-									= title
-							h3
-								= title2
 						.des !{des}
 						.btnDiv
 							+a-btn-primary('Xem thêm',link)
-					.sSliderNew
-						+sSlideNewThumb(array)
-		
+	else
+		unless title2
+				div(class="bgImg bgImgpc" style="background-image:url('" + image + "')")
+					div(class="bgImgsp" style="background-image:url('" + imagesp + "')")
+						.container
+							.info
+								.page-header
+									h3
+										span.icon-text !{icon}
+										span.ttl-text
+											= title
+								.des !{des}
+								.btnDiv
+									+a-btn-primary('Xem chi tiết',link)
+							.sSliderNew
+								+sSlideNewThumb(array)
+		else
+			div(class="bgImg bgImgpc" style="background-image:url('" + image + "')")
+				div(class="bgImgsp" style="background-image:url('" + imagesp + "')")
+					.container
+						.info
+							.page-header
+								h2
+									span.icon-text !{icon}
+									span.ttl-text
+										= title
+								h3
+									= title2
+							.des !{des}
+							.btnDiv
+								+a-btn-primary('Xem thêm',link)
+						.sSliderNew
+							+sSlideNewThumb(array)

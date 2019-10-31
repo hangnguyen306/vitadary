@@ -88,19 +88,20 @@
 
         }
     }
-    .sFormAdv{
-        img{
-            max-width: 100%;
-        }
-        .sForm{
-            background:#fff;
-            border:2px dotted $blue-main-light;
-            padding: rem(20) rem(40);
-            border-radius: 30px;margin-bottom: rem(50);
-        }
-    }
-    
+  
 }
+.sFormAdv{
+    img{
+        max-width: 100%;
+    }
+    .sForm{
+        background:#fff;
+        border:2px dotted $blue-main-light;
+        padding: rem(20) rem(40);
+        border-radius: 30px;margin-bottom: rem(50);
+    }
+}
+
 .sSlideperson{
     .item{
         padding: rem(15);
@@ -143,5 +144,135 @@
             }
         }
        
+    }
+}
+.sBoxFaq{
+    background: #fff;
+    border-radius: 20px;
+    border:1px dotted $blue-main-light;
+    display: flex;
+    margin-bottom: rem(10);
+    padding-bottom: rem(30);
+    &Left{
+        max-width: 50%;
+        width: 50%;
+        padding-right:rem(30);
+        .scroll-ui{
+            max-height: 540px;
+        }
+        .faqGrid{
+            .item{
+                padding: rem(20);
+                border: none;
+                border-radius: 0;
+                margin-top: 0;
+                position: relative;
+                &:afteR{
+                    left: 15px;
+                    right: 15px;
+                    bottom: 0;
+                    height: 1px;
+                    border-bottom: 1px dotted #CCCED0;
+                    position: absolute;
+                    content: '';
+                }
+                &:first-child{
+                }
+                &.active{
+                    background: rgba(62, 183, 228, 0.1);
+                }
+            }
+        }
+    }
+    &Right{
+        max-width: 50%;
+        width: 50%;
+        padding-left:rem(30);
+        padding-right:rem(30);
+        .scroll-ui{
+            max-height: 440px;
+        }
+        .sContent{
+            padding-right: rem(20);
+        }
+    }
+    h3{
+        color:$blue-main;
+        font-weight: bold;
+        font-size: rem(34);
+        margin-top:rem(30);
+    }
+    .sname{
+        text-align: right;
+        h4{
+            color:$blue-main;
+            font-weight: bold;
+            font-size: rem(15);
+            margin-top:rem(30);
+        }
+    }
+    .data-hide{
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+}
+//modal
+.modal{
+    z-index: 9999;
+    .modal-dialog{
+        max-width: 1180px;
+        .modal-content {
+            border-radius: 20px;
+            border: none;
+            button.close {
+                width: 50px;
+                height: 50px;
+                background: none;
+                border: 1px solid #ccc;
+                border-radius: 50%;
+                outline: none;    top: 30px;
+                right: 30px;
+                background: #fff;    z-index: 99;
+                position: absolute;
+                @include transition();
+                &:hover{
+                    background: $blue-main-light;
+                    border-color: $blue-main-light;
+                }
+                .ic-close{
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.487' height='19.486' viewBox='0 0 19.487 19.486'%3E%3Cpath id='Path_29776' data-name='Path 29776' d='M35.2,16.285a.973.973,0,0,0-1.378,0l-8.08,8.08-8.08-8.08a.974.974,0,0,0-1.378,1.378l8.08,8.08-8.08,8.08A.974.974,0,1,0,17.663,35.2l8.08-8.08,8.08,8.08A.974.974,0,0,0,35.2,33.823l-8.08-8.08,8.08-8.08A.973.973,0,0,0,35.2,16.285Z' transform='translate(-16 -16)' fill='%23ccced0'/%3E%3C/svg%3E%0A");
+                }
+            }
+            .modal-header {
+                text-align: center;
+                display: block;
+                border: none;
+                padding-top: rem(30);
+                padding-bottom: rem(30);
+                h5{
+                    color:$blue-main;
+                    font-size: rem(30);
+                    margin: 0;
+                    font-weight: bold;
+                }
+            }
+        }
+        .scroll-ui{
+            max-height: 600px;
+        }
+    }
+    a.btn.btn-primary.btn-icon-contact {
+        display: block;
+        margin-top: 30px;
     }
 }

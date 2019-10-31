@@ -1,0 +1,35 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "tu-van"
+
+block content
+    .sMainChild.sFaqPageDetail.sMainChild-other
+      .container
+        +breadcrumb([{'title':'Tư vấn dinh dưỡng ','link':'./'},{'title':'FAQ'}])
+        .sMainContent
+            .row
+                .col-sm-8
+                    .faqGrid
+                        +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna',"Nguyễn Thị Tuyết Mai")
+                        +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna',"Nguyễn Thị Tuyết Mai")
+                .col-sm-4
+                    .page-header
+                        h2
+                            span.icon-text
+                                <svg viewBox="0 0 24 29.844" class="icon-shape">
+                                    <use xlink:href="#ic-cauhoi"></use>
+                                </svg>
+                            span.ttl-text Câu hỏi liên quan
+                    .faqGrid
+                        +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
+                        +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
+                        +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
+                    .sNavtag
+                        a(href="#") #chăm sóc bé
+                        a(href="#") #dinh dưỡng sữa non
+                        a(href="#") #hệ tiêu hoá
+                        a(href="#") #trí não
+                        a(href="#") #chiều cao
+                        a(href="#") #cân nặng

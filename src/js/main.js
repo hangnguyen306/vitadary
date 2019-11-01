@@ -74,6 +74,9 @@ function fixHeight() {
     $('.fixHeight .sIntroheader').css({ 'minHeight': hW});
     $('.fixHeight.sLandingNewItem .bgImg.bgImgpc').css({ 'minHeight': hW - 50 });
     $('.fixHeight.sLandingNewItem .bgImgsp .container').css({ 'minHeight': hW - 50 });
+    $('.fixHeight.sContactImg').css({ 'minHeight': hW});
+
+    
 }
 function gotoTop() {
     var topTop = $('.toTop');

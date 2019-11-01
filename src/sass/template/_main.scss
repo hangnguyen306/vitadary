@@ -690,3 +690,45 @@ a.btn,
 .owl-theme .owl-nav [class*=owl-]:hover {
     background: none !important;
 }
+.sBoxshare{
+    @include media-breakpoint-up(md) {
+        text-align: right;
+    }
+    a{
+        @include transition();
+        span{
+            &.icon-link{
+                margin-right: rem(10);
+                vertical-align: middle;
+                svg{
+                   
+                    stroke: #3EB7E4;
+                    fill: #fff;
+
+                }
+            }
+            &.icon-text{
+                font-size: rem(12);
+                color:$blue-main-light;
+            }
+        }
+        &:hover{
+            text-decoration: none;
+            span{
+                &.icon-link{
+                    svg{
+                        stroke:#fff;
+                        fill: #3EB7E4;
+    
+                    }
+                }
+            }
+          
+        }
+    }
+}
+.sPolicyPage{
+    .breadcrumb{
+        margin-bottom:rem(20);
+    }
+}

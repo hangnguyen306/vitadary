@@ -49,13 +49,18 @@
 }
 
 .sPolicyPage{
-
+    .container{
+        border-bottom: 1px dashed #ccc;
+        padding-bottom: rem(20);
+        margin-bottom: rem(20);
+    }
 }
 .sOtherLink{
     &Item{
         position: relative;
         overflow: hidden;
         border-radius: 20px;
+        max-width: 380px;
         & + .sOtherLinkItem{
             margin-top:rem(20);
         }

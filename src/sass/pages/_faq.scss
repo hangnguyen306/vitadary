@@ -3,12 +3,23 @@
         li{
             flex: 0 0 25%;
             max-width: 25%;
+            @include media-breakpoint-down(md) {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+            @media (max-width: 480px){
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
         }
     }
 }
 .faqGrid{
+    @include media-breakpoint-down(md) {
+        margin-bottom: rem(30);
+    }
     .item {
-        border: 2px dashed #CCCED0;
+        border: 2px dotted #CCCED0;
         border-radius: 20px;
         padding: rem(20);
         margin-top: rem(20);
@@ -19,14 +30,18 @@
             float: left;
             border-radius: 50%;
             margin-right: 20px;
-            margin-bottom: 20px;
+            margin-bottom: rem(10);
+            @include media-breakpoint-down(md) {
+                width: 60px;
+                height: 60px;
+            }
         }
         h2{
             color:$blue-main;
             font-size: rem(15);
             font-weight: bold;
             margin: 0;
-            padding-bottom: rem(20);
+            padding-bottom: rem(10);
         }
         p{
             margin: 0;

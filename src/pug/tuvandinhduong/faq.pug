@@ -5,59 +5,95 @@ block setting
     - mainActive = "tu-van"
 
 block content
-    .sMainChild.sFaqPage.sMainChild-other
-      .container
-        +breadcrumb([{'title':'Tư vấn dinh dưỡng ','link':'./'},{'title':'FAQ'}])
-        .sMainContent
-            ul#myList.list-group.list-group-tab.sNavLink.list-group-col4(role='tablist')
-                li: a.active(data-toggle='list', href='#navTab1', role='tab') 
-                    span.svg-icon.ic-dt-tab-1
-                        <svg viewBox="0 0 24 29.844" class="icon-shape">
-                            <use xlink:href="#ic-cauhoi"></use>
-                        </svg>
-                    span Tất cả
-                li: a(data-toggle='list', href='#navTab1', role='tab') 
-                    span.svg-icon.ic-dt-tab-1
-                        <svg viewBox="0 0 24 29.844" class="icon-shape">
-                            <use xlink:href="#ic-faq-1"></use>
-                        </svg>
-                    span Bí quyết mẹ khoẻ
-                li: a(data-toggle='list', href='#navTab2', role='tab') 
-                    span.svg-icon.ic-dt-tab-2
-                        <svg viewBox="0 0 24 24" class="icon-shape">
-                            <use xlink:href="#ic-faq-2"></use>
-                        </svg>
-                    span Nuôi dưỡng bé yêu
-                li: a(data-toggle='list', href='#navTab3', role='tab') 
-                    span.svg-icon.ic-dt-tab-2
-                        <svg viewBox="0 0 24 24" class="icon-shape">
-                            <use xlink:href="#ic-faq-3"></use>
-                        </svg>
-                    span Chăm sóc người lớn tuổi
-            .tab-content
-                #navTab1.tab-pane.active(role='tabpanel')
-                    .row.faqGrid
-                        .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
-                        .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Mai Thị Kiều Châu")
-                        .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Trần Nguyệt Nhi")
-                        .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Cao Thị Minh Tuyết")
-                        .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Hương")
-                        .col-sm-6 
-                            +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Phạm Thị Mỹ Ngọc")
-                    .sPaiging
-                        +pagination([
-                            {text:'<i class="arrow_carrot-left"></i>',url:'#'},
-                            {text:'1',url:'#'},
-                            {text:'2',url:'#'},
-                            {text:'3',url:'#'},
-                            {text:'...',url:'#'},
-                            {text:'<span>Cuối</span><i class="arrow_carrot-right"></i>',url:'#'}
-                        ])
-                #navTab2.tab-pane(role='tabpanel')
-                #navTab3.tab-pane(role='tabpanel')
-                #navTab4.tab-pane(role='tabpanel')
+    .sMainChild.sFaqPage.sAdvisory.sMainChild-other
+        .container
+            +breadcrumb([{'title':'Tư vấn dinh dưỡng ','link':'./'},{'title':'FAQ'}])
+            .sMainContent
+                ul#myList.list-group.list-group-tab.sNavLink.list-group-col4(role='tablist')
+                    li: a.active(data-toggle='list', href='#navTab1', role='tab') 
+                        span.svg-icon.ic-dt-tab-1
+                            <svg viewBox="0 0 24 24" class="icon-shape">
+                                <use xlink:href="#ic-cau-hoi"></use>
+                            </svg>
+                        span Tất cả
+                    li: a(data-toggle='list', href='#navTab1', role='tab') 
+                        span.svg-icon.ic-dt-tab-1
+                            <svg viewBox="0 0 24 29.844" class="icon-shape">
+                                <use xlink:href="#ic-faq-1"></use>
+                            </svg>
+                        span Bí quyết mẹ khoẻ
+                    li: a(data-toggle='list', href='#navTab2', role='tab') 
+                        span.svg-icon.ic-dt-tab-2
+                            <svg viewBox="0 0 24 24" class="icon-shape">
+                                <use xlink:href="#ic-faq-2"></use>
+                            </svg>
+                        span Nuôi dưỡng bé yêu
+                    li: a(data-toggle='list', href='#navTab3', role='tab') 
+                        span.svg-icon.ic-dt-tab-2
+                            <svg viewBox="0 0 24 24" class="icon-shape">
+                                <use xlink:href="#ic-faq-3"></use>
+                            </svg>
+                        span Chăm sóc người lớn tuổi
+                .tab-content
+                    #navTab1.tab-pane.active(role='tabpanel')
+                        .row.faqGrid
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame,consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame,consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Mai Thị Kiều Châu")
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame,consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Trần Nguyệt Nhi")
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame,consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Cao Thị Minh Tuyết")
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame,consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Hương")
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Phạm Thị Mỹ Ngọc")
+                        .sPaiging
+                            +pagination([
+                                {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                                {text:'1',url:'#'},
+                                {text:'2',url:'#'},
+                                {text:'3',url:'#'},
+                                {text:'...',url:'#'},
+                                {text:'<span>Cuối</span><i class="arrow_carrot-right"></i>',url:'#'}
+                            ])
+                    #navTab2.tab-pane(role='tabpanel')
+                    #navTab3.tab-pane(role='tabpanel')
+                    #navTab4.tab-pane(role='tabpanel')
+        .sMainContentItem.bg-tuvan-4
+            .container
+                .sFormAdv
+                    .row
+                        .col-lg-5.align-self-end
+                            img(data-src= imgPath + 'tuvandinhduong/img-08.png' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                        .col-lg-7
+                            .page-header
+                                h3
+                                    span.icon-text
+                                        <svg viewBox="0 0 48 50" class="icon-shape">
+                                            <use xlink:href="#ic-cau-hoi"></use>
+                                        </svg>
+                                    span.ttl-text Đặt câu hỏi cho chuyên gia
+                                a(href="tel:+1900633559"): img(src= imgPath + 'hotline.svg' alt="")
+                            .page-header-des
+                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                            .sForm.form-style
+                                +input-box("text","","","Tên của mẹ *",'Nhập tên của mẹ','')
+                                +input-box("text","","","Email *",'Nhập email','')
+                                +input-box("text","","","Số điện thoại liên lạc",'Nhập số điện thoại','')
+                                .form-group
+                                    label Chủ đề bạn quan tâm
+                                    select.selectpicker.form-control(title="Chọn chủ đề bạn quan tâm")
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                +textarea-box('','','Nội dung câu hỏi *','Nhập nội dung câu hỏi','3')
+                                .row
+                                    .col-6
+                                        +a-btn-primary('Gửi','#','','icon-contact')
+                                    .col-6
+                                        .capcha
+                                            img(src= imgPath + 'captcha.png' alt="")

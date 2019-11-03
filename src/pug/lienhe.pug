@@ -7,22 +7,26 @@ block setting
 block content
     .sMainChild.sContact
         .fixHeight.sContactImg
-            .image
-                img(src= imgPath + 'lienhe/banner.jpg' alt="")
-                .info
-                    .container
-                        +breadcrumb([{'title':'Liên hệ'}])
-                        .des
-                            h2 Liên hệ
-                            p Cám ơn bạn đã ghé thăm Website của VitaDairy. 
-                            p Chúng tôi luôn sẵn sàng lắng nghe những phản hồi cũng như sự quan tâm của bạn đối với dịch vụ và sản phẩm. Ý kiến của bạn với chúng tôi rất quan  trọng và giúp chúng tôi phục vụ bạn ngày một tốt hơn.
-                            .btnDiv
-                                +a-btn-primary('Liên hệ với chúng tôi','#','','icon-contact')
+            .bgImg(style="background-image:url(" + imgPath + 'lienhe/banner.jpg' + ")")
+                .container
+                    +breadcrumb([{'title':'Liên hệ'}])
+                    .des
+                        h2 Liên hệ
+                        p Cám ơn bạn đã ghé thăm Website của VitaDairy. 
+                        p Chúng tôi luôn sẵn sàng lắng nghe những phản hồi cũng như sự quan tâm của bạn đối với dịch vụ và sản phẩm. Ý kiến của bạn với chúng tôi rất quan  trọng và giúp chúng tôi phục vụ bạn ngày một tốt hơn.
+                        .btnDiv
+                            +a-btn-primary('Liên hệ với chúng tôi','#','','icon-contact')
         .sMainContent
             .container
-                p Bạn có thể liên hệ với chúng tôi qua email hoặc để lại lời nhắn cho chúng tôi theo thông tin bên dưới
+                .page-header
+                    .row
+                        .col-sm-9.align-self-center
+                            p Bạn có thể liên hệ với chúng tôi qua email hoặc để lại lời nhắn cho chúng tôi theo thông tin bên dưới
+                        .col-sm-3
+                            .sHotlineBox
+                                a(href="tel:+1900633559"): img(src= imgPath + 'hotline.svg' alt="")
                 .row
-                    .col-sm-6
+                    .col-lg-6
                         .sBox
                             h3 Địa chỉ công ty
                             h5 Công ty cổ phần sữa vitadairy việt nam     
@@ -58,7 +62,7 @@ block content
                                     td
                                         span.ic-mail
                                     td Email: <a href="mailto:info@vitadairy.vn">info@vitadairy.vn</a>
-                    .col-sm-6
+                    .col-lg-6
                         .sBox
                             h3 Liên hệ với chúng tôi
                             .form-style
@@ -66,11 +70,11 @@ block content
                                 +input-box("text","","","Họ và tên *",'Nhập họ và tên','')
                                 +input-box("text","","","Email *",'Nhập email','')
                                 +input-box("text","","","Số điện thoại liên lạc",'Nhập số điện thoại','')
-                                +textarea-box('','','Nội dung *','','3')
+                                +textarea-box('','','Nội dung *','Nhập nội dung','3')
                                 .row
-                                    .col-6
+                                    .col-4.align-self-center
                                         +a-btn-primary('Gửi','#','','icon-contact')
-                                    .col-6
+                                    .col-8
                                         .capcha
                                             img(src= imgPath + 'captcha.png' alt="")
                 hr                                

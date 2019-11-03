@@ -417,8 +417,8 @@ a.btn,
             margin-right: 10px;
 
             svg {
-                width: 40px;
-                height: 40px;
+                width: rem(40);
+                height: rem(40);
                 fill: $blue-main-light;
             }
         }
@@ -484,7 +484,7 @@ a.btn,
                 }
 
                 &.ic-dt-tab-1 {
-                    width: 16px;
+                    width: 24px;
                 }
 
                 &.ic-dt-tab-2 {
@@ -538,6 +538,9 @@ a.btn,
             color: $blue-main-light;
             font-weight: normal;
             font-size: rem(12);
+            padding-left: rem(20);
+            display: block;
+    text-align: left;
         }
 
         textarea.form-control {
@@ -546,7 +549,11 @@ a.btn,
             overflow: auto;
         }
     }
-
+    .capcha{
+        img{
+            max-width: 100%;
+        }
+    }
 }
 
 @media (max-width: 1024px) {

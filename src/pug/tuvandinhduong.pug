@@ -71,38 +71,44 @@ block content
                 .page-header
                     h3
                         span.icon-text
-                        span.ttl-text Chia sẻ Cùng chuyên gia
+                            <svg viewBox="0 0 48 50" class="icon-shape">
+                                <use xlink:href="#ic-chia-se-chuyen-gia"></use>
+                            </svg>
+                        span.ttl-text Chia sẻ cùng chuyên gia
                 .sListsAdvisory
                     .item
                         .row
-                            .col-sm-7.align-self-center
+                            .col-lg-7.align-self-center
                                 .info
                                     h3 Bí quyết mẹ khoẻ
                                     p Làm mẹ là một hành trình ngọt ngào, nhiều hạnh phúc nhưng cũng không ít gian nan và vất vả. Bởi đó là khi mọi nỗ lực trong cuộc sống của mẹ đều đặt vào thiên thần nhỏ của mình. Làm thế nào để con được phát triển toàn diện từ thể chất đến trí não? Ba mẹ phải làm gì để nuôi dạy con tốt nhất? Và hàng ngàn câu hỏi khác mẹ đặt ra trong suốt hành trình nuôi con của mình. Chuyên gia VitaDairy sẽ luôn sẵn sàng chia sẻ cùng mẹ những kinh nghiệm chăm sóc, nuôi nấng và dạy dỗ con một cách khoa học nhất.
-                                    +a-btn-primary('Xem chi tiết','#')
-                            .col-sm-5
+                                    .btnDiv
+                                        +a-btn-primary('Xem chi tiết','#')
+                            .col-lg-5
                                 .image
                                     a(href="#")
                                         img(data-src= imgPath + 'tuvandinhduong/img-05.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
                     .item
                         .row
-                            .col-sm-7.align-self-center
+                            .col-lg-7.align-self-center
                                 .info
                                     h3 Nuôi dưỡng bé yêu
                                     p Mẹ đã sẵn sàng cho hành trình chờ đón thiên thần của mình chưa? Có quá nhiều thứ cần phải chuẩn bị cho sự hiện diện của bé con. Nếu đây là lần đầu lên kế hoạch sinh con, mẹ sẽ gặp một chút bối rối, nhưng đừng lo, mẹ sẽ làm tốt mọi việc như chính bản năng làm mẹ mà tạo hoá ban tặng. Các chuyên gia VitaDairy cùng những thông tin hữu ích và khoa học, sẽ luôn đồng hành cùng mẹ trong các giai đoạn mẹ nhé!
-                                    +a-btn-primary('Xem chi tiết','#')
-                            .col-sm-5
+                                    .btnDiv
+                                        +a-btn-primary('Xem chi tiết','#')
+                            .col-lg-5
                                 .image
                                     a(href="#")
                                         img(data-src= imgPath + 'tuvandinhduong/img-06.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
                     .item
                         .row
-                            .col-sm-7.align-self-center
+                            .col-lg-7.align-self-center
                                 .info
                                     h3 Chăm sóc người lớn tuổi
                                     p Khi tuổi càng cao, con người thường phải đối mặt với nhiều vấn đề về sức khoẻ và tâm lý. Chế độ dinh dưỡng hợp lý, tinh thần thoải mái và thực hiện vận động vừa sức sẽ giúp người lớn tuổi cải thiện sức khoẻ và ngăn ngừa bệnh tật.
-                                    +a-btn-primary('Xem chi tiết','#')
-                            .col-sm-5
+                                    .btnDiv
+                                        +a-btn-primary('Xem chi tiết','#')
+                            .col-lg-5
                                 .image
                                     a(href="#")
                                         img(data-src= imgPath + 'tuvandinhduong/img-07.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
@@ -111,6 +117,9 @@ block content
                 .page-header
                     h3
                         span.icon-text
+                            <svg viewBox="0 0 48 50" class="icon-shape">
+                                <use xlink:href="#ic-cau-hoi"></use>
+                            </svg>
                         span.ttl-text Những câu hỏi thường gặp (FAQ)
                 .sBoxFaq
                     .sBoxFaqLeft
@@ -118,9 +127,9 @@ block content
                             h3 Câu hỏi
                         .faqGrid
                             .scroll-ui
-                                +faq(imgPath + 'tuvandinhduong/img1.png',"Nguyễn Thị Tuyết Mai",'data-item1','active')
-                                +faq(imgPath + 'tuvandinhduong/img1.png',"Mai Thị Kiều Châu",'data-item2')
-                                +faq(imgPath + 'tuvandinhduong/img1.png',"Mai Thị Kiều Châu",'data-item2')
+                                +faq(imgPath + 'tuvandinhduong/img1.png',"3","Nguyễn Thị Tuyết Mai",'data-item1','active')
+                                +faq(imgPath + 'tuvandinhduong/img1.png',"3","Mai Thị Kiều Châu",'data-item2')
+                                +faq(imgPath + 'tuvandinhduong/img1.png',"3","Mai Thị Kiều Châu",'data-item3')
                     .sBoxFaqRight
                         .text-center
                             h3 Câu trả lời
@@ -130,7 +139,7 @@ block content
                                     .sContent
                                         p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt et dolore magna.
                                         p At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
-                                        p At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                                        p At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
                                 .sname
                                     h4 TS.BS. Lê Thị Hồng Gấm
                                     p Trung tâm dinh dưỡng VitaDairy
@@ -139,7 +148,7 @@ block content
                                     .sContent
                                         p 2Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt et dolore magna.
                                         p  2At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
-                                        p  2At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                                        p  2At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
                                 .sname
                                     h4 TS.BS. Lê Thị Hồng Gấm
                                     p Trung tâm dinh dưỡng VitaDairy
@@ -148,7 +157,7 @@ block content
                                     .sContent
                                         p 2Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt et dolore magna.
                                         p  2At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
-                                        p  2At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
+                                        p  2At vero eos et accusam et justo duo dolores et ea rebum. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est.
                                 .sname
                                     h4 TS.BS. Lê Thị Hồng Gấm
                                     p Trung tâm dinh dưỡng VitaDairy
@@ -161,12 +170,15 @@ block content
             .container
                 .sFormAdv
                     .row
-                        .col-sm-5.align-self-end
+                        .col-lg-5.align-self-end
                             img(data-src= imgPath + 'tuvandinhduong/img-08.png' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
-                        .col-sm-6
+                        .col-lg-7
                             .page-header
                                 h3
                                     span.icon-text
+                                        <svg viewBox="0 0 48 50" class="icon-shape">
+                                            <use xlink:href="#ic-cau-hoi"></use>
+                                        </svg>
                                     span.ttl-text Đặt câu hỏi cho chuyên gia
                                 a(href="tel:+1900633559"): img(src= imgPath + 'hotline.svg' alt="")
                             .page-header-des
@@ -200,7 +212,7 @@ block modal
                         i.ic-close
                 .modal-body
                     .row
-                        .col-sm-5
+                        .col-md-5
                             .sSlideperson
                                 .item
                                     .image
@@ -212,7 +224,7 @@ block modal
                                         p Chuyên khoa dinh dưỡng
                                     a(data-toggle="modal"  class="btn btn-primary btn-icon-contact " data-target="#fromModalCenter" data-dismiss="modal"  title="Gửi câu hỏi cho chuyên gia"): span Gửi câu hỏi cho chuyên gia
 
-                        .col-sm-7
+                        .col-md-7
                             .sSlidepersonInfo
                                 .scroll-ui
                                     .sContent

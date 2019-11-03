@@ -5,6 +5,13 @@
         &.bg-tuvan-4{
             padding-bottom: 0;
         }
+        &.sIntroheader{
+            padding:0;
+        }
+        @include media-breakpoint-down(md) {
+        padding: rem(30) 0;
+
+        }
     }
     .bg-tuvan-1{
         background: {
@@ -48,19 +55,21 @@
             background: #fff;
             margin-bottom: rem(30);
             box-shadow: 0 3px 40px rgba(131, 131, 131, 0.15);
-            &:nth-child(2n){
-                .row{
-                    div:first-child{
-                        order: 1;
-                    }
-                    div:last-child{
-                        order: 0;
-                        .image{
-                            img{
-                                border-bottom-right-radius: 0px;
-                                border-top-right-radius: 0px;
-                                border-bottom-left-radius: 20px;
-                                border-top-left-radius: 20px;
+            @include media-breakpoint-up(lg) {
+                &:nth-child(2n){
+                    .row{
+                        div:first-child{
+                            order: 1;
+                        }
+                        div:last-child{
+                            order: 0;
+                            .image{
+                                img{
+                                    border-bottom-right-radius: 0px;
+                                    border-top-right-radius: 0px;
+                                    border-bottom-left-radius: 20px;
+                                    border-top-left-radius: 20px;
+                                }
                             }
                         }
                     }
@@ -84,6 +93,15 @@
                     border-bottom-right-radius: 20px;
                     border-top-right-radius: 20px;
                 }
+                @include media-breakpoint-down(md) {
+                    img{
+                        width: 100%;
+                        border-top-left-radius: 0px;
+                        border-top-right-radius: 0px;
+                        border-bottom-right-radius: 20px;
+                        border-bottom-left-radius: 20px;
+                    }
+                }
             }
 
         }
@@ -93,12 +111,30 @@
 .sFormAdv{
     img{
         max-width: 100%;
+        margin-left: -50px;
+        @include media-breakpoint-down(lg) {
+            margin-left: 0;
+        }
     }
     .sForm{
         background:#fff;
         border:2px dotted $blue-main-light;
         padding: rem(20) rem(40);
         border-radius: 30px;margin-bottom: rem(50);
+    }
+    @include media-breakpoint-down(md) {
+        .row{
+            > div:last-child{
+                order: 1;
+            }
+            > div:first-child{
+                order:2;
+                text-align: center;
+                img{
+                    max-height: 400px;
+                }
+            }
+        }
     }
 }
 
@@ -110,6 +146,9 @@
             img{
                 display: inline-block;
                 max-width: 100%;
+                @include media-breakpoint-down(sm) {
+                    max-width: 240px;
+                }
             }
         }
         .info{
@@ -121,14 +160,16 @@
             h3{
                 color:$blue-main;
                 font-size: rem(20);
+                line-height: (28/18);
                 text-transform: uppercase;
                 font-weight: bold;
-                margin: 0 0 0 0;
+                margin: 0 0 5px 0;
                 @include transition();
 
             }
             p{
                 font-size: rem(18);
+                line-height: (28/18);
                 margin: 0;
                  @include transition();
             }
@@ -149,9 +190,9 @@
 .sBoxFaq{
     background: #fff;
     border-radius: 20px;
-    border:1px dotted $blue-main-light;
+    border:2px dotted $blue-main-light;
     display: flex;
-    margin-bottom: rem(10);
+    margin-bottom: rem(30);
     padding-bottom: rem(30);
     &Left{
         max-width: 50%;
@@ -190,10 +231,13 @@
         padding-left:rem(30);
         padding-right:rem(30);
         .scroll-ui{
-            max-height: 440px;
+            max-height: 500px;
         }
         .sContent{
             padding-right: rem(20);
+            p{
+                font-size:rem(14);
+            }
         }
     }
     h3{
@@ -201,6 +245,8 @@
         font-weight: bold;
         font-size: rem(34);
         margin-top:rem(30);
+        margin-bottom: rem(20);
+
     }
     .sname{
         text-align: right;
@@ -217,6 +263,28 @@
             display: block;
         }
     }
+    @include media-breakpoint-down(md) {
+        display: block;
+        &Left{
+            max-width: 100%;
+            flex: 0 0 100%;
+            width: 100%;
+            padding-right: 0px;
+            .scroll-ui{
+                max-height: 320px;
+            }
+        }  
+        &Right{
+            max-width: 100%;
+            padding-right: 10px;
+            width: 100%;
+            padding-left: 10px;
+            flex: 0 0 100%;
+            .scroll-ui{
+                max-height: 320px;
+            }
+        }  
+    }
 }
 //modal
 .modal{
@@ -227,8 +295,8 @@
             border-radius: 20px;
             border: none;
             button.close {
-                width: 50px;
-                height: 50px;
+                width: rem(50);
+                height: rem(50);
                 background: none;
                 border: 1px solid #ccc;
                 border-radius: 50%;
@@ -252,6 +320,13 @@
                     bottom: 0;
                     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='19.487' height='19.486' viewBox='0 0 19.487 19.486'%3E%3Cpath id='Path_29776' data-name='Path 29776' d='M35.2,16.285a.973.973,0,0,0-1.378,0l-8.08,8.08-8.08-8.08a.974.974,0,0,0-1.378,1.378l8.08,8.08-8.08,8.08A.974.974,0,1,0,17.663,35.2l8.08-8.08,8.08,8.08A.974.974,0,0,0,35.2,33.823l-8.08-8.08,8.08-8.08A.973.973,0,0,0,35.2,16.285Z' transform='translate(-16 -16)' fill='%23ccced0'/%3E%3C/svg%3E%0A");
                 }
+                @include media-breakpoint-down(md) {
+                    width: rem(30);
+                    height: rem(30);
+                    .ic-close{
+                        background-size: 50%;
+                    }
+                }
             }
             .modal-header {
                 text-align: center;
@@ -264,11 +339,20 @@
                     font-size: rem(30);
                     margin: 0;
                     font-weight: bold;
+                    padding-right: 40px;
+                    padding-left: 40px;
                 }
             }
         }
         .scroll-ui{
             max-height: 600px;
+        }
+    }
+    .sSlideperson {
+        max-width: 375px;
+        margin: 0 auto;
+        .item .info{
+            padding:rem(12) rem(30);
         }
     }
     a.btn.btn-primary.btn-icon-contact {

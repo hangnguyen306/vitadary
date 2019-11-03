@@ -74,7 +74,7 @@ function fixHeight() {
     $('.fixHeight .sIntroheader').css({ 'minHeight': hW});
     $('.fixHeight.sLandingNewItem .bgImg.bgImgpc').css({ 'minHeight': hW - 50 });
     $('.fixHeight.sLandingNewItem .bgImgsp .container').css({ 'minHeight': hW - 50 });
-    $('.fixHeight.sContactImg').css({ 'minHeight': hW});
+    $('.fixHeight.sContactImg .bgImg').css({ 'minHeight': hW -125});
 
     
 }
@@ -237,42 +237,23 @@ function sHomeNews() {
         ]
     });
 }
-
+var optionsMobile = {
+    infinite: true,
+    arrows: true,
+    prevArrow: "<a href='#' class='icon-arr icon-arr-small icon-left'></a>",
+    nextArrow: "<a href='#' class='icon-arr icon-arr-small icon-right'></a>",
+    speed: 1000,
+    //lazyLoad: "ondemand"
+};
 function sProduct() {
-    $('.sGridProduct').slick({
-        infinite: true,
-        arrows: true,
-        prevArrow: "<a href='#' class='icon-arr icon-arr-small icon-left'></a>",
-        nextArrow: "<a href='#' class='icon-arr icon-arr-small icon-right'></a>",
-        speed: 1000,
-        lazyLoad: "ondemand",
-        mobileFirst: true,
-        responsive: [
-            {
-                breakpoint: 2000,
-                settings: "unslick"
-            },
-            {
-                breakpoint: 1600,
-                settings: "unslick"
-            },
-            {
-                breakpoint: 1024,
-                settings: "unslick"
-            },
-            {
-                breakpoint: 769,
-                settings: "unslick"
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    });
+    var tipsTrend = $(".sGridProduct");
+    if (Modernizr.mq("(max-width: 1024px)")) {
+        tipsTrend.not(".slick-initialized").slick(optionsMobile)
+    } else {
+        if (tipsTrend.is(".slick-initialized")) {
+            tipsTrend.slick("unslick")
+        }
+    }
 
 }
 function sliderPartner() {
@@ -601,7 +582,22 @@ function sSlidepersonSlider(){
         centerPadding: '0px',
         prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
         nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>",
-        lazyLoad: "ondemand"
+        lazyLoad: "ondemand",
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+
+        ]
     });
 }
 function showAsk(){

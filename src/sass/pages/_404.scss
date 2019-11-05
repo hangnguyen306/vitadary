@@ -8,6 +8,11 @@
     repeat: no-repeat;
     position: right center;
   }
+  @include media-breakpoint-down(md) {
+    background: {
+      image: url($img-path + "bg-404-sp.jpg");
+    }
+  }
 
   .page-header {
     h3 {

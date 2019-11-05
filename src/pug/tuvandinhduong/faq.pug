@@ -59,8 +59,25 @@ block content
                                 {text:'<span>Cuối</span><i class="arrow_carrot-right"></i>',url:'#'}
                             ])
                     #navTab2.tab-pane(role='tabpanel')
+                        .row.faqGrid
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame,consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame,consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Mai Thị Kiều Châu")
+                            
                     #navTab3.tab-pane(role='tabpanel')
+                        .row.faqGrid
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame,consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Trần Nguyệt Nhi")
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Phạm Thị Mỹ Ngọc")
                     #navTab4.tab-pane(role='tabpanel')
+                        .row.faqGrid
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame,consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
+                            .col-sm-6 
+                                +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, Lorem ipsum dolor sit ame,consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitrLorem ipsum dolor sit ame, consetetur sadipscing elitr',"Mai Thị Kiều Châu")
+                            
         .sMainContentItem.bg-tuvan-4
             .container
                 .sFormAdv
@@ -79,20 +96,31 @@ block content
                             .page-header-des
                                 p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
                             .sForm.form-style
-                                +input-box("text","","","Tên của mẹ *",'Nhập tên của mẹ','')
+                                +input-box("text","","","Tên của bạn *",'Nhập tên của bạn','')
+                                +input-box("text","","","Điện thoại",'Nhập số điện thoại','')
                                 +input-box("text","","","Email *",'Nhập email','')
-                                +input-box("text","","","Số điện thoại liên lạc",'Nhập số điện thoại','')
                                 .form-group
-                                    label Chủ đề bạn quan tâm
+                                    label Chủ đề *
+                                    select.selectpicker.form-control(title="Chọn chủ đề")
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                .form-group
+                                    label Chủ đề quan tâm *
                                     select.selectpicker.form-control(title="Chọn chủ đề bạn quan tâm")
                                         option(value="Sample") Sample
                                         option(value="Sample") Sample
                                         option(value="Sample") Sample
                                         option(value="Sample") Sample
                                         option(value="Sample") Sample
-                                +textarea-box('','','Nội dung câu hỏi *','Nhập nội dung câu hỏi','3')
+                                +textarea-box('','','Nội dung hỏi đáp','Nhập nội dung câu hỏi','3')
+                                .custom-control.custom-checkbox
+                                    input#customCheck.custom-control-input(type='checkbox', name='example1')
+                                    label.custom-control-label(for='customCheck') Tôi đồng ý với các điều khoản bảo mật của VitaDairy
                                 .row
-                                    .col-6
+                                    .col-6.align-self-center
                                         +a-btn-primary('Gửi','#','','icon-contact')
                                     .col-6
                                         .capcha

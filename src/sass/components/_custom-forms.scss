@@ -353,3 +353,50 @@
     @include border-radius($custom-range-track-border-radius);
   }
 }
+
+.custom-control {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 1.5rem;
+  .custom-control-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-control-label {
+  margin-bottom: 0;
+}
+
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #fff;
+  border: 1px solid #47b7e4;
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.901' height='6.822' viewBox='0 0 8.901 6.822'%3E%3Cg id='correct-symbol' transform='translate(0 -51.678)'%3E%3Cpath id='Path_30227' data-name='Path 30227' d='M8.74,52.62l-.781-.781a.555.555,0,0,0-.781,0L3.411,55.612,1.723,53.918a.532.532,0,0,0-.39-.161.532.532,0,0,0-.391.161L.161,54.7a.555.555,0,0,0,0,.781L2.24,57.558l.781.781a.555.555,0,0,0,.781,0l.781-.781L8.74,53.4a.555.555,0,0,0,0-.781Z' fill='%230054a5'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+.custom-control-label::after {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.custom-control-label::before {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  pointer-events: none;
+  content: "";
+  user-select: none;
+  background-color: #dee2e6;
+}

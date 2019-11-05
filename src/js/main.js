@@ -70,7 +70,7 @@ function fixHeight() {
     $('.fixHeight.sMain-4').css({ 'minHeight': hW - 60 });
     $('.fixHeight.sMain-5').css({ 'minHeight': hW - 60 });
     $('.fixHeight.sMain-6').css({ 'minHeight': hW - 60 });
-    $('.fixHeight.s404Page').css({ 'minHeight': hW});
+    $('.fixHeight.s404Page').css({ 'minHeight': hW -125});
     $('.fixHeight .sIntroheader').css({ 'minHeight': hW});
     $('.fixHeight.sLandingNewItem .bgImg.bgImgpc').css({ 'minHeight': hW - 50 });
     $('.fixHeight.sLandingNewItem .bgImgsp .container').css({ 'minHeight': hW - 50 });
@@ -610,6 +610,14 @@ function showAsk(){
         $('.' + elType).addClass('active');
     })
 }
+$('#personModalCenter').on('shown.bs.modal', function(){
+    document.body.classList.add('modal-open');
+});
+$('#fromModalCenter').on( 'shown.bs.modal', function(){
+    document.body.classList.add('modal-open');
+});
+
+
 showAsk();
 waypointEl();
 // Base

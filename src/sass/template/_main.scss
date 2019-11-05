@@ -549,6 +549,10 @@ a.btn,
             overflow: auto;
         }
     }
+    .custom-checkbox{
+        margin-bottom:rem(20);
+        
+    }
     .capcha{
         img{
             max-width: 100%;
@@ -737,5 +741,12 @@ a.btn,
 .sPolicyPage{
     .breadcrumb{
         margin-bottom:rem(20);
+    }
+}
+.modal-open-2{
+    overflow: hidden;
+    .modal {
+        overflow-x: hidden;
+        overflow-y: auto;
     }
 }

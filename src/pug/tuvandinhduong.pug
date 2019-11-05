@@ -184,20 +184,31 @@ block content
                             .page-header-des
                                 p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
                             .sForm.form-style
-                                +input-box("text","","","Tên của mẹ *",'Nhập tên của mẹ','')
+                                +input-box("text","","","Tên của bạn *",'Nhập tên của bạn','')
+                                +input-box("text","","","Điện thoại",'Nhập số điện thoại','')
                                 +input-box("text","","","Email *",'Nhập email','')
-                                +input-box("text","","","Số điện thoại liên lạc",'Nhập số điện thoại','')
                                 .form-group
-                                    label Chủ đề bạn quan tâm
+                                    label Chủ đề *
+                                    select.selectpicker.form-control(title="Chọn chủ đề")
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                .form-group
+                                    label Chủ đề quan tâm *
                                     select.selectpicker.form-control(title="Chọn chủ đề bạn quan tâm")
                                         option(value="Sample") Sample
                                         option(value="Sample") Sample
                                         option(value="Sample") Sample
                                         option(value="Sample") Sample
                                         option(value="Sample") Sample
-                                +textarea-box('','','Nội dung câu hỏi *','Nhập nội dung câu hỏi','3')
+                                +textarea-box('','','Nội dung hỏi đáp','Nhập nội dung câu hỏi','3')
+                                .custom-control.custom-checkbox
+                                    input#customCheck.custom-control-input(type='checkbox', name='example1')
+                                    label.custom-control-label(for='customCheck') Tôi đồng ý với các điều khoản bảo mật của VitaDairy
                                 .row
-                                    .col-6
+                                    .col-6.align-self-center
                                         +a-btn-primary('Gửi','#','','icon-contact')
                                     .col-6
                                         .capcha
@@ -222,7 +233,7 @@ block modal
                                         h3 TS.BS. DAVID WILLIAM
                                         p Trình độ: Tiến sĩ 
                                         p Chuyên khoa dinh dưỡng
-                                    a(data-toggle="modal"  class="btn btn-primary btn-icon-contact " data-target="#fromModalCenter" data-dismiss="modal"  title="Gửi câu hỏi cho chuyên gia"): span Gửi câu hỏi cho chuyên gia
+                                    a(data-toggle="modal"  href="" class="btn btn-primary btn-icon-contact " data-target="#fromModalCenter" data-dismiss="modal"  title="Gửi câu hỏi cho chuyên gia"): span Gửi câu hỏi cho chuyên gia
 
                         .col-md-7
                             .sSlidepersonInfo
@@ -240,31 +251,43 @@ block modal
                 .modal-body
                     .sFormAdv
                         .row
-                            .col-sm-5.align-self-end
+                            .col-lg-5.align-self-end
                                 img(data-src= imgPath + 'tuvandinhduong/img-08.png' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
-                            .col-sm-6
+                            .col-lg-7
                                 .page-header
                                     h3
                                         span.icon-text
+                                            <svg viewBox="0 0 48 50" class="icon-shape">
+                                                <use xlink:href="#ic-cau-hoi"></use>
+                                            </svg>
                                         span.ttl-text Đặt câu hỏi cho chuyên gia
                                     a(href="tel:+1900633559"): img(src= imgPath + 'hotline.svg' alt="")
-                                .page-header-des
-                                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
                                 .sForm.form-style
-                                    +input-box("text","","","Tên của mẹ *",'Nhập tên của mẹ','')
+                                    +input-box("text","","","Tên của bạn *",'Nhập tên của bạn','')
+                                    +input-box("text","","","Điện thoại",'Nhập số điện thoại','')
                                     +input-box("text","","","Email *",'Nhập email','')
-                                    +input-box("text","","","Số điện thoại liên lạc",'Nhập số điện thoại','')
                                     .form-group
-                                        label Chủ đề bạn quan tâm
+                                        label Chủ đề *
+                                        select.selectpicker.form-control(title="Chọn chủ đề")
+                                            option(value="Sample") Sample
+                                            option(value="Sample") Sample
+                                            option(value="Sample") Sample
+                                            option(value="Sample") Sample
+                                            option(value="Sample") Sample
+                                    .form-group
+                                        label Chủ đề quan tâm *
                                         select.selectpicker.form-control(title="Chọn chủ đề bạn quan tâm")
                                             option(value="Sample") Sample
                                             option(value="Sample") Sample
                                             option(value="Sample") Sample
                                             option(value="Sample") Sample
                                             option(value="Sample") Sample
-                                    +textarea-box('','','Nội dung câu hỏi *','Nhập nội dung câu hỏi','3')
+                                    +textarea-box('','','Nội dung hỏi đáp','Nhập nội dung câu hỏi','3')
+                                    .custom-control.custom-checkbox
+                                        input#customCheck.custom-control-input(type='checkbox', name='example1')
+                                        label.custom-control-label(for='customCheck') Tôi đồng ý với các điều khoản bảo mật của VitaDairy
                                     .row
-                                        .col-6
+                                        .col-6.align-self-center
                                             +a-btn-primary('Gửi','#','','icon-contact')
                                         .col-6
                                             .capcha

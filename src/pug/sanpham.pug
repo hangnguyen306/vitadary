@@ -1,0 +1,199 @@
+extends layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "san-pham"
+
+block content
+    .sMainChild.sContact.sProduct
+        .fixHeight.sContactImg
+            .bgImg(style="background-image:url(" + imgPath + 'sanpham/banner.jpg' + ")")
+                .bgImgsp(style="background-image:url(" + imgPath + 'lienhe/banner-sp.jpg' + ")")
+                .container
+                    +breadcrumb([{'title':'Sản phẩm'}])
+                    .des
+                        h2 VitaDairy luôn đồng hành<br>cùng mẹ và bé
+                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                       
+        .sMainContent
+            .container
+                #sProductItem1
+                    .page-header-3
+                        h3: span SẢN PHẨM CHO MẸ
+                    .sProductSlider
+                        .sProductSliderInner
+                            .item
+                                .itemWrap
+                                    .image
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-1.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                    .info
+                                        .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
+                                            .des
+                                                h4 ColosBaby Gold for MUM 400g
+                                                ul
+                                                    li Dễ tiêu hoá
+                                                    li Kiểm soát cân nặng
+                                                    li Phát triển trí não
+                                                    li Miễn dịch khoẻ
+                                                    li Xương chắc khoẻ
+                                                .btnDiv
+                                                    +a-btn-primary('Mua ngay','#','','ic-shop')
+                            .item
+                                .itemWrap
+                                    .image.imageFull
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-2.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                            .item
+                                .itemWrap
+                                    .image
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-3.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                    .info
+                                        .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
+                                        .des
+                                            h4 ColosBaby Gold for MUM 400g
+                                            ul
+                                                li Dễ tiêu hoá
+                                                li Kiểm soát cân nặng
+                                                li Phát triển trí não
+                                                li Miễn dịch khoẻ
+                                                li Xương chắc khoẻ
+                                            .btnDiv
+                                                +a-btn-primary('Mua ngay','#','','ic-shop')
+                            .item
+                                .itemWrap
+                                    .image.imageFull
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-2.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+
+                #sProductItem2
+                    .page-header-3
+                        h3: span SẢN PHẨM CHO BÉ
+                    .sProductSlider
+                        .sProductSliderInner
+                            .item
+                                .itemWrap
+                                    .image
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-4.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                    .info
+                                        .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
+                                        .des
+                                            h4 ColosBaby Gold for MUM 400g
+                                            ul
+                                                li Dễ tiêu hoá
+                                                li Kiểm soát cân nặng
+                                                li Phát triển trí não
+                                                li Miễn dịch khoẻ
+                                                li Xương chắc khoẻ
+                                            .btnDiv
+                                                +a-btn-primary('Mua ngay','#','','ic-shop')
+                            .item
+                                .itemWrap
+                                    .image.imageFull
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-5.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                            .item
+                                .itemWrap
+                                    .image
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-6.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                    .info
+                                        .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
+                                        .des
+                                            h4 ColosBaby Gold for MUM 400g
+                                            ul
+                                                li Dễ tiêu hoá
+                                                li Kiểm soát cân nặng
+                                                li Phát triển trí não
+                                                li Miễn dịch khoẻ
+                                                li Xương chắc khoẻ
+                                            .btnDiv
+                                                +a-btn-primary('Mua ngay','#','','ic-shop')
+                            .item
+                                .itemWrap
+                                    .image.imageFull
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-5.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                
+                #sProductItem3
+                    .page-header-3
+                        h3: span SẢN PHẨM CHO NGƯỜI LỚN TUỔI
+                    .sProductSlider
+                        .sProductSliderInner
+                            .item
+                                .itemWrap
+                                    .image
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-7.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                    .info
+                                        .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
+                                        .des
+                                            h4 ColosBaby Gold for MUM 400g
+                                            ul
+                                                li Dễ tiêu hoá
+                                                li Kiểm soát cân nặng
+                                                li Phát triển trí não
+                                                li Miễn dịch khoẻ
+                                                li Xương chắc khoẻ
+                                            .btnDiv
+                                                +a-btn-primary('Mua ngay','#','','ic-shop')
+                            .item
+                                .itemWrap
+                                    .image.imageFull
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-8.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                            .item
+                                .itemWrap
+                                    .image
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-9.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                    .info
+                                        .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
+                                        .des
+                                            h4 ColosBaby Gold for MUM 400g
+                                            ul
+                                                li Dễ tiêu hoá
+                                                li Kiểm soát cân nặng
+                                                li Phát triển trí não
+                                                li Miễn dịch khoẻ
+                                                li Xương chắc khoẻ
+                                            .btnDiv
+                                                +a-btn-primary('Mua ngay','#','','ic-shop')
+                            .item
+                                .itemWrap
+                                    .image.imageFull
+                                        a(href="#")
+                                            img(data-lazy= imgPath +'sanpham/img-8.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+        .sMainContent.bg-khuyen-mai
+            .container
+                .page-header
+                    h3
+                        span.icon-text
+                            <svg viewBox="0 0 57.897 50" class="icon-shape">
+                                <use xlink:href="#ic-khuyen-mai"></use>
+                            </svg>
+                        span.ttl-text Khuyến mãi 
+                -
+                    var news = [
+                        {'title' : "VitaDairy vươn tầm thế giới cùng Gulfood Dubai", 'img': 'chiendichquangcao/img-02.jpg','url' : "#"},
+                        {'title' : "VitaDairy – Thương hiệu sữa Việt hàng đầu ứng dụng…", 'img': 'chiendichquangcao/img-03.jpg','url' : "#"},
+                        {'title' : "Sữa VitaDairy được Viện dinh dưỡng Việt Nam khuyên dùng", 'img': 'chiendichquangcao/img-04.jpg','url' : "#"},
+                        {'title' : "Bà Nguyễn Tú Anh, nhà sáng lập Công ty VitaDairy: Nữ…", 'img': 'chiendichquangcao/img-05.jpg','url' : "#"},
+                        {'title' : "VitaDairy là đối tác duy nhất của Bộ Y tế trong năm hành…", 'img': 'chiendichquangcao/img-06.jpg','url' : "#"},
+                        {'title' : "Hãng sữa VitaDairy xây thêm nhà máy 6 triệu USD", 'img': 'chiendichquangcao/img-07.jpg','url' : "#"}
+                    ]
+                .sNewsSlider
+                    .sNewsSliderInner
+                        for x in news
+                            .item
+                                a(href=x.url)
+                                    img(data-lazy= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                .info
+                                    .date 21/09/2019
+                                    a(href=x.url)
+                                        = x.title
+                                    p Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
+                                .btnDiv.text-center
+                                    +a-btn-primary('Xem thể lệ','#')

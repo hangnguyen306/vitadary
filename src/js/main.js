@@ -256,6 +256,38 @@ function sProduct() {
     }
 
 }
+function sProductSlider() {
+    var el = $(".sProductSliderInner");
+    el.slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll:1,
+        prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
+        nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>",
+        lazyLoad: "ondemand",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll:2,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+      });
+      $('.sProductSliderInner .item').matchHeight();
+
+}
+
 function sliderPartner() {
     $('.sSliderParInner').slick({
         infinite: true,
@@ -617,7 +649,7 @@ $('#fromModalCenter').on( 'shown.bs.modal', function(){
     document.body.classList.add('modal-open');
 });
 
-
+sProductSlider();
 showAsk();
 waypointEl();
 // Base

@@ -1,0 +1,66 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "san-pham"
+
+block content
+    .sMainChild.sProductDetail
+        .sBannerChild
+            img(src= imgPath + 'sanpham/banner-san-pham-chi-tiet.jpg' alt="")
+        .sMainContent
+            .container
+                +breadcrumb([{'title':'Sản phẩm','link':'#'},{'title':' Sản phẩm chi tiết'}])
+            .sLandingProduct
+                .bgImg(style="background-image:url(" + imgPath + 'sanpham/bg-san-pham-chi-tiet.jpg' + ")")
+                    .container
+                        .sBoxProduct
+                            .row
+                                .col-sm-6
+                                    .info
+                                        .page-header
+                                            h3
+                                                span.icon-text
+                                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                                        <use xlink:href="#nuoiduong1"></use>
+                                                    </svg>
+                                                span.ttl-text Miễn dịch khoẻ giảm bệnh vặt
+                                        .des
+                                            p ColosBaby sữa bột pha sẵn với công thức tiên phong bổ sung sữa non từ Mỹ, giúp bé miễn dịch khỏe tạo dựng nền tảng phát triển vững chắc cả về thể chất và trí não. Với ColosBaby Hộp pha sẵn, mẹ yên tâm vì bé đến trường khỏe mạnh, giúp cho hành trình học hỏi không gián đoạn bởi bệnh vặt.
+                                            p Tăng cường DHA, Choline, Vitamin A giúp hoàn thiện và phát triển não bộ, thị giác, tăng khả năng nhận thức và học hỏi của trẻ.
+                                            p Colosbaby với công thức tăng cường sữa non thu được sau 24h đầu từ Mỹ, bổ sung các dưỡng chất thiết yếu Kẽm, Selen, Vitamin & Khoáng chất giúp tăng cường sức đề kháng, cho bé hệ miễn dịch khỏe mạnh, bảo vệ trẻ khỏi các bệnh vặt tiêu hóa và hô hấp.
+                                .col-sm-6.align-self-end
+                                    .image
+                                        img(src= imgPath + 'sanpham/boy.png' alt="")
+                                        span.img-small
+                                            img(src= imgPath + 'sanpham/colos-baby.png' alt="")
+            .sLandingProductInfo
+                .container
+                    .row
+                        .col-sm-6
+                            .page-header
+                                h3
+                                    span.icon-text
+                                        <svg viewBox="0 0 40 40" class="icon-shape">
+                                            <use xlink:href="#ic-loi-ich"></use>
+                                        </svg>
+                                    span.ttl-text Lợi ích từ ColosBaby
+                            .image
+                                img(src= imgPath + 'sanpham/img-10.png' alt="")
+                        .col-sm-6
+                            .infoSlider
+                                .item
+                                    span.txt-icon
+                                    .des
+                                        h4 Ngủ ngon mau lớn
+                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                .item
+                                    span.txt-icon
+                                    .des
+                                        h4 Chống táo bón
+                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                .item
+                                    span.txt-icon
+                                    .des
+                                        h4 Phát triển chiều cao 
+                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.

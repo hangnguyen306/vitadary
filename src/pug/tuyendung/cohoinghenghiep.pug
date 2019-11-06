@@ -8,6 +8,7 @@ block content
     .sMainChild.sContact
         .fixHeight.sContactImg
             .bgImg(style="background-image:url(" + imgPath + 'tuyendung/banner-co-hoi-nghe-nghiep.jpg' + ")")
+                //.bgImgsp(style="background-image:url(" + imgPath + 'tuyendung/banner-co-hoi-nghe-nghiep-sp.jpg' + ")")
                 .container
                     +breadcrumb([{'title':'Tuyển dụng ','link':'#'},{'title':'Cơ hội nghề nghiệp'}])
                     .des
@@ -16,17 +17,24 @@ block content
         .sMainContent
             .container
                 .page-header
-                    h2
+                    h3
                         span.icon-text
                             <svg viewBox="0 0 40 40" class="icon-shape"><use xlink:href="#ic-tuyen-dung"></use></svg> 
                         span.ttl-text Các vị trí đang tuyển dụng
                 .form-style
                     .row
-                        .col-sm-8
+                        .col-sm-8.align-self-center
+                            .form-group
+                                .custom-control.custom-radio
+                                    input#exampleRadios1.custom-control-input(type='radio', name='customRadio' checked)
+                                    label.custom-control-label(for='exampleRadios1') Đang tuyển
+                                .custom-control.custom-radio
+                                    input#exampleRadios2.custom-control-input(type='radio', name='customRadio')
+                                    label.custom-control-label(for='exampleRadios2') Đã hết hạn
                         .col-sm-4
                             .form-group
                                     label Lĩnh vực
-                                    select.selectpicker.form-control(title="Chọn chủ đề bạn quan tâm")
+                                    select.selectpicker.form-control(title="Tất cả")
                                         option(value="Sample") Sample
                                         option(value="Sample") Sample
                                         option(value="Sample") Sample
@@ -43,7 +51,7 @@ block content
                         tbody
                             - for (var x = 1; x < 10; x++)
                                 tr
-                                    td Giám sát bán hàng
+                                    td: a(href="#") Giám sát bán hàng
                                     td Đồng Tháp
                                     td 01
                                     td 22/11/2019

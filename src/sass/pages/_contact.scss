@@ -107,8 +107,9 @@
         right: 0;
         bottom: 0;
         background-position: bottom center;
+        background-size: cover;
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(lg) {
             background: none !important;
         }
     }
@@ -225,20 +226,39 @@
         }
     }
 }
-
+.sCarree{
+    .breadcrumb{
+        margin-bottom: rem(30);
+    }
+    .sContactImg:nth-child(2){
+        .bgImg{
+            background-position: left;
+        }
+        .row{
+            div{
+                margin-left: auto;
+            }
+        }
+    }
+    .bgImg{
+        padding: rem(30) 0;
+    }
+}
 .sBoxApply {
     border: 1px solid #CCCED0;
     border-radius: 5px;
     padding: 1px;
-
+    margin-top:rem(20);
     table {
         width: 100%;
         font-size: rem(15);
-
         tr {
             td {
                 background: white;
                 @include transition();
+                a{
+                    color: inherit;
+                }
             }
 
             &:nth-child(2n) {
@@ -265,6 +285,12 @@
             padding: rem(15) rem(20);
         }
 
+    }
+    @include media-breakpoint-down(md) {
+        overflow: auto;
+        table{
+            width:1200px; 
+        }
     }
 }
 

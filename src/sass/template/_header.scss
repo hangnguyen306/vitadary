@@ -50,7 +50,7 @@ header.header {
                 display: inline-block;
                 padding-left: 13px;
                 &.active{
-                    a{
+                    >a{
                         color:$blue-main-light;
                     }
                 }

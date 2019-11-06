@@ -74,7 +74,12 @@ function fixHeight() {
     $('.fixHeight .sIntroheader').css({ 'minHeight': hW});
     $('.fixHeight.sLandingNewItem .bgImg.bgImgpc').css({ 'minHeight': hW - 50 });
     $('.fixHeight.sLandingNewItem .bgImgsp .container').css({ 'minHeight': hW - 50 });
-    $('.fixHeight.sContactImg .bgImg').css({ 'minHeight': hW -125});
+    $('.fixHeight.sContactImg .bgImg').css({ 'minHeight': hW -60});
+    $('.sAbout-1.fixHeight .bgImg').css({ 'minHeight': hW -125});
+    $('.sAbout-2.fixHeight .bgImg').css({ 'minHeight': hW -50});
+    $('.sAbout-3.fixHeight .bgImg').css({ 'minHeight': hW -50});
+    //$('.sDist .fixHeight').css({ 'minHeight': hW -50});
+    
 
     
 }

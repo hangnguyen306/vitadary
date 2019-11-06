@@ -74,22 +74,30 @@
 
 .sNew2Cold {
   .item {
-    padding: 50px 0 50px 0;
-
-    &:nth-child(2n) {
-      .row {
-        >div {
-          &:first-child {
-            order: 2;
-          }
-
-          &:last-child {
-            order: 1;
+    padding: rem(30) 0;
+    // &.fixHeight{
+    //   display: flex;
+    //   align-items: center;
+    //   flex-direction: row;
+    // }
+    @include media-breakpoint-down(md) {
+      padding: rem(10) 0;
+    }
+    @include media-breakpoint-up(lg) {
+      &:nth-child(2n) {
+        .row {
+          >div {
+            &:first-child {
+              order: 2;
+            }
+  
+            &:last-child {
+              order: 1;
+            }
           }
         }
       }
     }
-
     h4 {
       font-weight: bold;
       font-size: rem(34);
@@ -98,9 +106,14 @@
     }
 
     .image {
+      margin-top:rem(15);
+      margin-bottom: rem(15);
       img {
         max-width: 100%;
-        border-radius: 50px;
+        border-radius: rem(50);
+        @include media-breakpoint-down(md) {
+          border-radius: rem(20);
+        }
       }
     }
 
@@ -117,7 +130,20 @@
 
 //phan phoi
 .sDist {
-  padding: rem(40) 0 0 0;
+  padding-top:rem(30);
+  background: {
+    image:url($img-path + "bg-doi-tac.jpg");
+    repeat:no-repeat;
+    position: top right;
+    color: #f3f9fd;
+  };
+  // .container{
+  //   position: relative;
+  // }
+  // .breadcrumb{
+  //   position: absolute;
+  //   top:rem(30);
+  // }
   .sSlideValueContent{
     position: relative;
   }

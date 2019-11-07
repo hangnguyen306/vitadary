@@ -1,0 +1,60 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "tuyen-dung"
+
+block content
+    .sMainChild.sContact
+        .fixHeight.sContactImg
+            .bgImg(style="background-image:url(" + imgPath + 'tuyendung/banner-moi-truong-lam-viec.jpg' + ")")
+                //.bgImgsp(style="background-image:url(" + imgPath + 'tuyendung/banner-moi-truong-lam-viec-sp.jpg' + ")")
+                .container
+                    +breadcrumb([{'title':'Tuyển dụng ','link':'#'},{'title':'Cơ hội nghề nghiệp'}])
+                    .des
+                        h2 Môi trường làm việc 
+                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr. 
+        .sMainContent
+            .container
+              ul#myList.list-group.list-group-tab.sNavLink.list-col-3(role='tablist')
+                li: a.active(data-toggle='list', href='#navTab1', role='tab')
+                        span.svg-icon.ic-phattrien-1
+                            <svg viewBox="0 0  20 24" class="icon-shape">
+                                <use xlink:href="#ic-moi-truong-1"></use>
+                            </svg>
+                        span Kế hoạch phát triển nghề nghiệp
+                li: a(data-toggle='list', href='#navTab2', role='tab')
+                        span.svg-icon.ic-phattrien-1
+                            <svg viewBox="0 0 24 24" class="icon-shape">
+                                <use xlink:href="#ic-moi-truong-2"></use>
+                            </svg>
+                        span Kế hoạch đào tạo năng lực
+                li: a(data-toggle='list', href='#navTab3', role='tab')
+                      span.svg-icon.ic-phattrien-1
+                          <svg viewBox="0 0 24 28" class="icon-shape">
+                              <use xlink:href="#ic-moi-truong-3"></use>
+                          </svg>
+                      span Chính sách thi đua khen thưởng
+              .tab-content
+                #navTab1.tab-pane.active(role='tabpanel')
+                    .page-header-2
+                        h2 Kế hoạch phát triển nghề nghiệp
+                    .sContent
+                      p: strong Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                      p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+                      p: img(data-src= imgPath + 'tuyendung/img-1.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                #navTab2.tab-pane(role='tabpanel')
+                    .page-header-2
+                        h2 Kế hoạch đào tạo năng lực
+                    .sContent
+                      p: strong Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                      p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+                      p: img(data-src= imgPath + 'tuyendung/img-1.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                #navTab3.tab-pane(role='tabpanel')
+                    .page-header-2
+                        h2 Chính sách thi đua khen thưởng
+                    .sContent
+                      p: strong Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+                      p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+                      p: img(data-src= imgPath + 'tuyendung/img-1.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+              

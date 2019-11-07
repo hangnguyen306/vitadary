@@ -45,7 +45,63 @@
         margin-top:0;
         padding-top:rem(60);
     }
+    
+    .page-header-2{
+    margin-top:rem(30);
+    }
+    .sNewsSlider.sNewsSliderList{
+        margin-top:0;
+        .item{
+            box-shadow: 0 3px 40px rgba($color: #838383, $alpha: .15);
+            margin-bottom: rem(20);
+            border-radius: 20px;
+            
+        }
+        @include media-breakpoint-down(md) {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -10px;
+            margin-right: -10px;
+            .item{
+                max-width: 50%;
+                flex: 0 0 50%;
+                padding: 10px;
+                box-shadow: 0 3px 40px rgba($color: #838383, $alpha: 0);
+            }
+        }
+    }
+    .grp-date{
+        margin-bottom: rem(20);
+    }
+    
 }
+.bg-sanphamlienquan{
+    padding-top:rem(50);
+    padding-bottom:rem(50);
+    background: {
+        image: url($img-path + "bg-san-pham-lien-quan.jpg");
+        size: cover;
+        repeat: no-repeat;
+        position: top right;
+      }
+    &.bg-sanphamlienquan-2{
+        background: {
+            image: url($img-path + "bg-san-pham-lien-quan-2.jpg");
+            size: cover;
+            repeat: no-repeat;
+            position: top right;
+          }
+    }
+    &.bg-sanphamlienquan-3{
+        background: {
+            image: url($img-path + "bg-san-pham-lien-quan-3.jpg");
+            size: cover;
+            repeat: no-repeat;
+            position: top right;
+          }
+    }
+}
+
 .bg-dudinh{
     background: {
         image: url($img-path + "bg-dudinhmangthai.jpg");
@@ -213,3 +269,65 @@
 }
 
 .sEventChild {}
+.sBoxProduct{
+    h3{
+        color:$blue-main;
+        font-size: rem(34);
+        font-weight: bold;
+        margin: 0 0 20px 0;
+    }
+    p{}
+    .image{
+        margin-top:rem(10);
+        margin-bottom:rem(10);
+        text-align: center;
+        img{
+            max-width: 100%;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top:rem(30)
+        } 
+    }
+   
+    @include media-breakpoint-down(md) {
+        .btnDiv{
+        text-align: center;
+        margin-top:rem(20);
+        }
+    }
+}
+.sBoxProductSlidder{
+    border-top:1px dotted #CCCED0;
+    padding-top:rem(20);
+    margin-top:rem(20);
+    .item{
+        padding: rem(10);
+        .image{
+            background: #fff;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba($color: #838383, $alpha: .1);
+            img{
+                display: inline-block;
+            }
+           
+        }
+        h4{
+            color:$blue-main;
+            font-size: rem(20);
+            font-weight: bold;
+            margin: rem(20) 0 0px 0;
+            text-align: center;
+            a{
+                color: inherit;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+.sContentDes{
+    font-weight: bold;
+}

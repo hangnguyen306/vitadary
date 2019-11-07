@@ -6,9 +6,13 @@ body {
 }
 
 .form-control:focus {
+    background: $blue-main-light;
+    color: white;
     box-shadow: 0 0 0 0rem rgba(62, 183, 228, 0.25);
 }
-
+:focus{
+    outline:none;
+}
 a {
     &:focus {
         outline: none;
@@ -404,24 +408,24 @@ a.btn,
 
     &-2 {
         margin-bottom: rem(20);
-
-        h2 {
-            font-weight: bold;
-            font-size: rem(34);
-            color: $blue-main;
-        }
-
         .icon-link {
             display: inline-block;
             vertical-align: text-bottom;
             margin-right: 10px;
-
+    
             svg {
                 width: rem(40);
                 height: rem(40);
                 fill: $blue-main-light;
             }
         }
+        h2 {
+            font-weight: bold;
+            font-size: rem(34);
+            color: $blue-main;
+        }
+
+        
     }
 }
 
@@ -467,7 +471,10 @@ a.btn,
             background: #ECEFF1;
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
-
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             .svg-icon {
                 height: 24px;
                 display: inline-block;
@@ -520,6 +527,15 @@ a.btn,
         }
     }
     }
+    @include media-breakpoint-up(md) {
+        &.list-col-3{
+            li{
+                flex: 0 0 33.333%;
+                max-width: 33.33%;
+            }
+        }
+    }
+ 
 }
 
 .sContent {
@@ -546,8 +562,22 @@ a.btn,
         textarea.form-control {
             height: rem(100);
             resize: none;
+            padding-top: 15px;
             overflow: auto;
         }
+    }
+    .form-file{
+        padding:rem(15);
+        border-radius: 20px;
+        border:2px dotted #CCCED0;
+        .custom-file {
+            label.custom-file-label{
+              color: #333333;
+              padding-left: rem(100);
+              display: flex;
+              align-items: center;
+            }
+          }
     }
     .custom-checkbox{
         margin-bottom:rem(20);
@@ -702,6 +732,17 @@ a.btn,
     background: none !important;
 }
 .sBoxshare{
+    .icon-link {
+        display: inline-block;
+        vertical-align: text-bottom;
+        margin-right: 10px;
+
+        svg {
+            width: rem(40);
+            height: rem(40);
+            fill: $blue-main-light;
+        }
+    }
     @include media-breakpoint-up(md) {
         text-align: right;
     }

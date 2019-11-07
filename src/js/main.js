@@ -637,6 +637,36 @@ function sSlidepersonSlider(){
         ]
     });
 }
+function sBoxProductSlidder(){
+    $('.sBoxProductSlidder').slick({
+        infinite: true,
+        arrows:true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerPadding: '0px',
+        prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
+        nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>",
+        lazyLoad: "ondemand",
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+
+        ]
+    });
+}
+
+
 function showAsk(){
     var  el = $('.showAsk');
     el.click(function() {
@@ -653,7 +683,7 @@ $('#personModalCenter').on('shown.bs.modal', function(){
 $('#fromModalCenter').on( 'shown.bs.modal', function(){
     document.body.classList.add('modal-open');
 });
-
+sBoxProductSlidder();
 sProductSlider();
 showAsk();
 waypointEl();

@@ -365,4 +365,10 @@
     .sFormAdv .col-lg-5 img{
         margin-left: 0;
     }
+    
+    @include media-breakpoint-down(md) {
+        .sFormAdv .col-lg-5{
+         display: none;
+        }
+    }
 }

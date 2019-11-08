@@ -10,7 +10,7 @@ block content
         +breadcrumb([{'title':'Tư vấn dinh dưỡng ','link':'./'},{'title':'FAQ'}])
         .sMainContent
             .row
-                .col-sm-8
+                .col-lg-8
                     .page-header-2
                         .sBoxshare
                             a(href="#")
@@ -19,10 +19,10 @@ block content
                                         <use xlink:href="#ic-share"></use>
                                     </svg>
                                 span.icon-text Chia sẻ
-                    .faqGrid
-                        +faq(imgPath  + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna',"Nguyễn Thị Tuyết Mai")
-                        +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magnaLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna',"Nguyễn Thị Tuyết Mai")
-                .col-sm-4
+                    .faqGrid.faqGridDetail
+                        +faqDetail(imgPath  + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna',"Nguyễn Thị Tuyết Mai")
+                        +faqDetail(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magnaLorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna',"Nguyễn Thị Tuyết Mai")
+                .col-lg-4
                     .page-header
                         h3
                             span.icon-text
@@ -34,10 +34,12 @@ block content
                         +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
                         +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
                         +faq(imgPath + 'tuvandinhduong/img1.png','Lorem ipsum dolor sit ame, consetetur sadipscing elitr, Lorem ipsum dolor sit ame, consetetur sadipscing elitr',"Nguyễn Thị Tuyết Mai")
-                    .sNavtag
-                        a(href="#") #chăm sóc bé
-                        a(href="#") #dinh dưỡng sữa non
-                        a(href="#") #hệ tiêu hoá
-                        a(href="#") #trí não
-                        a(href="#") #chiều cao
-                        a(href="#") #cân nặng
+                    .sPaiging
+                        +pagination([
+                            {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                            {text:'1',url:'#'},
+                            {text:'2',url:'#'},
+                            {text:'3',url:'#'},
+                            {text:'...',url:'#'},
+                            {text:'<span>Cuối</span><i class="arrow_carrot-right"></i>',url:'#'}
+                        ])

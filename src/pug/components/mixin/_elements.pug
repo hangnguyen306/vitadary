@@ -153,14 +153,25 @@ mixin headerlanding(title,des)
 			span
 				= title
 		.des !{des}
-
+mixin faqDetail(image,des,title,other,active)
+	.item
+		.info
+			img(src=image alt="")
+			h2 
+				= title
+			h4 Bí quyết mẹ khỏe
+			p 
+				= des
 mixin faq(image,des,title,other,active)
+
 	unless other
 		.item
+			a(href="chitiet.html")
 			.info
 				img(src=image alt="")
 				h2 
 					= title
+				h4 Bí quyết mẹ khỏe
 				p 
 					= des
 	else
@@ -170,6 +181,7 @@ mixin faq(image,des,title,other,active)
 					img(src=image alt="")
 					h2 
 						= title
+					h4 Bí quyết mẹ khỏe
 					p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt uting Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt ut labore et dolore magna.
 		else
 			.item(data-id=other).showAsk.active
@@ -177,6 +189,7 @@ mixin faq(image,des,title,other,active)
 					img(src=image alt="")
 					h2 
 						= title
+					h4 Bí quyết mẹ khỏe
 					p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt uting Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam en nonumy eirmod tempor invidunt ut labore et dolore magna.
 mixin sSlideNewThumb(arrayNews)
 	each x in arrayNews  

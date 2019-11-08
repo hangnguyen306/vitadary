@@ -18020,7 +18020,10 @@ a.btn.btn-primary.btn-apply:after {
   @media (max-width: 991.98px) {
     .sFaqPage .list-group-col4 li {
       flex: 0 0 50%;
-      max-width: 50%; } }
+      max-width: 50%;
+      margin-bottom: 5px; }
+      .sFaqPage .list-group-col4 li a {
+        border-radius: 10px; } }
   @media (max-width: 480px) {
     .sFaqPage .list-group-col4 li {
       flex: 0 0 100%;
@@ -18039,6 +18042,12 @@ a.btn.btn-primary.btn-apply:after {
   @media screen and (prefers-reduced-motion: reduce) {
     .faqGrid .item {
       transition: none; } }
+  .faqGrid .item > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
   .faqGrid .item img {
     width: 90px;
     height: 90px;
@@ -18056,10 +18065,18 @@ a.btn.btn-primary.btn-apply:after {
     font-weight: bold;
     margin: 0;
     padding-bottom: 0.625rem; }
+  .faqGrid .item h4 {
+    font-size: 0.75rem;
+    color: #999A9D;
+    font-style: italic;
+    margin: 0 0 0.3125rem 0; }
   .faqGrid .item p {
     margin: 0; }
   .faqGrid .item:hover {
     background: rgba(62, 183, 228, 0.1); }
+
+.faqGrid.faqGridDetail .item:first-child {
+  background: rgba(236, 239, 241, 0.5); }
 
 .sNavtag {
   margin-top: 1.25rem; }
@@ -18843,6 +18860,9 @@ a.btn.btn-primary.btn-apply:after {
     margin-top: 30px; }
   .modal .sFormAdv .col-lg-5 img {
     margin-left: 0; }
+  @media (max-width: 991.98px) {
+    .modal .sFormAdv .col-lg-5 {
+      display: none; } }
 
 .page-header-3 h3 {
   overflow: hidden;

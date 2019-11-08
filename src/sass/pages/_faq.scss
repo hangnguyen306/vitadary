@@ -6,6 +6,10 @@
             @include media-breakpoint-down(md) {
                 flex: 0 0 50%;
                 max-width: 50%;
+                margin-bottom: 5px;
+                a{
+                    border-radius: 10px;
+                }
             }
             @media (max-width: 480px){
                 flex: 0 0 100%;
@@ -24,6 +28,13 @@
         padding: rem(20);
         margin-top: rem(20);
         @include transition();
+        >a{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
         img{
             width: 90px;
             height: 90px;
@@ -43,11 +54,22 @@
             margin: 0;
             padding-bottom: rem(10);
         }
+        h4{
+            font-size: rem(12);
+            color:#999A9D;
+            font-style:italic;
+            margin: 0 0 rem(5) 0;
+        }
         p{
             margin: 0;
         }
         &:hover{
             background: rgba(#3EB7E4, 0.1);
+        }
+    }
+    &.faqGridDetail{
+        .item:first-child{
+            background: rgba(#ECEFF1, 0.5);
         }
     }
 }

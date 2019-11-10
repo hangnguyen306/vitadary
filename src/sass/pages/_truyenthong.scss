@@ -1,75 +1,111 @@
-.sBanerChild{
-  .image{
-    @include bg-box(1918,399)
-  } 
-}
-.bigImageEvent{
-  .image{
-    a{
-      @include bg-box(598,385);
-    }
-  }
-  .info{
-    .date{
-
-    }
-    h3{
-      a{
-        font-size: rem(20);
-        color:inherit;
-      }
-    }
-    .des{
-
-    }
+.bg-thongtinkhuyemai{
+  background: {
+    image: url($img-path + "bg-thong-tin-khuyen-mai-landing.jpg");
+    size: contain;
+    repeat: no-repeat;
+    position: center;
   }
 }
-.thumbImageEvent{
-  margin-top:30px;
-  .itemEvent{
-    padding:rem(30);
-    .image{
-      a{
-        @include bg-box(326,224)
+.fixHeightNews{
+  display: flex;
+  align-items: center;
+  padding:rem(30) 0;
+  .sInfo{
+    margin-top:rem(30); 
+    @include media-breakpoint-down(md) {
+      padding-left: rem(40);
+      padding-right: rem(40);
+      .slick-arrow.icon-arr.icon-arr-3.icon-left{
+        left:rem(-40);
+      }
+      .slick-arrow.icon-arr.icon-arr-3.icon-right{
+        right:rem(-40);
       }
     }
-    .info{
-      .date{
-  
-      }
-      h4{
-        a{
-          font-size: rem(16);
-          color:inherit;
-        }
-      }
-      .des{
-  
-      }
-    }
-  }
-}
-.listEvent{
-  .item{
-    .image{
-      a{
-        @include bg-box(326,224)
-      }
-    }
-
-    .info{
-      h3{
-        a{
-          font-size: rem(16);
-          color:inherit;
-        }
-        }
-      }
-      .des{
-
-      }
-    }
-  }
-  .sEventChild{
     
   }
+}
+.bg-gray{
+  background: #F9FAFB;
+  padding: rem(40) 0;
+}
+@include media-breakpoint-down(sm) {
+  .sNewsSlider .item img{
+    width: 100%; 
+  }
+} 
+// .sBanerChild{
+//   .image{
+//     @include bg-box(1918,399)
+//   } 
+// }
+// .bigImageEvent{
+//   .image{
+//     a{
+//       @include bg-box(598,385);
+//     }
+//   }
+//   .info{
+//     .date{
+
+//     }
+//     h3{
+//       a{
+//         font-size: rem(20);
+//         color:inherit;
+//       }
+//     }
+//     .des{
+
+//     }
+//   }
+// }
+// .thumbImageEvent{
+//   margin-top:30px;
+//   .itemEvent{
+//     padding:rem(30);
+//     .image{
+//       a{
+//         @include bg-box(326,224)
+//       }
+//     }
+//     .info{
+//       .date{
+  
+//       }
+//       h4{
+//         a{
+//           font-size: rem(16);
+//           color:inherit;
+//         }
+//       }
+//       .des{
+  
+//       }
+//     }
+//   }
+// }
+// .listEvent{
+//   .item{
+//     .image{
+//       a{
+//         @include bg-box(326,224)
+//       }
+//     }
+
+//     .info{
+//       h3{
+//         a{
+//           font-size: rem(16);
+//           color:inherit;
+//         }
+//         }
+//       }
+//       .des{
+
+//       }
+//     }
+//   }
+//   .sEventChild{
+    
+//   }

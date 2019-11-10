@@ -17271,6 +17271,35 @@ a.btn.btn-primary.btn-apply:after {
     .sDoitacInner .item .info {
       padding-top: 20px; }
 
+.bg-thongtinkhuyemai {
+  background-image: url("../images/bg-thong-tin-khuyen-mai-landing.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.fixHeightNews {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem 0; }
+  .fixHeightNews .sInfo {
+    margin-top: 1.875rem; }
+    @media (max-width: 991.98px) {
+      .fixHeightNews .sInfo {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem; }
+        .fixHeightNews .sInfo .slick-arrow.icon-arr.icon-arr-3.icon-left {
+          left: -2.5rem; }
+        .fixHeightNews .sInfo .slick-arrow.icon-arr.icon-arr-3.icon-right {
+          right: -2.5rem; } }
+
+.bg-gray {
+  background: #F9FAFB;
+  padding: 2.5rem 0; }
+
+@media (max-width: 767.98px) {
+  .sNewsSlider .item img {
+    width: 100%; } }
+
 .sMainContent-other {
   margin-bottom: 90px; }
   @media (max-width: 768px) {

@@ -6,28 +6,26 @@ block setting
 
 block content
     .sMainChild.sNew.sNewDetail
-        .sMainContent.bg-thongtinkhuyemai
+        .sMainContent.bg-thongtinkhuyemai.fixHeightNews
             .container
                 +breadcrumb([{'title':'Truyền thông','link':'#'},{'title':'Chiến dịch Quảng cáo'}])
-            .sMainContentInfo
-                .container
-                    .sInfo.listColNew
-                        .bigImageEvent.bigImageEventSlider
-                            .item
-                                +itemBigEventSlider(imgPath + 'chiendichquangcao/img-01.jpg','image',"#","Sản phẩm dinh dưỡng tại Việt Nam, đã đến lúc hưởng “trái…")
-                            .item
-                                +itemBigEventSlider(imgPath + 'chiendichquangcao/img-01.jpg','image',"#","​1 Sản phẩm dinh dưỡng tại Việt Nam, đã đến lúc hưởng “trái…")
-                            .item
-                                +itemBigEventSlider(imgPath + 'chiendichquangcao/img-01.jpg','image',"#","2 Sản phẩm dinh dưỡng tại Việt Nam, đã đến lúc hưởng “trái…")
+                .sInfo.listColNew
+                    .bigImageEvent.bigImageEventSlider
+                        .item
+                            +itemBigEventSlider(imgPath + 'chiendichquangcao/img-01.jpg','image',"#","Sản phẩm dinh dưỡng tại Việt Nam, đã đến lúc hưởng “trái…")
+                        .item
+                            +itemBigEventSlider(imgPath + 'chiendichquangcao/img-01.jpg','image',"#","​1 Sản phẩm dinh dưỡng tại Việt Nam, đã đến lúc hưởng “trái…")
+                        .item
+                            +itemBigEventSlider(imgPath + 'chiendichquangcao/img-01.jpg','image',"#","2 Sản phẩm dinh dưỡng tại Việt Nam, đã đến lúc hưởng “trái…")
                    
-        .sMainContentInfo.bg-thongtinkhuyemai-1
+        .sMainContentInfo.bg-gray
             .container
                 .page-header
                     .row
                         .col-sm-8
                             h3
                                 span.icon-text
-                                    <svg viewBox="0 0 63.891 50" class="icon-shape">
+                                    <svg viewBox="0 0 50 50" class="icon-shape">
                                         <use xlink:href="#ic-chiendichquangcao"></use>
                                     </svg>
                                 span.ttl-text Chiến dịch Quảng cáo

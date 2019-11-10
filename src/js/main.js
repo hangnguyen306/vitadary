@@ -79,8 +79,8 @@ function fixHeight() {
     $('.sAbout-2.fixHeight .bgImg').css({ 'minHeight': hW -50});
     $('.sAbout-3.fixHeight .bgImg').css({ 'minHeight': hW -50});
     //$('.sDist .fixHeight').css({ 'minHeight': hW -50});
-    
 
+    $('.fixHeightNews').css({ 'minHeight': hW -125});
     
 }
 function gotoTop() {

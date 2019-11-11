@@ -6,28 +6,26 @@ block setting
 
 block content
     .sMainChild.sNew.sNewDetail
-        .sMainContent.bg-thongtinkhuyemai
+        .sMainContent.bg-thongtinkhuyemai.fixHeightNews
             .container
                 +breadcrumb([{'title':'Truyền thông','link':'#'},{'title':'Thông tin khuyến mãi'}])
-            .sMainContentInfo
-                .container
-                    .sInfo.listColNew
-                        .bigImageEvent.bigImageEventSlider
-                            .item
-                                +itemBigEventSlider(imgPath + 'thongtinkhuyenmai/img-01.jpg','image',"#","​[Khuyến mại] Hè rộn ràng, muôn vàn quà tặng từ…")
-                            .item
-                                +itemBigEventSlider(imgPath + 'thongtinkhuyenmai/img-01.jpg','image',"#","​[Khuyến mại] [Khuyến mại] Vui khỏe cùng vitadairy")
-                            .item
-                                +itemBigEventSlider(imgPath + 'thongtinkhuyenmai/img-01.jpg','image',"#","[Khuyến mại – miền nam] Nhận ngay quà to từ vitadairy")
+                .sInfo.listColNew
+                    .bigImageEvent.bigImageEventSlider
+                        .item
+                            +itemBigEventSlider(imgPath + 'thongtinkhuyenmai/img-01.jpg','image',"#","​[Khuyến mại] Hè rộn ràng, muôn vàn quà tặng từ…")
+                        .item
+                            +itemBigEventSlider(imgPath + 'thongtinkhuyenmai/img-01.jpg','image',"#","​[Khuyến mại] [Khuyến mại] Vui khỏe cùng vitadairy")
+                        .item
+                            +itemBigEventSlider(imgPath + 'thongtinkhuyenmai/img-01.jpg','image',"#","[Khuyến mại – miền nam] Nhận ngay quà to từ vitadairy")
                    
-        .sMainContentInfo.bg-thongtinkhuyemai-1
+        .sMainContentInfo.bg-gray
             .container
                 .page-header
                     .row
                         .col-sm-8
                             h3
                                 span.icon-text
-                                    <svg viewBox="0 0 63.891 50" class="icon-shape">
+                                    <svg viewBox="0 0 50 50" class="icon-shape">
                                         <use xlink:href="#ic-thongtinkhuyenmai"></use>
                                     </svg>
                                 span.ttl-text Thông tin Khuyến mãi

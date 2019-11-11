@@ -1,0 +1,116 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "bi-quyet"
+
+block content
+    .sMainChild.sNew.sNewDetail
+        .sMainContent.sMainContent-other
+            .container
+                +breadcrumb([{'title':'Chăm sóc người lớn tuổi','link':'#'},{'title':'Sống khoẻ mỗi ngày'}])
+                .sLinkWrap
+                    .sLink.sLink-col-5
+                        ul
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#chamsoc-1"></use>
+                                    </svg>
+                                span.icon-text Sống khoẻ <br>mỗi ngày
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#chamsoc-2"></use>
+                                    </svg>
+                                span.icon-text Sức khoẻ <br>tim mạch
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#chamsoc-3"></use>
+                                    </svg>
+                                span.icon-text Chăm sóc người <br>bệnh tiểu đường
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#chamsoc-4"></use>
+                                    </svg>
+                                span.icon-text Dinh dưỡng cho <br>người bệnh thận
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#chamsoc-5"></use>
+                                    </svg>
+                                span.icon-text Chăm sóc <br>người bệnh gan
+        .sMainContentInfo.bg-songkhoe
+            .container
+                .page-header
+                    h3
+                        span.icon-text
+                            <svg viewBox="0 0 51.171 50" class="icon-shape">
+                                <use xlink:href="#ic-thongtinnoibat"></use>
+                            </svg>
+                        span.ttl-text Thông tin nổi bật
+                .sInfo.listColNew
+                    .bigImageEvent
+                        +itemBigEvent(imgPath + 'songkhoemoingay/img-01.jpg','image',"#","​Sức khỏe ở người cao tuổi và bí quyết để sống vui, sống khoẻ")
+                    -
+                        var news = [
+                            {'title' : "Quy tắc ăn uống giúp người cao tuổi sống vui khỏe và…", 'img': 'songkhoemoingay/img-02.jpg','url' : "#"},
+                            {'title' : "10 bí quyết giúp người cao tuổi sống thọ", 'img': 'songkhoemoingay/img-03.jpg','url' : "#"},
+                            {'title' : "Sống khỏe mỗi ngày: Người cao tuổi và bệnh Khớp", 'img': 'songkhoemoingay/img-04.jpg','url' : "#"},
+                            {'title' : "Quy tắc ăn uống giúp người cao tuổi sống vui khỏe và…", 'img': 'songkhoemoingay/img-02.jpg','url' : "#"},
+                            {'title' : "10 bí quyết giúp người cao tuổi sống thọ", 'img': 'songkhoemoingay/img-03.jpg','url' : "#"},
+                            {'title' : "Sống khỏe mỗi ngày: Người cao tuổi và bệnh Khớp", 'img': 'songkhoemoingay/img-04.jpg','url' : "#"}
+                        ]
+                    .sNewsSlider
+                        .sNewsSliderInner
+                            for x in news
+                                .item
+                                    a(href=x.url)
+                                        img(data-lazy= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                    .info
+                                        .date 21/09/2019
+                                        a(href=x.url)
+                                            = x.title
+                                        p Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
+                                        +a-btn-link('Xem thêm','#')
+        .sMainContentInfo.bg-thongtin
+            .container
+                .page-header
+                    h3
+                        span.icon-text
+                            <svg viewBox="0 0 63.891 50" class="icon-shape">
+                                <use xlink:href="#ic-thongtinlienquan"></use>
+                            </svg>
+                        span.ttl-text Thông tin liên quan
+                -
+                    var news2 = [
+                        {'title' : "Những lưu ý khi chăm sóc sức khỏe người cao tuổi", 'img': 'songkhoemoingay/img-05.jpg','url' : "#"},
+                        {'title' : "Thói quen trong cuộc sống giúp bạn sống khỏe và hạnh…", 'img': 'songkhoemoingay/img-06.jpg','url' : "#"},
+                        {'title' : "Không tốn một xu vẫn giúp người già sống vui khỏe mỗi…", 'img': 'songkhoemoingay/img-07.jpg','url' : "#"},
+                        {'title' : "Sức khoẻ và bệnh tật của người lớn tuổi", 'img': 'songkhoemoingay/img-08.jpg','url' : "#"},
+                        {'title' : "Bí quyết cho cuộc sống tuổi già nhiều niềm vui, ít bệnh tật", 'img': 'songkhoemoingay/img-09.jpg','url' : "#"},
+                        {'title' : "Cẩm nang sức khỏe người cao tuổi", 'img': 'songkhoemoingay/img-10.jpg','url' : "#"}
+                    ]
+                .sNewsSlider.row.sNewsSliderList
+                        for x in news2
+                            .col-md-4.col-sm-6
+                                .item
+                                    a(href=x.url)
+                                        img(data-src= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                                    .info
+                                        .date 21/09/2019
+                                        a(href=x.url)
+                                            = x.title
+                                        p Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
+                                        +a-btn-link('Xem thêm','#')
+                .sPaiging
+                    +pagination([
+                        {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                        {text:'1',url:'#'},
+                        {text:'2',url:'#'},
+                        {text:'3',url:'#'},
+                        {text:'...',url:'#'},
+                        {text:'<span>Cuối</span><i class="arrow_carrot-right"></i>',url:'#'}
+                    ])

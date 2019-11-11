@@ -1,0 +1,81 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "tuyen-dung"
+
+block content
+    .sMainChild.sContact.sMainChild-other
+        .container
+            +breadcrumb([{'title':'Tuyển dụng ','link':'#'},{'title':'Cơ hội nghề nghiệp','link':'#'},{'title':' Chuyên viên tư vấn dinh dưỡng'}])
+        .sMainContent
+            .container
+                .sContactDetail
+                    .page-header
+                        h2 Giám sát bán hàng tỉnh Đồng Tháp
+                    .sContent.sContentApply
+                        .scroll-ui
+                            h3 MÔ TẢ CÔNG VIỆC
+                            p - Lập kế hoạch bán hàng
+                            p - Đánh giá thực hiện kế hoạch
+                            p - Lập kế hoạch tuyển dụng
+                            p - Tuyển dụng nhân sự theo định biên
+                            p - Lập kế hoạch đào tạo
+                            p - Huấn luyện kỹ năng bán hàng cho nhân viên
+                            p - Triển khai, giám sát, tổng kết hoạt động bán hàng đúng chương trình đã được phê duyệt
+                            p - Tham gia xử lý khiếu nại khách hàng
+                            p - Quản lý theo hệ thống
+                            p - Xây dựng mô tả công việc cho từng chức danh
+                            p - Xây dựng tiêu chí đánh giá hoàn thành công việc
+                            p - Giao việc, hướng dẫn, giám sát và đánh giá kết quả làm việc
+                            p - Đề xuất cơ cấu thu nhập cho nhân viên
+                            p - Các nhiệm vụ khác được phân công
+                            p - Tuân thủ các quy trình, quy định của Công ty.
+                            h3 QUYỀN LỢI ĐƯỢC HƯỞNG
+                            p - Mức lương: lương cơ bản + doanh số +% hoa hồng
+                            p - Các chính sách khác theo quy định của Công ty và pháp luật.
+                            h3 YÊU CẦU KHÁC
+                            p Có 01 năm kinh nghiệm ở vị trí tương đương trong ngành hàng Sữa bột hoặc tiêu dùng nhanh.
+                            h3 LIÊN HỆ
+                            p Phòng Nhân sự - Công ty Cổ phần Sữa VitaDairy Việt Nam.
+                            p Văn Phòng HCM - Tầng 9, Tòa nhà Empire Tower Building, Số 26-28 Hàm Nghi, Quận 1, Hồ Chí Minh.
+                            p Email: tuyendung@vitadairy.vn
+                            p ỨNG TUYỂN liên hệ: Mr Trường (086.686.1246)
+                    .btnDiv
+                        a(data-toggle="modal" href="" class="btn btn-primary btn-apply " data-target="#fromModalCenter"   title="Ứng tuyển"): span Ứng tuyển
+                hr 
+block modal
+    #fromModalCenter.modal.fade.smallPopup(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalLongTitle.modal-title Nộp hồ sơ
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        i.ic-close
+                .modal-body
+                   .form-style
+                        +input-box("text","","","Vị trí ứng tuyển *",'Nhập vị trí ứng tuyển','')
+                        +input-box("text","","","Họ tên *",'Nhập họ tên','')
+                        +input-box("text","","","Địa chỉ",'Nhập địa chỉ','')
+                        +input-box("text","","","Điện thoại *",'Nhập số điện thoại','')
+                        +input-box("text","","","Email *",'Nhập email','')
+                        //+input-box("file","","","File đính kèm",'Chọn file','Nhập nội dung')
+                        .form-group
+                            label(for="") Hồ sơ đính kèm *
+                            .form-file
+                                .custom-file
+                                    input#customFile.custom-file-input(type='file')
+                                    label.custom-file-label(for='customFile') Lưu ý: File có dung lượng tối đa 2 mb
+
+                        +textarea-box('Nhập nội dung','','Nội dung ','','3')
+                        .row
+                            .col-12.text-center
+                                +a-btn-primary('Ứng tuyển','#','','btn-apply')
+                          
+
+
+
+
+
+
+                    

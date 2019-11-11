@@ -1,0 +1,37 @@
+extends layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = ""
+
+block content
+    .sMainChild.sSearchPage.sMainChild-other
+      .container
+        +breadcrumb([{'title':'Kết quả tìm kiếm'}])
+        .form-style
+            div
+                input.form-control(type='text', placeholder='Tìm kiếm…')
+                button.btn-search-button
+                    i.icon-search
+        .row
+            .col-sm-8.align-self-center
+                .txt-search Đã tìm thấy 43 kết quả cho từ khoá “mang thai”
+            .col-sm-4
+                select.selectpicker.form-control(title="Mới nhất")
+                    option(value="Sample") Sample
+                    option(value="Sample") Sample
+                    option(value="Sample") Sample
+                    option(value="Sample") Sample
+                    option(value="Sample") Sample
+        .sListNews2Col
+            - for (var x = 1; x < 6; x++)
+                +itemEvent2(imgPath + 'search/img_0'+ x +'.jpg','image','#','Vợ chồng cần chuẩn bị gì trước khi mang thai')
+        .sPaiging
+            +pagination([
+                {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                {text:'1',url:'#'},
+                {text:'2',url:'#'},
+                {text:'3',url:'#'},
+                {text:'...',url:'#'},
+                {text:'<span>Cuối</span><i class="arrow_carrot-right"></i>',url:'#'}
+            ])

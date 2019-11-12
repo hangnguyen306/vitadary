@@ -15612,12 +15612,6 @@ a.btn,
       .sBanner .homeSlider .slick-arrow.icon-arr.icon-right {
         right: 10px;
         transform: scale(0.8) rotate(180deg); } }
-  @media (min-width: 1023px) {
-    .sBanner .homeSlider .slick-arrow.icon-arr.icon-left:hover {
-      left: 50px; } }
-  @media (min-width: 1023px) {
-    .sBanner .homeSlider .slick-arrow.icon-arr.icon-right:hover {
-      right: 50px; } }
 
 .scroll-down {
   display: flex;
@@ -16355,7 +16349,7 @@ a.btn,
   .sNewsSlider .item:hover a img {
     transform: scale(1.1);
     opacity: 0.7; }
-  .sNewsSlider .item:hover .info a {
+  .sNewsSlider .item:hover .info > a {
     color: #3EB7E4;
     text-decoration: none; }
   .sNewsSlider .item:hover .btn.btn-link {
@@ -16394,6 +16388,8 @@ a.btn,
     .sNewsSliderInner {
       margin: 0.625rem 0px 0 0px;
       padding: 0 20px; } }
+  .sNewsSliderInner .btnDiv {
+    margin-top: 1.25rem; }
 
 @keyframes spin {
   0% {
@@ -17352,6 +17348,35 @@ a.btn.btn-primary.btn-apply:after {
     .sDoitacInner .item .info {
       padding-top: 20px; }
 
+.bg-thongtinkhuyemai {
+  background-image: url("../images/bg-thong-tin-khuyen-mai-landing.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.fixHeightNews {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem 0; }
+  .fixHeightNews .sInfo {
+    margin-top: 1.875rem; }
+    @media (max-width: 991.98px) {
+      .fixHeightNews .sInfo {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem; }
+        .fixHeightNews .sInfo .slick-arrow.icon-arr.icon-arr-3.icon-left {
+          left: -2.5rem; }
+        .fixHeightNews .sInfo .slick-arrow.icon-arr.icon-arr-3.icon-right {
+          right: -2.5rem; } }
+
+.bg-gray {
+  background: #F9FAFB;
+  padding: 2.5rem 0; }
+
+@media (max-width: 767.98px) {
+  .sNewsSlider .item img {
+    width: 100%; } }
+
 .sMainContent-other {
   margin-bottom: 90px; }
   @media (max-width: 768px) {
@@ -18144,20 +18169,23 @@ a.btn.btn-primary.btn-apply:after {
     box-shadow: 0 3px 40px rgba(131, 131, 131, 0.15);
     margin-bottom: 1.25rem;
     border-radius: 20px; }
-  @media (max-width: 991.98px) {
-    .sNewDetail .sNewsSlider.sNewsSliderList {
-      display: flex;
-      flex-wrap: wrap;
-      margin-left: -10px;
-      margin-right: -10px; }
-      .sNewDetail .sNewsSlider.sNewsSliderList .item {
-        max-width: 50%;
-        flex: 0 0 50%;
-        padding: 10px;
-        box-shadow: 0 3px 40px rgba(131, 131, 131, 0); } }
 
 .sNewDetail .grp-date {
   margin-bottom: 1.25rem; }
+
+@media (max-width: 991.98px) {
+  .sNewDetail .col-lg-4 .sNewsSlider.sNewsSliderList {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px; }
+    .sNewDetail .col-lg-4 .sNewsSlider.sNewsSliderList .item {
+      max-width: 50%;
+      flex: 0 0 50%;
+      padding: 10px;
+      box-shadow: 0 3px 40px rgba(131, 131, 131, 0); }
+      .sNewDetail .col-lg-4 .sNewsSlider.sNewsSliderList .item .info {
+        padding: 10px 0 0 0; } }
 
 .bg-sanphamlienquan {
   padding-top: 3.125rem;
@@ -18894,6 +18922,14 @@ a.btn.btn-primary.btn-apply:after {
 
 .sProduct .sProductSlider {
   margin: 3.125rem 0; }
+  @media (max-width: 991.98px) {
+    .sProduct .sProductSlider {
+      padding-left: 20px;
+      padding-right: 20px; }
+      .sProduct .sProductSlider .slick-arrow.icon-arr.icon-arr-3.icon-left {
+        left: -20px; }
+      .sProduct .sProductSlider .slick-arrow.icon-arr.icon-arr-3.icon-right {
+        right: -20px; } }
 
 .sProduct .sProductSliderInner .item {
   padding: 0.625rem; }
@@ -18905,6 +18941,11 @@ a.btn.btn-primary.btn-apply:after {
     display: flex;
     height: 100%;
     flex-direction: column; }
+    @media (max-width: 991.98px) {
+      .sProduct .sProductSliderInner .itemWrap {
+        display: block;
+        height: auto;
+        flex-direction: inherit; } }
     .sProduct .sProductSliderInner .itemWrap .image {
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
@@ -18958,7 +18999,7 @@ a.btn.btn-primary.btn-apply:after {
 
 .bg-khuyen-mai {
   background-image: url("../images/bg-khuyen-mai.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 

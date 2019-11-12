@@ -35,6 +35,12 @@
   }
   .sProductSlider{
     margin: rem(50) 0;
+    @include media-breakpoint-down(md) {
+      padding-left: 20px;
+      padding-right: 20px;
+      .slick-arrow.icon-arr.icon-arr-3.icon-left{    left: -20px;}
+      .slick-arrow.icon-arr.icon-arr-3.icon-right{    right: -20px;}
+    }
   }
   .sProductSliderInner {
     .item{
@@ -46,6 +52,11 @@
         display: flex;
         height: 100%;
         flex-direction: column;
+        @include media-breakpoint-down(md) {
+          display: block;
+          height: auto;
+          flex-direction: inherit;
+        }
         .image{
           border-top-right-radius: 20px;
           border-top-left-radius: 20px;
@@ -115,7 +126,7 @@
 .bg-khuyen-mai{
   background: {
     image: url($img-path + "bg-khuyen-mai.jpg");
-    size: contain;
+    size: cover;
     repeat: no-repeat;
     position: center;
   }

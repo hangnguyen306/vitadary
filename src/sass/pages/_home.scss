@@ -63,20 +63,20 @@
 
         .slick-arrow.icon-arr {
             &.icon-left {
-                @media (min-width: 1023px) {
-                    &:hover {
-                        left: 50px;
-                    }
-                }
+                // @media (min-width: 1023px) {
+                //     &:hover {
+                //         left: 50px;
+                //     }
+                // }
 
             }
 
             &.icon-right {
-                @media (min-width: 1023px) {
-                    &:hover {
-                        right: 50px;
-                    }
-                }
+                // @media (min-width: 1023px) {
+                //     &:hover {
+                //         right: 50px;
+                //     }
+                // }
 
             }
         }
@@ -1244,7 +1244,7 @@
             }
 
             .info {
-                a {
+                >a {
                     color: $blue-main-light;
                     text-decoration: none;
                 }
@@ -1295,6 +1295,9 @@
     @media (max-width: 767.99px) {
         margin: rem(10) 0px 0 0px;
         padding: 0 20px;
+    }
+    .btnDiv{
+        margin-top:rem(20);
     }
 }
 @keyframes spin {

@@ -57,23 +57,31 @@
             border-radius: 20px;
             
         }
-        @include media-breakpoint-down(md) {
-            display: flex;
-            flex-wrap: wrap;
-            margin-left: -10px;
-            margin-right: -10px;
-            .item{
-                max-width: 50%;
-                flex: 0 0 50%;
-                padding: 10px;
-                box-shadow: 0 3px 40px rgba($color: #838383, $alpha: 0);
-            }
-        }
+       
     }
     .grp-date{
         margin-bottom: rem(20);
     }
-    
+  .col-lg-4{
+ @include media-breakpoint-down(md) {
+    .sNewsSlider.sNewsSliderList{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -10px;
+        margin-right: -10px;
+        .item{
+            max-width: 50%;
+            flex: 0 0 50%;
+            padding: 10px;
+            box-shadow: 0 3px 40px rgba($color: #838383, $alpha: 0);
+            .info{
+                padding: 10px 0 0 0 ;
+            }
+        }
+    }
+           
+        }
+  }  
 }
 .bg-sanphamlienquan{
     padding-top:rem(50);

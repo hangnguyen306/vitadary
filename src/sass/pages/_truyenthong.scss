@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   padding:rem(30) 0;
+  position: relative;
   .sInfo{
     margin-top:rem(30); 
     @include media-breakpoint-down(md) {
@@ -24,6 +25,14 @@
     }
     
   }
+  .breadcrumb{
+    margin-bottom: rem(30);
+    
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top:30px;
+    }
+}
 }
 .bg-gray{
   background: #F9FAFB;

@@ -2,20 +2,50 @@ extends layouts/_layout_default
 
 block setting
     - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
-    - mainActive = "san-pham"
+    - mainActive = "san-pham";
+    - bodyClass = 'noStick';
 
 block content
     .sMainChild.sContact.sProduct
         .fixHeight.sContactImg
             .bgImg(style="background-image:url(" + imgPath + 'sanpham/banner.jpg' + ")")
-                .bgImgsp(style="background-image:url(" + imgPath + 'lienhe/banner-sp.jpg' + ")")
+                .bgImgsp(style="background-image:url(" + imgPath + 'sanpham/banner-sp.jpg' + ")")
                 .container
                     +breadcrumb([{'title':'Sản phẩm'}])
                     .des
                         h2 VitaDairy luôn đồng hành<br>cùng mẹ và bé
                         p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
                        
-        .sMainContent
+        .sMainContent.bg-white
+            .container
+                .sLink#stickMenu-2.sLink-col-4.sQuickLink
+                    ul
+                        li: a(href="#allProduct")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#ic-san-pham-1"></use>
+                                </svg>
+                            span.icon-text Tất cả
+                        li: a(href="#sProductItem1")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#ic-san-pham-2"></use>
+                                </svg>
+                            span.icon-text Sản phẩm<br>cho mẹ
+                        li: a(href="#sProductItem2")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#ic-san-pham-3"></use>
+                                </svg>
+                            span.icon-text Sản phẩm<br>cho bé
+                        li: a(href="#sProductItem3")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#ic-san-pham-4"></use>
+                                </svg>
+                            span.icon-text Sản phẩm cho<br>người lớn tuổi
+        #allProduct
+        .sMainContent.bg-gray
             .container
                 #sProductItem1
                     .page-header-3
@@ -25,8 +55,8 @@ block content
                             .item
                                 .itemWrap
                                     .image
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-1.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-1.jpg' alt="" )
                                     .info
                                         .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
                                         .des
@@ -42,13 +72,13 @@ block content
                             .item
                                 .itemWrap
                                     .image.imageFull
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-2.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-2.jpg' alt="" )
                             .item
                                 .itemWrap
                                     .image
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-3.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-3.jpg' alt="" )
                                     .info
                                         .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
                                         .des
@@ -64,8 +94,8 @@ block content
                             .item
                                 .itemWrap
                                     .image.imageFull
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-2.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-2.jpg' alt="" )
 
                 #sProductItem2
                     .page-header-3
@@ -75,8 +105,8 @@ block content
                             .item
                                 .itemWrap
                                     .image
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-4.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-4.jpg' alt="" )
                                     .info
                                         .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
                                         .des
@@ -92,13 +122,13 @@ block content
                             .item
                                 .itemWrap
                                     .image.imageFull
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-5.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-5.jpg' alt="" )
                             .item
                                 .itemWrap
                                     .image
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-6.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-6.jpg' alt="" )
                                     .info
                                         .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
                                         .des
@@ -114,8 +144,8 @@ block content
                             .item
                                 .itemWrap
                                     .image.imageFull
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-5.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-5.jpg' alt="" )
                 
                 #sProductItem3
                     .page-header-3
@@ -125,8 +155,8 @@ block content
                             .item
                                 .itemWrap
                                     .image
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-7.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-7.jpg' alt="")
                                     .info
                                         .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
                                         .des
@@ -142,13 +172,13 @@ block content
                             .item
                                 .itemWrap
                                     .image.imageFull
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-8.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-8.jpg' alt="" )
                             .item
                                 .itemWrap
                                     .image
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-9.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-9.jpg' alt="" )
                                     .info
                                         .txt COLOSBABY for MUM<br>GIẢM ỐM VẶT THAI KỲ
                                         .des
@@ -164,9 +194,9 @@ block content
                             .item
                                 .itemWrap
                                     .image.imageFull
-                                        a(href="#")
-                                            img(data-lazy= imgPath +'sanpham/img-8.jpg' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
-        .sMainContent.bg-khuyen-mai
+                                        a(href=url + 'sanpham/sanphamchitiet.html')
+                                            img(src= imgPath +'sanpham/img-8.jpg' alt="")
+        .bg-khuyen-mai
             .container
                 .page-header
                     h3

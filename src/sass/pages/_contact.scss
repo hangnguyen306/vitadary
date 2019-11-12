@@ -10,7 +10,9 @@
     padding-top: 0;
 
     &Img {
-
+        @include media-breakpoint-down(md) {
+            display: block;
+        }
         //display: flex;
         .image {
             position: relative;
@@ -229,6 +231,11 @@
 .sCarree{
     .breadcrumb{
         margin-bottom: rem(30);
+        
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            top:30px;
+        }
     }
     .sContactImg:nth-child(2){
         .bgImg{
@@ -242,6 +249,14 @@
     }
     .bgImg{
         padding: rem(30) 0;
+        position: relative;
+        .container{
+            .row{
+                position: relative;
+                z-index: 9;
+            }
+          
+        }
     }
 }
 .sBoxApply {

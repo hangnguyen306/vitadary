@@ -23,7 +23,8 @@
         right: 0;
         bottom: 0;
         background-position: bottom center;
-
+        background-repeat: no-repeat;
+        background-size: cover;
         @include media-breakpoint-up(lg) {
             background: none !important;
         }

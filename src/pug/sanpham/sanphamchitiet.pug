@@ -110,48 +110,145 @@ block content
                                     <use xlink:href="#ic-san-pham-chi-tiet-2"></use>
                                 </svg>
                             span.ttl-text Thành phần dinh dưỡng
+                    ul#myList.list-group.list-group-tab.sNavLink(role='tablist')
+                        li: a.active(data-toggle='list', href='#navTab1', role='tab')
+                                span.text-tab Cho trẻ từ <br>1 - 2 tuổi
+                        li: a(data-toggle='list', href='#navTab2', role='tab')
+                                span.text-tab Cho trẻ từ <br>2 - 6 tuổi
+                        li: a(data-toggle='list', href='#navTab3', role='tab') 
+                                span.text-tab Cho trẻ từ <br>6 - 10 tuổi
                     .tableDetail
                         .tableDetailWrap
-                           .table-cont
-                                .fixed_headers
-                                    .itemtr
-                                        .th.col-3-td  Thành phần trung bình
-                                        .th.col-3-td  Trong 100g bột
-                                        .th.col-3-td  Trong 1 ly đã pha
-                                        .th.col-3-td  Đơn vị
-                                .scroll-ui
-                                    .itemtr
-                                        .td.col-3-td Năng lượng
-                                        .td.col-3-td 465
-                                        .td.col-3-td 177
-                                        .td.col-3-td kCAI
-                                    .itemtr
-                                        .td.col-3-td Chất đạm
-                                        .td.col-3-td 465
-                                        .td.col-3-td 177
-                                        .td.col-3-td kCAI
-                                    .itemtr
-                                        .td.col-3-td Trytophan
-                                        .td.col-3-td 465
-                                        .td.col-3-td 177
-                                        .td.col-3-td kCAI
-                                    .itemtr
-                                        .td.col-3-td Chất béo
-                                        .td.col-3-td 465
-                                        .td.col-3-td 177
-                                        .td.col-3-td kCAI
-                                    .itemtr
-                                        .td.col-3-td Acid linoleic
-                                        .td.col-3-td 465
-                                        .td.col-3-td 177
-                                        .td.col-3-td kCAI
-                                    .itemtr
-                                        .td.col-3-td Acid Alpha 0 linolenic
-                                        .td.col-3-td 465
-                                        .td.col-3-td 177
-                                        .td.col-3-td kCAI
-                                    .itemtr
-                                        .td.col-3-td DHA (Dococahexacnoic acid)
-                                        .td.col-3-td 465
-                                        .td.col-3-td 177
-                                        .td.col-3-td kCAI
+                            .tab-content
+                                #navTab1.tab-pane.active(role='tabpanel')
+                                    .table-cont
+                                        .fixed_headers
+                                            .itemtr
+                                                .th.col-3-td  Thành phần trung bình
+                                                .th.col-3-td  Trong 100g bột
+                                                .th.col-3-td  Trong 1 ly đã pha
+                                                .th.col-3-td  Đơn vị
+                                        .scroll-ui-table
+                                            .itemtr
+                                                .td.col-3-td Năng lượng
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất đạm
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Trytophan
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất béo
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid linoleic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid Alpha 0 linolenic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td DHA (Dococahexacnoic acid)
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                #navTab2.tab-pane(role='tabpanel')
+                                    .table-cont
+                                        .fixed_headers
+                                            .itemtr
+                                                .th.col-3-td  Thành phần trung bình
+                                                .th.col-3-td  Trong 100g bột
+                                                .th.col-3-td  Trong 1 ly đã pha
+                                                .th.col-3-td  Đơn vị
+                                        .scroll-ui-table
+                                            .itemtr
+                                                .td.col-3-td Năng lượng
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất đạm
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Trytophan
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất béo
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid linoleic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid Alpha 0 linolenic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td DHA (Dococahexacnoic acid)
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                #navTab3.tab-pane(role='tabpanel')
+                                    .table-cont
+                                        .fixed_headers
+                                            .itemtr
+                                                .th.col-3-td  Thành phần trung bình
+                                                .th.col-3-td  Trong 100g bột
+                                                .th.col-3-td  Trong 1 ly đã pha
+                                                .th.col-3-td  Đơn vị
+                                        .scroll-ui-table
+                                            .itemtr
+                                                .td.col-3-td Năng lượng
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất đạm
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Trytophan
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất béo
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid linoleic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid Alpha 0 linolenic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td DHA (Dococahexacnoic acid)
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI

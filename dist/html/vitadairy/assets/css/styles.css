@@ -19088,7 +19088,7 @@ a.btn.btn-primary.btn-apply:after {
 .sLandingProductInfo {
   position: relative;
   padding-top: 3.125rem;
-  background-image: url("../images/bg-san-pham-chi-tiet-loi-ich.jpg");
+  background-image: url("../images/bg-san-phan-chi-tiet-loi-ich.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center; }
@@ -19113,68 +19113,75 @@ a.btn.btn-primary.btn-apply:after {
     z-index: 3; }
     .sLandingProductInfo .container .image img {
       max-width: 100%; }
-    .sLandingProductInfo .container .infoSlider .itemWrap {
-      padding-left: 3.125rem; }
-    .sLandingProductInfo .container .infoSlider .item {
-      background: linear-gradient(to right, rgba(62, 183, 228, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      padding-left: 50px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
-      position: relative; }
-      .sLandingProductInfo .container .infoSlider .item ~ .item {
-        margin-top: 1.25rem; }
-      .sLandingProductInfo .container .infoSlider .item .txt-icon {
-        width: 6.25rem;
-        height: 6.25rem;
-        background: #fff;
-        border-radius: 50%;
-        display: flex;
-        border: 1px solid #3EB7E4;
-        position: absolute;
-        left: -3.125rem;
-        align-items: center;
-        justify-content: center; }
-        .sLandingProductInfo .container .infoSlider .item .txt-icon svg {
-          width: 50px;
-          height: 50px;
-          fill: #0054A5; }
-      .sLandingProductInfo .container .infoSlider .item h4 {
-        font-weight: bold;
-        color: #0054A5;
-        font-size: 1.25rem; }
-      .sLandingProductInfo .container .infoSlider .item p {
-        font-size: 0.8125rem;
-        margin: 0; }
-    .sLandingProductInfo .container .infoSlider .slick-dots {
-      position: relative;
-      bottom: inherit;
-      text-align: center; }
+    .sLandingProductInfo .container .infoSlider {
+      margin-bottom: 3.125rem; }
+      .sLandingProductInfo .container .infoSlider .itemWrap {
+        padding-left: 3.125rem; }
+      .sLandingProductInfo .container .infoSlider .item {
+        background: linear-gradient(to right, rgba(62, 183, 228, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        padding-left: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        position: relative; }
+        .sLandingProductInfo .container .infoSlider .item ~ .item {
+          margin-top: 1.25rem; }
+        .sLandingProductInfo .container .infoSlider .item .txt-icon {
+          width: 6.25rem;
+          height: 6.25rem;
+          background: #fff;
+          border-radius: 50%;
+          display: flex;
+          border: 1px solid #3EB7E4;
+          position: absolute;
+          left: -3.125rem;
+          align-items: center;
+          justify-content: center; }
+          .sLandingProductInfo .container .infoSlider .item .txt-icon svg {
+            width: 50px;
+            height: 50px;
+            fill: #0054A5; }
+        .sLandingProductInfo .container .infoSlider .item h4 {
+          font-weight: bold;
+          color: #0054A5;
+          font-size: 1.25rem; }
+        .sLandingProductInfo .container .infoSlider .item p {
+          font-size: 0.8125rem;
+          margin: 0; }
+      .sLandingProductInfo .container .infoSlider .slick-dots {
+        position: relative;
+        bottom: inherit;
+        text-align: center; }
 
 .sLandingProductContent {
   background: white;
   padding: 3.125rem 0; }
   .sLandingProductContent .tableDetail {
     position: relative;
-    height: 827px;
+    height: 662px;
     padding-top: 124px; }
     .sLandingProductContent .tableDetail:after {
       content: '';
       position: absolute;
       top: 0;
-      left: -81px;
+      left: 0;
       right: 0;
       bottom: 0;
-      background-image: url("../images/table-2.png"); }
+      background-image: url("../images/table-2.png");
+      background-repeat: no-repeat;
+      background-position: center center; }
     .sLandingProductContent .tableDetail .table-cont {
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       position: relative;
       z-index: 3; }
-      .sLandingProductContent .tableDetail .table-cont .scroll-ui {
-        max-height: 400px; }
+      .sLandingProductContent .tableDetail .table-cont .scroll-ui-table {
+        max-height: 400px;
+        overflow-y: scroll;
+        scrollbar-color: #0A4C95 #C2D2E4;
+        scrollbar-width: thin; }
       .sLandingProductContent .tableDetail .table-cont .itemtr {
         display: flex; }
         .sLandingProductContent .tableDetail .table-cont .itemtr .col-3-td {
@@ -19189,5 +19196,15 @@ a.btn.btn-primary.btn-apply:after {
         background: #eeeeee; }
       .sLandingProductContent .tableDetail .table-cont .td {
         border-top: 1px solid #CCCED0; }
+  .sLandingProductContent ::-webkit-scrollbar {
+    width: 8px;
+    top: 10px;
+    bottom: 10px; }
+  .sLandingProductContent ::-webkit-scrollbar-track {
+    background: #c0c0c0;
+    border-radius: 10px; }
+  .sLandingProductContent ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #e0e0e0; }
 
 /*# sourceMappingURL=styles.css.map */

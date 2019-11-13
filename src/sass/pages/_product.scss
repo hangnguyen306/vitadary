@@ -212,7 +212,7 @@
 position: relative;
 padding-top:rem(50);
 background: {
-  image: url($img-path + "bg-san-pham-chi-tiet-loi-ich.jpg");
+  image: url($img-path + "bg-san-phan-chi-tiet-loi-ich.jpg");
   size: cover;
   repeat: no-repeat;
   position: top center;
@@ -244,6 +244,7 @@ background: {
     }
   }
   .infoSlider{
+    margin-bottom: rem(50);
     .itemWrap{
       padding-left: rem(50);
     }
@@ -300,26 +301,32 @@ background: {
   padding:rem(50) 0;
   .tableDetail{
     position: relative;
-    height: 827px;
+    height: 662px;
     padding-top: 124px;
     &:after{
       content:'';
       position: absolute;
       top:0;
-      left:-81px;
+      left:0;
       right:0;
       bottom: 0;
       background: {
         image: url($img-path + "table-2.png");
+        repeat: no-repeat;
+        position: center center;
       }
     }
     .table-cont{
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       position: relative;
       z-index: 3;
-      .scroll-ui{
+      .scroll-ui-table{
         max-height: 400px;
+        overflow-y: scroll;
+        scrollbar-color: #0A4C95 #C2D2E4;
+        scrollbar-width: thin;
+        //overflow: auto;
       }
       .itemtr{
         display: flex;
@@ -343,5 +350,27 @@ background: {
     }
     
   }
+  .simplebar-track{
+    
+  }
+  // .scroll-ui{
+  //   padding-right: 30px;
+  // }
+  ::-webkit-scrollbar {
+    width: 8px;
+    top:10px;
+    bottom: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #c0c0c0;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #e0e0e0;
+  }
 }
+
 

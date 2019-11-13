@@ -554,6 +554,36 @@ function sPartner() {
         }
     });
 }
+function sSlidethumbLogo() {
+    $('.sSlidethumb-logo').slick({
+        infinite: true,
+        arrows:true,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode:true,
+        centerPadding: '0px',
+        prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
+        nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>",
+        lazyLoad: "ondemand",
+        focusOnSelect: true,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+
+        ]
+    });
+}
 function sSlidethumb() {
     $('.sSlidethumb-text').slick({
         infinite: true,
@@ -570,13 +600,7 @@ function sSlidethumb() {
         asNavFor: '.sSlidethumb-text-content',
         responsive: [
             {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 480,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1
                 }
@@ -719,7 +743,8 @@ sPartner();
 sSlidethumb();
 sSliderbigImage();
 sSlidepersonSlider();
-sInfoSlider()
+sInfoSlider();
+sSlidethumbLogo();
 function init() {
     $(window).on("debouncedresize", function (event) {
 

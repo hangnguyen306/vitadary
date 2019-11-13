@@ -1,0 +1,161 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "about";
+    - bodyClass = 'noStick';
+
+block content
+    .sMainChild.sAboutChild.sMainChild-other
+        .container
+            +breadcrumb([{'title':'VitaDairy','link':'vitadairy.html'},{'title':'Cam kết chất lượng'}])
+            .sMainContent-other-about
+                .sLink#stickMenu-2.sLinkLine.sQuickLink
+                    .d-flex.navLink
+                        .flex-item: a(href="#itemStory1")
+                            span.icon-link
+                                <svg viewBox="0 0 50 73.07" class="icon-shape">
+                                    <use xlink:href="#ic-camket-1"></use>
+                                </svg>
+                            span.icon-text Nghiên cứu và<br>cải tiến chất lượng
+                        .flex-item: a(href="#itemStory2")
+                            span.icon-link
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#ic-camket-2"></use>
+                                </svg>
+                            span.icon-text Công nghệ<br>sản xuất
+                        .flex-item: a(href="#itemStory3")
+                            span.icon-link
+                                <svg viewBox="0 0 30 40.747" class="icon-shape">
+                                    <use xlink:href="#ic-camket-3"></use>
+                                </svg>
+                            span.icon-text Độc quyền sữa non<br>ColoslgG 24h
+                        .flex-item: a(href="#itemStory4")
+                            span.icon-link
+                                <svg viewBox="0 0 40 45.101" class="icon-shape">
+                                    <use xlink:href="#ic-camket-4"></use>
+                                </svg>
+                            span.icon-text Đối tác của bộ y tế
+                        .flex-item: a(href="#itemStory5")
+                            span.icon-link
+                                <svg viewBox="0 040 47.073" class="icon-shape">
+                                    <use xlink:href="#ic-camket-5"></use>
+                                </svg>
+                            span.icon-text Thành tích<br>nổi bật
+    .sQualityItem.bg-cam-ket-1#itemStory1
+        .container     
+            .page-header
+                h3
+                    span.icon-text 
+                        <svg viewBox="0 0 50 73.07" class="icon-shape">
+                            <use xlink:href="#ic-camket-1"></use>
+                        </svg>
+                    span.ttl-text Nghiên cứu và cải tiến chất lượng
+            .sQbox
+                p Luôn ý thức được chất lượng sản phẩm là thước đo để chạm tới tâm trí và trái tim khách hàng, đồng thời cũng là danh dự, là chữ tín của doanh nghiệp nên VitaDairy luôn đặt yếu tố chất lượng lên hàng đầu.Để thực hiện chính sách chất lượng, chúng tôi cam kết:
+                ul
+                    li Duy trì Hệ thống quản lý chất lượng một cách có hiệu quả và liên tục, cải tiến thường xuyên Hệ thống trên cơ sở sự tham gia của tất cả mọi người trên nền tảng của ISO 9001:2000; ISO 22000 & HACCP.
+                    li Thỏa mãn tối đa các yêu cầu thỏa đáng của khách hàng.
+                    li Đầu tư máy móc thiết bị, công cụ hỗ trợ để nâng cao chất lượng và đa dạng hóa sản phẩm, dịch vụ.
+                    li Mở rộng thị trường ra các thành phố lớn trên cả nước.
+                    li Đào tạo nâng cao năng lực đội ngũ CB-CNV.
+                    li Cung cấp đầy đủ nguồn lực đảm bảo nhu cầu của hệ thống quản lý chất lượng.
+                    li Duy trì và cải tiến thường xuyên các quá trình của hệ thống quản lý chất lượng
+    .sQualityItem.bg-cam-ket-2#itemStory2
+        .container
+            .page-header
+                h3
+                    span.icon-text
+                        <svg viewBox="0 0 40 40" class="icon-shape">
+                            <use xlink:href="#ic-camket-2"></use>
+                        </svg>
+                    span.ttl-text Công nghệ sản xuất
+            .sSlideValue.sSlidethumb-text
+                .item
+                    .image
+                        img(src= imgPath + 'aboutus/camket/cong-nghe-san-xuat-1.jpg' alt="")
+                    .info
+                        h4 Chứng nhận chất lượng bởi UKAS Anh Quốc
+                .item
+                    .image
+                        img(src= imgPath + 'aboutus/camket/cong-nghe-san-xuat-2.jpg' alt="")
+                    .info
+                        h4 Hệ thống máy móc hiện đại
+                .item
+                    .image
+                        img(src= imgPath + 'aboutus/camket/cong-nghe-san-xuat-3.jpg' alt="")
+                    .info
+                        h4 Nhà máy Bình Dương
+                .item
+                    .image
+                        img(src= imgPath + 'aboutus/camket/cong-nghe-san-xuat-1.jpg' alt="")
+                    .info
+                        h4 Chứng nhận chất lượng bởi UKAS Anh Quốc
+            .sSlideValueContent.sSlidethumb-text-content
+                .info.infoquote
+                    p Năm 2007, nhà máy nghiên cứu và sản phẩm các sản phẩm dinh dưỡng đầu tiên của VitaDairy được xây dựng tại Hà Nội. Từ ý định ban đầu đưa dinh dưỡng đóng góp cho điều trị, VitaDairy đã vươn xa ra khỏi vài chục mét vuông của phòng thí nghiệm để trở thành một doanh nghiệp với nhà máy hiện đại.
+                .info.infoquote 2
+                .info.infoquote 3
+                .info.infoquote 4
+    .sQualityItem.bg-cam-ket-3#itemStory3
+        .container
+            .page-header
+                h3
+                    span.icon-text
+                        <svg viewBox="0 0 40 40" class="icon-shape">
+                            <use xlink:href="#ic-camket-3"></use>
+                        </svg>
+                    span.ttl-text Độc quyền sữa non ColosIgG 24h
+            .row
+                .col-md-7
+                    p Với hơn 15 năm nghiên cứu, VitaDairy đã tiên phong đưa kháng thể tự nhiên IgG từ sữa non vào sản phẩm dinh dưỡng cho trẻ trên 2 tuổi trở lên ColosBaby. IgG được bảo tồn ở dạng còn hoạt tính và được nhập khẩu từ Mỹ, trở thành nguyên liệu chính cho sản phẩm sữa dinh dưỡng này.
+                    p Kháng thể IgG tự nhiên từ sữa non là thành phần dinh dưỡng miễn dịch có tác dụng trực tiếp giúp tăng cường miễn dịch cho trẻ, có tác dụng kháng khuẩn trực tiếp, trung hòa nội độc tố vi khuẩn tại toàn bộ đường tiêu hóa, cũng như có các hoạt tính sinh học khác giúp ức chế tình trạng viêm tại ruột, thúc đẩy tái tạo lớp màng nhầy, phục hồi tổn thương mô, có vai trò đặc biệt trong việc phòng chống nhiễm khuẩn đường tiêu hóa và hô hấp ở trẻ em.
+                    p Sản phẩm dành cho trẻ em từ 2 tuổi trở lên, đặc biệt tốt trong giai đoạn “khoảng trống miễn dịch” từ 6 - 36 tháng, góp phần hỗ trợ mang đến cho trẻ hệ miễn dịch khỏe, góp phần hỗ trợ phòng ngừa các bệnh nhiễm khuẩn đường tiêu hóa và hô hấp cho trẻ.
+                .col-md-5.text-center
+                    .image
+                        img(src= imgPath + 'aboutus/camket/sua-non.png' alt="")
+    .sQualityItem.bg-cam-ket-4#itemStory4
+        .container
+            .row
+                .col-md-6.ml-auto
+                    .page-header
+                        h3
+                            span.icon-text
+                                <svg viewBox="0 0 40 40" class="icon-shape">
+                                    <use xlink:href="#ic-camket-4"></use>
+                                </svg>
+                            span.ttl-text Đối tác của bộ y tế
+                    .des
+                        p Công ty Cổ phần Sữa VitaDairy Việt Nam được Bộ Y tế trao chứng nhận là đơn vị đồng hành cùng Bộ Y tế đầu tiên và duy nhất trong chuỗi Hội thảo Dinh Dưỡng Miễn Dịch, công nhận những thành tựu khoa học xuất sắc về dinh dưỡng miễn dịch. Theo Bộ Y tế, Công ty Cổ phần Sữa VitaDairy Việt Nam đã có những thành tựu khoa học xuất sắc về dinh dưỡng miễn dịch. Đặc biệt, VitaDairy đã rất thành công trong việc nghiên cứu và sản xuất thành công dòng sản phẩm sữa non ColosBaby, giúp trẻ trong độ tuổi ‘khoảng trống miễn dịch’ (6 - 36 tháng) có miễn dịch khỏe , giảm bệnh vặt. Đó cũng chính là lý do vì sao Bộ Y tế lựa chọn VitaDairy là đối tác chiến lược đồng hành duy nhất trong hàng trăm ứng viên cho trong năm Hành Động Miễn Dịch.
+    .sQualityItem.bg-cam-ket-5#itemStory5
+        .container
+            .page-header
+                h3
+                    span.icon-text
+                        <svg viewBox="0 0 40 47.073" class="icon-shape">
+                            <use xlink:href="#ic-camket-5"></use>
+                        </svg>
+                    span.ttl-text Thành tích Nổi bật
+            .sSlideValue.sSlidethumb-logo.sSlideValuewhite
+                .item
+                    .image
+                        img(src= imgPath + 'aboutus/camket/img-01.png' alt="")
+                    .info
+                        h4 Đối tác đồng hành cùng Bộ Y Tế
+                .item
+                    .image
+                        img(src= imgPath + 'aboutus/camket/img-02.png' alt="")
+                    .info
+                        h4 Top 10 “Thương hiệu được tin dùng nhất Asia” – năm 2019
+                .item
+                    .image
+                        img(src= imgPath + 'aboutus/camket/img-03.png' alt="")
+                    .info
+                        h4 Doanh nghiệp tiêu biểu 1000 năm Thăng Long - Hà Nội
+                .item
+                    .image
+                        img(src= imgPath + 'aboutus/camket/img-02.png' alt="")
+                    .info
+                        h4  Đối tác đồng hành Bệnh viện Chợ Rẫy
+                   
+                           

@@ -1,0 +1,98 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "truyen-thong"
+
+block content
+    .sMainChild.sNew.sNewDetail.sNewGift
+        .container
+            +breadcrumb([{'title':'Truyền thông','link':'#'},{'title':'Vì con mẹ tặng'}])
+        .sMainContent.sMainContent-other
+          .container
+            +headerlanding('Vì con mẹ tặng','Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore')
+        .sMainContent-news.bg-truyenthong-3
+            .container
+                .sHomeKnow
+                    .row
+                        .col-lg-7
+                            .info
+                                .des
+                                    h4 Quà tặng từ Colosbaby 
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    ul
+                                        li
+                                            span.icon-small.icon-child
+                                            span.icon-text Quà tặng cho mẹ
+                                            span.icon-btn
+                                                +a-btn-primary('Xem thêm','#')
+                                        li
+                                            span.icon-small.icon-moon
+                                            span.icon-text Quà tặng cho bé
+                                            span.icon-btn
+                                                +a-btn-primary('Xem thêm', "")
+                        .col-lg-5.align-self-center
+                            .image
+                                img(data-src= imgPath + 'qua-tang/qua-tang-1.png' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                .sHomeKnow
+                    .row
+                        .col-lg-7
+                            .info
+                                .des
+                                    h4 Quà tặng từ Goatlac
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    ul
+                                        li
+                                            span.icon-small.icon-child
+                                            span.icon-text Quà tặng cho mẹ
+                                            span.icon-btn
+                                                +a-btn-primary('Xem thêm','#')
+                                        li
+                                            span.icon-small.icon-moon
+                                            span.icon-text Quà tặng cho bé
+                                            span.icon-btn
+                                                +a-btn-primary('Xem thêm', "")
+                                        li
+                                            span.icon-small.icon-grand
+                                            span.icon-text Quà tặng cho người lớn tuổi
+                                            span.icon-btn
+                                                +a-btn-primary('Xem thêm', "")
+                        .col-lg-5.align-self-center
+                            .image
+                                img(data-src= imgPath + 'qua-tang/qua-tang-2.png' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                .sHomeKnow
+                    .row
+                        .col-lg-7
+                            .info
+                                .des
+                                    h4 Quà tặng từ Gluvita
+                                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                    ul
+                                        li
+                                            span.icon-small.icon-child
+                                            span.icon-text Quà tặng cho mẹ
+                                            span.icon-btn
+                                                +a-btn-primary('Xem thêm','#')
+                        .col-lg-5.align-self-center
+                            .image
+                                img(data-src= imgPath + 'qua-tang/qua-tang-4.png' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                .sHomeKnow
+                    .row
+                        .col-lg-7
+                            .info
+                                .des
+                                    h4 Chuỗi hội thảo y tế
+                                    p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.
+                                    +a-btn-link('Xem thêm','#')
+                        .col-lg-5.align-self-center
+                            .image.imageborder
+                                img(data-src= imgPath + 'qua-tang/qua-tang-5.png' alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                .sPaiging
+                    +pagination([
+                        {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                        {text:'1',url:'#'},
+                        {text:'2',url:'#'},
+                        {text:'3',url:'#'},
+                        {text:'...',url:'#'},
+                        {text:'<span>Cuối</span><i class="arrow_carrot-right"></i>',url:'#'}
+                    ])

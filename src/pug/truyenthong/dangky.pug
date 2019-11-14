@@ -1,0 +1,159 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "truyen-thong"
+
+block content
+    .sMainChild.sNew.sNewDetail
+        .sBannerChild
+            img(src= imgPath + 'truyenthong/banner01.jpg' alt="")   
+        .sMainContent-news
+            .container
+                +breadcrumb([{'title':'Truyền thông','link':'#'},{'title':'Vì con mẹ tặng','link':'#'},{'title':'Sản phẩm Colosbaby'}])
+        .sMainContent-news.bg-dangky-1
+            .container
+                .page-header
+                    h3
+                        span.icon-text
+                            <svg viewBox="0 0 48 50" class="icon-shape">
+                                <use xlink:href="#ic-cau-hoi"></use>
+                            </svg>
+                        span.ttl-text Đăng ký thông tin nhận mẫu 
+                    a(href="tel:+1900633559"): img(src= imgPath + 'hotline.svg' alt="")
+                .row
+                    .col-lg-7
+                        .page-header-des
+                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                        .sFormAdv 
+                            .sForm.form-style
+                                +input-box("text","","","Tên của bạn *",'Nhập tên của bạn','')
+                                +input-box("text","","","Điện thoại",'Nhập số điện thoại','')
+                                +input-box("text","","","Email *",'Nhập email','')
+                                +input-box("text","","","Tên của bé thứ nhất * ",'Nhập tên của bé','')
+                                .form-group
+                                    label(for='datepicker') Sinh nhật của bé *
+                                    .input-group-date
+                                        span.icon-date
+                                        input#datepicker.form-control(type='text', placeholder='', name='datepicker', value='Chọn sinh nhật của bé')
+
+                                .form-group
+                                    label Tỉnh / thành *
+                                    select.selectpicker.form-control(title="Chọn tỉnh / thành")
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") 
+                                .form-group
+                                    .row
+                                        .col-6
+                                            label Quận / huyện *
+                                            select.selectpicker.form-control(title="Chọn quận / huyện")
+                                                option(value="Sample") Sample
+                                                option(value="Sample") Sample
+                                                option(value="Sample") Sample
+                                                option(value="Sample") Sample
+                                                option(value="Sample") Sample
+                                        .col-6
+                                            label Phường / xã *
+                                            select.selectpicker.form-control(title="Chọn phường / xã")
+                                                option(value="Sample") Sample
+                                                option(value="Sample") Sample
+                                                option(value="Sample") Sample
+                                                option(value="Sample") Sample
+                                                option(value="Sample") Sample
+                                +input-box("text","","","Số nhà và tên đường *",'Nhập số nhà và tên đường','')
+                                +textarea-box('','','Ghi chú','Nhập nội dung ghi chú','3')
+                                .custom-control.custom-checkbox
+                                    input#customCheck.custom-control-input(type='checkbox', name='example1')
+                                    label.custom-control-label(for='customCheck') Tôi đồng ý với các điều khoản bảo mật của VitaDairy
+                                p: a(href="#") Thể lệ chương trình
+                                .row
+                                    .col-6.align-self-center
+                                        +a-btn-primary('Gửi','#','','icon-contact')
+                                    .col-6
+                                        .capcha
+                                            img(src= imgPath + 'captcha.png' alt="")
+                    .col-lg-5.align-self-center
+                        .image
+                            img(src= imgPath + 'dangki/dang-ki-01.png' alt="")
+        .sMainContent-news.bg-dangky-2
+            .container
+                .sdangkyBox
+                    .row
+                        .col-sm-6.text-center
+                            .image
+                                img(src= imgPath + 'dangki/dang-ky-02.png' alt="")
+                            +a-btn-primary('Mua ngay','#','','ic-shop')
+                        .col-sm-6
+                            .sdangkyBoxInfo.scroll-ui
+                                .infoSlider
+                                    .itemWrap
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                    <use xlink:href="#ic-loi-ich-1"></use>
+                                                </svg>
+                                            .des
+                                                h4 Ngủ ngon mau lớn
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 40 39.864" class="icon-shape">
+                                                    <use xlink:href="#nuoiduong2"></use>
+                                                </svg>
+                                            
+                                            .des
+                                                h4 Chống táo bón
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 68.889" class="icon-shape">
+                                                    <use xlink:href="#nuoiduong3"></use>
+                                                </svg>
+                                            .des
+                                                h4 Phát triển chiều cao 
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 68.889" class="icon-shape">
+                                                    <use xlink:href="#ic-tangcan"></use>
+                                                </svg>
+                                            .des
+                                                h4 Tăng cân khoẻ mạnh
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+        .sMainContent-news.bg-dangky-3
+            .container
+                .page-header
+                    h3
+                        span.icon-text
+                            <svg viewBox="0 0 48 50" class="icon-shape">
+                                <use xlink:href="#ic-chuong-trinh"></use>
+                            </svg>
+                        span.ttl-text Chương trình khác
+                .sProductSlider2
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'dangki/dang-ky-03.png' alt="")
+                        h4 Quà tặng từ Goatlac
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'dangki/dang-ky-04.png' alt="")
+                        h4 Quà tặng từ Calosure
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'dangki/dang-ky-05.png' alt="")
+                        h4 Quà tặng từ Gluvita
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'dangki/dang-ky-03.png' alt="")
+                        h4 Quà tặng từ Goatlac
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'dangki/dang-ky-04.png' alt="")
+                        h4 Quà tặng từ Calosure
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'dangki/dang-ky-05.png' alt="")
+                        h4 Quà tặng từ Gluvita

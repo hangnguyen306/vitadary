@@ -48,7 +48,7 @@ block content
                             .image
                                 img(src= imgPath + 'sanpham/img-10.png' alt="")
                         .col-sm-6
-                            .infoSlider
+                            .infoSlider.infoSliderProduct
                                 .itemWrap
                                     .item
                                         span.txt-icon
@@ -110,14 +110,17 @@ block content
                                     <use xlink:href="#ic-san-pham-chi-tiet-2"></use>
                                 </svg>
                             span.ttl-text Thành phần dinh dưỡng
-                    ul#myList.list-group.list-group-tab.sNavLink(role='tablist')
-                        li: a.active(data-toggle='list', href='#navTab1', role='tab')
-                                span.text-tab Cho trẻ từ <br>1 - 2 tuổi
-                        li: a(data-toggle='list', href='#navTab2', role='tab')
-                                span.text-tab Cho trẻ từ <br>2 - 6 tuổi
-                        li: a(data-toggle='list', href='#navTab3', role='tab') 
-                                span.text-tab Cho trẻ từ <br>6 - 10 tuổi
-                    .tableDetail
+                    
+                    .tableDetail    
+                        ul#myList.list-group.list-group-tab.sNavLink(role='tablist')
+                            li: a.active(data-toggle='list', href='#navTab1', role='tab')
+                                    span.text-tab Cho trẻ từ <br>1 - 2 tuổi
+                            li: a(data-toggle='list', href='#navTab2', role='tab')
+                                    span.text-tab Cho trẻ từ <br>2 - 6 tuổi
+                            li: a(data-toggle='list', href='#navTab3', role='tab') 
+                                    span.text-tab Cho trẻ từ <br>6 - 10 tuổi
+                        .imgThumb
+                            img(src= imgPath + 'sanpham/img-table-1.png' alt="")
                         .tableDetailWrap
                             .tab-content
                                 #navTab1.tab-pane.active(role='tabpanel')
@@ -252,3 +255,80 @@ block content
                                                 .td.col-3-td 465
                                                 .td.col-3-td 177
                                                 .td.col-3-td kCAI
+            .sLandingProductContent-2.bg-chi-tiet-san-pham-2
+                .container
+                    .page-header
+                            h3
+                                span.icon-text
+                                    <svg viewBox="0 0 36.554 50" class="icon-shape">
+                                        <use xlink:href="#ic-san-pham-1"></use>
+                                    </svg>
+                                span.ttl-text Chủng loại và quy cách đóng 
+                    .row
+                        .col-lg-5
+                            p ColosBaby gồm các chủng loại bao bì sau:
+                            p Sữa Bột <br>Hộp thiếc 400 g<br>Hộp thiếc 900 g<br>Hộp thiếc 1500 g
+                            p Sữa Bột Pha Sẵn <br>Lốc 4 hộp 110 ml <br>Lốc 4 hộp 180 ml
+                        .col-lg-7
+                            .image
+                                img(src= imgPath + 'sanpham/colos-baby-2.png' alt="")
+            .sLandingProductContent-3.bg-chi-tiet-san-pham-3
+                .container
+                    .page-header
+                        h3
+                            span.icon-text
+                                <svg viewBox="0 0 36.554 50" class="icon-shape">
+                                    <use xlink:href="#ic-san-pham-chi-tiet-3"></use>
+                                </svg>
+                            span.ttl-text Hồ sơ công bố sản phẩm
+                    .sFileSlider
+                        .item
+                            .info
+                                span.icon-down
+                                p Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor.
+                        .item
+                            .info
+                                span.icon-down
+                                p Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor.
+                        .item
+                            .info
+                                span.icon-down
+                                p Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor.
+                        .item
+                            .info
+                                span.icon-down
+                                p Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor.
+        .sMainContent-news.bg-dangky-3
+            .container
+                .page-header
+                    h3
+                        span.icon-text
+                            <svg viewBox="0 0 48 50" class="icon-shape">
+                                <use xlink:href="#ic-san-pham-1"></use>
+                            </svg>
+                        span.ttl-text Sản phẩm liên quan
+                .sProductSlider2
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-1.png' alt="")
+                        h4 Colosbaby 2+ 800g
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-2.png' alt="")
+                        h4 Vitagrow 4 400g
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-3.png' alt="")
+                        h4 ColosBaby Hộp Pha Sẵn
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-1.png' alt="")
+                        h4 Colosbaby 2+ 800g
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-2.png' alt="")
+                        h4 Vitagrow 4 400g
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-3.png' alt="")
+                        h4 ColosBaby Hộp Pha Sẵn                   

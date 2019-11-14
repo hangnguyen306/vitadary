@@ -24,6 +24,7 @@ function ui() {
             $(this).siblings('.file-ui-label').text(fileName);
         }
     });
+    $('#datepicker').datetimepicker();
 
     // Parallax
     $('[data-paroller-factor]').paroller();
@@ -78,7 +79,8 @@ function fixHeight() {
     $('.sAbout-1.fixHeight .bgImg').css({ 'minHeight': hW -125});
     $('.sAbout-2.fixHeight .bgImg').css({ 'minHeight': hW -50});
     $('.sAbout-3.fixHeight .bgImg').css({ 'minHeight': hW -50});
-    //$('.sDist .fixHeight').css({ 'minHeight': hW -50});
+    $('.sPartner-1.fixHeight').css({ 'minHeight': hW -125});
+    $('.sPartner-2.fixHeight').css({ 'minHeight': hW -50});
 
     $('.fixHeightNews').css({ 'minHeight': hW -125});
     
@@ -288,6 +290,62 @@ function sProductSlider() {
         ]
       });
       $('.sProductSliderInner .itemWrap').matchHeight();
+
+}
+function sProductSlider2() {
+    var el = $(".sProductSlider2");
+    el.slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll:1,
+        prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
+        nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll:2,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+      });
+
+}
+function sFileSlider() {
+    var el = $(".sFileSlider");
+    el.slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll:1,
+        prevArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-left'></a>",
+        nextArrow: "<a href='#' class='icon-arr icon-arr-3 icon-arr-small icon-right'></a>",
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll:2,
+                    infinite: true
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+      });
 
 }
 
@@ -688,7 +746,7 @@ function sBoxProductSlidder(){
     });
 }
 function sInfoSlider(){
-    $('.infoSlider').slick({
+    $('.infoSliderProduct').slick({
         infinite: true,
         arrows:false,
         speed: 300,
@@ -719,6 +777,7 @@ $('#fromModalCenter').on( 'shown.bs.modal', function(){
 });
 sBoxProductSlidder();
 sProductSlider();
+sProductSlider2();
 showAsk();
 waypointEl();
 // Base
@@ -744,6 +803,7 @@ sSlidethumb();
 sSliderbigImage();
 sSlidepersonSlider();
 sInfoSlider();
+sFileSlider();
 sSlidethumbLogo();
 function init() {
     $(window).on("debouncedresize", function (event) {

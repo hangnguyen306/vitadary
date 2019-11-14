@@ -608,6 +608,20 @@
             position: left bottom;
             size:cover;
         };
+        @include media-breakpoint-down(md) { 
+            background: {
+                image:url($img-path + "bg-cam-ket-4-sp.jpg");
+                repeat:no-repeat;
+                position: left bottom;
+                size:cover;
+            };
+            .des{
+                padding-bottom:200px;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            background-size: contain;
+        }
     }
     &.bg-cam-ket-5{
         background: {
@@ -616,15 +630,7 @@
             position: bottom;
             size:cover;
         };
-        @include media-breakpoint-down(md) { 
-            padding-top:300px;
-            background: {
-                image:url($img-path + "bg-cam-ket-4-sp.jpg");
-                repeat:no-repeat;
-                position: left bottom;
-                size:cover;
-            };
-        }
+       
     }
     .sQbox{
         ul{
@@ -661,6 +667,12 @@
             padding:rem(30);
             img{
                 display: inline-block;
+            }
+        }
+        .item{
+            @include media-breakpoint-down(md) {
+                padding-top: 0;
+                padding-bottom: 0;
             }
         }
     }

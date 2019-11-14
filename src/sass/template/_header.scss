@@ -415,6 +415,11 @@ header.header {
                         a {
                             font-size: rem(14);
                         }
+                        &:last-child{
+                            ul{
+                                left: inherit;
+                            }
+                        }
                     }
                 }
             }

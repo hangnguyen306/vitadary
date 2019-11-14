@@ -27,7 +27,6 @@
   }
   .breadcrumb{
     margin-bottom: rem(30);
-    
     @include media-breakpoint-up(lg) {
         position: absolute;
         top:30px;
@@ -42,79 +41,150 @@
   .sNewsSlider .item img{
     width: 100%; 
   }
-} 
-// .sBanerChild{
-//   .image{
-//     @include bg-box(1918,399)
-//   } 
-// }
-// .bigImageEvent{
-//   .image{
-//     a{
-//       @include bg-box(598,385);
-//     }
-//   }
-//   .info{
-//     .date{
+}
+.bigImageEvent{
+  .image{
+    img{
+      max-width: 100%;
+    }
+  }
+ 
+}
+.sMainContent-news{
+  padding:rem(50) 0;
+  .sHomeKnow{
+    background: white;
+    padding:rem(30);
+    border-radius: 30px;
+    box-shadow: 0px 3px 40px rgba(131, 131, 131, 0.15);
+    .row{
+      >div:first-child{
+       padding-right: 15px;
+      }
+    }
+    .des{
+      margin: 0;
+      ul{
+        margin-bottom: 0;
+        li{
+          margin-top:rem(10);
+        }
+      }
+    }
+    .image{
+      text-align: center;
+      margin-right: 0;
+      max-width: 100%;
+      &.imageborder{
+        img{
+          border-radius: 30px;
+        }
+      }
+    }
+   
+    & ~ .sHomeKnow{
+      margin-top:rem(30);
+    }
+    &:nth-child(2n-1){
+      .row{
+        >div:first-child{
+          order: 2;
+        }
+      }
+    }
+    .btn.btn-link {
+      color: $blue-main-light;
+      padding-bottom: 0;
+      padding-left: 2px;
+      text-align: left;
+      @include transition();
 
-//     }
-//     h3{
-//       a{
-//         font-size: rem(20);
-//         color:inherit;
-//       }
-//     }
-//     .des{
+      &:after {
+          background: {
+              image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='13.763' viewBox='0 0 20 13.763'%3E%3Cg id='icon-arrow' transform='translate(0 -41.916)'%3E%3Cpath id='Path_25276' data-name='Path 25276' d='M19.728,48.14l-5.952-5.952A.93.93,0,1,0,12.461,43.5l4.364,4.364H.93a.93.93,0,1,0,0,1.86H16.825l-4.364,4.364a.93.93,0,0,0,1.315,1.315l5.952-5.952A.93.93,0,0,0,19.728,48.14Z' transform='translate(0 0)' fill='%233EB7E4'/%3E%3C/g%3E%3C/svg%3E%0A");
+          }
+      }
+  }
+  }
+}
+.bg-truyenthong-1{
+ background: rgba($color: #ECEFF1, $alpha: .7); 
+}
+.bg-truyenthong-2{
+  background: rgba($color: #ECEFF1, $alpha: .5); 
 
-//     }
-//   }
-// }
-// .thumbImageEvent{
-//   margin-top:30px;
-//   .itemEvent{
-//     padding:rem(30);
-//     .image{
-//       a{
-//         @include bg-box(326,224)
-//       }
-//     }
-//     .info{
-//       .date{
-  
-//       }
-//       h4{
-//         a{
-//           font-size: rem(16);
-//           color:inherit;
-//         }
-//       }
-//       .des{
-  
-//       }
-//     }
-//   }
-// }
-// .listEvent{
-//   .item{
-//     .image{
-//       a{
-//         @include bg-box(326,224)
-//       }
-//     }
-
-//     .info{
-//       h3{
-//         a{
-//           font-size: rem(16);
-//           color:inherit;
-//         }
-//         }
-//       }
-//       .des{
-
-//       }
-//     }
-//   }
-//   .sEventChild{
-    
-//   }
+}
+.bg-truyenthong-3{
+  background: {
+    image: url($img-path + "bg-truyenthong-3.jpg");
+    size: cover;
+    repeat: no-repeat;
+    position: bottom left;
+  }
+}
+.bg-truyenthong-4{
+  background: {
+    image: url($img-path + "bg-truyenthong-4.jpg");
+    size: cover;
+    repeat: no-repeat;
+    position: bottom left;
+  }
+}
+.sNewGift{
+  padding-top:rem(30);
+  .sMainContent-news{
+    .sHomeKnow{
+      &:nth-child(2n-1){
+        .row{
+          >div:first-child{
+            order: 0;
+          }
+        }
+      }
+    }
+  }
+  .sPaiging{
+    margin-top: rem(30)!important;
+  }
+}
+.sdangkyBox{
+  .image{
+    margin-bottom: rem(30);
+  }
+  .sdangkyBoxInfo{
+    max-height: 680px;
+  }
+  .infoSlider{
+    padding-right: rem(40);
+  }
+}
+.bg-dangky-1{
+  padding-top:rem(30);
+  background: {
+    image: url($img-path + "bg-dang-ki.jpg");
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
+  .image{
+    img{
+      max-width: 100%;
+    }
+  }
+}
+.bg-dangky-2{
+  background: {
+    image: url($img-path + "bg-dang-ki-2.jpg");
+    size: contain;
+    repeat: no-repeat;
+    position: left bottom;
+  }
+}
+.bg-dangky-3{
+  background: {
+    image: url($img-path + "bg-dang-ki-3.jpg");
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
+}

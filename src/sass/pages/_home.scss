@@ -526,33 +526,40 @@
         padding: rem(20) 0 rem(0) 0;
     }
 
-    .sHomeKnow {
-        .row {
-            >div {
-                &:first-child {
-                    padding-right: 0;
-                }
+   
 
-                @media (max-width: 991.99px) {
-                    &:first-child {
-                        padding-right: 15px;
-                    }
-
-                    &:last-child {
-                        order: 0;
-                        max-width: 100%;
-                        margin: 0 auto;
-                    }
-                }
+   
+}
+.sHomeKnow {
+    .row {
+        >div {
+            &:first-child {
+                padding-right: 0;
             }
 
-        }
-    }
+            @media (max-width: 991.99px) {
+                &:first-child {
+                    padding-right: 15px;
+                }
 
+                &:last-child {
+                    order: 0;
+                    max-width: 100%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+    }
     .des {
         margin-top: rem(30);
         margin-bottom: rem(30);
-
+        h4{
+            color:$blue-main;
+            font-weight: bold;
+            font-size: rem(34);
+            margin: 0 0 rem(20) 0;
+        }
         p {
             font-weight: normal;
             display: -webkit-box;
@@ -663,7 +670,6 @@
 
     }
 }
-
 .sMain-3 {
     overflow: hidden;
     padding: rem(40) 0 0px 0;

@@ -243,57 +243,7 @@ background: {
       max-width: 100%;
     }
   }
-  .infoSlider{
-    margin-bottom: rem(50);
-    .itemWrap{
-      padding-left: rem(50);
-    }
-    .item{
-      background: linear-gradient(to right, rgba(62,183,228,.1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      padding-left: 50px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
-      position: relative;
-     
-      & ~ .item{
-        margin-top:rem(20);
-      }
-     
-      .txt-icon{
-        width: rem(100);
-        height: rem(100);
-        background: #fff;
-        border-radius: 50%;
-        display: flex;
-        border:1px solid $blue-main-light;
-        position: absolute;
-        left: rem(-50);
-        align-items: center;
-        justify-content: center;
-          svg{
-            width: 50px;
-            height: 50px;
-            fill: $blue-main;
-        }
-      }
-      h4{
-        font-weight: bold;
-        color:$blue-main;
-        font-size: rem(20);
-      }
-      p{
-        font-size: rem(13);
-        margin: 0;
-      }
-    }
-    .slick-dots{
-      position: relative;
-      bottom: inherit;
-      text-align: center;
-    }
-  }
+ 
 }
 }
 .sLandingProductContent{
@@ -371,6 +321,146 @@ background: {
     border-radius: 10px;
     background: #e0e0e0;
   }
+  .sNavLink{
+    width: 115px;
+    display: block;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    right: -64px;
+    li{
+      max-width: 100%;
+      flex: 0 0 100%;
+      margin: 5px 0;
+      a{
+        text-align: left;
+        border-top-left-radius:0px;
+        border-bottom-left-radius:0px;
+        border-top-right-radius:10px;
+        border-bottom-right-radius:10px;
+        
+        
+      }
+    }
+  }
 }
 
 
+.infoSlider{
+  margin-bottom: rem(50);
+  .itemWrap{
+    padding-left: rem(50);
+  }
+  .item{
+    background: linear-gradient(to right, rgba(62,183,228,.1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    padding-left: 75px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+   
+    & ~ .item{
+      margin-top:rem(20);
+    }
+   
+    .txt-icon{
+      width: rem(100);
+      height: rem(100);
+      background: #fff;
+      border-radius: 50%;
+      display: flex;
+      border:1px solid $blue-main-light;
+      position: absolute;
+      left: rem(-50);
+      align-items: center;
+      justify-content: center;
+        svg{
+          width: 50px;
+          height: 50px;
+          fill: $blue-main;
+      }
+    }
+    h4{
+      font-weight: bold;
+      color:$blue-main;
+      font-size: rem(20);
+    }
+    p{
+      font-size: rem(13);
+      margin: 0;
+    }
+  }
+  .slick-dots{
+    position: relative;
+    bottom: inherit;
+    text-align: center;
+  }
+}
+.imgThumb{
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  z-index: 5;
+}
+.sProductSlider2{
+  .item{
+    padding:10px;
+    .image{
+      background: white;
+      border-radius: 20px;
+      text-align: center;
+      padding: rem(20);
+      img{
+        display: inline-block;
+      }
+    }
+    h4{
+      color:$blue-main;
+      font-weight: rem(20);
+      font-weight: bold;
+      text-align: center;
+      margin: 10px 0 10px 0;
+    }
+  }
+}
+.bg-chi-tiet-san-pham-2{
+  padding: rem(50) 0;
+  background: {
+    image: url($img-path + "bg-chi-tiet-san-pham-2.jpg");
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
+}
+.bg-chi-tiet-san-pham-3{
+  padding: rem(50) 0;
+  background: {
+    image: url($img-path + "bg-chi-tiet-san-pham-3.jpg");
+    size: cover;
+    repeat: no-repeat;
+    position: center;
+  }
+}
+.sFileSlider{
+  .item{
+    padding:10px;
+    .info{
+      background: white;
+      border-radius: 20px;
+      text-align: center;
+      padding: rem(20);
+      p{
+        margin: 0;
+      }
+    }
+  }
+  .icon-down{
+    width:50px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    background-size: contain;
+    margin-bottom: 20px;
+  }
+}

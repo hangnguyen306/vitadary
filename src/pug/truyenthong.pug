@@ -2,22 +2,38 @@ extends layouts/_layout_default
 
 block setting
     - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
-    - mainActive = "bi-quyet"
+    - mainActive = "truyen-thong"
 
 block content
-    .sMainChild.sNew.sNewDetail
+    .sMainChild.sNew.sNewDetail.sEvent
         .sBannerChild
             img(src= imgPath + 'truyenthong/banner.jpg' alt="")
-        .sMainContent-news.bg-truyenthong-1
+        .bg-truyenthong
             .container
                 +breadcrumb([{'title':'Truyền thông'}])
+                .row
+                    .col-lg-4.col-sm-6.col-12
+                        select.selectpicker.form-control(title="Bài viết mới nhất")
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                            option(value="Sample") Sample
+                    .col-lg-4.col-sm-6.ml-auto.col-12
+                         .form-style
+                            div
+                                input.form-control(type='text', placeholder='Nhập từ khoá')
+                                button.btn-search-button
+                                    i.icon-search
+        .sMainContent-news.bg-truyenthong-1
+            .container
                 .page-header
                     h3
                         span.icon-text
                             <svg viewBox="0 0 63.891 50" class="icon-shape">
                                 <use xlink:href="#ic-tintuc-sukien"></use>
                             </svg>
-                        span.ttl-text Tin tức Sự kiện
+                        span.ttl-text Tin tức sự kiện
                 .sInfo.listColNew
                     .bigImageEvent
                         +itemBigEvent(imgPath + 'tintucsukien/img-01.jpg','image',"#","Chính phủ Mỹ nói gì về hợp tác độc quyền sữa non của…")
@@ -50,7 +66,7 @@ block content
                             <svg viewBox="0 0 63.891 50" class="icon-shape">
                                 <use xlink:href="#ic-thongtinkhuyenmai"></use>
                             </svg>
-                        span.ttl-text Thông tin Khuyến mãi
+                        span.ttl-text Thông tin khuyến mãi
                 .sInfo.listColNew
                     .bigImageEvent
                         +itemBigEvent(imgPath + 'thongtinkhuyenmai/img-01.jpg','image',"#","​[Khuyến mại] Hè rộn ràng, muôn vàn quà tặng từ…")
@@ -83,7 +99,7 @@ block content
                             <svg viewBox="0 0 63.891 50" class="icon-shape">
                                 <use xlink:href="#ic-chiendichquangcao"></use>
                             </svg>
-                        span.ttl-text Chiến dịch Quảng cáo
+                        span.ttl-text Chiến dịch quảng cáo
                 .sInfo.listColNew
                     .bigImageEvent
                         +itemBigEvent(imgPath + 'chiendichquangcao/img-01.jpg','image',"#","Sản phẩm dinh dưỡng tại Việt Nam, đã đến lúc hưởng “trái…")

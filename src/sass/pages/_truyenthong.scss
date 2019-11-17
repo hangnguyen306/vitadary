@@ -1,3 +1,8 @@
+.sEvent{
+  .page-header .icon-text {
+    vertical-align: bottom;
+  }
+}
 .bg-thongtinkhuyemai{
   background: {
     image: url($img-path + "bg-thong-tin-khuyen-mai-landing.jpg");
@@ -75,6 +80,8 @@
       text-align: center;
       margin-right: 0;
       max-width: 100%;
+      margin-top: 10px;
+      margin-bottom: 10px;
       &.imageborder{
         img{
           border-radius: 30px;
@@ -89,6 +96,10 @@
       .row{
         >div:first-child{
           order: 2;
+
+        @include media-breakpoint-down(md) {
+          order: inherit;;
+        }
         }
       }
     }
@@ -107,6 +118,40 @@
   }
   }
 }
+
+.bg-truyenthong{
+  margin-top:rem(-50);
+  padding:rem(50) 0;
+  background: rgba($color: #E9F1F5, $alpha: 1); 
+  .breadcrumb{
+    margin-bottom: rem(30);
+  }
+  .btn-search-button {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    outline: none;
+    z-index: 9;
+    cursor: pointer;
+    @include transition();
+    opacity: 1;
+    i{
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        display: block;
+        background-repeat: no-repeat;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+}
+ }
 .bg-truyenthong-1{
  background: rgba($color: #ECEFF1, $alpha: .7); 
 }

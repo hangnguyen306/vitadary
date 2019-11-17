@@ -813,6 +813,7 @@ function init() {
 $(window).resize(function () {
     sProduct();
     fixHeight();
+    sProductSlider();
 })
 
 $(window).on('load ', function () {

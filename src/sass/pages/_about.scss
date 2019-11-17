@@ -68,14 +68,12 @@
             position: bottom;
             size:cover;
         };
-        .page-header .icon-text{
-            margin-right: 0;
-        }
+        
     }
     &-invest{
         padding:rem(80) 0;
         background: {
-            image:url($img-path + "bg-cau-chuyen-2.jpg");
+            image:url($img-path + "bg-cau-chuyen-2.png");
             repeat:no-repeat;
             position: bottom;
             size:cover;
@@ -498,7 +496,7 @@
             @include media-breakpoint-down(md) {
             padding-left: rem(10);
             padding-right: rem(10);
-            box-shadow: 0 3px 40px rgba($color: #838383, $alpha: 0) ;
+            box-shadow: 0 3px 40px rgba($color: #838383, $alpha: 0)!important ;
 
             }
         }
@@ -616,11 +614,11 @@
                 size:cover;
             };
             .des{
-                padding-bottom:200px;
+                padding-bottom: 80%;
             }
         }
         @include media-breakpoint-down(sm) {
-            background-size: contain;
+            //background-size: contain;
         }
     }
     &.bg-cam-ket-5{
@@ -673,6 +671,8 @@
             @include media-breakpoint-down(md) {
                 padding-top: 0;
                 padding-bottom: 0;
+                padding-left: 10px;
+                padding-right: 10px;
             }
         }
     }

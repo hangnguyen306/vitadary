@@ -64,6 +64,10 @@
           height: auto;
           flex-direction: inherit;
         }
+        @include media-breakpoint-down(sm) {
+          max-width: 380px;
+          margin: 0 auto;
+        }
         .image{
           border-top-right-radius: 20px;
           border-top-left-radius: 20px;

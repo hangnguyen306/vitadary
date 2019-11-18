@@ -699,8 +699,6 @@
 
             img {
                 max-width: 235px;
-                transform: scale(1.2);
-
                 @media (max-width: 991.99px) {
                     max-width: 150px;
                     transform: scale(1);

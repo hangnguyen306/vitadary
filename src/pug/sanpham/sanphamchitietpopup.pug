@@ -1,0 +1,360 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "san-pham"
+
+block content
+    .sMainChild.sProductDetail
+        .sBannerChild
+            img(src= imgPath + 'sanpham/banner-san-pham-chi-tiet.jpg' alt="")
+        .sMainContent
+            .container
+                +breadcrumb([{'title':'Sản phẩm','link':'#'},{'title':' Sản phẩm chi tiết'}])
+            .sLandingProduct
+                .bgImg(style="background-image:url(" + imgPath + 'sanpham/bg-san-pham-chi-tiet.jpg' + ")")
+                    .container
+                        .sBoxProduct
+                            .row
+                                .col-sm-6
+                                    .info
+                                        .page-header
+                                            h3
+                                                span.icon-text
+                                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                                        <use xlink:href="#mom1"></use>
+                                                    </svg>
+                                                span.ttl-text Miễn dịch khoẻ giảm bệnh vặt
+                                        .des
+                                            p ColosBaby sữa bột pha sẵn với công thức tiên phong bổ sung sữa non từ Mỹ, giúp bé miễn dịch khỏe tạo dựng nền tảng phát triển vững chắc cả về thể chất và trí não. Với ColosBaby Hộp pha sẵn, mẹ yên tâm vì bé đến trường khỏe mạnh, giúp cho hành trình học hỏi không gián đoạn bởi bệnh vặt.
+                                            p Tăng cường DHA, Choline, Vitamin A giúp hoàn thiện và phát triển não bộ, thị giác, tăng khả năng nhận thức và học hỏi của trẻ.
+                                            p Colosbaby với công thức tăng cường sữa non thu được sau 24h đầu từ Mỹ, bổ sung các dưỡng chất thiết yếu Kẽm, Selen, Vitamin & Khoáng chất giúp tăng cường sức đề kháng, cho bé hệ miễn dịch khỏe mạnh, bảo vệ trẻ khỏi các bệnh vặt tiêu hóa và hô hấp.
+                                .col-sm-6.align-self-end
+                                    .image
+                                        img(src= imgPath + 'sanpham/boy.png' alt="")
+                                        span.img-small
+                                            img(src= imgPath + 'sanpham/colos-baby.png' alt="")
+            .sLandingProductInfo
+                .container
+                    .page-header
+                        h3
+                            span.icon-text
+                                <svg viewBox="0 0 36.554 50" class="icon-shape">
+                                    <use xlink:href="#ic-san-pham-chi-tiet-1"></use>
+                                </svg>
+                            span.ttl-text Lợi ích từ ColosBaby
+                    .row
+                        .col-sm-6.align-self-end
+                            .image
+                                img(src= imgPath + 'sanpham/img-10.png' alt="")
+                        .col-sm-6
+                            .infoSlider.infoSliderProduct
+                                .itemWrap
+                                    .item
+                                        span.txt-icon
+                                            <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                <use xlink:href="#ic-loi-ich-1"></use>
+                                            </svg>
+                                        .des
+                                            h4 Ngủ ngon mau lớn
+                                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    .item
+                                        span.txt-icon
+                                            <svg viewBox="0 0 40 39.864" class="icon-shape">
+                                                <use xlink:href="#nuoiduong2"></use>
+                                            </svg>
+                                        
+                                        .des
+                                            h4 Chống táo bón
+                                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    .item
+                                        span.txt-icon
+                                            <svg viewBox="0 0 60 68.889" class="icon-shape">
+                                                <use xlink:href="#nuoiduong3"></use>
+                                            </svg>
+                                        .des
+                                            h4 Phát triển chiều cao 
+                                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                .itemWrap
+                                    .item
+                                        span.txt-icon
+                                            <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                <use xlink:href="#ic-loi-ich-1"></use>
+                                            </svg>
+                                        .des
+                                            h4 Ngủ ngon mau lớn 2
+                                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    .item
+                                        span.txt-icon
+                                            <svg viewBox="0 0 40 39.864" class="icon-shape">
+                                                <use xlink:href="#nuoiduong2"></use>
+                                            </svg>
+                                        
+                                        .des
+                                            h4 Chống táo bón 2
+                                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    .item
+                                        span.txt-icon
+                                            <svg viewBox="0 0 60 68.889" class="icon-shape">
+                                                <use xlink:href="#nuoiduong3"></use>
+                                            </svg>
+                                        .des
+                                            h4 Phát triển chiều cao  2
+                                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+            .sLandingProductContent
+                .container
+                    .page-header
+                        h3
+                            span.icon-text
+                                <svg viewBox="0 0 36.554 50" class="icon-shape">
+                                    <use xlink:href="#ic-san-pham-chi-tiet-2"></use>
+                                </svg>
+                            span.ttl-text Thành phần dinh dưỡng
+                    
+                    .tableDetail    
+                        ul#myList.list-group.list-group-tab.sNavLink(role='tablist')
+                            li: a.active(data-toggle='list', href='#navTab1', role='tab')
+                                    span.text-tab Cho trẻ từ <br>1 - 2 tuổi
+                            li: a(data-toggle='list', href='#navTab2', role='tab')
+                                    span.text-tab Cho trẻ từ <br>2 - 6 tuổi
+                            li: a(data-toggle='list', href='#navTab3', role='tab') 
+                                    span.text-tab Cho trẻ từ <br>6 - 10 tuổi
+                        .imgThumb
+                            img(src= imgPath + 'sanpham/img-table-1.png' alt="")
+                        .tableDetailWrap
+                            .tab-content
+                                #navTab1.tab-pane.active(role='tabpanel')
+                                    .table-cont
+                                        .fixed_headers
+                                            .itemtr
+                                                .th.col-3-td  Thành phần trung bình
+                                                .th.col-3-td  Trong 100g bột
+                                                .th.col-3-td  Trong 1 ly đã pha
+                                                .th.col-3-td  Đơn vị
+                                        .scroll-ui-table
+                                            .itemtr
+                                                .td.col-3-td Năng lượng
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất đạm
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Trytophan
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất béo
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid linoleic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid Alpha 0 linolenic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td DHA (Dococahexacnoic acid)
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                #navTab2.tab-pane(role='tabpanel')
+                                    .table-cont
+                                        .fixed_headers
+                                            .itemtr
+                                                .th.col-3-td  Thành phần trung bình
+                                                .th.col-3-td  Trong 100g bột
+                                                .th.col-3-td  Trong 1 ly đã pha
+                                                .th.col-3-td  Đơn vị
+                                        .scroll-ui-table
+                                            .itemtr
+                                                .td.col-3-td Năng lượng
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất đạm
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Trytophan
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất béo
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid linoleic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid Alpha 0 linolenic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td DHA (Dococahexacnoic acid)
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                #navTab3.tab-pane(role='tabpanel')
+                                    .table-cont
+                                        .fixed_headers
+                                            .itemtr
+                                                .th.col-3-td  Thành phần trung bình
+                                                .th.col-3-td  Trong 100g bột
+                                                .th.col-3-td  Trong 1 ly đã pha
+                                                .th.col-3-td  Đơn vị
+                                        .scroll-ui-table
+                                            .itemtr
+                                                .td.col-3-td Năng lượng
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất đạm
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Trytophan
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Chất béo
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid linoleic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td Acid Alpha 0 linolenic
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+                                            .itemtr
+                                                .td.col-3-td DHA (Dococahexacnoic acid)
+                                                .td.col-3-td 465
+                                                .td.col-3-td 177
+                                                .td.col-3-td kCAI
+            .sLandingProductContent-2.bg-chi-tiet-san-pham-2
+                .container
+                    .page-header
+                            h3
+                                span.icon-text
+                                    <svg viewBox="0 0 36.554 50" class="icon-shape">
+                                        <use xlink:href="#ic-san-pham-1"></use>
+                                    </svg>
+                                span.ttl-text Chủng loại và quy cách đóng 
+                    .row
+                        .col-lg-5
+                            p ColosBaby gồm các chủng loại bao bì sau:
+                            p Sữa Bột <br>Hộp thiếc 400 g<br>Hộp thiếc 900 g<br>Hộp thiếc 1500 g
+                            p Sữa Bột Pha Sẵn <br>Lốc 4 hộp 110 ml <br>Lốc 4 hộp 180 ml
+                        .col-lg-7
+                            .image
+                                img(src= imgPath + 'sanpham/colos-baby-2.png' alt="")
+            .sLandingProductContent-3.bg-chi-tiet-san-pham-3
+                .container
+                    .page-header
+                        h3
+                            span.icon-text
+                                <svg viewBox="0 0 36.554 50" class="icon-shape">
+                                    <use xlink:href="#ic-san-pham-chi-tiet-3"></use>
+                                </svg>
+                            span.ttl-text Hồ sơ công bố sản phẩm
+                    .sFileSlider
+                        .item
+                            .info
+                                span.icon-down
+                                p Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor.
+                        .item
+                            .info
+                                span.icon-down
+                                p Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor.
+                        .item
+                            .info
+                                span.icon-down
+                                p Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor.
+                        .item
+                            .info
+                                span.icon-down
+                                p Lorem ipsum dolor sit amet, consetetur elitr, sed diam nonumy eirmod tempor.
+        .sMainContent-news.bg-dangky-3
+            .container
+                .page-header
+                    h3
+                        span.icon-text
+                            <svg viewBox="0 0 48 50" class="icon-shape">
+                                <use xlink:href="#ic-san-pham-1"></use>
+                            </svg>
+                        span.ttl-text Sản phẩm liên quan
+                .sProductSlider2
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-1.png' alt="")
+                        h4 Colosbaby 2+ 800g
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-2.png' alt="")
+                        h4 Vitagrow 4 400g
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-3.png' alt="")
+                        h4 ColosBaby Hộp Pha Sẵn
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-1.png' alt="")
+                        h4 Colosbaby 2+ 800g
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-2.png' alt="")
+                        h4 Vitagrow 4 400g
+                    .item
+                        .image
+                            a(href="#"): img(src= imgPath + 'sanpham/product-3.png' alt="")
+                        h4 ColosBaby Hộp Pha Sẵn                   
+block modal
+    #sYteCenter.modal.sYteCenter.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalLongTitle.modal-title Xác nhận thông tin
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        i.ic-close
+                .modal-body
+                    ul
+                        li Thông tin sản phẩm này chỉ dành cho nhân viên y tế
+                        li Thông tin chỉ dành cho người có nhu cầu tìm hiểu và nghiên cứu sản phẩm
+                        li Thông tin không mang tính chất quảng cáo sản phẩm
+                    .sBoxyte
+                        | Vui lòng liên hệ Hotline  <a href="tel:1900633599">1900 633 599</a> để được tư vấn thêm!
+                    .custom-control.custom-checkbox
+                        input#customCheck.custom-control-input(type='checkbox', name='example1')
+                        label.custom-control-label(for='customCheck') Tôi hoàn toàn hiểu rõ nội dung của khuyến nghị này và đồng ý tiếp tục tìm hiểu thông tin sản phẩm
+                    .text-center
+                        +a-btn-primary('Bỏ qua','#','','cancel')
+                        +a-btn-primary('Xác nhận','#','','confrim')
+block js
+    script.
+        $(window).on('load',function(){
+            $('#sYteCenter').modal('show');
+        });

@@ -14566,6 +14566,8 @@ header.header {
       padding-right: 2.1875rem;
       box-shadow: 0 3px 20px rgba(0, 0, 0, 0.1);
       padding-left: 38px; }
+      header.header .navbar-search .form-control:focus {
+        background: white; }
     header.header .navbar-search div {
       padding: 10px; }
       header.header .navbar-search div button {
@@ -16032,8 +16034,7 @@ a.btn,
       right: 0;
       bottom: 4px; }
       .sMain-3 .page-header a img {
-        max-width: 235px;
-        transform: scale(1.2); }
+        max-width: 235px; }
         @media (max-width: 991.99px) {
           .sMain-3 .page-header a img {
             max-width: 150px;
@@ -16791,6 +16792,8 @@ a.btn,
 .sAbout-3 {
   position: relative;
   overflow: hidden; }
+  .sAbout-3 .bgImg {
+    background-position: right; }
 
 .sAboutChild .sContent {
   margin-top: 2.5rem; }
@@ -17751,6 +17754,61 @@ a.btn.btn-primary.btn-apply:after {
     padding-left: 2.5rem;
     padding-right: 2.5rem; } }
 
+.sFormCenter .scroll-ui {
+  max-height: 750px; }
+
+.sFormCenter.modal .modal-dialog {
+  max-width: 815px;
+  margin: 0 auto; }
+
+.sYteCenter.modal .modal-dialog {
+  max-width: 980px;
+  margin: 0 auto; }
+
+.sYteCenter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .sYteCenter ul li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin: 0 0 1.125rem 0; }
+    .sYteCenter ul li:before {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 10px;
+      top: 7px;
+      left: 0;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11.594' height='10' viewBox='0 0 11.594 10'%3E%3Cpath id='Path_30891' data-name='Path 30891' d='M6.8,11.023a21.833,21.833,0,0,1,8.156-7.535l.167.165a2.64,2.64,0,0,1-.332.374,22.678,22.678,0,0,0-7.046,8.762c-.406.913-.8.911-1.376.111-.756-1.051-1.538-2.082-2.31-3.124a2.241,2.241,0,0,1-.413-.593A1.006,1.006,0,0,1,3.7,8.161a.778.778,0,0,1,.848.309C5.3,9.26,6,10.105,6.8,11.023Z' transform='translate(-3.53 -3.488)' fill='%233eb7e4'/%3E%3C/svg%3E%0A"); }
+
+.sYteCenter .sBoxyte {
+  border: 2px dashed #AFB0B2;
+  padding: 8px 30px;
+  display: inline-block;
+  color: #222222;
+  font-weight: bold;
+  border-radius: 20px;
+  margin-bottom: 20px; }
+  .sYteCenter .sBoxyte a {
+    color: #3EB7E4;
+    font-weight: bold;
+    font-size: 1.5rem; }
+
+.sYteCenter .custom-checkbox {
+  margin-bottom: 1.25rem; }
+
+.sYteCenter .btn.btn-primary {
+  margin: 0 10px; }
+
+.btn.btn-primary.btn-cancel {
+  background: #AFB0B2; }
+  .btn.btn-primary.btn-cancel:after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath id='Path_29830' data-name='Path 29830' d='M29.795,16.205a.7.7,0,0,0-.99,0L23,22.01l-5.805-5.805a.7.7,0,0,0-.99.99L22.01,23,16.205,28.8a.7.7,0,1,0,.99.99L23,23.99,28.8,29.795a.7.7,0,0,0,.99-.99L23.99,23l5.805-5.805A.7.7,0,0,0,29.795,16.205Z' transform='translate(-16 -16)' fill='%23fff'/%3E%3C/svg%3E%0A"); }
+
+.btn.btn-primary.btn-confrim:after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='14.688' viewBox='0 0 20 14.688'%3E%3Cg id='tick' transform='translate(3 -67.998)'%3E%3Cg id='Group_768' data-name='Group 768' transform='translate(0 67.997)'%3E%3Cpath id='Path_29798' data-name='Path 29798' d='M19.707,68.29a1,1,0,0,0-1.414,0L6.312,80.271,1.707,75.666A1,1,0,0,0,.292,77.08L5.6,82.392a1,1,0,0,0,1.414,0L19.707,69.7A1,1,0,0,0,19.707,68.29Z' transform='translate(-3 -67.997)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"); }
+
 .sMainContent-other {
   margin-bottom: 90px; }
   @media (max-width: 768px) {
@@ -18428,54 +18486,54 @@ a.btn.btn-primary.btn-apply:after {
       flex: 0 0 100%;
       max-width: 100%; } }
 
-@media (max-width: 991.98px) {
-  .faqGrid {
-    margin-bottom: 1.875rem; } }
-
-.faqGrid .item {
-  border: 2px dotted #CCCED0;
-  border-radius: 20px;
-  padding: 1.25rem;
-  margin-top: 1.25rem;
-  transition: all 0.2s ease-in-out; }
-  @media screen and (prefers-reduced-motion: reduce) {
-    .faqGrid .item {
-      transition: none; } }
-  .faqGrid .item > a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0; }
-  .faqGrid .item img {
-    width: 90px;
-    height: 90px;
-    float: left;
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-bottom: 0.625rem; }
-    @media (max-width: 991.98px) {
-      .faqGrid .item img {
-        width: 60px;
-        height: 60px; } }
-  .faqGrid .item h2 {
-    color: #0054A5;
-    font-size: 0.9375rem;
-    font-weight: bold;
-    margin: 0;
-    padding-bottom: 0.625rem; }
-  .faqGrid .item h4 {
-    font-size: 0.75rem;
-    color: #999A9D;
-    font-style: italic;
-    margin: 0 0 0.3125rem 0; }
-  .faqGrid .item p {
-    margin: 0; }
-  .faqGrid .item:hover {
-    background: rgba(62, 183, 228, 0.1); }
-
-.faqGrid.faqGridDetail .item:first-child {
-  background: rgba(236, 239, 241, 0.5); }
+.faqGrid {
+  padding-bottom: 1.875rem; }
+  @media (max-width: 991.98px) {
+    .faqGrid {
+      margin-bottom: 1.875rem; } }
+  .faqGrid .item {
+    border: 2px dotted #CCCED0;
+    border-radius: 20px;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    transition: all 0.2s ease-in-out; }
+    @media screen and (prefers-reduced-motion: reduce) {
+      .faqGrid .item {
+        transition: none; } }
+    .faqGrid .item > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .faqGrid .item img {
+      width: 90px;
+      height: 90px;
+      float: left;
+      border-radius: 50%;
+      margin-right: 20px;
+      margin-bottom: 0.625rem; }
+      @media (max-width: 991.98px) {
+        .faqGrid .item img {
+          width: 60px;
+          height: 60px; } }
+    .faqGrid .item h2 {
+      color: #0054A5;
+      font-size: 0.9375rem;
+      font-weight: bold;
+      margin: 0;
+      padding-bottom: 0.625rem; }
+    .faqGrid .item h4 {
+      font-size: 0.75rem;
+      color: #999A9D;
+      font-style: italic;
+      margin: 0 0 0.3125rem 0; }
+    .faqGrid .item p {
+      margin: 0; }
+    .faqGrid .item:hover {
+      background: rgba(62, 183, 228, 0.1); }
+  .faqGrid.faqGridDetail .item:first-child {
+    background: rgba(236, 239, 241, 0.5); }
 
 .sNavtag {
   margin-top: 1.25rem; }

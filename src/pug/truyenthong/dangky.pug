@@ -68,7 +68,7 @@ block content
                                 .custom-control.custom-checkbox
                                     input#customCheck.custom-control-input(type='checkbox', name='example1')
                                     label.custom-control-label(for='customCheck') Tôi đồng ý với các điều khoản bảo mật của VitaDairy
-                                p: a(href="#") Thể lệ chương trình
+                                p: a(href="#" data-toggle="modal" data-target="#sFormCenter") Thể lệ chương trình
                                 .row
                                     .col-6.align-self-center
                                         +a-btn-primary('Gửi','#','','icon-contact')
@@ -157,3 +157,24 @@ block content
                         .image
                             a(href="dangky.html"): img(src= imgPath + 'dangki/dang-ky-05.png' alt="")
                         h4 Quà tặng từ Gluvita
+block modal
+    #sFormCenter.modal.sFormCenter.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalLongTitle.modal-title Thể lệ chương trình
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        i.ic-close
+                .modal-body
+                    .scroll-ui
+                        .sContent
+                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            p Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat
+                            p: strong 1. Lorem ipsum dolor sit amet
+                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata.
+                            p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            p: strong 2. Consetetur sadipscing elit
+                            p No sea takimata sanctus est Lorem ipsum dolor sit amet:
+                            p – Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            p – At vero eos et accusam et justo duo dolores et ea rebum. 
+                            p - Lorem ipsum dolor sit amet, consetetur sadipscing elitr

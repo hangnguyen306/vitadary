@@ -44,7 +44,7 @@ block content
                             .des
                                 p Tại VitaDairy, chúng tôi lấy giá trị cốt lõi NHÂN ĐẠO – TRUNG THỰC – TRÁCH NHIỆM để truyền cảm hứng và lan tỏa tinh thần VÌ CON NGƯỜI đến với tập thể cán bộ nhân viên. VitaDairy được thành lập vì mục tiêu con người và sẽ luôn nỗ lực hết mình vì điều đó.
                             .btnDiv
-                                +a-btn-primary('Xem thêm','#')
+                                +a-btn-primary('Xem thêm',url + 'vitadairy/index.html')
                     .col-lg-6
                         .image
                             img(src= imgPath + 'img01.png' alt="")
@@ -100,7 +100,7 @@ block content
                         .info
                             p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet
                         .btnDiv
-                            +a-btn-primary('Xem thêm','#')
+                            +a-btn-primary('Xem thêm',url + 'tuvandinhduong.html')
     //- sMain-4
     section.fixHeight.sMain-4(data-waypoint="70%")
         .container
@@ -112,9 +112,9 @@ block content
                     h3 Sản phẩm
                 -
                     var products = [
-                        {'title': 'Sữa cho mẹ bầu',     'icon': 'icon-child-blue','img': 'me-bau.png' , 'url': '#','imghover' : 'me-bau-hover.png'},
-                        {'title': 'Sữa cho bé',     'icon': 'icon-moon-blue','img': 'sua-cho-be.png' ,'url': '#','imghover' : 'sua-cho-be-hover.png'},
-                        {'title': 'Sữa cho người lớn tuổi',  'icon': 'icon-grand-blue','img': 'sua-cho-ong-ba.png'  ,'url': '#','imghover' : 'sua-cho-ong-ba-hover.png'}
+                        {'title': 'Sữa cho mẹ bầu',     'icon': 'icon-child-blue','img': 'me-bau.png' , 'url': url +  'sanpham.html#sProductItem1','imghover' : 'me-bau-hover.png'},
+                        {'title': 'Sữa cho bé',     'icon': 'icon-moon-blue','img': 'sua-cho-be.png' ,'url':url +  'sanpham.html#sProductItem2','imghover' : 'sua-cho-be-hover.png'},
+                        {'title': 'Sữa cho người lớn tuổi',  'icon': 'icon-grand-blue','img': 'sua-cho-ong-ba.png'  ,'url': url +  'sanpham.html#sProductItem3','imghover' : 'sua-cho-ong-ba-hover.png'}
                     ];
                 .sGridProduct
                     for name in products
@@ -133,7 +133,7 @@ block content
                                         = name.title
                                 p Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor 
                                 .btnDiv
-                                    +a-btn-primary('Xem thêm','#')
+                                    +a-btn-primary('Xem thêm',url +  'sanpham.html')
     //- sMain-5
     section.fixHeight.sMain-5(data-waypoint="70%")
         .container
@@ -145,38 +145,38 @@ block content
                     h3 Các sản phẩm dinh dưỡng khoa học từ VitaDairy
                     p Lorem ipsum dolor sit amet, adipisicing elit, sed doLorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.adipisicing elit, sed doLorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     .btnDiv
-                        +a-btn-primary('Xem thêm','#')
+                        +a-btn-primary('Xem thêm',url +  'sanpham.html')
                 .sHomeProductSlider
                     .sHomeProductSliderInner
                         .item
                             .image
-                                a(href="#"): img(src= imgPath + 'colosbaby.png' alt="")
+                                a(href=url +  'sanpham/sanphamchitiet.html'): img(src= imgPath + 'colosbaby.png' alt="")
                             .info
-                                a(href="#") ColosBaby
+                                a(href=url +  'sanpham/sanphamchitiet.html') ColosBaby
                                 p Lorem ipsum dolor sit amet consectetur adipisicing elitsed do 
                         .item
                             .image
-                                a(href="#"): img(src= imgPath + 'highgoatba.png' alt="")
+                                a(href=url +  'sanpham/sanphamchitiet.html'): img(src= imgPath + 'highgoatba.png' alt="")
                             .info
-                                a(href="#") Oggi
+                                a(href=url +  'sanpham/sanphamchitiet.html') Oggi
                                 p Lorem ipsum dolor sit amet consectetur adipisicing elitsed do 
                         .item
                             .image
                                 a(href="#"): img(src= imgPath + 'goatlac.png' alt="")
                             .info
-                                a(href="#") GoatLac
+                                a(href=url +  'sanpham/sanphamchitiet.html') GoatLac
                                 p Lorem ipsum dolor sit amet consectetur adipisicing elitsed do 
                         .item
                             .image
-                                a(href="#"): img(src= imgPath + 'calosure.png' alt="")
+                                a(href=url +  'sanpham/sanphamchitiet.html'): img(src= imgPath + 'calosure.png' alt="")
                             .info
-                                a(href="#") CaloSure
+                                a(href=url +  'sanpham/sanphamchitiet.html') CaloSure
                                 p Lorem ipsum dolor sit amet consectetur adipisicing elitsed do 
                         .item
                             .image
-                                a(href="#"): img(src= imgPath + 'colosbaby.png')
+                                a(href=url +  'sanpham/sanphamchitiet.html'): img(src= imgPath + 'colosbaby.png')
                             .info
-                                a(href="#") CaloSure
+                                a(href=url +  'sanpham/sanphamchitiet.html') CaloSure
                                 p Lorem ipsum dolor sit amet consectetur adipisicing elitsed do 
     //- sMain-6
     section.fixHeight.sMain-6(data-waypoint="70%")

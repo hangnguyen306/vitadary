@@ -195,9 +195,13 @@
 .sdangkyBox{
   .image{
     margin-bottom: rem(30);
+    max-width: 100%;
   }
   .sdangkyBoxInfo{
-    max-height: 680px;
+    max-height: 710px;
+    @include media-breakpoint-down(md) {
+      margin-top:rem(30);
+    }
   }
   .infoSlider{
     padding-right: rem(40);
@@ -215,6 +219,9 @@
     img{
       max-width: 100%;
     }
+    @include media-breakpoint-up(lg) {
+      margin-right: -100px;
+    }
   }
 }
 .bg-dangky-2{
@@ -231,5 +238,11 @@
     size: cover;
     repeat: no-repeat;
     position: center;
+  }
+}
+.sProductSlider2 {
+  @include media-breakpoint-down(md) {
+   padding-left: rem(40);
+   padding-right: rem(40);
   }
 }

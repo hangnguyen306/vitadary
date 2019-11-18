@@ -200,13 +200,14 @@
       .image{
         text-align: center;
         position: relative;
+        margin-bottom: 0;
         .img-small{
           position: absolute;
           bottom: -40px;
           left: 0;
           right: 0;
           text-align: center;
-          z-index: 900;
+          z-index: 9;
         }
       }
     }
@@ -252,11 +253,15 @@ background: {
 }
 .sLandingProductContent{
   background: white;
-  padding:rem(50) 0;
+  padding:rem(50) 0 rem(70) 0;
   .tableDetail{
     position: relative;
     height: 662px;
     padding-top: 124px;
+    @include media-breakpoint-down(md) {
+      height: auto;
+      padding-top: 0;
+    }
     &:after{
       content:'';
       position: absolute;
@@ -269,12 +274,19 @@ background: {
         repeat: no-repeat;
         position: center center;
       }
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
     }
     .table-cont{
       max-width: 900px;
       margin: 0 auto;
       position: relative;
       z-index: 3;
+      @include media-breakpoint-down(md) {
+        background: #ededed;
+        padding: 10px;
+      }
       .scroll-ui-table{
         max-height: 400px;
         overflow-y: scroll;
@@ -346,6 +358,34 @@ background: {
         
       }
     }
+    @include media-breakpoint-down(md) {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      right: inherit;
+      width: auto;
+      margin-left: -10px;
+      margin-right: -10px;
+      li{
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+        margin: 0;
+        a{
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 0px;
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 0px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &-2{
+    .image{
+      img{
+        max-width: 100%;
+      }
+    }
   }
 }
 
@@ -403,9 +443,12 @@ background: {
 }
 .imgThumb{
   position: absolute;
-  bottom: -30px;
-  left: -30px;
+  bottom: -59px;
+  left: -91px;
   z-index: 5;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }
 .sProductSlider2{
   .item{
@@ -466,5 +509,11 @@ background: {
     margin: 0 auto;
     background-size: contain;
     margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  @include media-breakpoint-down(md) {
+    padding-left: rem(40);
+    padding-right: rem(40);
   }
 }

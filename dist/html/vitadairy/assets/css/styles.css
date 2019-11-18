@@ -17710,10 +17710,14 @@ a.btn.btn-primary.btn-apply:after {
     margin-top: 1.875rem !important; }
 
 .sdangkyBox .image {
-  margin-bottom: 1.875rem; }
+  margin-bottom: 1.875rem;
+  max-width: 100%; }
 
 .sdangkyBox .sdangkyBoxInfo {
-  max-height: 680px; }
+  max-height: 710px; }
+  @media (max-width: 991.98px) {
+    .sdangkyBox .sdangkyBoxInfo {
+      margin-top: 1.875rem; } }
 
 .sdangkyBox .infoSlider {
   padding-right: 2.5rem; }
@@ -17726,6 +17730,9 @@ a.btn.btn-primary.btn-apply:after {
   background-position: center; }
   .bg-dangky-1 .image img {
     max-width: 100%; }
+  @media (min-width: 992px) {
+    .bg-dangky-1 .image {
+      margin-right: -100px; } }
 
 .bg-dangky-2 {
   background-image: url("../images/bg-dang-ki-2.jpg");
@@ -17738,6 +17745,11 @@ a.btn.btn-primary.btn-apply:after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
+
+@media (max-width: 991.98px) {
+  .sProductSlider2 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; } }
 
 .sMainContent-other {
   margin-bottom: 90px; }
@@ -19422,14 +19434,15 @@ a.btn.btn-primary.btn-apply:after {
       padding-top: 3.125rem; }
     .sProductDetail .sMainContent .sLandingProduct .image {
       text-align: center;
-      position: relative; }
+      position: relative;
+      margin-bottom: 0; }
       .sProductDetail .sMainContent .sLandingProduct .image .img-small {
         position: absolute;
         bottom: -40px;
         left: 0;
         right: 0;
         text-align: center;
-        z-index: 900; }
+        z-index: 9; }
 
 .sLandingProductInfo {
   position: relative;
@@ -19462,11 +19475,15 @@ a.btn.btn-primary.btn-apply:after {
 
 .sLandingProductContent {
   background: white;
-  padding: 3.125rem 0; }
+  padding: 3.125rem 0 4.375rem 0; }
   .sLandingProductContent .tableDetail {
     position: relative;
     height: 662px;
     padding-top: 124px; }
+    @media (max-width: 991.98px) {
+      .sLandingProductContent .tableDetail {
+        height: auto;
+        padding-top: 0; } }
     .sLandingProductContent .tableDetail:after {
       content: '';
       position: absolute;
@@ -19477,11 +19494,18 @@ a.btn.btn-primary.btn-apply:after {
       background-image: url("../images/table-2.png");
       background-repeat: no-repeat;
       background-position: center center; }
+      @media (max-width: 991.98px) {
+        .sLandingProductContent .tableDetail:after {
+          display: none; } }
     .sLandingProductContent .tableDetail .table-cont {
       max-width: 900px;
       margin: 0 auto;
       position: relative;
       z-index: 3; }
+      @media (max-width: 991.98px) {
+        .sLandingProductContent .tableDetail .table-cont {
+          background: #ededed;
+          padding: 10px; } }
       .sLandingProductContent .tableDetail .table-cont .scroll-ui-table {
         max-height: 400px;
         overflow-y: scroll;
@@ -19528,6 +19552,27 @@ a.btn.btn-primary.btn-apply:after {
         border-bottom-left-radius: 0px;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px; }
+    @media (max-width: 991.98px) {
+      .sLandingProductContent .sNavLink {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        right: inherit;
+        width: auto;
+        margin-left: -10px;
+        margin-right: -10px; }
+        .sLandingProductContent .sNavLink li {
+          flex: 0 0 33.333%;
+          max-width: 33.333%;
+          margin: 0; }
+          .sLandingProductContent .sNavLink li a {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 0px;
+            text-align: center; } }
+  .sLandingProductContent-2 .image img {
+    max-width: 100%; }
 
 .infoSlider {
   margin-bottom: 3.125rem; }
@@ -19573,9 +19618,12 @@ a.btn.btn-primary.btn-apply:after {
 
 .imgThumb {
   position: absolute;
-  bottom: -30px;
-  left: -30px;
+  bottom: -59px;
+  left: -91px;
   z-index: 5; }
+  @media (max-width: 991.98px) {
+    .imgThumb {
+      display: none; } }
 
 .sProductSlider2 .item {
   padding: 10px; }
@@ -19623,6 +19671,13 @@ a.btn.btn-primary.btn-apply:after {
   display: block;
   margin: 0 auto;
   background-size: contain;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+@media (max-width: 991.98px) {
+  .sFileSlider {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; } }
 
 /*# sourceMappingURL=styles.css.map */

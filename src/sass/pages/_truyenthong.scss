@@ -57,6 +57,9 @@
 }
 .sMainContent-news{
   padding:rem(50) 0;
+  @include media-breakpoint-down(md) {
+    padding:rem(20) 0;
+  }
   .sHomeKnow{
     background: white;
     padding:rem(30);
@@ -150,6 +153,15 @@
     &:hover{
         opacity: 0.8;
     }
+}
+
+
+@include media-breakpoint-down(md) {
+  .row{
+    >div{
+      margin-bottom: rem(10);
+    }
+  }
 }
  }
 .bg-truyenthong-1{
@@ -312,4 +324,7 @@
   &:after{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='14.688' viewBox='0 0 20 14.688'%3E%3Cg id='tick' transform='translate(3 -67.998)'%3E%3Cg id='Group_768' data-name='Group 768' transform='translate(0 67.997)'%3E%3Cpath id='Path_29798' data-name='Path 29798' d='M19.707,68.29a1,1,0,0,0-1.414,0L6.312,80.271,1.707,75.666A1,1,0,0,0,.292,77.08L5.6,82.392a1,1,0,0,0,1.414,0L19.707,69.7A1,1,0,0,0,19.707,68.29Z' transform='translate(-3 -67.997)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
   }
+}
+.listColNew{
+  margin-bottom: rem(20);
 }

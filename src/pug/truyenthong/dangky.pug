@@ -27,10 +27,10 @@ block content
                             p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
                         .sFormAdv 
                             .sForm.form-style
-                                +input-box("text","","","Tên của bạn *",'Nhập tên của bạn','')
-                                +input-box("text","","","Điện thoại",'Nhập số điện thoại','')
-                                +input-box("text","","","Email *",'Nhập email','')
-                                +input-box("text","","","Tên của bé thứ nhất * ",'Nhập tên của bé','')
+                                +input-box("text","","Nhập tên của bạn","Tên của bạn *",'','')
+                                +input-box("text","","Nhập số điện thoại","Điện thoại",'','')
+                                +input-box("text","","Nhập email","Email *",'','')
+                                +input-box("text","","Nhập tên của bé","Tên của bé thứ nhất * ",'','')
                                 .form-group
                                     label(for='datepicker') Sinh nhật của bé *
                                     .input-group-date
@@ -63,8 +63,8 @@ block content
                                                 option(value="Sample") Sample
                                                 option(value="Sample") Sample
                                                 option(value="Sample") Sample
-                                +input-box("text","","","Số nhà và tên đường *",'Nhập số nhà và tên đường','')
-                                +textarea-box('','','Ghi chú','Nhập nội dung ghi chú','3')
+                                +input-box("text","","Nhập số nhà và tên đường","Số nhà và tên đường *",'','')
+                                +textarea-box('Nhập nội dung ghi chú','','Ghi chú','','3')
                                 .custom-control.custom-checkbox
                                     input#customCheck.custom-control-input(type='checkbox', name='example1')
                                     label.custom-control-label(for='customCheck') Tôi đồng ý với các điều khoản bảo mật của VitaDairy

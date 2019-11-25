@@ -40,10 +40,16 @@
     }
     .sMainContent-other{
         margin-bottom: rem(60);
+        @include media-breakpoint-down(md) {
+            margin-bottom: rem(0);
+        }
     }
     .bg-thongtinkhuyemai{
         margin-top:0;
         padding-top:rem(60);
+        @include media-breakpoint-down(md) {
+            padding-top:rem(20);
+        }
     }
     
     .page-header-2{
@@ -77,6 +83,10 @@
             .info{
                 padding: 10px 0 0 0 ;
             }
+            @include media-breakpoint-down(sm) {
+                max-width: 100%;
+                flex: 0 0 100%;
+            }
         }
     }
            
@@ -86,6 +96,10 @@
 .bg-sanphamlienquan{
     padding-top:rem(50);
     padding-bottom:rem(50);
+    @include media-breakpoint-down(md) {
+        padding-top:rem(20);
+        padding-bottom:rem(20);
+    }
     background: {
         image: url($img-path + "bg-san-pham-lien-quan.jpg");
         size: cover;

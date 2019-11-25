@@ -22,6 +22,9 @@
  
     .des {
       margin-bottom: rem(30);
+      @include media-breakpoint-down(md) {
+        padding-bottom: 63%;
+      }
     }
     &.fixHeight{
       display: flex;
@@ -33,9 +36,13 @@
             position: absolute;
             top:30px;
         }
+        @include media-breakpoint-down(md) {
+          margin-bottom: rem(0); 
+        }
     }
     @include media-breakpoint-down(md) {
       align-items: end;
+      padding-top: 20px;
     }
     }
     @include media-breakpoint-down(md) {
@@ -71,6 +78,10 @@
       display: flex;
       align-items: center;
       position: relative;
+      @include media-breakpoint-down(md) {
+        padding-top:rem(20);
+        padding-bottom:rem(20);
+      }
     }
     @include media-breakpoint-down(md) {
       .sListNewItem{
@@ -190,6 +201,9 @@
     position: top right;
     color: #f3f9fd;
   };
+  @include media-breakpoint-down(md) {
+    background-size: contain;
+  }
   // .container{
   //   position: relative;
   // }
@@ -244,6 +258,9 @@
         display: none;
       }
      
+    }
+    @include media-breakpoint-down(md) {
+      padding: rem(10) 0;
     }
   }
   .list-group {

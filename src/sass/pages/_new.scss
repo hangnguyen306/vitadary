@@ -17,6 +17,7 @@
     >div {
       &:first-child {}
     }
+   
   }
 }
 
@@ -738,5 +739,17 @@
     }
   }}
   
+  }
+}
+@include media-breakpoint-down(md) {
+  .fixHeight .sIntroheader{
+    min-height: inherit!important;
+  }
+  .sNew .sLandingNewItem .bgImgsp .container{
+    min-height: inherit!important;
+
+  }
+  .sNew .sLandingNew .sSliderNew{
+    margin-top:70%;
   }
 }

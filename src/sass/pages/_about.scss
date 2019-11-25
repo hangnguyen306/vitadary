@@ -9,10 +9,13 @@
         @include media-breakpoint-down(md) {
             background: none !important;
             align-items: baseline;
-            padding-top: 40px;
+            padding-top: 10px;
             .container {
                 position: relative;
                 z-index: 3;
+            }
+            .breadcrumb{
+                margin-bottom: rem(10);
             }
         }
     }
@@ -49,6 +52,9 @@
     .sMainContent{
         border-bottom: 1px dashed #CCCED0;
         padding-bottom: 30px;
+        @include media-breakpoint-down(md) {
+            margin-top:10px;
+        }
     }
 }
 
@@ -59,6 +65,11 @@
             margin-top:rem(60);
             padding-top:rem(80);
             padding-bottom:rem(80);
+            @include media-breakpoint-down(md) {
+                margin-top:rem(10);
+                padding-top:rem(10);
+                padding-bottom:rem(10);
+            }
         }
     &-value{
         padding:rem(80) 0;
@@ -81,7 +92,9 @@
         .page-header .icon-text{
             margin-right: 0;
         }
-
+        @include media-breakpoint-down(md) {
+            padding:rem(20) 0;
+        }
     }
     &-quanlity{
         padding:rem(80) 0;
@@ -91,6 +104,9 @@
             position: bottom;
             size:cover;
         };
+        @include media-breakpoint-down(md) {
+            padding:rem(20) 0;
+        }
         .page-header .icon-text{
             margin-right: 0;
         }
@@ -374,6 +390,7 @@
 
     @media (max-width: 991.98px) {
         max-width: 100%;
+        margin-top: 0;
     }
 
     @media (max-width: 767.99px) {
@@ -387,7 +404,7 @@
         .item,
         .item:nth-child(2n) {
             display: block;
-
+            margin-bottom: 10px;
             >div {
                 max-width: 100%;
             }
@@ -433,6 +450,11 @@
 }
 .sMainContent-other-about{
     margin-top:rem(30);
+    
+    @include media-breakpoint-down(md) {
+        margin-top:rem(0);
+
+    }
 }
 .sLink {
    // height: 60px;

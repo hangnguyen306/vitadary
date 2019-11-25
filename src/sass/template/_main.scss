@@ -432,6 +432,9 @@ a.btn,
 .sMainChild {
     .sMainContent {
         margin-top: rem(60);
+        @include media-breakpoint-down(md) {
+            margin-top: rem(10);
+        }
     }
 
     &.sMainChild-other {

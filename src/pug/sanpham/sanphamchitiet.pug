@@ -7,7 +7,8 @@ block setting
 block content
     .sMainChild.sProductDetail
         .sBannerChild
-            img(src= imgPath + 'sanpham/banner-san-pham-chi-tiet.jpg' alt="")
+            .image.pc: img(src=imgPath + 'sanpham/banner-san-pham-chi-tiet.jpg' alt="")
+            .image.sp: img(src=imgPath + 'sanpham/banner-san-pham-chi-tiet-sp.jpg' alt="")
         .sMainContent
             .container
                 +breadcrumb([{'title':'Sản phẩm','link':'#'},{'title':' Sản phẩm chi tiết'}])

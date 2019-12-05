@@ -15147,6 +15147,15 @@ a.btn,
   margin-bottom: 2.5rem; }
   .sBannerChild img {
     width: 100%; }
+  .sBannerChild .image img {
+    width: 100%;
+    max-width: 100%; }
+  @media (min-width: 769.98px) {
+    .sBannerChild .image.sp {
+      display: none; } }
+  @media (max-width: 767.99px) {
+    .sBannerChild .image.pc {
+      display: none; } }
 
 .sNavLink {
   display: flex;

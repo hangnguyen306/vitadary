@@ -448,6 +448,23 @@ a.btn,
     img {
         width: 100%;
     }
+    .image{
+        img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        @media (min-width: 769.98px) {
+            &.sp {
+                display: none;
+            }
+        }
+        @media (max-width: 767.99px) {
+            &.pc {
+                display: none;
+            }
+        }
+    }
 }
 
 .sNavLink {

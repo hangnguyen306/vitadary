@@ -562,6 +562,8 @@ a.btn,
     img {
         border-radius: 10px;
         max-width: 100%;
+        width: auto!important;
+        height: auto!important;
     }
     p{
         margin-bottom: rem(20);

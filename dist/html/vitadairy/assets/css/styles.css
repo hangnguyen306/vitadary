@@ -15223,7 +15223,9 @@ a.btn,
 
 .sContent img {
   border-radius: 10px;
-  max-width: 100%; }
+  max-width: 100%;
+  width: auto !important;
+  height: auto !important; }
 
 .sContent p {
   margin-bottom: 1.25rem; }

@@ -16589,7 +16589,9 @@ a.btn,
         height: 220px; }
       .fixHeight.sMain-4 .sGridProductItem .info h3 {
         font-size: 1.125rem;
-        margin: 0; }
+        margin: 0;
+        justify-content: center;
+        padding-bottom: 2px; }
       .fixHeight.sMain-4 .sGridProductItem .info p {
         font-size: 0.875rem;
         line-height: 1.5714285714;
@@ -17599,7 +17601,8 @@ a.btn.btn-primary.btn-apply:after {
       display: none; }
   @media (max-width: 991.98px) {
     .sDoitacContentInfo {
-      padding: 0.625rem 0; } }
+      padding: 0.625rem 0;
+      padding-top: 30px; } }
 
 .sDoitacInner {
   padding: 60px 0;

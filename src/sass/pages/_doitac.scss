@@ -261,6 +261,7 @@
     }
     @include media-breakpoint-down(md) {
       padding: rem(10) 0;
+      padding-top: 30px;
     }
   }
   .list-group {

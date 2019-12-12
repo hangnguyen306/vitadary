@@ -517,3 +517,12 @@ background: {
     padding-right: rem(40);
   }
 }
+.sProductDetail{
+  .sProductSlider2 .item .image{
+    padding: 0;
+    border-radius: 20px;
+    img{
+      max-width: 100%;
+    }
+  }
+}

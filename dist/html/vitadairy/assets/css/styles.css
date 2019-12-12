@@ -19819,4 +19819,10 @@ a.btn.btn-primary.btn-apply:after {
     padding-left: 2.5rem;
     padding-right: 2.5rem; } }
 
+.sProductDetail .sProductSlider2 .item .image {
+  padding: 0;
+  border-radius: 20px; }
+  .sProductDetail .sProductSlider2 .item .image img {
+    max-width: 100%; }
+
 /*# sourceMappingURL=styles.css.map */

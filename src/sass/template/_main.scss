@@ -833,7 +833,10 @@ a.btn,
 }
 #sProductItem1 ,#sProductItem2,#sProductItem3{
     margin-top: -50px;
-    padding-top: 50px;
+    padding-top: 80px;
+    .page-header-3{
+    padding-top: 0; 
+    }
 }
 .sGridProductItem{
     .btnDiv {

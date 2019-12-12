@@ -15404,7 +15404,9 @@ a.btn,
 
 #sProductItem1, #sProductItem2, #sProductItem3 {
   margin-top: -50px;
-  padding-top: 50px; }
+  padding-top: 80px; }
+  #sProductItem1 .page-header-3, #sProductItem2 .page-header-3, #sProductItem3 .page-header-3 {
+    padding-top: 0; }
 
 .sGridProductItem .btnDiv {
   padding-left: 43px; }

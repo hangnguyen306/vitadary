@@ -839,7 +839,9 @@ a.btn,
     }
 }
 .sGridProductItem{
-    .btnDiv {
-        padding-left: 43px;
-    }
+        @include media-breakpoint-up(md) {
+            .btnDiv {
+                padding-left: 43px;
+            }}
+
 }

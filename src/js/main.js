@@ -25,6 +25,7 @@ function ui() {
         }
     });
     $('#datepicker').datetimepicker();
+    $('#datepicker2').datetimepicker();
 
     // Parallax
     $('[data-paroller-factor]').paroller();

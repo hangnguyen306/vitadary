@@ -15408,8 +15408,9 @@ a.btn,
   #sProductItem1 .page-header-3, #sProductItem2 .page-header-3, #sProductItem3 .page-header-3 {
     padding-top: 0; }
 
-.sGridProductItem .btnDiv {
-  padding-left: 43px; }
+@media (min-width: 768px) {
+  .sGridProductItem .btnDiv {
+    padding-left: 43px; } }
 
 .footer {
   padding: 3.75rem 0 0px 0;
@@ -19664,6 +19665,9 @@ a.btn.btn-primary.btn-apply:after {
         overflow-y: scroll;
         scrollbar-color: #0A4C95 #C2D2E4;
         scrollbar-width: thin; }
+        @media (max-width: 991.98px) {
+          .sLandingProductContent .tableDetail .table-cont .scroll-ui-table {
+            max-height: 300px; } }
       .sLandingProductContent .tableDetail .table-cont .itemtr {
         display: flex; }
         .sLandingProductContent .tableDetail .table-cont .itemtr .col-3-td {

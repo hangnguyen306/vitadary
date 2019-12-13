@@ -11,7 +11,7 @@ block content
         .sMainContent-news
             .container
                 +breadcrumb([{'title':'Truyền thông','link':'#'},{'title':'Vì con mẹ tặng','link':'#'},{'title':'Sản phẩm Colosbaby'}])
-        .sMainContent-news.bg-dangky-1(style="background-image:url(" + imgPath + 'dangki/bg-dang-ki-1.png' + ")")
+        .sMainContent-news.bg-dangky-1(style="background-image:url(" + imgPath + 'dangki/bg-dang-ki-2.png' + ")")
             .container
                 .page-header
                     h3
@@ -30,13 +30,14 @@ block content
                                 +input-box("text","","Nhập tên của bạn","Tên của bạn *",'','')
                                 +input-box("text","","Nhập số điện thoại","Điện thoại",'','')
                                 +input-box("text","","Nhập email","Email *",'','')
-                                +input-box("text","","Nhập tên của bé","Tên của bé thứ nhất * ",'','')
                                 .form-group
-                                    label(for='datepicker') Sinh nhật của bé *
-                                    .input-group-date
-                                        span.icon-date
-                                        input#datepicker.form-control(type='text', placeholder='', name='datepicker', value='Chọn sinh nhật của bé')
-
+                                    label Tên chương trình
+                                    select.selectpicker.form-control(title="Tên chương trình")
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") Sample
+                                        option(value="Sample") 
                                 .form-group
                                     label Tỉnh / thành *
                                     select.selectpicker.form-control(title="Chọn tỉnh / thành")

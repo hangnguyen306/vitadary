@@ -1,7 +1,7 @@
 function ui(){// Range UI
 $('.range-ui').each(function(key){var el=$(this);el.attr({'id':'range-ui-'+key}).queue(function(next){$('#range-ui-'+key).ionRangeSlider();next()})});// Scroll
 $('.scroll-ui').each(function(key){var el=$(this);el.attr({'id':'scroll-ui-'+key}).queue(function(next){new SimpleBar($('#'+el.attr('id'))[0]);next()})});// File Browse UI
-$('.file-ui .file-ui-input').change(function(e){if(typeof e.target.files[0]!=='undefined'){var fileName=e.target.files[0].name;$(this).siblings('.file-ui-label').text(fileName)}});$('#datepicker').datetimepicker();// Parallax
+$('.file-ui .file-ui-input').change(function(e){if(typeof e.target.files[0]!=='undefined'){var fileName=e.target.files[0].name;$(this).siblings('.file-ui-label').text(fileName)}});$('#datepicker').datetimepicker();$('#datepicker2').datetimepicker();// Parallax
 $('[data-paroller-factor]').paroller()}// Image svg
 function imgSVG(){$('img.svg').each(function(){var $img=$(this);var imgID=$img.attr('id');var imgClass=$img.attr('class');var imgURL=$img.attr('src');$.get(imgURL,function(data){// Get the SVG tag, ignore the rest
 var $svg=$(data).find('svg');// Add replaced image's ID to the new SVG

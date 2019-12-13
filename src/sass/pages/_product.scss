@@ -293,6 +293,9 @@ background: {
         scrollbar-color: #0A4C95 #C2D2E4;
         scrollbar-width: thin;
         //overflow: auto;
+        @include media-breakpoint-down(md) {
+          max-height: 300px;
+        }
       }
       .itemtr{
         display: flex;

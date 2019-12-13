@@ -11,7 +11,7 @@ block content
         .sMainContent-news
             .container
                 +breadcrumb([{'title':'Truyền thông','link':'#'},{'title':'Vì con mẹ tặng','link':'#'},{'title':'Sản phẩm Colosbaby'}])
-        .sMainContent-news.bg-dangky-1(style="background-image:url(" + imgPath + 'dangki/bg-dang-ki-1.png' + ")")
+        .sMainContent-news.bg-dangky-1(style="background-image:url(" + imgPath + 'dangki/bg-dang-ki-3.png' + ")")
             .container
                 .page-header
                     h3
@@ -30,12 +30,16 @@ block content
                                 +input-box("text","","Nhập tên của bạn","Tên của bạn *",'','')
                                 +input-box("text","","Nhập số điện thoại","Điện thoại",'','')
                                 +input-box("text","","Nhập email","Email *",'','')
-                                +input-box("text","","Nhập tên của bé","Tên của bé thứ nhất * ",'','')
                                 .form-group
-                                    label(for='datepicker') Sinh nhật của bé *
+                                    label(for='datepicker') Sinh nhật của mẹ *
                                     .input-group-date
                                         span.icon-date
-                                        input#datepicker.form-control(type='text', placeholder='', name='datepicker', value='Chọn sinh nhật của bé')
+                                        input#datepicker.form-control(type='text', placeholder='', name='datepicker', value='Sinh nhật của mẹ')
+                                .form-group
+                                    label(for='datepicker') Sinh nhật của mẹ *
+                                    .input-group-date
+                                        span.icon-date
+                                        input#datepicker2.form-control(type='text', placeholder='', name='datepicker', value='Ngày dự sinh')
 
                                 .form-group
                                     label Tỉnh / thành *

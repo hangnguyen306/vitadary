@@ -17459,7 +17459,7 @@ a.btn.btn-primary.btn-apply:after {
   background-image: url("../images/bg-doi-tac-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: right center; }
+  background-position: 60% center; }
   .sPartner-1 .des {
     margin-bottom: 1.875rem; }
     @media (max-width: 991.98px) {

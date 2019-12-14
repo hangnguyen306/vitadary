@@ -302,6 +302,7 @@ background: {
         .col-3-td{
           flex:0 0 25%;
           max-width: 25%;
+          word-break: break-word;
         }
       }
       .th,.td{
@@ -406,6 +407,9 @@ background: {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     position: relative;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
    
     & ~ .item{
       margin-top:rem(20);

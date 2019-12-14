@@ -19672,7 +19672,8 @@ a.btn.btn-primary.btn-apply:after {
         display: flex; }
         .sLandingProductContent .tableDetail .table-cont .itemtr .col-3-td {
           flex: 0 0 25%;
-          max-width: 25%; }
+          max-width: 25%;
+          word-break: break-word; }
       .sLandingProductContent .tableDetail .table-cont .th, .sLandingProductContent .tableDetail .table-cont .td {
         padding: 16px 10px 15px 0px; }
       .sLandingProductContent .tableDetail .table-cont .th {
@@ -19743,7 +19744,10 @@ a.btn.btn-primary.btn-apply:after {
     padding-bottom: 20px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    position: relative; }
+    position: relative;
+    min-height: 120px;
+    display: flex;
+    align-items: center; }
     .infoSlider .item ~ .item {
       margin-top: 1.25rem; }
     .infoSlider .item .txt-icon {

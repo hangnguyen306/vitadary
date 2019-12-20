@@ -15412,6 +15412,9 @@ a.btn,
   .sGridProductItem .btnDiv {
     padding-left: 43px; } }
 
+.sLandingNew .listColNew {
+  margin-bottom: 0; }
+
 .footer {
   padding: 3.75rem 0 0px 0;
   background-color: white;

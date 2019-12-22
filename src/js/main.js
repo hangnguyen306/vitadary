@@ -770,6 +770,16 @@ function showAsk(){
         $('.' + elType).addClass('active');
     })
 }
+function showInfo(){
+    var  el = $('.btn-nav-tab');
+    el.click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next().toggleClass('active')
+    })
+}
+
+
 $('#personModalCenter').on('shown.bs.modal', function(){
     document.body.classList.add('modal-open');
 });
@@ -806,6 +816,7 @@ sSlidepersonSlider();
 sInfoSlider();
 sFileSlider();
 sSlidethumbLogo();
+showInfo();
 function init() {
     $(window).on("debouncedresize", function (event) {
 

@@ -565,8 +565,8 @@ a.btn,
         width: auto!important;
         height: auto!important;
     }
-    p{
-        margin-bottom: rem(20);
+    p,>div{
+        margin-bottom: rem(20); 
     }
 }
 

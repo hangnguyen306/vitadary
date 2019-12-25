@@ -265,6 +265,8 @@ background: {
     @include media-breakpoint-down(md) {
       height: auto;
       padding-top: 0;
+      margin-right: 0; 
+      padding-left: 0px;
     }
     &:after{
       content:'';

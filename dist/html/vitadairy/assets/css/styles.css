@@ -19649,7 +19649,9 @@ a.btn.btn-primary.btn-apply:after {
     @media (max-width: 991.98px) {
       .sLandingProductContent .tableDetail {
         height: auto;
-        padding-top: 0; } }
+        padding-top: 0;
+        margin-right: 0;
+        padding-left: 0px; } }
     .sLandingProductContent .tableDetail:after {
       content: '';
       position: absolute;

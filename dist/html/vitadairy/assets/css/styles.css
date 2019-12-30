@@ -17472,11 +17472,35 @@ a.btn.btn-primary.btn-apply:after {
   z-index: 3; }
 
 .sPartner-1 {
-  padding: 2.5rem 0 2.5rem 0;
-  background-image: url("../images/bg-doi-tac-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60% center; }
+  .sPartner-1 .bgImg {
+    display: flex;
+    padding: 2.5rem 0 2.5rem 0;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% center; }
+    @media (max-width: 991.98px) {
+      .sPartner-1 .bgImg {
+        background: none !important;
+        align-items: baseline;
+        padding-top: 20px; }
+        .sPartner-1 .bgImg .container {
+          position: relative;
+          z-index: 3; } }
+  .sPartner-1 .bgImgsp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: bottom center;
+    background-size: cover; }
+    @media (min-width: 992px) {
+      .sPartner-1 .bgImgsp {
+        background: none !important; } }
   .sPartner-1 .des {
     margin-bottom: 1.875rem; }
     @media (max-width: 991.98px) {
@@ -17501,7 +17525,6 @@ a.btn.btn-primary.btn-apply:after {
         padding-top: 20px; } }
   @media (max-width: 991.98px) {
     .sPartner-1 {
-      background-image: url("../images/bg-doi-tac-1-sp.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center bottom; } }

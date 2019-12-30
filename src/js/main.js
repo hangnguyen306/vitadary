@@ -80,7 +80,7 @@ function fixHeight() {
     $('.sAbout-1.fixHeight .bgImg').css({ 'minHeight': hW -125});
     $('.sAbout-2.fixHeight .bgImg').css({ 'minHeight': hW -50});
     $('.sAbout-3.fixHeight .bgImg').css({ 'minHeight': hW -50});
-    $('.sPartner-1.fixHeight').css({ 'minHeight': hW -125});
+    $('.sPartner-1 .fixHeight').css({ 'minHeight': hW -125});
     $('.sPartner-2.fixHeight').css({ 'minHeight': hW -50});
 
     $('.fixHeightNews').css({ 'minHeight': hW -125});

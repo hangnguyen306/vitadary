@@ -12,13 +12,46 @@
 }
 .sPartner {
   &-1 {
-    padding: rem(40) 0 rem(40) 0;
+  
     background: {
-      image: url($img-path + 'bg-doi-tac-1.jpg');
       size: cover;
       repeat: no-repeat;
       position: 60% center;
     }
+    .bgImg {
+      display: flex;
+      padding: rem(40) 0 rem(40) 0;
+      align-items: center;
+      background: {
+        size: cover;
+        repeat: no-repeat;
+        position: 60% center;
+      }
+
+      @include media-breakpoint-down(md) {
+          background: none !important;
+          align-items: baseline;
+          padding-top: 20px;
+
+          .container {
+              position: relative;
+              z-index: 3;
+          }
+      }
+  }
+    .bgImgsp {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-position: bottom center;
+      background-size: cover;
+
+      @include media-breakpoint-up(lg) {
+          background: none !important;
+      }
+  }
  
     .des {
       margin-bottom: rem(30);
@@ -47,7 +80,6 @@
     }
     @include media-breakpoint-down(md) {
       background: {
-        image: url($img-path + 'bg-doi-tac-1-sp.jpg');
         size: cover;
         repeat: no-repeat;
         position: center bottom;

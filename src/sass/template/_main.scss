@@ -465,6 +465,15 @@ a.btn,
             }
         }
     }
+    & ~ .sMainContent-news.bg-truyenthong-1{
+        margin-top: rem(-60); 
+        .breadcrumb{
+            margin-bottom: 20px;
+        }
+        @include media-breakpoint-down(md) {
+            margin-top: rem(-10);
+        }
+    }
 }
 
 .sNavLink {

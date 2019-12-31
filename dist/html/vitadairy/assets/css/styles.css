@@ -15156,6 +15156,13 @@ a.btn,
   @media (max-width: 767.99px) {
     .sBannerChild .image.pc {
       display: none; } }
+  .sBannerChild ~ .sMainContent-news.bg-truyenthong-1 {
+    margin-top: -3.75rem; }
+    .sBannerChild ~ .sMainContent-news.bg-truyenthong-1 .breadcrumb {
+      margin-bottom: 20px; }
+    @media (max-width: 991.98px) {
+      .sBannerChild ~ .sMainContent-news.bg-truyenthong-1 {
+        margin-top: -0.625rem; } }
 
 .sNavLink {
   display: flex;

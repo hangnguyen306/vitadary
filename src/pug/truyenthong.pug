@@ -8,25 +8,26 @@ block content
     .sMainChild.sNew.sNewDetail.sEvent
         .sBannerChild
             img(src= imgPath + 'truyenthong/banner.jpg' alt="")
-        .bg-truyenthong
-            .container
-                +breadcrumb([{'title':'Truyền thông'}])
-                .row
-                    .col-lg-4.col-sm-6.col-12
-                        select.selectpicker.form-control(title="Bài viết mới nhất")
-                            option(value="Sample") Sample
-                            option(value="Sample") Sample
-                            option(value="Sample") Sample
-                            option(value="Sample") Sample
-                            option(value="Sample") Sample
-                    .col-lg-4.col-sm-6.ml-auto.col-12
-                         .form-style
-                            div
-                                input.form-control(type='text', placeholder='Nhập từ khoá')
-                                button.btn-search-button
-                                    i.icon-search
+        //- .bg-truyenthong
+        //-     .container
+                
+        //-         .row
+        //-             .col-lg-4.col-sm-6.col-12
+        //-                 select.selectpicker.form-control(title="Bài viết mới nhất")
+        //-                     option(value="Sample") Sample
+        //-                     option(value="Sample") Sample
+        //-                     option(value="Sample") Sample
+        //-                     option(value="Sample") Sample
+        //-                     option(value="Sample") Sample
+        //-             .col-lg-4.col-sm-6.ml-auto.col-12
+        //-                  .form-style
+        //-                     div
+        //-                         input.form-control(type='text', placeholder='Nhập từ khoá')
+        //-                         button.btn-search-button
+        //-                             i.icon-search
         .sMainContent-news.bg-truyenthong-1
             .container
+                +breadcrumb([{'title':'Truyền thông'}])
                 .page-header
                     h3
                         span.icon-text

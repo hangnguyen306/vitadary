@@ -18277,7 +18277,8 @@ a.btn.btn-primary.btn-apply:after {
 
 @media (min-width: 1024px) {
   .sNew .sLandingNewItem .bgImgsp {
-    background: none !important; }
+    background: none !important;
+    width: 100%; }
   .sNew .sLandingNewItem .container {
     min-height: inherit !important; } }
 

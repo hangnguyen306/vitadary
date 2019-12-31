@@ -17151,18 +17151,28 @@ a.btn,
     background-position: bottom;
     background-size: cover; }
   .sQualityItem.bg-cam-ket-4 {
-    background-image: url("../images/bg-cam-ket-4.jpg");
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: cover; }
     @media (max-width: 991.98px) {
       .sQualityItem.bg-cam-ket-4 {
-        background-image: url("../images/bg-cam-ket-4-sp.jpg");
         background-repeat: no-repeat;
         background-position: left bottom;
-        background-size: cover; }
+        background-size: cover;
+        background: none !important;
+        padding: 0 !important; }
         .sQualityItem.bg-cam-ket-4 .des {
           padding-bottom: 80%; } }
+    .sQualityItem.bg-cam-ket-4 .bgImgsp {
+      background-position: bottom center;
+      background-size: cover; }
+      @media (min-width: 992px) {
+        .sQualityItem.bg-cam-ket-4 .bgImgsp {
+          background: none !important; } }
+      @media (max-width: 991.98px) {
+        .sQualityItem.bg-cam-ket-4 .bgImgsp {
+          padding-top: 30px;
+          padding-bottom: 30px; } }
   .sQualityItem.bg-cam-ket-5 {
     background-image: url("../images/bg-cam-ket-5.jpg");
     background-repeat: no-repeat;
@@ -17267,6 +17277,12 @@ a.btn,
         font-size: 1.25rem; }
         .sContactImg .des p:last-child {
           margin-bottom: 0; }
+      @media (max-width: 1400px) {
+        .sContactImg .des {
+          max-width: 700px; } }
+      @media (max-width: 1200px) {
+        .sContactImg .des {
+          max-width: 600px; } }
       @media (max-width: 991.98px) {
         .sContactImg .des {
           margin-left: 0px;

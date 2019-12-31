@@ -626,20 +626,32 @@
     }
     &.bg-cam-ket-4{
         background: {
-            image:url($img-path + "bg-cam-ket-4.jpg");
             repeat:no-repeat;
             position: left bottom;
             size:cover;
         };
         @include media-breakpoint-down(md) { 
             background: {
-                image:url($img-path + "bg-cam-ket-4-sp.jpg");
                 repeat:no-repeat;
                 position: left bottom;
                 size:cover;
+               
             };
+            background: none !important;
+            padding:0!important;
             .des{
                 padding-bottom: 80%;
+            }
+        }
+        .bgImgsp {
+            background-position: bottom center;
+            background-size: cover;
+            @include media-breakpoint-up(lg) {
+                background: none !important;
+            }
+            @include media-breakpoint-down(md) {
+                padding-top:30px;
+                padding-bottom:30px;
             }
         }
         @include media-breakpoint-down(sm) {

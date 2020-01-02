@@ -103,6 +103,7 @@
         @media (max-width: 991.99px) { margin: rem(20) 0;}
         .item {
             max-width: 25%;
+            position: relative;
             >a {
                 display: inline-block;
                 width: rem(55);
@@ -261,6 +262,97 @@
 
         @media (max-width: 767.98px) {
             text-align: center;
+        }
+    }
+    .divWrapFb{
+        width: 274px;
+        position: absolute;
+        background: white;
+        padding: 10px;
+        border: 2px dashed #e5e5e5;
+        bottom:  calc(100% + 20px);
+        z-index: 88;
+        left: -110px;
+        display: none;
+        &.active{
+            display: block;
+        }
+        @media (max-width: 1500px) {
+            left: 0;
+        }
+        &:after, &:before {
+            top: 100%;
+            left: 50%;
+            border: dashed transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #fff;
+            margin-left: -10px;
+            @media (max-width: 1500px) {
+                left: 25px;
+            }
+        }
+        
+        &:after {
+            // border-color: rgba(136, 183, 213, 0);
+            // border-top-color: #fff;
+            // border-width: 10px;
+            // margin-left: -10px;
+        }
+        &:before {
+            border-color: rgba(194, 225, 245, 0);
+            border-top-color: #e5e5e5;
+            border-width: 12px;
+            margin-left: -12px;
+            border-style: double;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li{
+                background: #9b9b9b;
+                border-radius: 10px;
+                &:hover{
+                    background: $blue-main;
+                    a{
+                        color: white;
+                    }
+                }
+                & + li{
+                    margin-top:10px;
+                }
+                a{
+                    color:white;
+                    font-size: rem(14);
+                    display: block;
+                    padding: 3px;
+                    i.ic-fb-1{
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: middle;
+                        margin-left: rem(10);
+                        background: {
+                            image: url($img-path + "icon-fb.png");
+                            repeat: no-repeat;
+                            position: center;
+                          }
+                    }
+                    span{
+                        color:white;
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                }
+            }
         }
     }
 

@@ -15510,7 +15510,8 @@ a.btn,
       .footer .grpShare {
         margin: 1.25rem 0; } }
     .footer .grpShare .item {
-      max-width: 25%; }
+      max-width: 25%;
+      position: relative; }
       .footer .grpShare .item > a {
         display: inline-block;
         width: 3.4375rem;
@@ -15618,6 +15619,76 @@ a.btn,
     @media (max-width: 767.98px) {
       .footer .copyright {
         text-align: center; } }
+  .footer .divWrapFb {
+    width: 274px;
+    position: absolute;
+    background: white;
+    padding: 10px;
+    border: 2px dashed #e5e5e5;
+    bottom: calc(100% + 20px);
+    z-index: 88;
+    left: -110px;
+    display: none; }
+    .footer .divWrapFb.active {
+      display: block; }
+    @media (max-width: 1500px) {
+      .footer .divWrapFb {
+        left: 0; } }
+    .footer .divWrapFb:after, .footer .divWrapFb:before {
+      top: 100%;
+      left: 50%;
+      border: dashed transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid #fff;
+      margin-left: -10px; }
+      @media (max-width: 1500px) {
+        .footer .divWrapFb:after, .footer .divWrapFb:before {
+          left: 25px; } }
+    .footer .divWrapFb:before {
+      border-color: rgba(194, 225, 245, 0);
+      border-top-color: #e5e5e5;
+      border-width: 12px;
+      margin-left: -12px;
+      border-style: double; }
+    .footer .divWrapFb ul {
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      .footer .divWrapFb ul li {
+        background: #9b9b9b;
+        border-radius: 10px; }
+        .footer .divWrapFb ul li:hover {
+          background: #0054A5; }
+          .footer .divWrapFb ul li:hover a {
+            color: white; }
+        .footer .divWrapFb ul li + li {
+          margin-top: 10px; }
+        .footer .divWrapFb ul li a {
+          color: white;
+          font-size: 0.875rem;
+          display: block;
+          padding: 3px; }
+          .footer .divWrapFb ul li a i.ic-fb-1 {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-left: 0.625rem;
+            background-image: url("../images/icon-fb.png");
+            background-repeat: no-repeat;
+            background-position: center; }
+          .footer .divWrapFb ul li a span {
+            color: white;
+            display: inline-block;
+            vertical-align: middle; }
 
 .footer__totop {
   position: fixed;
@@ -17266,7 +17337,7 @@ a.btn,
         z-index: 2; }
     .sContactImg .des {
       margin-top: 25px;
-      max-width: 800px;
+      max-width: 700px;
       padding: 1.25rem;
       position: relative;
       margin-left: -30px;
@@ -17317,7 +17388,8 @@ a.btn,
     align-items: center;
     background-position: right;
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: 80%; }
     @media (max-width: 991.98px) {
       .sContact .bgImg {
         background: none !important;

@@ -119,6 +119,25 @@ function gotoTop() {
 
 };
 
+function btnFB(){
+    var btn = $('.btn-fb'),
+        sForm = $('.divWrapFb');
+        btn.click(function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $(this).next().toggleClass('active');
+    });
+    sForm.bind('click', function (e) {
+        e.stopPropagation()
+    })
+    $(document).click(function () {
+        if (sForm.hasClass('active')) {
+            sForm.removeClass('active');
+            sButton.removeClass('active')
+        }
+    });
+}
+
 var hHeader = 0;
 
 // function scrollClick() {
@@ -817,6 +836,7 @@ sInfoSlider();
 sFileSlider();
 sSlidethumbLogo();
 showInfo();
+btnFB();
 function init() {
     $(window).on("debouncedresize", function (event) {
 

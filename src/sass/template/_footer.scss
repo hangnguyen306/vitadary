@@ -267,7 +267,7 @@
     .divWrapFb{
         width: 274px;
         position: absolute;
-        background: white;
+        background: rgba(255, 255, 255, 0.8);
         padding: 10px;
         border: 2px dashed #e5e5e5;
         bottom:  calc(100% + 20px);
@@ -331,19 +331,21 @@
                 }
                 a{
                     color:white;
-                    font-size: rem(14);
+                    font-size: 14px;
                     display: block;
                     padding: 3px;
                     i.ic-fb-1{
                         display: inline-block;
-                        width: 20px;
-                        height: 20px;
+                        width: 25px;
+                        height: 25px;
                         vertical-align: middle;
-                        margin-left: rem(10);
+                        margin-left: 5px;
+                        margin-right: 5px;
                         background: {
-                            image: url($img-path + "icon-fb.png");
+                            image: url($img-path + "icon-fb.svg");
                             repeat: no-repeat;
                             position: center;
+                            size: contain;
                           }
                     }
                     span{

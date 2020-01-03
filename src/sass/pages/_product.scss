@@ -67,6 +67,11 @@
         @include media-breakpoint-down(sm) {
           max-width: 380px;
           margin: 0 auto;
+          height: auto!important;
+          .btnDiv{
+            margin-bottom: 10px;
+            margin-top: 10px;
+          }
         }
         .image{
           border-top-right-radius: 20px;
@@ -95,10 +100,19 @@
             font-size: rem(15);
             font-weight: bold;
             padding: rem(15);
+            height: rem(82);
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
           .des{
             background: #fff;
             padding:rem(20);
+            height: rem(250);
+            overflow: hidden;
+            @include media-breakpoint-down(sm) {
+              height: 240px;
+            }
               h4{
                 font-weight: bold;
                 font-size: rem(20);
@@ -130,6 +144,7 @@
         }
         .btnDiv{
           text-align: center;
+          margin-top: 10px;
         }
       }
     }

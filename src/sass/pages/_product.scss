@@ -61,13 +61,11 @@
         flex-direction: column;
         @include media-breakpoint-down(md) {
           display: block;
-          height: auto;
           flex-direction: inherit;
         }
         @include media-breakpoint-down(sm) {
           max-width: 380px;
           margin: 0 auto;
-          height: auto!important;
           .btnDiv{
             margin-bottom: 10px;
             margin-top: 10px;
@@ -112,6 +110,9 @@
             overflow: hidden;
             @include media-breakpoint-down(sm) {
               height: 240px;
+            }
+            @include media-breakpoint-down(sm) {
+              height: 230px;
             }
               h4{
                 font-weight: bold;

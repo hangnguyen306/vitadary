@@ -14502,7 +14502,7 @@ header.header {
             text-decoration: none; }
   header.header .menumain li {
     position: relative; }
-    header.header .menumain li:hover ul {
+    header.header .menumain li:hover > ul {
       opacity: 1;
       z-index: 99;
       visibility: visible; }
@@ -14547,6 +14547,13 @@ header.header {
         padding: 5px 10px;
         display: block;
         text-align: left; }
+      header.header .menumain li ul ul {
+        left: 100%;
+        top: 0;
+        margin-left: 0;
+        width: 180px; }
+        header.header .menumain li ul ul:before {
+          display: none; }
   header.header .expand {
     display: none; }
   header.header .navbar-search {
@@ -14779,6 +14786,8 @@ header.header {
               font-size: 0.9375rem;
               padding: 3px 0;
               text-align: left; }
+            header.header .mainMenu ul li ul li ul {
+              padding-left: 10px; }
       header.header .mainMenu .navRight {
         order: 1; }
         header.header .mainMenu .navRight > ul {

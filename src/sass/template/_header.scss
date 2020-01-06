@@ -183,7 +183,7 @@ header.header {
         li{
             position: relative;
             &:hover {
-                ul {
+                > ul {
                     opacity: 1;
                     z-index: 99;
                     visibility: visible
@@ -232,6 +232,16 @@ header.header {
                         padding: 5px 10px;
                         display: block;
                         text-align: left;
+                    }
+                    
+                }
+                ul{
+                    left: 100%;
+                    top: 0;
+                    margin-left: 0;
+                    width: 180px;
+                    &:before{
+                        display: none;
                     }
                 }
             }
@@ -610,6 +620,9 @@ header.header {
                                 font-size: rem(15);
                                 padding: 3px 0;
                                 text-align: left;
+                            }
+                            ul{
+                                padding-left: 10px;
                             }
                         }
                     }

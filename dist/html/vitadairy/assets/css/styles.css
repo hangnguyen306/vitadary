@@ -15243,7 +15243,7 @@ a.btn,
   width: auto !important;
   height: auto !important; }
 
-.sContent p, .sContent > div {
+.sContent p, .sContent > div, .sContent > div > div {
   margin-bottom: 1.25rem; }
 
 .form-style .form-group label {
@@ -15438,6 +15438,14 @@ a.btn,
   right: 0;
   bottom: 0;
   z-index: 3; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #222222; }
+  select .bs-title-option {
+    display: none; }
 
 .footer {
   padding: 3.75rem 0 0px 0;

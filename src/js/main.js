@@ -805,6 +805,15 @@ $('#personModalCenter').on('shown.bs.modal', function(){
 $('#fromModalCenter').on( 'shown.bs.modal', function(){
     document.body.classList.add('modal-open');
 });
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+    // var el = $('select.form-control').attr('title');
+    $('select.form-control').selectpicker('destroy');
+    //$('.bs-title-option').text(el)
+    $(".bs-title-option").each(function() {
+        var elP = $(this).parent().attr('title');
+        $(this).text(elP)
+    });
+}
 sBoxProductSlidder();
 sProductSlider();
 sProductSlider2();

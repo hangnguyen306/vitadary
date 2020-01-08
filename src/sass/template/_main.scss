@@ -574,7 +574,7 @@ a.btn,
         width: auto!important;
         height: auto!important;
     }
-    p,>div{
+    p,>div, >div >div{
         margin-bottom: rem(20); 
     }
 }
@@ -866,4 +866,16 @@ a.btn,
     right: 0;
     bottom: 0;
     z-index: 3; 
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color:$body-color;
+    .bs-title-option{
+        display: none;
+    }
+}
+
+select::-ms-expand {
 }

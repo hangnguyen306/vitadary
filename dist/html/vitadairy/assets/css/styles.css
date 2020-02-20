@@ -16948,7 +16948,7 @@ select {
   overflow: hidden; }
   .sAbout-3 .bgImg {
     background-position: right; }
-    @media (max-width: 1200px) {
+    @media (max-width: 1360px) {
       .sAbout-3 .bgImg {
         background-position: 57%; } }
 

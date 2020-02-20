@@ -189,10 +189,10 @@
 
     &-3 {
         position: relative;
-        overflow: hidden;
+        overflow: hidden; 
         .bgImg {
             background-position: right;
-            @media (max-width: 1200px) {background-position: 57%;}
+            @media (max-width: 1360px) {background-position: 57%;}
         }
     }
 

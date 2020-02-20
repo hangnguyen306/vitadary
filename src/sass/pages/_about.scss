@@ -192,6 +192,7 @@
         overflow: hidden;
         .bgImg {
             background-position: right;
+            @media (max-width: 1200px) {background-position: 57%;}
         }
     }
 

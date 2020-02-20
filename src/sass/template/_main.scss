@@ -588,6 +588,11 @@ a.btn,
             padding-left: rem(20);
             display: block;
             text-align: left;
+            &.error{
+                color: red;
+                font-weight: normal;
+                font-style: italic;
+            }
         }
 
         textarea.form-control {

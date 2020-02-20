@@ -15253,6 +15253,10 @@ a.btn,
   padding-left: 1.25rem;
   display: block;
   text-align: left; }
+  .form-style .form-group label.error {
+    color: red;
+    font-weight: normal;
+    font-style: italic; }
 
 .form-style .form-group textarea.form-control {
   height: 6.25rem;
@@ -16944,6 +16948,9 @@ select {
   overflow: hidden; }
   .sAbout-3 .bgImg {
     background-position: right; }
+    @media (max-width: 1200px) {
+      .sAbout-3 .bgImg {
+        background-position: 57%; } }
 
 .sAboutChild .sContent {
   margin-top: 2.5rem; }
@@ -19638,7 +19645,8 @@ a.btn.btn-primary.btn-apply:after {
     @media (max-width: 767.98px) {
       .sProduct .sProductSliderInner .itemWrap {
         max-width: 380px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        height: auto !important; }
         .sProduct .sProductSliderInner .itemWrap .btnDiv {
           margin-bottom: 10px;
           margin-top: 10px; } }
@@ -19675,10 +19683,7 @@ a.btn.btn-primary.btn-apply:after {
         overflow: hidden; }
         @media (max-width: 767.98px) {
           .sProduct .sProductSliderInner .itemWrap .info .des {
-            height: 240px; } }
-        @media (max-width: 767.98px) {
-          .sProduct .sProductSliderInner .itemWrap .info .des {
-            height: 230px; } }
+            height: 197px; } }
         .sProduct .sProductSliderInner .itemWrap .info .des h4 {
           font-weight: bold;
           font-size: 1.25rem;
@@ -19763,8 +19768,8 @@ a.btn.btn-primary.btn-apply:after {
         position: absolute;
         bottom: -40px;
         left: 0;
-        right: 0;
-        text-align: center;
+        right: -25%;
+        text-align: right;
         z-index: 9; }
 
 .sLandingProductInfo {

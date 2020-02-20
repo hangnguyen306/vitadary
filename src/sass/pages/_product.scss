@@ -66,6 +66,7 @@
         @include media-breakpoint-down(sm) {
           max-width: 380px;
           margin: 0 auto;
+          height: auto!important;
           .btnDiv{
             margin-bottom: 10px;
             margin-top: 10px;
@@ -108,11 +109,11 @@
             padding:rem(20);
             height: rem(250);
             overflow: hidden;
+            // @include media-breakpoint-down(sm) {
+            //   height: 240px;
+            // }
             @include media-breakpoint-down(sm) {
-              height: 240px;
-            }
-            @include media-breakpoint-down(sm) {
-              height: 230px;
+              height: 197px;
             }
               h4{
                 font-weight: bold;
@@ -221,9 +222,13 @@
           position: absolute;
           bottom: -40px;
           left: 0;
-          right: 0;
-          text-align: center;
+          right: -25%;
+          text-align: right;
           z-index: 9;
+//           @include media-breakpoint-down(sm) {
+//             text-align: center;
+// right: 0;
+//           }
         }
       }
     }

@@ -5,7 +5,7 @@ block setting
     - mainActive = "san-pham"
 
 block content
-    .sMainChild.sProductDetail
+    .sMainChild.sProductDetail.sProduct.sProductList.sNew
         .sBannerChild
             .image.pc: img(src=imgPath + 'sanpham/banner-san-pham-chi-tiet.jpg' alt="")
             .image.sp: img(src=imgPath + 'sanpham/banner-san-pham-chi-tiet-sp.jpg' alt="")
@@ -121,17 +121,6 @@ block content
                                     span.text-tab ColosBaby Gold 1+
                             li: a(data-toggle='list', href='#navTab3', role='tab') 
                                     span.text-tab ColosBaby Gold 2+
-                            li: a.active(data-toggle='list', href='#navTab1', role='tab')
-                                    span.text-tab ColosBaby  0+
-                            li: a(data-toggle='list', href='#navTab2', role='tab')
-                                    span.text-tab ColosBaby  1+
-                            li: a(data-toggle='list', href='#navTab3', role='tab') 
-                                    span.text-tab ColosBaby  2+
-                            li: a(data-toggle='list', href='#navTab2', role='tab')
-                                    span.text-tab Sữa non 24h pha sẵn (180ml)
-                            li: a(data-toggle='list', href='#navTab3', role='tab') 
-                                    span.text-tab Sữa non 24h pha sẵn (110ml)
-                            
                         .imgThumb
                             img(src= imgPath + 'sanpham/img-table-1.png' alt="")
                         .tableDetailWrap
@@ -282,9 +271,163 @@ block content
                             p ColosBaby gồm các chủng loại bao bì sau:
                             p Sữa Bột <br>Hộp thiếc 400 g<br>Hộp thiếc 900 g<br>Hộp thiếc 1500 g
                             p Sữa Bột Pha Sẵn <br>Lốc 4 hộp 110 ml <br>Lốc 4 hộp 180 ml
+                            .row.btn-group2
+                                .col-6
+                                    +a-btn-primary('Mua ngay','#','','ic-shop')
+                                .col-6
+                                    +a-btn-primary('Tìm cửa hàng','#','','ic-shop-2')
                         .col-lg-7
                             .image
                                 img(src= imgPath + 'sanpham/colos-baby-2.png' alt="")
+            .sLandingProductContent-4
+                .container
+                    .page-header
+                        h3
+                            span.icon-text
+                                <svg viewBox="0 0 36.554 50" class="icon-shape">
+                                    <use xlink:href="#ic-san-pham-chi-tiet-3"></use>
+                                </svg>
+                            span.ttl-text Sử dụng và bảo quản      
+                    .sUse
+                        .row
+                            .col-lg-5
+                                .image
+                                    img(src=imgPath + 'nuoidaycon/kid.png' alt="")
+                                    span.ttl_line
+                                        b Sản phẩm cho bé từ 2 tuổi trở lên
+                            .col-lg-7
+                                p Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                                .infoSlider.infoSliderProduct.infoSlider-2
+                                    .itemWrap
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                    <use xlink:href="#ic-milk"></use>
+                                                </svg>
+                                            .des
+                                                h4 Bước 01 - Lorem ipsum set dolor
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                    <use xlink:href="#ic-milk"></use>
+                                                </svg>
+                                            .des
+                                                h4 Bước 02 - Lorem ipsum set dolor
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                    <use xlink:href="#ic-milk"></use>
+                                                </svg>
+                                            .des
+                                                h4 Bước 03 - Lorem ipsum set dolor
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                    <use xlink:href="#ic-milk"></use>
+                                                </svg>
+                                            .des
+                                                h4 Bước 04 - Lorem ipsum set dolor
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                    .itemWrap
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                    <use xlink:href="#ic-milk"></use>
+                                                </svg>
+                                            .des
+                                                h4 Bước 01 - Lorem ipsum set dolor
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                    <use xlink:href="#ic-milk"></use>
+                                                </svg>
+                                            .des
+                                                h4 Bước 02 - Lorem ipsum set dolor
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                    <use xlink:href="#ic-milk"></use>
+                                                </svg>
+                                            .des
+                                                h4 Bước 03 - Lorem ipsum set dolor
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                        .item
+                                            span.txt-icon
+                                                <svg viewBox="0 0 60 53.4" class="icon-shape">
+                                                    <use xlink:href="#ic-milk"></use>
+                                                </svg>
+                                            .des
+                                                h4 Bước 04 - Lorem ipsum set dolor
+                                                p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.          
+            .bg-khuyen-mai
+                .container
+                    .page-header
+                        ul#myList.list-group.list-group-tab(role='tablist')
+                            li: a.active(data-toggle='list', href='#newtab1', role='tab') 
+                                    span.icon-text
+                                        <svg viewBox="0 0 57.897 50" class="icon-shape">
+                                            <use xlink:href="#ic-news"></use>
+                                        </svg>
+                                    span.ttl-text Kiến thức dinh dưỡng
+                            li: a(data-toggle='list', href='#newtab2', role='tab') 
+                                    span.icon-text
+                                        <svg viewBox="0 0 57.897 50" class="icon-shape">
+                                            <use xlink:href="#ic-khuyen-mai"></use>
+                                        </svg>
+                                    span.ttl-text Thông tin khuyến mãi
+                    -
+                        var news = [
+                            {'title' : "VitaDairy vươn tầm thế giới cùng Gulfood Dubai", 'img': 'chiendichquangcao/img-02.jpg','url' : "#"},
+                            {'title' : "VitaDairy – Thương hiệu sữa Việt hàng đầu ứng dụng…", 'img': 'chiendichquangcao/img-03.jpg','url' : "#"},
+                            {'title' : "Sữa VitaDairy được Viện dinh dưỡng Việt Nam khuyên dùng", 'img': 'chiendichquangcao/img-04.jpg','url' : "#"},
+                            {'title' : "Bà Nguyễn Tú Anh, nhà sáng lập Công ty VitaDairy: Nữ…", 'img': 'chiendichquangcao/img-05.jpg','url' : "#"},
+                            {'title' : "VitaDairy là đối tác duy nhất của Bộ Y tế trong năm hành…", 'img': 'chiendichquangcao/img-06.jpg','url' : "#"},
+                            {'title' : "Hãng sữa VitaDairy xây thêm nhà máy 6 triệu USD", 'img': 'chiendichquangcao/img-07.jpg','url' : "#"}
+                        ]
+                    -
+                        var news2 = [
+                            {'title' : "2V itaDairy vươn tầm thế giới cùng Gulfood Dubai", 'img': 'chiendichquangcao/img-02.jpg','url' : "#"},
+                            {'title' : "2 VitaDairy – Thương hiệu sữa Việt hàng đầu ứng dụng…", 'img': 'chiendichquangcao/img-03.jpg','url' : "#"},
+                            {'title' : "2 Sữa VitaDairy được Viện dinh dưỡng Việt Nam khuyên dùng", 'img': 'chiendichquangcao/img-04.jpg','url' : "#"},
+                            {'title' : "2 Bà Nguyễn Tú Anh, nhà sáng lập Công ty VitaDairy: Nữ…", 'img': 'chiendichquangcao/img-05.jpg','url' : "#"},
+                            {'title' : "2 VitaDairy là đối tác duy nhất của Bộ Y tế trong năm hành…", 'img': 'chiendichquangcao/img-06.jpg','url' : "#"},
+                            {'title' : "2 Hãng sữa VitaDairy xây thêm nhà máy 6 triệu USD", 'img': 'chiendichquangcao/img-07.jpg','url' : "#"}
+                        ]
+                    .tab-content
+                        #newtab1.tab-pane.active(role='tabpanel')
+                            .sNewsSlider
+                                .sNewsSliderInner
+                                    for y in news2
+                                        .item
+                                            a(href=y.url)
+                                                img(data-lazy= imgPath + y.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                            .info
+                                                .date 21/09/2019
+                                                a(href=y.url)
+                                                    = y.title
+                                                p 1 Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
+                                                .btnDiv.text-center
+                                                    +a-btn-primary('Xem thể lệ','#')
+
+                        #newtab2.tab-pane(role='tabpanel')
+                            .sNewsSlider
+                                .sNewsSliderInner
+                                    for x in news
+                                        .item
+                                            a(href=x.url)
+                                                img(data-lazy= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==")
+                                            .info
+                                                .date 21/09/2019
+                                                a(href=x.url)
+                                                    = x.title
+                                                p 2 Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
+                                                .btnDiv.text-center
+                                                    +a-btn-primary('Xem thể lệ','#')
             .sLandingProductContent-3.bg-chi-tiet-san-pham-3
                 .container
                     .page-header

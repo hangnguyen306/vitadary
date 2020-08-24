@@ -8,9 +8,9 @@ block content
     .sMainChild.sNew.sNewDetail
         .sMainContent.sMainContent-other
             .container
-                +breadcrumb([{'title':'Nuôi dưỡng bé yêu','link':'#'},{'title':'Miễn dịch khoẻ'}])
+                +breadcrumb([{'title':'Nuôi dạy con và nhật ký làm mẹ ','link':'#'},{'title':'Bé 0-6 tháng tuổi'}])
                 .sLinkWrap
-                    .sLink.sLink-col-6
+                    .sLink.sLink-col-5.sLink2
                         ul
                             li.active: a(href="#")
                                 span.icon-link
@@ -46,7 +46,8 @@ block content
                             </svg>
                         span.ttl-text Tổng quan giai đoạn 0-6 tháng
                 .sInfo.listColNew
-                    +itemBigEvent(imgPath + 'nuoidaycon/img-01.jpg','image',"#","Nuôi dưỡng hệ miễn dịch của trẻ: Mẹ đã biết chưa?")
+                    .bigImageEvent
+                        +itemBigEvent(imgPath + 'nuoidaycon/img-01.jpg','image',"#","Nuôi dưỡng hệ miễn dịch của trẻ: Mẹ đã biết chưa?")
         .sMainContentInfo.bg-thongtin
             .container
                 .page-header
@@ -72,28 +73,28 @@ block content
                 .sNewsSlider.sNewsSliderList.sNewsSliderList-2
                         for x in news2
                             .item.row
-                                .col-5.col-sm-4
+                                .col-md-6.col-lg-4
                                     a(href='chitiet.html')
                                         img(data-src= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
-                                .col-7.col-sm-8
+                                .col-md-6.col-lg-8
                                     .info
                                         .date 21/09/2019
                                         a(href='chitiet.html')
                                             = x.title
                                         p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-                                        .row
+                                        .row.align-items-center
                                             .col-4
-                                                +a-btn-link('Xem thêm','chitiet.html')
+                                                +btn-primary('Xem thêm','chitiet.html')
                                             .col-8
                                                 .share 
                                                     a(href="#").ico-fb Chia sẻ
                                                     .review
-                                                        span.icon-start
-                                                        span.icon-start
-                                                        span.icon-start
-                                                        span.icon-start
-                                                        span.icon-start
-                                                        span.text (4.5/5)
+                                                        span.icon-start.fa.fa-star.checked
+                                                        span.icon-start.fa.fa-star.checked
+                                                        span.icon-start.fa.fa-star.checked
+                                                        span.icon-start.fa.fa-star.checked
+                                                        span.icon-start.fa.fa-star
+                                                        span.text (4/5)
 
                 .sPaiging
                     +pagination([

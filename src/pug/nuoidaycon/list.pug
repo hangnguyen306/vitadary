@@ -1,0 +1,106 @@
+extends ../layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "nuoi-duong"
+
+block content
+    .sMainChild.sNew.sNewDetail
+        .sMainContent.sMainContent-other
+            .container
+                +breadcrumb([{'title':'Nuôi dưỡng bé yêu','link':'#'},{'title':'Miễn dịch khoẻ'}])
+                .sLinkWrap
+                    .sLink.sLink-col-6
+                        ul
+                            li.active: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#nuoicon1"></use>
+                                    </svg>
+                                span.icon-text Bé 0-6 tháng tuổi
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#nuoicon2"></use>
+                                    </svg>
+                                span.icon-text Bé 6-12 tháng tuổi
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#nuoicon3"></use>
+                                    </svg>
+                                span.icon-text Bé 1-3 tuổi
+                            li: a(href="#")
+                                span.icon-link
+                                    <svg viewBox="0 0 40 40" class="icon-shape">
+                                        <use xlink:href="#nuoicon4"></use>
+                                    </svg>
+                                span.icon-text Bé trên 3 tuổi
+        .sMainContentInfo.bg-miendich
+            .container
+                .page-header
+                    h3
+                        span.icon-text
+                            <svg viewBox="0 0 51.171 50" class="icon-shape">
+                                <use xlink:href="#ic-thongtinnoibat"></use>
+                            </svg>
+                        span.ttl-text Tổng quan giai đoạn 0-6 tháng
+                .sInfo.listColNew
+                    +itemBigEvent(imgPath + 'nuoidaycon/img-01.jpg','image',"#","Nuôi dưỡng hệ miễn dịch của trẻ: Mẹ đã biết chưa?")
+        .sMainContentInfo.bg-thongtin
+            .container
+                .page-header
+                    h3
+                        span.icon-text
+                            <svg viewBox="0 0 63.891 50" class="icon-shape">
+                                <use xlink:href="#ic-thongtinlienquan"></use>
+                            </svg>
+                        span.ttl-text Bài viết liên quan
+                -
+                    var news2 = [
+                        {'title' : "Dinh dưỡng cho bé 3 tháng tuổi như nào là tốt", 'img': 'nuoidaycon/img01.jpg','url' : "#"},
+                        {'title' : "Dinh dưỡng cho bé 3 tháng tuổi như nào là tốt", 'img': 'nuoidaycon/img02.jpg','url' : "#"},
+                        {'title' : "Dinh dưỡng cho bé 3 tháng tuổi như nào là tốt", 'img': 'nuoidaycon/img03.jpg','url' : "#"},
+                        {'title' : "Dinh dưỡng cho bé 3 tháng tuổi như nào là tốt", 'img': 'nuoidaycon/img04.jpg','url' : "#"},
+                        {'title' : "Dinh dưỡng cho bé 3 tháng tuổi như nào là tốt", 'img': 'nuoidaycon/img05.jpg','url' : "#"},
+                        {'title' : "Dinh dưỡng cho bé 3 tháng tuổi như nào là tốt", 'img': 'nuoidaycon/img01.jpg','url' : "#"},
+                        {'title' : "Dinh dưỡng cho bé 3 tháng tuổi như nào là tốt", 'img': 'nuoidaycon/img02.jpg','url' : "#"},
+                        {'title' : "Dinh dưỡng cho bé 3 tháng tuổi như nào là tốt", 'img': 'nuoidaycon/img03.jpg','url' : "#"},
+                        {'title' : "Dinh dưỡng cho bé 3 tháng tuổi như nào là tốt", 'img': 'nuoidaycon/img04.jpg','url' : "#"},
+                        {'title' : "Dinh dưỡng cho bé 3 tháng tuổi như nào là tốt", 'img': 'nuoidaycon/img05.jpg','url' : "#"}
+                    ]
+                .sNewsSlider.sNewsSliderList.sNewsSliderList-2
+                        for x in news2
+                            .item.row
+                                .col-5.col-sm-4
+                                    a(href='chitiet.html')
+                                        img(data-src= imgPath + x.img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==").lazy
+                                .col-7.col-sm-8
+                                    .info
+                                        .date 21/09/2019
+                                        a(href='chitiet.html')
+                                            = x.title
+                                        p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+                                        .row
+                                            .col-4
+                                                +a-btn-link('Xem thêm','chitiet.html')
+                                            .col-8
+                                                .share 
+                                                    a(href="#").ico-fb Chia sẻ
+                                                    .review
+                                                        span.icon-start
+                                                        span.icon-start
+                                                        span.icon-start
+                                                        span.icon-start
+                                                        span.icon-start
+                                                        span.text (4.5/5)
+
+                .sPaiging
+                    +pagination([
+                        {text:'<i class="arrow_carrot-left"></i>',url:'#'},
+                        {text:'1',url:'#'},
+                        {text:'2',url:'#'},
+                        {text:'3',url:'#'},
+                        {text:'...',url:'#'},
+                        {text:'<span>Cuối</span><i class="arrow_carrot-right"></i>',url:'#'}
+                    ])

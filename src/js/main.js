@@ -814,6 +814,32 @@ if(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
         $(this).text(elP)
     });
 }
+
+function loadMoreItem() {
+    var loadMore = $('.loadMore');
+    loadMore.each(function() {
+        var el = $(this)
+          , numberShowItem = el.data('show')
+          , numberLoadItem = el.data('load');
+        countItem = el.parents('.loadMoreGroup').find('.showBox').length;
+        elShow = el.parents('.loadMoreGroup').find('.showBox');
+        elShow.slice(0, numberShowItem).show();
+        console.log('load :', numberLoadItem);
+        console.log('count : ', countItem);
+        if (countItem < numberLoadItem) {
+            el.hide()
+        }
+        el.on('click', function(e) {
+            e.preventDefault();
+            el.parents('.loadMoreGroup').find('.showBox:hidden').slice(0, numberLoadItem).slideDown();
+            if (el.parents('.loadMoreGroup').find('.showBox:hidden').length == 0) {
+                el.fadeOut('slow')
+            }
+          
+        })
+    })
+}
+loadMoreItem();
 sBoxProductSlidder();
 sProductSlider();
 sProductSlider2();

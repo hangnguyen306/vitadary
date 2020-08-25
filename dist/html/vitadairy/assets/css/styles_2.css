@@ -4989,6 +4989,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .sProductList .sMainContent {
   margin-top: 0; }
+  @media (max-width: 991.98px) {
+    .sProductList .sMainContent {
+      margin-top: 13px; } }
   .sProductList .sMainContent .btn.btn-primary.btn-btn-ic-shop:after {
     display: none; }
 
@@ -5130,7 +5133,7 @@ a.text-dark:hover, a.text-dark:focus {
           height: 1.25rem; } }
   .sProductList .list-group a {
     color: #999A9D;
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     font-weight: bold; }
     .sProductList .list-group a.active {
       text-decoration: underline;
@@ -5182,6 +5185,9 @@ a.text-dark:hover, a.text-dark:focus {
       width: 100%; }
   .sNewsSlider.sNewsSliderList-2 > .item .info {
     padding-left: 30px; }
+    @media (max-width: 991.98px) {
+      .sNewsSlider.sNewsSliderList-2 > .item .info {
+        padding-left: 0; } }
     .sNewsSlider.sNewsSliderList-2 > .item .info a:not(.btn) {
       height: auto; }
     .sNewsSlider.sNewsSliderList-2 > .item .info .share {
@@ -5216,6 +5222,9 @@ a.text-dark:hover, a.text-dark:focus {
     .sNewsSlider.sNewsSliderList-2 > .item .info p ~ div {
       margin-top: 1.25rem; }
 
+.sNewDetail .sNewsSlider.sNewsSliderList .item {
+  align-items: center; }
+
 .btn-group2 {
   max-width: 440px; }
   .btn-group2 a {
@@ -5234,13 +5243,19 @@ a.text-dark:hover, a.text-dark:focus {
 .sLandingProductContent-4 {
   background: #F9F3F0;
   padding-top: 2.5rem; }
+  .sLandingProductContent-4 .infoSlider .item {
+    min-height: 100px; }
+  .sLandingProductContent-4 .infoSlider .item ~ .item {
+    margin-top: 0; }
   .sLandingProductContent-4 .image {
     position: relative;
     text-align: center;
     padding: 0 15px; }
     @media (max-width: 991.98px) {
       .sLandingProductContent-4 .image {
-        margin-bottom: 20px; } }
+        margin-bottom: 20px; }
+        .sLandingProductContent-4 .image img {
+          max-width: 200px !important; } }
     .sLandingProductContent-4 .image img {
       max-width: 100%; }
     .sLandingProductContent-4 .image .ttl_line {
@@ -5273,6 +5288,17 @@ a.text-dark:hover, a.text-dark:focus {
   .sLandingProductContent-4 .infoSlider-2 .item {
     padding-left: 60px;
     background: none; }
+
+@media (max-width: 991.98px) {
+  .sNew .page-header-content h2 span {
+    font-size: 1.4rem; } }
+
+.sProductDetail.sProduct.sProductList.sNew .page-header h3 {
+  font-size: 1.8rem !important; }
+
+@media (max-width: 991.98px) {
+  .sProductDetail.sProduct.sProductList.sNew .page-header h3 {
+    font-size: 1.5rem !important; } }
 
 .sProductDetail.sProduct.sProductList.sNew .bg-khuyen-mai {
   background: #E9EDF2; }

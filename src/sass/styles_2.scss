@@ -29,6 +29,9 @@
   }
   .sMainContent{
     margin-top: 0;
+    @include media-breakpoint-down(md) {
+          margin-top: 13px;
+    }
     .btn.btn-primary.btn-btn-ic-shop{
       &:after{
         display: none;
@@ -197,7 +200,7 @@
     }
     a{
       color: #999A9D;
-      font-size: rem(30);
+      font-size: rem(20);
       font-weight: bold;
       &.active{
         text-decoration: underline;
@@ -263,6 +266,9 @@
     }
     .info{
       padding-left: 30px;
+      @include media-breakpoint-down(md) {
+        padding-left: 0;
+      }
       a:not(.btn){
         height: auto;
       }
@@ -316,6 +322,9 @@
   }
   
 }
+.sNewDetail .sNewsSlider.sNewsSliderList .item{
+  align-items: center;
+}
 .btn-group2{
   max-width: 440px;
   a{
@@ -344,12 +353,21 @@
 .sLandingProductContent-4{
   background:#F9F3F0;
   padding-top:rem(40);
+  .infoSlider .item{
+    min-height:100px;
+  }
+  .infoSlider .item ~ .item{
+    margin-top: 0;
+  }
   .image{
     position: relative;
     text-align: center;
     padding:0 15px;
     @include media-breakpoint-down(md) {
       margin-bottom: 20px;
+      img{
+        max-width: 200px!important;
+      }
     }
     img{
       max-width: 100%;
@@ -392,7 +410,25 @@
     }
   }
 }
+.sNew{
+  @include media-breakpoint-down(md){
+    .page-header-content h2 span{
+      font-size:1.4rem;
+    }
+  }
+  
+}
 .sProductDetail.sProduct.sProductList.sNew{
+  .page-header h3{
+    font-size:1.8rem!important;
+  }
+  @include media-breakpoint-down(md) 
+  {
+  
+    .page-header h3{
+      font-size:1.5rem!important;
+    }
+  }
   .bg-khuyen-mai{
     background:#E9EDF2;
   }

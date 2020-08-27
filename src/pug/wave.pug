@@ -1,0 +1,48 @@
+extends layouts/_layout_default
+
+block setting
+    - title = "Công ty cổ phần sữa VitaDairy Việt Nam"
+    - mainActive = "bi-quyet"
+    - bodyClass = 'noStick';
+
+block content
+    .sMainChild.sNew
+      .sBannerChild
+        img(src= imgPath + 'nuoidaycon/mv.jpg' alt="")
+      .fixHeight
+        .sIntroheader
+          .container
+            +breadcrumb([{'title':'Nuôi dạy con và nhật ký làm mẹ'}])
+          .container
+            .sMainContent.sMainContent-other
+              +headerlanding('Nuôi dạy con và nhật ký làm mẹ ','Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea')
+            .sLink#stickMenu.sQuickLink.sLink-col-5.item7.sLink2
+              ul
+                li.active: a(href="#nuoiconItem1")
+                    span.icon-link
+                        img(src=imgPath + 'nuoidaycon/icon1.svg' alt="")
+                    span.icon-text Bé 0-6 tháng tuổi
+                li: a(href="#nuoiconItem2")
+                    span.icon-link
+                        img(src=imgPath + 'nuoidaycon/icon2.svg' alt="")
+                    span.icon-text Bé 6-12 tháng tuổi
+                li: a(href="#nuoiconItem3")
+                    span.icon-link
+                        img(src=imgPath + 'nuoidaycon/icon3.svg' alt="")
+                    span.icon-text Bé 1-3 tuổi
+                li: a(href="#nuoiconItem4")
+                    span.icon-link
+                        img(src=imgPath + 'nuoidaycon/icon4.svg' alt="")
+                    span.icon-text Bé trên 3 tuổi
+                li: a(href="#nuoiconItem4")
+                    span.icon-link
+                        img(src=imgPath + 'nuoidaycon/icon4.svg' alt="")
+                    span.icon-text Bé trên 3 tuổi
+                li: a(href="#nuoiconItem4")
+                    span.icon-link
+                        img(src=imgPath + 'nuoidaycon/icon4.svg' alt="")
+                    span.icon-text Bé trên 3 tuổi
+                li: a(href="#nuoiconItem4")
+                    span.icon-link
+                        img(src=imgPath + 'nuoidaycon/icon4.svg' alt="")
+                    span.icon-text Bé trên 3 tuổi

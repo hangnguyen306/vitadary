@@ -214,6 +214,10 @@
   .tab-content{
     margin-left: -40px;
     margin-right: -40px;
+    @include media-breakpoint-down(md) {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
   }
   .tab-content > .tab-pane{
     display: block!important;
@@ -221,6 +225,12 @@
     overflow: hidden;
     padding-left: 50px;
     padding-right: 50px;
+    @include media-breakpoint-down(md) {
+      height: auto!important;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 20px;
+    }
   }
   .tab-content > .tab-pane.active {
     height: auto;
@@ -274,7 +284,9 @@
       }
       .share{
         text-align: right;
-       
+        @include media-breakpoint-down(md) {
+          margin-top:10px;
+        }
         a{
           &.ico-fb{
             margin: 0;
@@ -413,7 +425,7 @@
 .sNew{
   @include media-breakpoint-down(md){
     .page-header-content h2 span{
-      font-size:1.4rem;
+      font-size:1.3rem;
     }
   }
   
@@ -432,4 +444,14 @@
   .bg-khuyen-mai{
     background:#E9EDF2;
   }
+}
+@media (min-width: 991.98px) {
+  .for-sp{
+    display: none;
+  }
+}
+@include media-breakpoint-down(md) {
+.for-pc{
+  display: none;
+}
 }

@@ -350,7 +350,7 @@ block content
                                                 p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.          
             .bg-khuyen-mai
                 .container
-                    .page-header
+                    .page-header.for-pc
                         ul#myList.list-group.list-group-tab(role='tablist')
                             li: a.active(data-toggle='list', href='#newtab1', role='tab') 
                                     span.icon-text
@@ -383,6 +383,13 @@ block content
                             {'title' : "2 Hãng sữa VitaDairy xây thêm nhà máy 6 triệu USD", 'img': 'chiendichquangcao/img-07.jpg','url' : "#"}
                         ]
                     .tab-content
+                        .page-header.for-sp
+                            h2
+                                span.icon-text
+                                    <svg viewBox="0 0 57.897 50" class="icon-shape">
+                                        <use xlink:href="#ic-news"></use>
+                                    </svg>
+                                span.ttl-text Kiến thức dinh dưỡng
                         #newtab1.tab-pane.active(role='tabpanel')
                             .sNewsSlider
                                 .sNewsSliderInner
@@ -396,8 +403,14 @@ block content
                                                     = y.title
                                                 p 1 Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
                                                 .btnDiv.text-center
-                                                    +a-btn-primary('Xem thể lệ','#')
-
+                                                    +a-btn-primary('Xem thêm','#')
+                        .page-header.for-sp
+                            h2
+                                span.icon-text
+                                    <svg viewBox="0 0 57.897 50" class="icon-shape">
+                                        <use xlink:href="#ic-khuyen-mai"></use>
+                                    </svg>
+                                span.ttl-text Thông tin khuyến mãi
                         #newtab2.tab-pane(role='tabpanel')
                             .sNewsSlider
                                 .sNewsSliderInner
@@ -411,7 +424,7 @@ block content
                                                     = x.title
                                                 p 2 Lorem ipsum dolor sit amet, consec tetur adip isicing elit, sed do eiusmod tempor 
                                                 .btnDiv.text-center
-                                                    +a-btn-primary('Xem thể lệ','#')
+                                                    +a-btn-primary('Xem thêm','#')
             .sLandingProductContent-3.bg-chi-tiet-san-pham-3
                 .container
                     .page-header
